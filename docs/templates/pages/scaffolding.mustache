@@ -1,13 +1,13 @@
       <!-- Masthead
       ================================================== -->
       <header class="jumbotron subhead" id="overview">
-        <h1>{{_i}}Scaffolding{{/i}}</h1>
-        <p class="lead">{{_i}}Bootstrap is built on a responsive 12-column grid. We've also included fixed- and fluid-width layouts based on that system.{{/i}}</p>
+        <h1>Grid</h1>
+        <p class="lead">O Bootstrap foi desenvolvido num grid responsive de 12 colunas. Também está incluído layouts fixos e fluidos</p>
         <div class="subnav">
           <ul class="nav pills">
-            <li><a href="#grid-system">{{_i}}Grid system{{/i}}</a></li>
-            <li><a href="#layouts">{{_i}}Layouts{{/i}}</a></li>
-            <li><a href="#responsive">{{_i}}Responsive design{{/i}}</a></li>
+            <li><a href="#grid-system">Grid system</a></li>
+            <li><a href="#layouts">Layouts</a></li>
+            <li><a href="#responsive">Responsive design</a></li>
           </ul>
         </div>
       </header>
@@ -18,10 +18,10 @@
 ================================================== -->
 <section id="grid-system">
   <div class="page-header">
-    <h1>{{_i}}Grid system <small>12 columns with a responsive twist</small>{{/i}}</h1>
+    <h1>Grid com <small>12 colunas com um toque responsive</small></h1>
   </div>
 
-  <h2>Default 940px grid</h2>
+  <h2>Grid 940px padrão</h2>
   <div class="row show-grid">
     <div class="span1">1</div>
     <div class="span1">1</div>
@@ -55,8 +55,8 @@
 
   <div class="row">
     <div class="span4">
-      <p>{{_i}}The default grid system provided as part of Bootstrap is a <strong>940px-wide, 12-column grid</strong>.{{/i}}</p>
-      <p>{{_i}}It also has three responsive variations for various devices and resolutions: phone, tablet, and large widescreen desktops.{{/i}}</p>
+    	<p>O grid padrão disponível como parte do Bootstrap é um grid de <strong>940px, de 12 colunas</strong></p>
+      <p>Existem três variações de grid responsive para vários devices e resoluções: phone, tablet, e telas maiores de desktop</p>
     </div>
     <div class="span4">
 <pre class="prettyprint linenums">
@@ -67,11 +67,11 @@
 </pre>
     </div>
     <div class="span4">
-      <p>{{_i}}As shown here, a basic layout can be created with two "columns," each spanning a number of the 12 foundational columns we defined as part of our grid system.{{/i}}</p>
+    	<p>Como mostrado aqui, um layout básico pode ser criado com duas "colunas", cada parte tem um número de 12 colunas definidas como parte do grid</p>
     </div>
   </div><!-- /row -->
 
-  <h2>Offsetting columns</h2>
+  <h2>Offset de colunas</h2>
   <div class="row show-grid">
     <div class="span4">4</div>
     <div class="span4 offset4">4 offset 4</div>
@@ -86,20 +86,20 @@
 
   <br>
 
-  <h2>{{_i}}Nesting columns{{/i}}</h2>
+  <h2>Colunas aninhadas</h2>
   <div class="row">
     <div class="span6">
-      <p>{{_i}}With the static (non-fluid) grid system in Bootstrap, nesting is easy. To nest your content, just add a new <code>.row</code> and set of <code>.span*</code> columns within an existing <code>.span*</code> column.{{/i}}</p>
-      <h4>{{_i}}Example{{/i}}</h4>
+      <p>Com o grid estático (não fluido) do Bootstrap, aninhamento é bem fácil. Para aninhar o conteúdo, simplesmente adicione um novo <code>.row</code> e blocos de colunas <code>.span*</code> dentro de um span existente <code>.span*</code>.</p>
+      <h4>Exemplo</h4>
       <div class="row show-grid">
         <div class="span6">
-          {{_i}}Level 1 of column{{/i}}
+          Nível 1 da coluna
           <div class="row show-grid">
             <div class="span3">
-              {{_i}}Level 2{{/i}}
+              Nível 2
             </div>
             <div class="span3">
-              {{_i}}Level 2{{/i}}
+              Nível 2
             </div>
           </div>
         </div>
@@ -109,10 +109,10 @@
 <pre class="prettyprint linenums">
 &lt;div class="row"&gt;
   &lt;div class="span12"&gt;
-    {{_i}}Level 1 of column{{/i}}
+    Nível 1 da coluna
     &lt;div class="row"&gt;
-      &lt;div class="span6"&gt;{{_i}}Level 2{{/i}}&lt;/div&gt;
-      &lt;div class="span6"&gt;{{_i}}Level 2{{/i}}&lt;/div&gt;
+      &lt;div class="span6"&gt;Nível 2&lt;/div&gt;
+      &lt;div class="span6"&gt;Nível 2&lt;/div&gt;
     &lt;/div&gt;
   &lt;/div&gt;
 &lt;/div&gt;
@@ -120,50 +120,50 @@
     </div>
   </div>
 
-  <h2>{{_i}}Grid customization{{/i}}</h2>
+  <h2>Customização do grid</h2>
   <table class="table table-bordered table-striped">
     <thead>
       <tr>
-        <th>{{_i}}Variable{{/i}}</th>
-        <th>{{_i}}Default value{{/i}}</th>
-        <th>{{_i}}Description{{/i}}</th>
+        <th>Variáveis</th>
+        <th>Valor padrão</th>
+        <th>Descrição</th>
       </tr>
     </thead>
     <tbody>
       <tr>
         <td><code>@gridColumns</code></td>
         <td>12</td>
-        <td>{{_i}}Number of columns{{/i}}</td>
+        <td>Número de colunas</td>
       </tr>
       <tr>
         <td><code>@gridColumnWidth</code></td>
         <td>60px</td>
-        <td>{{_i}}Width of each column{{/i}}</td>
+        <td>Largura de cada coluna</td>
       </tr>
       <tr>
         <td><code>@gridGutterWidth</code></td>
         <td>20px</td>
-        <td>{{_i}}Negative space between columns{{/i}}</td>
+        <td>Espaço negativo entre colunas</td>
       </tr>
       <tr>
         <td><code>@siteWidth</code></td>
-        <td><em>{{_i}}Computed sum of all columns and gutters{{/i}}</em></td>
-        <td>{{_i}}Counts number of columns and gutters to set width of the <code>.container-fixed()</code> mixin{{/i}}</td>
+        <td><em>Somas computadas de todas as colunas e margens</em></td>
+        <td>Contagem de número de colunas e gutters estão em <code>.container-fixed()</code></td>
       </tr>
     </tbody>
   </table>
   <div class="row">
     <div class="span4">
-      <h3>{{_i}}Variables in LESS{{/i}}</h3>
-      <p>{{_i}}Built into Bootstrap are a handful of variables for customizing the default 940px grid system, documented above. All variables for the grid are stored in variables.less.{{/i}}</p>
+      <h3>Variáveis em LESS</h3>
+      <p>Através das variáveis é possível customizar o grid de 940px padrão, documentado acima. Todas variáveis para o grid estão armazenadas em variables.less</p>
     </div>
     <div class="span4">
-      <h3>{{_i}}How to customize{{/i}}</h3>
-      <p>{{_i}}Modifying the grid means changing the three <code>@grid*</code> variables and recompiling Bootstrap. Change the grid variables in variables.less and use one of the <a href="#compiling">four ways documented to recompile</a>. If you're adding more columns, be sure to add the CSS for those in grid.less.{{/i}}</p>
+      <h3>Como customizar</h3>
+      <p>Modificar o grid significa modificar as três variáveis <code>@grid*</code> e recompilando o Bootstrap Mudando as variáveis do grid e use uma das opções de compilar. Existem <a href="#compiling">quatro maneiras documentadas para compilar</a></p>
     </div>
     <div class="span4">
-      <h3>{{_i}}Staying responsive{{/i}}</h3>
-      <p>{{_i}}Customization of the grid only works at the default level, the 940px grid. To maintain the responsive aspects of Bootstrap, you'll also have to customize the grids in responsive.less.{{/i}}</p>
+      <h3>Continuando responsive</h3>
+      <p>A customização do grid somente funciona no seu padrão, ou seja, o grid de 940px. Para manter os aspectos responsive do Bootstrap, você também terá que customizar os grids em responsive.less.</p>
     </div>
   </div><!-- /row -->
 
@@ -175,13 +175,13 @@
 ================================================== -->
 <section id="layouts">
   <div class="page-header">
-    <h1>{{_i}}Layouts <small>Basic templates to create webpages</small>{{/i}}</h1>
+    <h1>Layouts <small>Templates básicos para criar páginas</small></h1>
   </div>
 
   <div class="row">
     <div class="span6">
-      <h2>{{_i}}Fixed layout{{/i}}</h2>
-      <p>{{_i}}The default and simple 940px-wide, centered layout for just about any website or page provided by a single <code>&lt;div class="container"&gt;</code>.{{/i}}</p>
+      <h2>Layout fixo</h2>
+      <p>O layout padrão e simples de 940px, centralizado para qualquer website que suporte um simples <code>&lt;div class="container"&gt;</code>.</p>
       <div class="mini-layout">
         <div class="mini-layout-body"></div>
       </div>
@@ -194,8 +194,8 @@
 </pre>
     </div><!-- /col -->
     <div class="span6">
-      <h2>{{_i}}Fluid layout{{/i}}</h2>
-      <p>{{_i}}<code>&lt;div class="fluid-container"&gt;</code> gives flexible page structure, min- and max-widths, and a left-hand sidebar. It's great for apps and docs.{{/i}}</p>
+      <h2>Layout fluido</h2>
+      <p><code>&lt;div class="fluid-container"&gt;</code> estrutura flexível de página, min- e max-widths, e sidebar. Ótimo para aplicações e página de documentações.</p>
       <div class="mini-layout fluid">
         <div class="mini-layout-sidebar"></div>
         <div class="mini-layout-body"></div>
@@ -223,7 +223,7 @@
 ================================================== -->
 <section id="responsive">
   <div class="page-header">
-    <h1>{{_i}}Responsive design <small>Media queries for various devices and resolutions</small>{{/i}}</h1>
+    <h1>Responsive design <small>Media queries para vários dispositivos e resoluções</small></h1>
   </div>
   <!-- Supported devices -->
   <div class="row">
@@ -231,85 +231,77 @@
       <img src="assets/img/responsive-illustrations.png" alt="Responsive devices">
     </div>
     <div class="span8">
-      <h2>{{_i}}Supported devices{{/i}}</h2>
-      <p>{{_i}}Bootstrap supports a handful of media queries to help make your projects more appropriate on different devices and screen resolutions. Here's what's included:{{/i}}</p>
+      <h2>Dispositivos suportados</h2>
+      <p>O Bootstrap suporta uma grande variedade de media queries para ajudar a tornar seus projetos mais apropriados em diferentes devices e resoluções. Abaixo o que inclui:</p>
       <table class="table table-bordered table-striped">
         <thead>
           <tr>
-            <th>{{_i}}Label{{/i}}</th>
-            <th>{{_i}}Layout width{{/i}}</th>
-            <th>{{_i}}Column width{{/i}}</th>
-            <th>{{_i}}Gutter width{{/i}}</th>
+            <th>Label</th>
+            <th>Largura do layout</th>
+            <th>Largura da coluna</th>
+            <th>largura das margens (gutter)</th>
           </tr>
         </thead>
         <tbody>
           <tr>
-            <td>{{_i}}Smartphones{{/i}}</td>
-            <td>480px and below</td>
-            <td class="muted" colspan="2">{{_i}}Fluid columns, no fixed widths{{/i}}</td>
+            <td>Smartphones</td>
+            <td>480px e inferiores</td>
+            <td class="muted" colspan="2">Colunas fluidas, sem larguras fixas</td>
           </tr>
           <tr>
-            <td>{{_i}}Portrait tablets{{/i}}</td>
-            <td>480px to 768px</td>
-            <td class="muted" colspan="2">{{_i}}Fluid columns, no fixed widths{{/i}}</td>
+            <td>tablets modo retrato</td>
+            <td>480px até 768px</td>
+            <td class="muted" colspan="2">Colunas fluidas, sem larguras fixas</td>
           </tr>
           <tr>
-            <td>{{_i}}Landscape tablets{{/i}}</td>
-            <td>768px to 940px</td>
+            <td>tablets modo paisagem</td>
+            <td>768px até 940px</td>
             <td>44px</td>
             <td>20px</td>
           </tr>
           <tr>
-            <td>{{_i}}Default{{/i}}</td>
-            <td>940px and up</td>
+            <td>Padrão</td>
+            <td>940px acima</td>
             <td>60px</td>
             <td>20px</td>
           </tr>
           <tr>
-            <td>{{_i}}Large display{{/i}}</td>
-            <td>1210px and up</td>
+            <td>Display maiores</td>
+            <td>1210px e acima</td>
             <td>70px</td>
             <td>30px</td>
           </tr>
         </tbody>
       </table>
-
-      <h3>{{_i}}What they do{{/i}}</h3>
-      <p>{{_i}}Media queries allow for custom CSS based on a number of conditions&mdash;ratios, widths, display type, etc&mdash;but usually focuses around <code>min-width</code> and <code>max-width</code>.{{/i}}</p>
-      <ul>
-        <li>{{_i}}Modify the width of column in our grid{{/i}}</li>
-        <li>{{_i}}Stack elements instead of float wherever necessary{{/i}}</li>
-        <li>{{_i}}Resize headings and text to be more appropriate for devices{{/i}}</li>
-      </ul>
     </div>
   </div>
 
   <br>
 
   <!-- Media query code -->
-  <h2>{{_i}}Using the media queries{{/i}}</h2>
+  <h2>Template para Media query</h2>
   <div class="row">
     <div class="span5">
-      <p>{{_i}}Bootstrap doesn't automatically include these media queries, but understanding and adding them is very easy and requires minimal setup. You have a few options for including the responsive features of Bootstrap:{{/i}}</p>
+    	<p>O Bootstrap não inclui os media queries automaticamente, mas adicioná-los no projeto é muito fácil e requer o mínimo de configuração:</p>
       <ol>
-        <li>{{_i}}Use the compiled responsive version, bootstrap-reponsive.css{{/i}}</li>
-        <li>{{_i}}Add @import "responsive.less" and recompile Bootstrap{{/i}}</li>
-        <li>{{_i}}Modify and recompile responsive.less as a separate{{/i}}</li>
+      	<li>Use a versão compilada do responsive, bootstrap-responsive.css</li>
+      	<li>Adicionar @import "responsive.less" e recompilar o Bootstrap</li>
+      	<li>Modificar e recompilar responsive.less em separado</li>
       </ol>
-      <p>{{_i}}<strong>Why not just include it?</strong> Truth be told, not everything needs to be responsive. Instead of encouraging developers to remove this feature, we figure it best to enable it.{{/i}}</p>
+      <p><strong>Por que não já vem incluso?</strong> Nem tudo precisa ser responsive, ao invés disto deixamos a opção de inserir com o mínimo de configuração.</p>
     </div>
     <div class="span7">
 <pre class="prettyprint linenums">
-  // {{_i}}Landscape phones and down{{/i}}
+  // phones formato landscape e abaixo
   @media (max-width: 480px) { ... }
 
-  // {{_i}}Landscape phone to portrait tablet{{/i}}
+  // phones landscape até tablet no formato retrato
   @media (max-width: 768px) { ... }
 
-  // {{_i}}Portrait tablet to landscape and desktop{{/i}}
+  // tablet formato retrato ate o landscape e desktop
   @media (min-width: 768px) and (max-width: 940px) { ... }
 
-  // {{_i}}Large desktop{{/i}}
+  // desktop de tamanhos maiores
   @media (min-width: 1210px) { .. }
 </pre>
     </div>
