@@ -343,58 +343,58 @@
     </div>
   </div>
 
-  <h2>{{_i}}Nav lists{{/i}} <small>{{_i}}Build simple stacked navs, great for sidebars{{/i}}</small></h2>
+  <h2>Listas de navegação <small>Construídos para otimizar as barras de navegação</small></h2>
   <div class="row">
     <div class="span4">
-      <h3>{{_i}}Application-style navigation{{/i}}</h3>
-      <p>{{_i}}Nav lists provide a simple and easy way to build groups of nav links with optional headers. They're best used in sidebars like the Finder in OS X.{{/i}}</p>
-      <p>{{_i}}Structurally, they're built on the same core nav styles as tabs and pills, so usage and customization are straightforward.{{/i}}</p>
-      <h4>{{_i}}With icons{{/i}}</h4>
-      <p>{{_i}}Nav lists are also easy to equip with icons. Add the proper <code>&lt;i&gt;</code> tag with class and you're set.{{/i}}</p>
+      <h3>Navegação estilo aplicação</h3>
+      <p>As listas de navegação provê uma simples e fácil maneira de construir grupos de links com header opcional. Eles são melhor usados para sidebars como o Finder do OS X</p>
+      <p>Estruturalmente, eles são construídos com o mesmo estilo de navegação das tabs e pílulas, então a customização é bastante intuitiva</p>
+      <h4>Com ícones</h4>
+      <p>Listas de navegação são fáceis de serem construídas com ícones. Basta adicionar a tag <code>&lt;i&gt;</code> com a classe e pronto!</p>
     </div>
     <div class="span4">
-      <h3>{{_i}}Example nav list{{/i}}</h3>
-      <p>{{_i}}Take a list of links and add <code>class="nav list"</code>:{{/i}}</p>
+      <h3>Exemplo de listas de navegação</h3>
+      <p>Faça uma lista de links e adicione a estrutura <code>class="nav list"</code>:</p>
       <div class="well" style="padding: 8px 0;">
         <ul class="nav list">
-          <li class="nav-header">{{_i}}List header{{/i}}</li>
-          <li class="active"><a href="#">{{_i}}Home{{/i}}</a></li>
-          <li><a href="#">{{_i}}Library{{/i}}</a></li>
-          <li><a href="#">{{_i}}Applications{{/i}}</a></li>
-          <li class="nav-header">{{_i}}Another list header{{/i}}</li>
-          <li><a href="#">{{_i}}Profile{{/i}}</a></li>
-          <li><a href="#">{{_i}}Settings{{/i}}</a></li>
-          <li><a href="#">{{_i}}Help{{/i}}</a></li>
+          <li class="nav-header">Cabecalho</li>
+          <li class="active"><a href="#">Home</a></li>
+          <li><a href="#">Biblioteca</a></li>
+          <li><a href="#">Aplicações</a></li>
+          <li class="nav-header">Outro cabeçalho</li>
+          <li><a href="#">Perfil</a></li>
+          <li><a href="#">Configurações</a></li>
+          <li><a href="#">Ajuda</a></li>
         </ul>
       </div> <!-- /well -->
 <pre class="prettyprint linenums">
 &lt;ul class="nav list"&gt;
   &lt;li class="nav-header"&gt;
-    {{_i}}List header{{/i}}
+    Cabeçalho da lista
   &lt;/li&gt;
   &lt;li class="active"&gt;
-    &lt;a href="#"&gt;{{_i}}Home{{/i}}&lt;/a&gt;
+    &lt;a href="#"&gt;Home&lt;/a&gt;
   &lt;/li&gt;
   &lt;li&gt;
-    &lt;a href="#"&gt;{{_i}}Library{{/i}}&lt;/a&gt;
+    &lt;a href="#"&gt;Biblioteca&lt;/a&gt;
   &lt;/li&gt;
   ...
 &lt;/ul&gt;
 </pre>
     </div>
     <div class="span4">
-      <h3>{{_i}}Example with icons{{/i}}</h3>
-      <p>{{_i}}Same example, but with <code>&lt;i&gt;</code> tags for icons.{{/i}}</p>
+      <h3>Exemplo com ícones</h3>
+      <p>Algum exemplo, mas com a tag <code>&lt;i&gt;</code> para ícones</p>
       <div class="well" style="padding: 8px 0;">
         <ul class="nav list">
-          <li class="nav-header">{{_i}}List header{{/i}}</li>
-          <li class="active"><a href="#"><i class="icon home"></i> {{_i}}Home{{/i}}</a></li>
-          <li><a href="#"><i class="icon book"></i> {{_i}}Library{{/i}}</a></li>
-          <li><a href="#"><i class="icon pencil"></i> {{_i}}Applications{{/i}}</a></li>
-          <li class="nav-header">{{_i}}Another list header{{/i}}</li>
-          <li><a href="#"><i class="icon user"></i> {{_i}}Profile{{/i}}</a></li>
-          <li><a href="#"><i class="icon cog"></i> {{_i}}Settings{{/i}}</a></li>
-          <li><a href="#"><i class="icon flag"></i> {{_i}}Help{{/i}}</a></li>
+          <li class="nav-header">Cabeçalho</li>
+          <li class="active"><a href="#"><i class="icon home"></i> Home</a></li>
+          <li><a href="#"><i class="icon book"></i> Biblioteca</a></li>
+          <li><a href="#"><i class="icon pencil"></i> Aplicações</a></li>
+          <li class="nav-header">Outro cabeçalho</li>
+          <li><a href="#"><i class="icon user"></i> Perfil</a></li>
+          <li><a href="#"><i class="icon cog"></i> Configurações</a></li>
+          <li><a href="#"><i class="icon flag"></i> Ajuda</a></li>
         </ul>
       </div> <!-- /well -->
 <pre class="prettyprint linenums">
@@ -403,7 +403,7 @@
   &lt;li&gt;
     &lt;a href="#"&gt;
       &lt;i class="icon book"&gt;&lt;/i&gt;
-      {{_i}}Library{{/i}}
+      Biblioteca
     &lt;/a&gt;
   &lt;/li&gt;
   ...
@@ -413,82 +413,82 @@
   </div>
 
 
-  <h2>{{_i}}Tabbable nav{{/i}} <small>{{_i}}Bring tabs to life via javascript{{/i}}</small></h2>
+  <h2>Navegação tabular <small>Trazendo vida aos tabs com javascript</small></h2>
   <div class="row">
     <div class="span4">
-      <h3>{{_i}}What's included{{/i}}</h3>
-      <p>{{_i}}Bring your tabs to life with a simple plugin to toggle between content via tabs. Bootstrap integrates tabbable tabs in four styles: top (default), right, bottom, and left.{{/i}}</p>
-      <p>{{_i}}Changing between them is easy and only requires changing very little markup.{{/i}}</p>
+    	<h3>O que é incluído</h3>
+    	<p>Traga suas tabs a vida com um plugin simples para transformar o conteúdo em tabs. O Bootstrap integra tabs em quatro estilos: topo (padrão), direita, parte inferior, e esquerda</p>
+     	<p>A mudança entre eles é fácil e somente requer um pouco de markup</p>
     </div>
     <div class="span4">
-      <h3>{{_i}}Tabbable example{{/i}}</h3>
-      <p>{{_i}}To make tabs tabbable, wrap the <code>.tabs</code> in another div with class <code>.tabbable</code>.{{/i}}</p>
+      <h3>Exemplos de tabs</h3>
+      <p>Para fazer tabs "tabeáveis", coloque o código <code>.tabs</code> em outra div com a classe <code>.tabbable</code></p>
       <div class="tabbable" style="margin-bottom: 9px;">
         <ul class="nav tabs">
-          <li class="active"><a href="#1" data-toggle="tab">{{_i}}Section 1{{/i}}</a></li>
-          <li><a href="#2" data-toggle="tab">{{_i}}Section 2{{/i}}</a></li>
-          <li><a href="#3" data-toggle="tab">{{_i}}Section 3{{/i}}</a></li>
+          <li class="active"><a href="#1" data-toggle="tab">Seção 1</a></li>
+          <li><a href="#2" data-toggle="tab">Seção 2</a></li>
+          <li><a href="#3" data-toggle="tab">Seção 3</a></li>
         </ul>
         <div class="tab-content">
           <div class="tab-pane active" id="1">
-            <p>{{_i}}I'm in Section 1.{{/i}}</p>
+            <p>Eu sou a seção 1</p>
           </div>
           <div class="tab-pane" id="2">
-            <p>{{_i}}Howdy, I'm in Section 2.{{/i}}</p>
+            <p>Oi, eu sou a seção 2</p>
           </div>
           <div class="tab-pane" id="3">
-            <p>{{_i}}What up girl, this is Section 3.{{/i}}</p>
+            <p>O que é que há, agora você está na seção 3</p>
           </div>
         </div>
       </div> <!-- /tabbable -->
     </div>
     <div class="span4">
-      <h3>{{_i}}Custom jQuery plugin{{/i}}</h3>
-      <p>{{_i}}All tabbable tabs are powered by our lightweight jQuery plugin. Read more about how to bring tabbable tabs to life on the javascript docs page.{{/i}}</p>
-      <p><a class="btn" href="./javascript.html/#tabs">{{_i}}Get the javascript &rarr;{{/i}}</a></p>
+      <h3>Plugin de jQuery personalizado</h3>
+      <p>Todos as interações das tabs são feitas com um plugin do jQuery. Saiba mais lendo a página da documentação javascript</p>
+      <p><a class="btn" href="./javascript.html/#tabs">Obter javascript &rarr;</a></p>
     </div>
   </div>
 
-  <h3>{{_i}}Straightforward markup{{/i}}</h3>
-  <p>{{_i}}Using tabbable tabs requires a wrapping div, a set of tabs, and a set of tabbable panes of content.{{/i}}</p>
+  <h3>Markup direto</h3>
+  <p>Usando tabs requer uma div em volta do conteúdo, uma coleção de tabs, e painés de conteúdo</p>
 <pre class="prettyprint linenums">
 &lt;div class="tabbable"&gt;
   &lt;ul class="nav tabs"&gt;
-    &lt;li class="active"&gt;&lt;a href="#1" data-toggle="tab"&gt;{{_i}}Section 1{{/i}}&lt;/a&gt;&lt;/li&gt;
-    &lt;li&gt;&lt;a href="#2" data-toggle="tab"&gt;{{_i}}Section 2{{/i}}&lt;/a&gt;&lt;/li&gt;
+    &lt;li class="active"&gt;&lt;a href="#1" data-toggle="tab"&gt;Secao 1&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href="#2" data-toggle="tab"&gt;Secao 1&lt;/a&gt;&lt;/li&gt;
   &lt;/ul&gt;
   &lt;div class="tab-content"&gt;
     &lt;div class="tab-pane active" id="1"&gt;
-      &lt;p&gt;{{_i}}I'm in Section 1.{{/i}}&lt;/p&gt;
+      &lt;p&gt;Estou na seção 1&lt;/p&gt;
     &lt;/div&gt;
     &lt;div class="tab-pane" id="2"&gt;
-      &lt;p&gt;{{_i}}Howdy, I'm in Section 2.{{/i}}&lt;/p&gt;
+      &lt;p&gt;Estou na seção 2&lt;/p&gt;
     &lt;/div&gt;
   &lt;/div&gt;
 &lt;/div&gt;
 </pre>
 
-  <h3>{{_i}}Tabbable in any direction{{/i}}</h3>
+  <h3>Tabs em qualquer direção</h3>
   <div class="row">
     <div class="span4">
-      <h4>{{_i}}Tabs on the bottom{{/i}}</h4>
-      <p>{{_i}}Flip the order of the HTML and add a class to put tabs on the bottom.{{/i}}</p>
+      <h4>Tabs inferiores</h4>
+      <p>Troque a ordem do html e adicione uma classe para colocar as tabs na parte inferior</p>
       <div class="tabbable tabs-below">
         <div class="tab-content">
           <div class="tab-pane active" id="A">
-            <p>{{_i}}I'm in Section A.{{/i}}</p>
+            <p>Estou na seção A</p>
           </div>
           <div class="tab-pane" id="B">
-            <p>{{_i}}Howdy, I'm in Section B.{{/i}}</p>
+            <p>Estou na seção B</p>
           </div>
           <div class="tab-pane" id="C">
-            <p>{{_i}}What up girl, this is Section C.{{/i}}</p>
+            <p>Estou na seção C</p>
           </div>
         </div>
         <ul class="nav tabs">
-          <li class="active"><a href="#A" data-toggle="tab">{{_i}}Section 1{{/i}}</a></li>
-          <li><a href="#B" data-toggle="tab">{{_i}}Section 2{{/i}}</a></li>
-          <li><a href="#C" data-toggle="tab">{{_i}}Section 3{{/i}}</a></li>
+          <li class="active"><a href="#A" data-toggle="tab">Seção 1</a></li>
+          <li><a href="#B" data-toggle="tab">Seção 2</a></li>
+          <li><a href="#C" data-toggle="tab">Seção 3</a></li>
         </ul>
       </div> <!-- /tabbable -->
 <pre class="prettyprint linenums" style="margin-top: 11px;">
@@ -503,23 +503,23 @@
 </pre>
     </div>
     <div class="span4">
-      <h4>{{_i}}Tabs on the left{{/i}}</h4>
-      <p>{{_i}}Swap the class to put tabs on the left.{{/i}}</p>
+      <h4>Tabs a esquerda</h4>
+      <p>Mude a classe e coloque os tabs a esquerda</p>
       <div class="tabbable tabs-left">
         <ul class="nav tabs">
-          <li class="active"><a href="#lA" data-toggle="tab">{{_i}}Section 1{{/i}}</a></li>
-          <li><a href="#lB" data-toggle="tab">{{_i}}Section 2{{/i}}</a></li>
-          <li><a href="#lC" data-toggle="tab">{{_i}}Section 3{{/i}}</a></li>
+          <li class="active"><a href="#lA" data-toggle="tab">Seção 1</a></li>
+          <li><a href="#lB" data-toggle="tab">Seção 2</a></li>
+          <li><a href="#lC" data-toggle="tab">Seção 3</a></li>
         </ul>
         <div class="tab-content">
           <div class="tab-pane active" id="lA">
-            <p>{{_i}}I'm in Section A.{{/i}}</p>
+            <p>Estou na seção A</p>
           </div>
           <div class="tab-pane" id="lB">
-            <p>{{_i}}Howdy, I'm in Section B.{{/i}}</p>
+            <p>Estou na seção B</p>
           </div>
           <div class="tab-pane" id="lC">
-            <p>{{_i}}What up girl, this is Section C.{{/i}}</p>
+            <p>Estou na seção C</p>
           </div>
         </div>
       </div> <!-- /tabbable -->
@@ -535,23 +535,23 @@
 </pre>
     </div>
     <div class="span4">
-      <h4>{{_i}}Tabs on the right{{/i}}</h4>
-      <p>{{_i}}Swap the class to put tabs on the right.{{/i}}</p>
+      <h4>Tabs na direita</h4>
+      <p>Mude a classe para colocar a classe a direita</p>
       <div class="tabbable tabs-right">
         <ul class="nav tabs">
-          <li class="active"><a href="#rA" data-toggle="tab">{{_i}}Section 1{{/i}}</a></li>
-          <li><a href="#rB" data-toggle="tab">{{_i}}Section 2{{/i}}</a></li>
-          <li><a href="#rC" data-toggle="tab">{{_i}}Section 3{{/i}}</a></li>
+          <li class="active"><a href="#rA" data-toggle="tab">Seção 1</a></li>
+          <li><a href="#rB" data-toggle="tab">Seção 2</a></li>
+          <li><a href="#rC" data-toggle="tab">Seção 3</a></li>
         </ul>
         <div class="tab-content">
           <div class="tab-pane active" id="rA">
-            <p>{{_i}}I'm in Section A.{{/i}}</p>
+            <p>Estou na seção A</p>
           </div>
           <div class="tab-pane" id="rB">
-            <p>{{_i}}Howdy, I'm in Section B.{{/i}}</p>
+            <p>Estou na seção B</p>
           </div>
           <div class="tab-pane" id="rC">
-            <p>{{_i}}What up girl, this is Section C.{{/i}}</p>
+            <p>Estou na seção C</p>
           </div>
         </div>
       </div> <!-- /tabbable -->
@@ -576,27 +576,27 @@
 ================================================== -->
 <section id="navbar">
   <div class="page-header">
-    <h1>{{_i}}Navbar{{/i}}</h1>
+    <h1>Barra de navegação</h1>
   </div>
-  <h2>{{_i}}Static navbar example{{/i}}</h2>
-  <p>{{_i}}An example of a static (not fixed to the top) navbar with project name, navigation, and search form.{{/i}}</p>
+  <h2>Exemplo de barra de navegação estática</h2>
+  <p>Um exemplo de navegação estática (não fixa no topo) com nome do projeto, navegação e formulário de busca</p>
   <div class="navbar navbar-static">
     <div class="navbar-inner">
       <div class="container" style="width: auto;">
-        <a class="brand" href="#">{{_i}}Project name{{/i}}</a>
+        <a class="brand" href="#">Globo.com</a>
         <ul class="nav">
-          <li class="active"><a href="#">{{_i}}Home{{/i}}</a></li>
-          <li><a href="#">{{_i}}Link{{/i}}</a></li>
-          <li><a href="#">{{_i}}Link{{/i}}</a></li>
-          <li><a href="#">{{_i}}Link{{/i}}</a></li>
+          <li class="active"><a href="#">Home</a></li>
+          <li><a href="#">Link</a></li>
+          <li><a href="#">Link</a></li>
+          <li><a href="#">Link</a></li>
           <li class="dropdown">
-            <a href="#" class="dropdown-toggle" data-toggle="dropdown">{{_i}}Dropdown{{/i}} <b class="caret"></b></a>
+            <a href="#" class="dropdown-toggle" data-toggle="dropdown">Dropdown <b class="caret"></b></a>
             <ul class="dropdown-menu">
-              <li><a href="#">{{_i}}Action{{/i}}</a></li>
-              <li><a href="#">{{_i}}Another action{{/i}}</a></li>
-              <li><a href="#">{{_i}}Something else here{{/i}}</a></li>
+              <li><a href="#">Ação</a></li>
+              <li><a href="#">Outra ação</a></li>
+              <li><a href="#">Algo mais</a></li>
               <li class="divider"></li>
-              <li><a href="#">{{_i}}Separated link{{/i}}</a></li>
+              <li><a href="#">Link separado</a></li>
             </ul>
           </li>
         </ul>
@@ -604,16 +604,16 @@
           <input type="text" class="search-query span2" placeholder="Search">
         </form>
         <ul class="nav pull-right">
-          <li><a href="#">{{_i}}Link{{/i}}</a></li>
+          <li><a href="#">Link</a></li>
           <li class="vertical-divider"></li>
           <li class="dropdown">
-            <a href="#" class="dropdown-toggle" data-toggle="dropdown">{{_i}}Dropdown{{/i}} <b class="caret"></b></a>
+            <a href="#" class="dropdown-toggle" data-toggle="dropdown">Dropdown <b class="caret"></b></a>
             <ul class="dropdown-menu">
-              <li><a href="#">{{_i}}Action{{/i}}</a></li>
-              <li><a href="#">{{_i}}Another action{{/i}}</a></li>
-              <li><a href="#">{{_i}}Something else here{{/i}}</a></li>
+              <li><a href="#">Ações</a></li>
+              <li><a href="#">Outra ação</a></li>
+              <li><a href="#">Algo mais</a></li>
               <li class="divider"></li>
-              <li><a href="#">{{_i}}Separated link{{/i}}</a></li>
+              <li><a href="#">Links separados</a></li>
             </ul>
           </li>
         </ul>
@@ -623,8 +623,8 @@
 
   <div class="row">
     <div class="span8">
-      <h3>{{_i}}Navbar scaffolding{{/i}}</h3>
-      <p>{{_i}}The navbar requires only a few divs to structure it well for static or fixed display.{{/i}}</p>
+      <h3>Pontapé da barra de navegação</h3>
+      <p>A barra de navegação requer somente poucas estruturas de divs para exibição estáticas e fixas</p>
 <pre class="prettyprint linenums">
 &lt;div class="navbar navbar-static"&gt;
   &lt;div class="navbar-inner"&gt;
@@ -634,48 +634,48 @@
   &lt;/div&gt;
 &lt;/div&gt;
 </pre>
-      <p>{{_i}}To make the navbar fixed, swap the <code>.navbar-static</code> class for <code>.navbar-fixed</code>. In your CSS, you will also need to account for the overlap it causes by adding <code>padding-top: 40px;</code> to your <code>&lt;body&gt;</code>.{{/i}}</p>
+      <p>Para fazer a barra de navegação fixa, troque a classe <code>.navbar-static</code> por <code>.navbar-fixed</code>. Em seu css, será preciso adicionar uma margem para a sobreposição e causa adicionando <code>padding-top: 40px;</code> no <code>&lt;body&gt;</code></p>
 <pre class="prettyprint linenums">
 &lt;div class="navbar navbar-fixed"&gt;
   ...
 &lt;/div&gt;
 </pre>
-      <h3>{{_i}}Brand name{{/i}}</h3>
-      <p>{{_i}}A simple link to show your brand or project name only requires an anchor tag.{{/i}}</p>
+      <h3>Nome da marc</h3>
+      <p>Um simples link para mostrar a tag requer somente o mínimo de markup</p>
 <pre class="prettyprint linenums">
 &lt;a class="brand" href="#"&gt;
-  {{_i}}Project name{{/i}}
+  Nome do projeto
 &lt;/a&gt;
 </pre>
-      <h3>{{_i}}Search form{{/i}}</h3>
-      <p>{{_i}}Search forms receive custom styles in the navbar with the <code>.navbar-search</code> class. Include <code>.pull-left</code> or <code>.pull-right</code> on the <code>form</code> to align it.{{/i}}</p>
+      <h3>Formulário de busca</h3>
+      <p>Formulários de busca recebem um estilo customizado na barra de navegação com uma classe <code>.navbar-search</code>. Incluir <code>.pull-left</code> ou <code>.pull-right</code> no <code>form</code> para alinhá-lo</p>
 <pre class="prettyprint linenums">
 &lt;form class="navbar-search"&gt;
-  &lt;input type="text" class="search-query pull-left" placeholder="{{_i}}Search{{/i}}"&gt;
+  &lt;input type="text" class="search-query pull-left" placeholder="Buscar"&gt;
 &lt;/form&gt;
 </pre>
     </div>
     <div class="span4">
-      <h3>{{_i}}Nav links{{/i}}</h3>
-      <p>{{_i}}Nav items are simple to add via unordered lists.{{/i}}</p>
+      <h3>Links de navegação</h3>
+      <p>Lista de navegação são simples para adicionar via listas não ordenadas</p>
 <pre class="prettyprint linenums">
 &lt;ul class="nav"&gt;
   &lt;li class="active"&gt;
-    &lt;a href="#">{{_i}}Home{{/i}}&lt;/a&gt;
+    &lt;a href="#">Home&lt;/a&gt;
   &lt;/li&gt;
-  &lt;li&gt;&lt;a href="#"&gt;{{_i}}Link{{/i}}&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href="#"&gt;{{_i}}Link{{/i}}&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href="#"&gt;Link&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href="#"&gt;Link&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
 </pre>
-      <h3>{{_i}}Adding dropdowns{{/i}}</h3>
-      <p>{{_i}}Adding dropdowns to the nav is super simple, but does require the use of <a href="./javascript.html/#dropdown">our javascript plugin</a>.{{/i}}</p>
+      <h3>Adicionando dropdowns</h3>
+      <p>Adicionar drowpdowns para a navegação é super simples, mas requer o uso de um <a href="./javascript.html/#dropdown">plugin javascript</a></p>
 <pre class="prettyprint linenums">
 &lt;ul class="nav"&gt;
   &lt;li class="dropdown"&gt;
     &lt;a href="#"
           class="dropdown-toggle"
           data-toggle="dropdown">
-          {{_i}}Account{{/i}}
+          Conta
           &lt;b class="caret"&gt;&lt;/b&gt;
     &lt;/a&gt;
     &lt;ul class="dropdown-menu"&gt;
@@ -684,7 +684,7 @@
   &lt;/li&gt;
 &lt;/ul&gt;
 </pre>
-    <p><a class="btn" href="./javascript.html/#dropdown">{{_i}}Get the javascript &rarr;{{/i}}</a></p>
+    <p><a class="btn" href="./javascript.html/#dropdown">Obter javascript &rarr;</a></p>
     </div>
   </div>
 
@@ -696,42 +696,42 @@
 ================================================== -->
 <section id="breadcrumbs">
   <div class="page-header">
-    <h1>{{_i}}Breadcrumbs{{/i}} <small></small></h1>
+    <h1>Breadcrumbs <small></small></h1>
   </div>
 
   <div class="row">
     <div class="span6">
-      <h3>{{_i}}Why use them{{/i}}</h3>
-      <p>{{_i}}Breadcrumb navigation is used as a way to show users where they are within an app or a site, but not for primary navigation. Keep their use sparse and succinct to be most effective.{{/i}}</p>
+      <h3>Por que usá-los</h3>
+      <p>A navegação Breadcrumb é usado como um caminho para mostrar aos usuários para se situar em uma aplicação ou site, mas não para navegação primária. Mantenha-os sucintos para se tornar mais efetivo</p>
 
-      <h3>{{_i}}Examples{{/i}}</h3>
-      <p>{{_i}}A single example shown as it might be displayed across multiple pages.{{/i}}</p>
+      <h3>Exemplos</h3>
+      <p>Um exemplo simples mostra como ele pode ser mostrado em múltiplas páginas</p>
       <ul class="breadcrumb">
-        <li class="active">{{_i}}Home{{/i}}</li>
+        <li class="active">Home</li>
       </ul>
       <ul class="breadcrumb">
-        <li><a href="#">{{_i}}Home{{/i}}</a> <span class="divider">/</span></li>
-        <li class="active">{{_i}}Library{{/i}}</li>
+        <li><a href="#">Home</a> <span class="divider">/</span></li>
+        <li class="active">Biblioteca</li>
       </ul>
       <ul class="breadcrumb">
-        <li><a href="#">{{_i}}Home{{/i}}</a> <span class="divider">/</span></li>
-        <li><a href="#">{{_i}}Library{{/i}}</a> <span class="divider">/</span></li>
-        <li class="active">{{_i}}Data{{/i}}</li>
+        <li><a href="#">Home</a> <span class="divider">/</span></li>
+        <li><a href="#">Biblioteca</a> <span class="divider">/</span></li>
+        <li class="active">Dados</li>
       </ul>
     </div>
     <div class="span6">
-      <h3>{{_i}}Markup{{/i}}</h3>
-      <p>{{_i}}HTML is your standard unordered list with links.{{/i}}</p>
+      <h3>Markup</h3>
+      <p>Html com uma lista não ordenada padrão</p>
 <pre class="prettyprint linenums">
 &lt;ul class="breadcrumb"&gt;
   &lt;li&gt;
-    &lt;a href="#"&gt;{{_i}}Home{{/i}}&lt;/a&gt; &lt;span class="divider"&gt;/&lt;/span&gt;
+    &lt;a href="#"&gt;Home&lt;/a&gt; &lt;span class="divider"&gt;/&lt;/span&gt;
   &lt;/li&gt;
   &lt;li&gt;
-    &lt;a href="#"&gt;{{_i}}Library{{/i}}&lt;/a&gt; &lt;span class="divider"&gt;/&lt;/span&gt;
+    &lt;a href="#"&gt;Biblioteca&lt;/a&gt; &lt;span class="divider"&gt;/&lt;/span&gt;
   &lt;/li&gt;
   &lt;li class="active"&gt;
-    &lt;a href="#"&gt;{{_i}}Data{{/i}}&lt;/a&gt;
+    &lt;a href="#"&gt;Dados&lt;/a&gt;
   &lt;/li&gt;
 &lt;/ul&gt;
 </pre>
@@ -746,22 +746,23 @@
 ================================================== -->
 <section id="pagination">
   <div class="page-header">
-    <h1>{{_i}}Pagination{{/i}} <small>{{_i}}Two options for paging through content{{/i}}</small></h1>
+    <h1>Paginação <small>Duas opções de paginação pelo conteúdo</small></h1>
   </div>
 
-  <h2>{{_i}}Multi-page pagination{{/i}}</h2>
+  <h2>Paginação multi-página</h2>
   <div class="row">
     <div class="span4">
-      <h3>{{_i}}When to use{{/i}}</h3>
-      <p>{{_i}}Ultra simplistic and minimally styled pagination inspired by Rdio, great for apps and search results. The large block is hard to miss, easily scalable, and provides large click areas.{{/i}}</p>
-      <h3>{{_i}}Stateful page links{{/i}}</h3>
-      <p>{{_i}}Links are customizable and work in a number of circumstances with the right class. <code>.disabled</code> for unclickable links and <code>.active</code> for current page.{{/i}}</p>
-      <h3>{{_i}}Flexible alignment{{/i}}</h3>
-      <p>{{_i}}Add either of two optional classes to change the alignment of pagination links: <code>.pagination-centered</code> and <code>.pagination-right</code>.{{/i}}</p>
+      <h3>Onde usar</h3>
+      <p>Paginação bastante simples e miminalista, ótima para aplicações e resultados de busca. O bloco maior é fácil de user, facilmente escalável, e provê uma boa área de click</p>
+      <h3>Links de estados da página</h3>
+      <p>Links são customizáveis e trabalhar em um número de circunstâncias com a classe <code>.disabled</code> para links sem cliques e <code>.active</code> para a página atual</p>
+      <h3>Alinhamento flexível</h3>
+      <p>Adicionar duas classes opcionais para modificar o alinhamento dos links de paginação: <code>.pagination-centered</code> e <code>.pagination-right</code>.</p>
     </div>
     <div class="span4">
-      <h3>{{_i}}Examples{{/i}}</h3>
-      <p>{{_i}}The default pagination component is flexible and works in a number of variations.{{/i}}</p>
+      <h3>Exemplos</h3>
+      <p>A paginação padrão é flexível e trabalha em várias variações</p>
+      <p>O componente de paginação padrão é flexível e trabalha com várias variações</p>
       <div class="pagination">
         <ul>
           <li class="disabled"><a href="#">&laquo;</a></li>
@@ -801,8 +802,8 @@
       </div>
     </div>
     <div class="span4">
-      <h3>{{_i}}Markup{{/i}}</h3>
-      <p>{{_i}}Wrapped in a <code>&lt;div&gt;</code>, pagination is just a <code>&lt;ul&gt;</code>.{{/i}}</p>
+      <h3>Markup</h3>
+      <p>Coloque em volta de uma <code>&lt;div&gt;</code> a paginação e uma  <code>&lt;ul&gt;</code></p>
 <pre class="prettyprint linenums">
 &lt;div class="pagination"&gt;
   &lt;ul&gt;
@@ -820,44 +821,44 @@
     </div>
   </div><!-- /row -->
 
-  <h2>{{_i}}Pager{{/i}} <small>{{_i}}For quick previous and next links{{/i}}</small></h2>
+  <h2>Paginador <small>Para um fácil link de anterior e próximo</small></h2>
   <div class="row">
     <div class="span4">
-      <h3>{{_i}}About pager{{/i}}</h3>
-      <p>{{_i}}The pager component is a set of links for simple pagination implemenations with light markup and even lighter styles. It's great for simple sites like blogs or magazines.{{/i}}</p>
+      <h3>Sobre o paginador</h3>
+      <p>O paginador é uma coleção de links para uma paginação simples com um markup limpo e estilos mais limpos ainda. É ótimo para sites simples e blogs, além de visualização de registros</p>
     </div>
     <div class="span4">
-      <h3>{{_i}}Default example{{/i}}</h3>
-      <p>{{_i}}By default, the pager centers links.{{/i}}</p>
+      <h3>Exemplo padrão</h3>
+      <p>Por padrão, o paginador centraliza links</p>
       <ul class="pager">
-        <li><a href="#">{{_i}}Previous{{/i}}</a></li>
-        <li><a href="#">{{_i}}Next{{/i}}</a></li>
+        <li><a href="#">Anterior</a></li>
+        <li><a href="#">Próximo</a></li>
       </ul>
 <pre class="prettyprint linenums">
 &lt;ul class="pager"&gt;
   &lt;li&gt;
-    &lt;a href="#"&gt;{{_i}}Previous{{/i}}&lt;/a&gt;
+    &lt;a href="#"&gt;Anterior&lt;/a&gt;
   &lt;/li&gt;
   &lt;li&gt;
-    &lt;a href="#"&gt;{{_i}}Next{{/i}}&lt;/a&gt;
+    &lt;a href="#"&gt;Próximo&lt;/a&gt;
   &lt;/li&gt;
 &lt;/ul&gt;
 </pre>
     </div>
     <div class="span4">
-      <h3>{{_i}}Aligned links{{/i}}</h3>
-      <p>{{_i}}Alternatively, you can align each link to the sides:{{/i}}</p>
+      <h3>Alinhamento dos links</h3>
+      <p>Alternadamente, você pode alinhar os links aos lados</p>
       <ul class="pager">
-        <li class="previous"><a href="#">{{_i}}&larr; Older{{/i}}</a></li>
-        <li class="next"><a href="#">{{_i}}Newer &rarr;{{/i}}</a></li>
+        <li class="previous"><a href="#">&larr; Anteriores</a></li>
+        <li class="next"><a href="#">Novos &rarr;</a></li>
       </ul>
 <pre class="prettyprint linenums">
 &lt;ul class="pager"&gt;
   &lt;li class="previous"&gt;
-    &lt;a href="#"&gt;{{_i}}&amp;larr; Older{{/i}}&lt;/a&gt;
+    &lt;a href="#"&gt;&amp;larr; Anteriores&lt;/a&gt;
   &lt;/li&gt;
   &lt;li class="next"&gt;
-    &lt;a href="#"&gt;{{_i}}Newer &amp;rarr;{{/i}}&lt;/a&gt;
+    &lt;a href="#"&gt;Novos &amp;rarr;&lt;/a&gt;
   &lt;/li&gt;
 &lt;/ul&gt;
 </pre>
@@ -871,13 +872,13 @@
 ================================================== -->
 <section id="thumbnails">
   <div class="page-header">
-    <h1>{{_i}}Thumbnails{{/i}} <small>{{_i}}Grids of images, videos, text, and more{{/i}}</small></h1>
+    <h1>Thumbnails <small>Grid para imagens, vídeos, texto e muito mais!</small></h1>
   </div>
 
   <div class="row">
     <div class="span6">
-      <h2>{{_i}}Default thumbnails{{/i}}</h2>
-      <p>{{_i}}By default, Bootstrap's thumbnails are designed to showcase linked images with minimal required markup.{{/i}}</p>
+      <h2>thumbnail padrão</h2>
+      <p>Por padrão, os thumbnails do bootstrap foram desenhados para ligar imagens com o mínimo de markup necessário</p>
       <ul class="thumbnails">
         <li class="span3">
           <a href="#" class="thumbnail">
@@ -902,16 +903,16 @@
       </ul>
     </div>
     <div class="span6">
-      <h2>{{_i}}Highly customizable{{/i}}</h2>
-      <p>{{_i}}With a bit of extra markup, it's possible to add any kind of HTML content like headings, paragraphs, or buttons into thumbnails.{{/i}}</p>
+      <h2>Altamente customizável</h2>
+      <p>Com um pouco de markup extra, é possível adicionar qualquer tipo de HTML como cabeçalhos, parágrafos, ou botões em thumbnails</p>
       <ul class="thumbnails">
         <li class="span3">
           <div class="thumbnail">
             <img src="http://placehold.it/210x150" alt="">
             <div class="caption">
-              <h5>{{_i}}Thumbnail label{{/i}}</h5>
+              <h5>Rótulo do thumbnail</h5>
               <p>Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
-              <p><a href="#" class="btn primary">{{_i}}Action{{/i}}</a> <a href="#" class="btn">{{_i}}Action{{/i}}</a></p>
+              <p><a href="#" class="btn primary">Ação</a> <a href="#" class="btn">Ação</a></p>
             </div>
           </div>
         </li>
@@ -919,9 +920,9 @@
           <div class="thumbnail">
             <img src="http://placehold.it/210x150" alt="">
             <div class="caption">
-              <h5>{{_i}}Thumbnail label{{/i}}</h5>
+              <h5>Rótulo do thumbnail</h5>
               <p>Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
-              <p><a href="#" class="btn primary">{{_i}}Action{{/i}}</a> <a href="#" class="btn">{{_i}}Action{{/i}}</a></p>
+              <p><a href="#" class="btn primary">Ação</a> <a href="#" class="btn">Ação</a></p>
             </div>
           </div>
         </li>
@@ -931,23 +932,23 @@
 
   <div class="row">
     <div class="span4">
-      <h3>{{_i}}Why use thumbnails{{/i}}</h3>
-      <p>{{_i}}Thumbnails (previously <code>.media-grid</code> up until v1.4) are great for grids of photos or videos, image search results, retail products, portfolios, and much more. They can be links or static content.{{/i}}</p>
+      <h3>Por que usar Thumbnails</h3>
+      <p>Thumbnails são ótimo para grid de fotos ou vídeos, busca de imagem, detalhes de produtos, portfolio e muito mais. Eles podem ser links ou conteúdo estático</p>
     </div>
     <div class="span4">
-      <h3>{{_i}}Simple, flexible markup{{/i}}</h3>
-      <p>{{_i}}Thumbnail markup is simple&mdash;a <code>ul</code> with any number of <code>li</code> elements is all that is required. It's also super flexible, allowing for any type of content with just a bit more markup to wrap your contents.{{/i}}</p>
+      <h3>Simples e markup flexível</h3>
+      <p>O markup do thumbnail é simples, é uma <code>ul</code> com qualquer número de <code>li</code>. É também bem flexível, permitindo para qualquer tipo de conteúdo com somente um pouco mais de markup</p>
     </div>
     <div class="span4">
-      <h3>{{_i}}Uses grid column sizes{{/i}}</h3>
-      <p>{{_i}}Lastly, the thumbnails component uses existing grid system classes&mdash;like <code>.span2</code> or <code>.span3</code>&mdash;for control of thumbnail dimensions.{{/i}}</p>
+      <h3>Use grids para tamanhos de colunas</h3>
+      <p>O componente de thumbnail usa um sistema de grid existente como <code>.span2</code> ou <code>.span3</code> para controlar as dimensões do thumbnail</p>
     </div>
   </div>
 
   <div class="row">
     <div class="span6">
-      <h2>{{_i}}The markup{{/i}}</h2>
-      <p>{{_i}}As mentioned previously, the required markup for thumbnails is light and straightforward. Here's a look at the default setup <strong>for linked images</strong>:{{/i}}</p>
+      <h2>O markup</h2>
+      <p>Como mencionado antes, o markup requerido para thumbnails é direto. Aqui está um exemplo de como é a configuração padrão para  <strong>for linked images</strong>:</p>
 <pre class="prettyprint linenums">
 &lt;ul class="thumbnails"&gt;
   &lt;li class="span3"&gt;
@@ -958,14 +959,14 @@
   ...
 &lt;/ul&gt;
 </pre>
-      <p>{{_i}}For custom HTML content in thumbnails, the markup changes slightly. To allow block level content anywhere, we swap the <code>&lt;a&gt;</code> for a <code>&lt;div&gt;</code> like so:{{/i}}</p>
+      <p>Para conteúdo HTML em thumbnails, o markup muda discretamente. Para permitir conteúdo em blocos em qualquer lugar, nós mudamos a classe <code>&lt;a&gt;</code> para uma <code>&lt;div&gt;</code></p>
 <pre class="prettyprint linenums">
 &lt;ul class="thumbnails"&gt;
   &lt;li class="span3"&gt;
     &lt;div class="thumbnail"&gt;
       &lt;img src="http://placehold.it/210x150" alt=""&gt;
-      &lt;h5&gt;{{_i}}Thumbnail label{{/i}}&lt;/h5&gt;
-      &lt;p&gt;{{_i}}Thumbnail caption right here...{{/i}}&lt;/p&gt;
+      &lt;h5&gt;Rótulo do thumbnail&lt;/h5&gt;
+      &lt;p&gt;Caption do thumbnail&lt;/p&gt;
     &lt;/div&gt;
   &lt;/li&gt;
   ...
@@ -973,8 +974,8 @@
 </pre>
     </div>
     <div class="span6">
-      <h2>{{_i}}More examples{{/i}}</h2>
-      <p>{{_i}}Explore all your options with the various grid classes available to you. You can also mix and match different sizes.{{/i}}</p>
+      <h2>Mais exemplos</h2>
+      <p>Explore todas as opções com as várias classes de grid disponíveis para você. Você pode também fazer um mix para diferentes tamanhos</p>
       <ul class="thumbnails">
         <li class="span4">
           <a href="#" class="thumbnail">
@@ -1018,57 +1019,57 @@
 ================================================== -->
 <section id="alerts">
   <div class="page-header">
-    <h1>{{_i}}Alerts{{/i}} <small>{{_i}}Styles for success, warning, and error messages{{/i}}</small></h1>
+    <h1>Alertas <small>Estilos para sucesso, avisos, e mensagens de erro</small></h1>
   </div>
 
-  <h2>{{_i}}Lightweight defaults{{/i}}</h2>
+  <h2>Padrões</h2>
   <div class="row">
     <div class="span4">
-      <h3>{{_i}}Rewritten base class{{/i}}</h3>
-      <p>{{_i}}With Bootstrap 2, we've simplified the base class: <code>.alert</code> instead of <code>.alert-message</code>. We've also reduced the minimum required markup&mdash;no <code>&lt;p&gt;</code> is required by default, just the outter <code>&lt;div&gt;</code>.{{/i}}</p>
-      <h3>{{_i}}Single alert message{{/i}}</h3>
-      <p>{{_i}}For a more durable component with less code, we've removed the differentiating look for block alerts, messages that come with more padding and typically more text. The class also has changed to <code>.alert-block</code>.{{/i}}</p>
+      <h3>Reescrever a classe base</h3>
+      <p>Com o Bootstrap 2, nós simplificamos a classe base <code>.alert</code> ao invés de <code>.alert-message</code>. Nós também reduzimos o mínimo requerido de markup no <code>&lt;p&gt;</code>, ele é requerido por padrão, somente fora com <code>&lt;div&gt;</code></p>
+      <h3>Alerta de mensagens únicos</h3>
+      <p>Para componentes mais duráveis com menos código, nós removemos a diferenciação para blocos de alertas, mensagens que vem com mais padding e tipicamente mais textos. A classe também mudou para <code>.alert-block</code>.</p>
       <hr>
-      <h3>{{_i}}Goes great with javascript{{/i}}</h3>
-      <p>{{_i}}Bootstrap comes with a great jQuery plugin that supports alert messages, making dismissing them quick and easy.{{/i}}</p>
-      <p><a class="btn js-btn" href="./javascript.html#alerts">{{_i}}Get the plugin &raquo;</a>{{/i}}</p>
+      <h3>Funciona bem com javascript</h3>
+      <p>O Bootstrap vem com um ótimo plugin jQuery que suporta mensagens de alerta, fazendo o uso deles ser rápido e fácil</p>
+      <p><a class="btn js-btn" href="./javascript.html#alerts">Obter plugin &raquo;</a></p>
     </div>
     <div class="span8">
-      <h3>{{_i}}Example alerts{{/i}}</h3>
-      <p>{{_i}}Wrap your message and an optional close icon in a div with simple class.{{/i}}</p>
+      <h3>Alertas de exemplo</h3>
+      <p>Coloque em volta sua mensagem e uma classe opcional de fechar com uma div com uma classe simples</p>
       <div class="alert">
         <a class="close">&times;</a>
-        <strong>{{_i}}Warning!{{/i}}</strong> {{_i}}Best check yo self, you’re not looking too good.{{/i}}
+        <strong>Aviso</strong> Olhe isto, como ficou lindo e envolvente!
       </div>
 <pre class="prettyprint linenums">
 &lt;div class="alert"&gt;
   &lt;a class="close"&gt;&times;&lt;/a&gt;
-  &lt;strong&gt;{{_i}}Warning!{{/i}}&lt;/strong&gt; {{_i}}Best check yo self, you’re not looking too good.{{/i}}
+  &lt;strong&gt;Aviso!&lt;/strong&gt; Olhe isto, como ficou lindo e envolvente!
 &lt;/div&gt;
 </pre>
-      <p>{{_i}}Easily extend the standard alert message with two optional classes: <code>.alert-block</code> for more padding and text controls and <code>.alert-heading</code> for a matching heading.{{/i}}</p>
+      <p>Facilmente configure os alertas padrões com duas classes opcionais: <code>.alert-block</code> para mais padding e controles de texto use <code>.alert-heading</code> para o cabeçalho</p>
       <div class="alert alert-block">
         <a class="close">&times;</a>
-        <h4 class="alert-heading">{{_i}}Warning!{{/i}}</h4>
-        <p>{{_i}}Best check yo self, you’re not looking too good.{{/i}} Nulla vitae elit libero, a pharetra augue. Praesent commodo cursus magna, vel scelerisque nisl consectetur et.</p>
+        <h4 class="alert-heading">Aviso</h4>
+        <p>Nulla vitae elit libero, a pharetra augue. Praesent commodo cursus magna, vel scelerisque nisl consectetur et.</p>
       </div>
 <pre class="prettyprint linenums">
 &lt;div class="alert alert-block"&gt;
   &lt;a class="close"&gt;&times;&lt;/a&gt;
-  &lt;h4 class="alert-heading"&gt;{{_i}}Warning!{{/i}}&lt;/h4&gt;
-  {{_i}}Best check yo self, you’re not...{{/i}}
+  &lt;h4 class="alert-heading"&gt;Aviso&lt;/h4&gt;
+  Melhor ver você mesmo
 &lt;/div&gt;
 </pre>
     </div>
   </div>
 
-  <h2>{{_i}}Contextual alternatives{{/i}} <small>{{_i}}Add optional classes to change an alert's connotation{{/i}}</small></h2>
+  <h2>Alternativas contextuais <small>Adicione classes opcionais para modificar a conotação dos alertas</small></h2>
   <div class="row">
     <div class="span4">
-      <h3>{{_i}}Error or danger{{/i}}</h3>
+      <h3>Erro e perigo</h3>
       <div class="alert alert-error">
         <a class="close">&times;</a>
-        <strong>{{_i}}Oh snap!{{/i}}</strong> {{_i}}Change a few things up and try submitting again.{{/i}}
+        <strong>Ow my axe!</strong> Mude algumas coisas e envie novamente
       </div>
 <pre class="prettyprint linenums">
 &lt;div class="alert alert-error"&gt;
@@ -1077,10 +1078,10 @@
 </pre>
     </div>
     <div class="span4">
-      <h3>{{_i}}Success{{/i}}</h3>
+      <h3>Sucesso</h3>
       <div class="alert alert-success">
         <a class="close">&times;</a>
-        <strong>{{_i}}Well done!{{/i}}</strong> {{_i}}You successfully read this important alert message.{{/i}}
+        <strong>Muito bem!</strong> Você leu com sucesso esta mensagem de sucesso
       </div>
 <pre class="prettyprint linenums">
 &lt;div class="alert alert-success"&gt;
@@ -1089,10 +1090,10 @@
 </pre>
     </div>
     <div class="span4">
-      <h3>{{_i}}Information{{/i}}</h3>
+      <h3>Informação</h3>
       <div class="alert alert-info">
         <a class="close">&times;</a>
-        <strong>{{_i}}Heads up!{{/i}}</strong> {{_i}}This alert needs your attention, but it’s not super important.{{/i}}
+        <strong>Aviso!</strong> Este alerta precisa de sua atenção
       </div>
 <pre class="prettyprint linenums">
 &lt;div class="alert alert-info"&gt;
@@ -1110,14 +1111,14 @@
 ================================================== -->
       <section id="progress">
         <div class="page-header">
-          <h1>{{_i}}Progress bars{{/i}} <small>{{_i}}For loading, redirecting, or action status{{/i}}</small></h1>
+          <h1>Barra de progresso <small>Para carregamento, redirecionamentos e retorno para o usuário</small></h1>
         </div>
 
-        <h2>{{_i}}Examples and markup{{/i}}</h2>
+        <h2>Exemplos e markup</h2>
         <div class="row">
           <div class="span4">
-            <h3>{{_i}}Basic{{/i}}</h3>
-            <p>{{_i}}Default progress bar with a vertical gradient.{{/i}}</p>
+            <h3>Básico</h3>
+            <p>Barra de progresso padrão com gradiente vertical</p>
             <div class="progress">
               <div class="bar" style="width: 60%;"></div>
             </div>
@@ -1129,8 +1130,8 @@
 </pre>
           </div>
           <div class="span4">
-            <h3>{{_i}}Striped{{/i}}</h3>
-            <p>{{_i}}Uses a gradient to create a striped effect.{{/i}}</p>
+            <h3>Zebrado</h3>
+            <p>Use gradiente para criar um efeito zebrado</p>
             <div class="progress info striped">
               <div class="bar" style="width: 20%;"></div>
             </div>
@@ -1143,8 +1144,8 @@
 </pre>
           </div>
           <div class="span4">
-            <h3>{{_i}}Animated{{/i}}</h3>
-            <p>{{_i}}Takes the striped example and animates it.{{/i}}</p>
+            <h3>Animado</h3>
+            <p>Pegue o exemplo zebrado, e anime!</p>
             <div class="progress danger active striped">
               <div class="bar" style="width: 45%"></div>
             </div>
@@ -1158,27 +1159,27 @@
           </div>
         </div>
 
-        <h2>{{_i}}Options and browser support{{/i}}</h2>
+        <h2>Opções e suporte a browser</h2>
         <div class="row">
           <div class="span4">
-            <h3>{{_i}}Additional colors{{/i}}</h3>
-            <p>{{_i}}Progress bars utilize some of the same classes as buttons and alert messages for quick styling.{{/i}}</p>
+            <h3>Cores adicionais</h3>
+            <p>Barras de progresso usam clases dos botões e alertas para fácil estilização</p>
             <ul>
               <li><code>.info</code></li>
               <li><code>.success</code></li>
               <li><code>.danger</code></li>
             </ul>
-            <p>{{_i}}Alternatively, you can customize the LESS files and roll your own colors and sizes.{{/i}}</p>
+            <p>Alternativamente, você pode customizar os arquivos LESS e escolha cores e tamanhos</p>
           </div>
           <div class="span4">
-            <h3>{{_i}}Behavior{{/i}}</h3>
-            <p>{{_i}}Progress bars use CSS3 transitions, so if you dynamically adjust the width via javascript, it will smoothly resize.{{/i}}</p>
-            <p>{{_i}}If you use the <code>.active</code> class, your <code>.striped</code> progress bars will animate the stripes left to right.{{/i}}</p>
+            <h3>Comportamento</h3>
+            <p>Barra de progresso e transições CSS3, então você ajusta dinamicamente a largura via javascript, e ele irá ser redimensionada</p>
+            <p>Se você usa a classe <code>.active</code>, sua barra zebrada <code>.striped</code> irá animar da esquerda pra direita</p>
           </div>
           <div class="span4">
-            <h3>{{_i}}Browser support{{/i}}</h3>
-            <p>{{_i}}Progress bars use CSS3 gradients, transitions, and animations to achieve all their effects. These features are not supported in IE7-8 or older versions of Firefox.{{/i}}</p>
-            <p>{{_i}}Opera does not support animations at this time.{{/i}}</p>
+            <h3>Suporte a browsers</h3>
+            <p>Barra de progresso usam gradientes CSS3, transições, e animações para conseguir seus efeitos. Estas features não são suportadas no IE7-8 e versões antigas do Firefox</p>
+            <p>Opera não suporta animação</p>
           </div>
         </div>
 
