@@ -1,78 +1,74 @@
-TWITTER BOOTSTRAP
+GLOBO BOOTSTRAP
 =================
 
-Bootstrap is Twitter's toolkit for kickstarting CSS for websites, apps, and more. It includes base CSS styles for typography, forms, buttons, tables, grids, navigation, alerts, and more.
+O Bootstrap da Globo, desenvolvido como uma extensão do Bootstrap do twitter, é um kit de ferramentas para facilmente usar componentes de interface para websites, aplicações e mais. Inclui folha de estilos padronizadas para tipografia, formulários, botões, tabelas, grids, navegação alertas e mais.
 
-To get started -- checkout http://twitter.github.com/bootstrap!
+Para começar -- checkout https://github.com/globocom/bootstrap!
 
 
-Usage
+Uso
 -----
 
-You can use Twitter Bootstrap in one of two ways: just drop the compiled CSS into any new project and start cranking, or run LESS on your site and compile on the fly like a boss.
+Você pode usar o Globo Bootstrap de duas maneiras, simplesmente use o CSS compilado em algum projeto, ou execute o LESS no seu site e compile em tempo de execução like a boss.
 
-Here's what the LESS version looks like:
+Versão less:
 
 ``` html
 <link rel="stylesheet/less" type="text/css" href="lib/bootstrap.less">
 <script src="less.js" type="text/javascript"></script>
 ```
 
-Or if you prefer, the standard CSS way:
+A maneira CSS padrão
 
 ``` html
 <link rel="stylesheet" type="text/css" href="bootstrap.css">
 ```
 
-For more info, refer to the docs!
+Para mais informações, consulte a documentação.
 
 
-Versioning
-----------
+Versionamento
+--------------
 
-For transparency and insight into our release cycle, and for striving to maintain backwards compatibility, Bootstrap will be maintained under the Semantic Versioning guidelines as much as possible.
+Para transparência e no ciclo de release, e para manter compatibilidade, o Globo Bootstrap será mantido pelo Semantic Versioning.
 
-Releases will be numbered with the follow format:
+Os guidelines serão no seguinte formato:
 
 `<major>.<minor>.<patch>`
 
-And constructed with the following guidelines:
+Esta nomenclatura segue os seguintes princípios:
 
-* Breaking backwards compatibility bumps the major
+* Quebra de compatibilidade com versão anterior aumenta o major
+* Adição de funcionalidade sem quebrar versionamento aumenta o minor
 * New additions without breaking backwards compatibility bumps the minor
-* Bug fixes and misc changes bump the patch
+* Bug fixes aumenta o patch
 
-For more information on SemVer, please visit http://semver.org/.
+Para mais informações, visite http://semver.org/.
 
 
 Bug tracker
 -----------
 
-Have a bug? Please create an issue here on GitHub!
+Se encontrou algum bug, crie uma issue no github
 
-https://github.com/twitter/bootstrap/issues
+https://github.com/globocom/bootstrap/issues
 
 
-Twitter account
+Roadmap
 ---------------
 
-Keep up to date on announcements and more by following Bootstrap on Twitter, <a href="http://twitter.com/TwBootstrap">@TwBootstrap</a>.
+### 2.0
+* Formulários personalizados para selectbox e checkbox
+* Tipografia do H1 e H2
+* Box principal
+* Barra de ferramentas
+* Fontes personalizada no título da documentação
 
 
-Mailing list
-------------
+Para desenvolvedores
+----------------------
 
-Have a question? Ask on our mailing list!
-
-twitter-bootstrap@googlegroups.com
-
-http://groups.google.com/group/twitter-bootstrap
-
-
-Developers
-----------
-
-We have included a makefile with convenience methods for working with the Bootstrap library.
+Há um makefile para poder gerar os estáticos
 
 + **build** - `make build`
 This will run the less compiler on the bootstrap lib and generate a bootstrap.css and bootstrap.min.css file.
@@ -83,8 +79,10 @@ This is a convenience method for watching your less files and automatically buil
 Watchr is required for this command to run.
 
 
-Authors
+Autores
 -------
+
+## Twitter Bootstrap
 
 **Mark Otto**
 
@@ -95,6 +93,13 @@ Authors
 
 + http://twitter.com/fat
 + http://github.com/fat
+
+## Globo Bootstrap
+
+** Alexandre Magno **
++ http://blog.alexandremagno.net
++ github.com/alexanmtz
++ @alexanmtz
 
 
 Copyright and license
