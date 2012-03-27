@@ -165,7 +165,11 @@ $(function () {
     })
 
   // carousel demo
-  $('#myCarousel').carousel()
+  $('#myCarousel').carousel();
+  
+  // custom select demo
+  $('.select-custom').selectbox();
+  
 })
 
 

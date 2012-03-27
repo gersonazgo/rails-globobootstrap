@@ -1,0 +1,135 @@
+// Selectbox and checkbox custom
+// -----------------------------
+
+.sbHolder{
+  background-color: white;
+  #gradient > .vertical(#FFFFFF, #EEEEEE);
+  .border-radius(3px);
+  border-bottom: solid 1px #E4E4E4;
+  border-left: solid 1px #E4E4E4;
+  border-top: solid 1px #F1F1F1;
+  border-right: solid 1px #F1F1F1;
+
+  font-family: Arial, sans-serif;
+  font-size: 13px;
+  font-weight: normal;
+  height: 29px;
+  position: relative;
+  margin-top: 5px;
+}
+
+.sbSelector{
+  display: block;
+  height: 29px;
+  left: 0;
+  line-height: 29px;
+  outline: none;
+  overflow: hidden;
+  position: absolute;
+  text-indent: 10px;
+  top: 0;
+  width: 170px;
+
+  text-decoration: none !important;
+
+  &:link, &:visited, &:hover {
+    color: #323232 !important;
+    outline: none;
+  }
+}
+
+.sbToggle{
+  background: url('http://s.videos.globo.com/gv/assets/images/icon-select-arrow.png') no-repeat center center;
+  display: block;
+  height: 29px;
+  outline: none;
+  position: absolute;
+  right: 0;
+  top: 0;
+  width: 30px;
+}
+.sbHolderDisabled{
+  background-color: #3C3C3C;
+  border: solid 1px #515151;
+}
+
+.sbOptions{
+  background-color: white;
+
+  border-bottom: solid 1px #E4E4E4;
+  border-left: solid 1px #E4E4E4;
+  border-top: solid 1px #F1F1F1;
+  border-right: solid 1px #F1F1F1;
+
+  list-style: none;
+  left: -1px;
+  margin: 0;
+
+  padding: 0;
+
+  position: absolute;
+  top: 29px;
+  width: 100%;
+  max-height: 300px;
+  z-index: 1;
+  overflow-y: auto;
+  overflow-x: hidden;
+
+  li.last {
+    border-bottom: none !important;
+  }
+
+  li {
+    border-bottom: solid 1px #E5E5E5;
+    width: 93% !important;
+    padding: 0 7px;
+    margin: 0 20px 0px 0;
+
+    &:first-child {
+      a {
+        font-style: italic;
+        color: #CDCDCD !important;
+      }
+    }
+
+    &:hover {
+      background-color: #F7F7F7;
+    }
+  }
+
+  a {
+    color: #333 !important;
+
+    display: block;
+    outline: none;
+    padding: 7px 0 7px 3px;
+    text-decoration: none !important;
+
+    &:link, &:visited {
+      color: #DDD;
+    }
+
+    &:hover {
+      color: #323232 !important;
+    }
+  }
+
+  .sbDisabled{
+    border-bottom: dotted 1px #515151;
+    color: #999;
+    display: block;
+    padding: 7px 0 7px 3px;
+  }
+
+  .sbGroup{
+    border-bottom: dotted 1px #515151;
+    color: #EBB52D;
+    display: block;
+    font-weight: bold;
+    padding: 7px 0 7px 3px;
+  }
+
+  .sbSub{
+    padding-left: 17px;
+  }
+}	

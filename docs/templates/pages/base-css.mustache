@@ -934,6 +934,41 @@
             <button type="reset" class="btn">cancelar</button>
           </div>
         </fieldset>
+        <fieldset>
+          <legend>Formulários personalizados</legend>
+          <p>Há a possibilidade de deixar os selectboxes personalizados, usando CSS e o plugin do jQuery selectbox</p>
+          <div class="control-group">
+            <label class="control-label" for="multiSelect">Select personalizado</label>
+            <div class="controls">
+              <select id="selectCustom" class="select-custom">
+                <option>personalizado 1</option>
+                <option>personalizado 2</option>
+                <option>personalizado 3</option>
+                <option>personalizado 4</option>
+                <option>personalizado 5</option>
+              </select>
+            </div>
+          </div>
+          <p>Para deixá-lo desta forma, inclua o plugin selectbox e use o seguinte código:</p>
+<pre class="prettyprint linenums">
+$('.select-custom').selectbox();
+</pre>          
+				<p>E no markup:</p>
+<pre class="prettyprint linenums">
+&lt;div class=&quot;control-group&quot;&gt;
+  &lt;label class=&quot;control-label&quot; for=&quot;multiSelect&quot;&gt;Select personalizado&lt;/label&gt;
+  &lt;div class=&quot;controls&quot;&gt;
+    &lt;select id=&quot;selectCustom&quot; class=&quot;select-custom&quot;&gt;
+      &lt;option&gt;personalizado 1&lt;/option&gt;
+      &lt;option&gt;personalizado 2&lt;/option&gt;
+      &lt;option&gt;personalizado 3&lt;/option&gt;
+      &lt;option&gt;personalizado 4&lt;/option&gt;
+      &lt;option&gt;personalizado 5&lt;/option&gt;
+    &lt;/select&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+</pre>				
+        </fieldset>
       </form>
     </div>
     <div class="span4">
