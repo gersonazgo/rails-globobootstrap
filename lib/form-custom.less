@@ -1,4 +1,4 @@
-// Selectbox and checkbox custom
+// Selectbox custom
 // -----------------------------
 
 .sbHolder{
@@ -133,3 +133,41 @@
     padding-left: 17px;
   }
 }	
+
+// Checkbox custom
+// -----------------------------
+
+.custom-checkbox {
+  position: relative;
+
+ 	input {
+	  position: absolute;
+	  margin: 0;
+	  z-index: 0;
+	  left: 20px;
+	  top: 3px;
+	}
+
+	label {
+	  display: block;
+	  position: relative;
+	  z-index: 1;
+	  font-size: 13px;
+	  padding-right: 10px;
+	  line-height: 1;
+	  padding: 2px 0 1px 22px;
+	  margin-left: 0px !important;
+	  cursor: pointer;
+	  width: auto;
+	  background: url('http://s.videos.globo.com/gv/assets/images/icon/checkbox.png') no-repeat;
+  	background-position: 0 -26px;
+  	height: 16px;
+  	&.hover,
+		&.focus {
+  		background-position: 0 -26px;
+		}
+		&.checked {
+  		background-position: 0 0;
+		}
+	}
+}

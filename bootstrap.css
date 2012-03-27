@@ -6,7 +6,7 @@
  * http://www.apache.org/licenses/LICENSE-2.0
  *
  * Designed and built with all the love in the world @twitter by @mdo and @fat.
- * Date: Tue Mar 27 16:23:08 BRT 2012
+ * Date: Tue Mar 27 17:54:12 BRT 2012
  */
 article,
 aside,
@@ -1145,6 +1145,38 @@ select:focus:required:invalid:focus {
 }
 .sbOptions .sbSub {
   padding-left: 17px;
+}
+.custom-checkbox {
+  position: relative;
+}
+.custom-checkbox input {
+  position: absolute;
+  margin: 0;
+  z-index: 0;
+  left: 20px;
+  top: 3px;
+}
+.custom-checkbox label {
+  display: block;
+  position: relative;
+  z-index: 1;
+  font-size: 13px;
+  padding-right: 10px;
+  line-height: 1;
+  padding: 2px 0 1px 22px;
+  margin-left: 0px !important;
+  cursor: pointer;
+  width: auto;
+  background: url('http://s.videos.globo.com/gv/assets/images/icon/checkbox.png') no-repeat;
+  background-position: 0 -26px;
+  height: 16px;
+}
+.custom-checkbox label.hover,
+.custom-checkbox label.focus {
+  background-position: 0 -26px;
+}
+.custom-checkbox label.checked {
+  background-position: 0 0;
 }
 table {
   max-width: 100%;

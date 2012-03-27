@@ -168,7 +168,10 @@ $(function () {
   $('#myCarousel').carousel();
   
   // custom select demo
-  $('.select-custom').selectbox();
+  $('.custom-select').selectbox();
+  
+  $('.custom-checkbox').customInput();
+  
   
 })
 

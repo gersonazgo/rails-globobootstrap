@@ -1000,12 +1000,12 @@
           </div>
         </fieldset>
         <fieldset>
-          <legend>Formulários personalizados</legend>
-          <p>Há a possibilidade de deixar os selectboxes personalizados, usando CSS e o plugin do jQuery selectbox</p>
+          <legend>SelectBox Personalizado</legend>
+          <p>Há a possibilidade de deixar os selectboxes personalizados, usando CSS e o <a target="_blank" href="http://info.wsisiz.edu.pl/~suszynsk/jQuery/demos/jquery-selectbox/">plugin do jQuery custom selectbox</a></p>
           <div class="control-group">
             <label class="control-label" for="multiSelect">Select personalizado</label>
             <div class="controls">
-              <select id="selectCustom" class="select-custom">
+              <select id="selectCustom" class="custom-select">
                 <option>personalizado 1</option>
                 <option>personalizado 2</option>
                 <option>personalizado 3</option>
@@ -1030,6 +1030,33 @@ $('.select-custom').selectbox();
       &lt;option&gt;personalizado 4&lt;/option&gt;
       &lt;option&gt;personalizado 5&lt;/option&gt;
     &lt;/select&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+</pre>				
+        </fieldset>
+				<fieldset>
+          <legend>Checkbox Personalizado</legend>
+          <p>Há a possibilidade também de deixar os checkboxes personalizados, usando CSS e o <a target="_blank" href="https://github.com/filamentgroup/jQuery-Custom-Input">plugin do jQuery custom input</a></p>
+           <div class="control-group">
+            <div class="controls">
+              <div class="checkbox">
+                <input type="checkbox" id="optionsCustomCheckbox" value="option1" class="custom-checkbox">
+                <label for="optionsCustomCheckbox">Opção um de um checkbox personalizado</label>
+              </div>
+            </div>
+          </div>
+          <p>Para deixá-lo desta forma, inclua o plugin customInput e use o seguinte código:</p>
+<pre class="prettyprint linenums">
+$('.custom-checkbox').customInput();
+</pre>          
+				<p>E no markup:</p>
+<pre class="prettyprint linenums">
+&lt;div class=&quot;control-group&quot;&gt;
+  &lt;div class=&quot;controls&quot;&gt;
+    &lt;div class=&quot;checkbox&quot;&gt;
+      &lt;input type=&quot;checkbox&quot; id=&quot;optionsCustomCheckbox&quot; value=&quot;option1&quot; class=&quot;custom-checkbox&quot;&gt;
+      &lt;label for=&quot;optionsCustomCheckbox&quot;&gt;Op&ccedil;&atilde;o um de um checkbox personalizado&lt;/label&gt;
+    &lt;/div&gt;
   &lt;/div&gt;
 &lt;/div&gt;
 </pre>				
@@ -1549,6 +1576,7 @@ $('.select-custom').selectbox();
     <script src="../js/bootstrap-carousel.js"></script>
     <script src="../js/bootstrap-typeahead.js"></script>
     <script src="../js/jquery.selectbox-0.1.3.js"></script>
+    <script src="../js/jquery.customInput.js"></script>
     <script src="assets/js/application.js"></script>
   </body>
 </html>

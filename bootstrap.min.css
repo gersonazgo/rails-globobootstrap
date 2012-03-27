@@ -193,6 +193,9 @@ input:focus:required:invalid,textarea:focus:required:invalid,select:focus:requir
 .sbOptions .sbDisabled{border-bottom:dotted 1px #515151;color:#999;display:block;padding:7px 0 7px 3px;}
 .sbOptions .sbGroup{border-bottom:dotted 1px #515151;color:#EBB52D;display:block;font-weight:bold;padding:7px 0 7px 3px;}
 .sbOptions .sbSub{padding-left:17px;}
+.custom-checkbox{position:relative;}.custom-checkbox input{position:absolute;margin:0;z-index:0;left:20px;top:3px;}
+.custom-checkbox label{display:block;position:relative;z-index:1;font-size:13px;padding-right:10px;line-height:1;padding:2px 0 1px 22px;margin-left:0px !important;cursor:pointer;width:auto;background:url('http://s.videos.globo.com/gv/assets/images/icon/checkbox.png') no-repeat;background-position:0 -26px;height:16px;}.custom-checkbox label.hover,.custom-checkbox label.focus{background-position:0 -26px;}
+.custom-checkbox label.checked{background-position:0 0;}
 table{max-width:100%;border-collapse:collapse;border-spacing:0;}
 .table{width:100%;margin-bottom:18px;}.table th,.table td{padding:8px;line-height:18px;text-align:left;border-top:1px solid #ddd;}
 .table th{font-weight:bold;vertical-align:bottom;}
