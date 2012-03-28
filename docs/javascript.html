@@ -968,11 +968,29 @@ $('a[data-toggle="tab"]').on('shown', function (e) {
           <p>Simplesmente adicione <code>data-dismiss="alert"</code> para que seu botão de fechar automaticamente dê um alerta de fechar</p>
           <pre class="prettyprint linenums">&lt;a class="close" data-dismiss="alert" href="#"&gt;&amp;times;&lt;/a&gt;</pre>
           <h3>Métodos</h3>
-          <h4>$().alert()</h4>
-          <p>Dá uma funcionalidade de fechar um alerta. Para fazer os seus alertas animados quando fecharem, certifique-se de ter a classe <code>.fade</code> and <code>.in</code></p>
-          <h4>.alert('close')</h4>
-          <p>Fechar um alerta</p>
-          <pre class="prettyprint linenums">$(".alert-message").alert('close')</pre>
+          <p>O alerta do Bootstrap possui alguns métodos para serem usados</p>
+          <table class="table table-bordered table-striped">
+            <thead>
+             <tr>
+               <th style="width: 150px;">Método</th>
+               <th>Descrição</th>
+             </tr>
+            </thead>
+            <tbody>
+             <tr>
+             	<td>.alert()</td>
+             	<td>Dá uma funcionalidade de fechar um alerta. Para fazer os seus alertas animados quando fecharem, certifique-se de ter a classe <code>.fade</code> and <code>.in</code></td>
+             </tr>
+             <tr>
+               <td>open</td>
+               <td>Este é um método usado para abrir o alert na forma de cortina</td>
+             </tr>
+             <tr>
+             		<td>close</td>
+             		<td>Fecha um alerta</td>
+             </tr>
+            </tbody>
+          </table>
           <h3>Eventos</h3>
           <p>O alerta do Bootstrap possui alguns eventos onde você pode interferir no seu funcionamento</p>
           <table class="table table-bordered table-striped">
@@ -997,25 +1015,6 @@ $('a[data-toggle="tab"]').on('shown', function (e) {
 $('#my-alert').bind('closed', function () {
   // faça algo
 })</pre>
-				 <h3>Métodos</h3>
-          <p>O alerta do Bootstrap possui alguns métodos para serem usados</p>
-          <div class="alert warning">
-          	<strong>Nota:</strong> Os métodos abaixo é para executar o alerta no modo cortina
-          </div>
-          <table class="table table-bordered table-striped">
-            <thead>
-             <tr>
-               <th style="width: 150px;">Método</th>
-               <th>Descrição</th>
-             </tr>
-            </thead>
-            <tbody>
-             <tr>
-               <td>open</td>
-               <td>Este é um método usado para abrir o alert na forma de cortina</td>
-             </tr>
-            </tbody>
-          </table>
           <h2>Demonstração</h2>
           <p>Abaixo uma demonstração de como usar o modo cortina para uma mensagem de erro</p>
           <div class="alert-curtain success" id="alert-curtain-success-demo">
