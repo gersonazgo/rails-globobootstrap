@@ -6,7 +6,7 @@
  * http://www.apache.org/licenses/LICENSE-2.0
  *
  * Designed and built with all the love in the world @twitter by @mdo and @fat.
- * Date: Wed Mar 28 10:51:12 BRT 2012
+ * Date: Wed Mar 28 15:43:33 BRT 2012
  */
 article,
 aside,
@@ -1177,6 +1177,59 @@ select:focus:required:invalid:focus {
 }
 .custom-checkbox label.checked {
   background-position: 0 0;
+}
+.box {
+  border: 1px solid #999999;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border-radius: 5px;
+  -webkit-box-shadow: 0 1px 3px rgba(0, 0, 0, 0.25);
+  -moz-box-shadow: 0 1px 3px rgba(0, 0, 0, 0.25);
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.25);
+}
+.box .header {
+  border-bottom: 1px solid #999999;
+}
+.box .header h2 {
+  padding: 10px 20px;
+}
+.box .content p {
+  padding: 10px;
+}
+.box .content ul.menu {
+  overflow: hidden;
+  margin: 0;
+}
+.box .content ul.menu li {
+  border-bottom: 1px solid #999999;
+  *zoom: 1;
+}
+.box .content ul.menu li .menu-item {
+  padding: 10px;
+  overflow: hidden;
+}
+.box .content ul.menu li .view {
+  width: 40%;
+  padding-left: 2%;
+  margin-top: 1%;
+  float: left;
+}
+.box .content ul.menu li .actions {
+  width: 40%;
+  padding-right: 2%;
+  float: right;
+  text-align: right;
+}
+.box .content ul.menu li:last-child {
+  border-bottom: none;
+}
+.box .content ul.menu li:before,
+.box .content ul.menu li:after {
+  display: table;
+  content: "";
+}
+.box .content ul.menu li:after {
+  clear: both;
 }
 table {
   max-width: 100%;

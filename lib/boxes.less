@@ -1,0 +1,46 @@
+// boxes
+// -----------
+
+.box {
+	border: 1px solid @grayLight;
+	.border-radius();
+	.box-shadow();
+	.header {
+		border-bottom: 1px solid @grayLight;
+		h2 {
+			padding: 10px 20px;
+		}
+	}
+	.content {
+		p {
+			padding: 10px;
+		}
+		ul.menu {
+			overflow: hidden;
+			margin: 0;
+			li {
+				.menu-item {
+					padding: 10px;
+					overflow: hidden;
+				}
+				border-bottom: 1px solid @grayLight;
+				.view {
+					width: 40%;
+					padding-left: 2%;
+					margin-top: 1%;
+					float: left;					
+				}
+				.actions {
+					width: 40%;
+					padding-right: 2%;
+					float: right;
+					text-align: right;
+				}
+				&:last-child {
+					border-bottom: none;
+				}
+				.clearfix();
+			}
+		}
+	}
+}

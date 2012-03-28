@@ -196,6 +196,14 @@ input:focus:required:invalid,textarea:focus:required:invalid,select:focus:requir
 .custom-checkbox{position:relative;}.custom-checkbox input{position:absolute;margin:0;z-index:0;left:20px;top:3px;}
 .custom-checkbox label{display:block;position:relative;z-index:1;font-size:13px;padding-right:10px;line-height:1;padding:2px 0 1px 22px;margin-left:0px !important;cursor:pointer;width:auto;background:url('http://s.videos.globo.com/gv/assets/images/icon/checkbox.png') no-repeat;background-position:0 -26px;height:16px;}.custom-checkbox label.hover,.custom-checkbox label.focus{background-position:0 -26px;}
 .custom-checkbox label.checked{background-position:0 0;}
+.box{border:1px solid #999999;-webkit-border-radius:5px;-moz-border-radius:5px;border-radius:5px;-webkit-box-shadow:0 1px 3px rgba(0, 0, 0, 0.25);-moz-box-shadow:0 1px 3px rgba(0, 0, 0, 0.25);box-shadow:0 1px 3px rgba(0, 0, 0, 0.25);}.box .header{border-bottom:1px solid #999999;}.box .header h2{padding:10px 20px;}
+.box .content p{padding:10px;}
+.box .content ul.menu{overflow:hidden;margin:0;}.box .content ul.menu li{border-bottom:1px solid #999999;*zoom:1;}.box .content ul.menu li .menu-item{padding:10px;overflow:hidden;}
+.box .content ul.menu li .view{width:40%;padding-left:2%;margin-top:1%;float:left;}
+.box .content ul.menu li .actions{width:40%;padding-right:2%;float:right;text-align:right;}
+.box .content ul.menu li:last-child{border-bottom:none;}
+.box .content ul.menu li:before,.box .content ul.menu li:after{display:table;content:"";}
+.box .content ul.menu li:after{clear:both;}
 table{max-width:100%;border-collapse:collapse;border-spacing:0;}
 .table{width:100%;margin-bottom:18px;}.table th,.table td{padding:8px;line-height:18px;text-align:left;border-top:1px solid #ddd;}
 .table th{font-weight:bold;vertical-align:bottom;}

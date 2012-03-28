@@ -11,6 +11,7 @@
             <li><a href="#scrollspy">Scroll spy</a></li>
             <li><a href="#tabs">Tab</a></li>
             <li><a href="#tooltips">Tooltips</a></li>
+            <li><a href="#charcount">Charcount</a></li>
             <li><a href="#popovers">Popover</a></li>
             <li><a href="#alerts">Alertas</a></li>
             <li><a href="#buttons">Botões</a></li>
@@ -688,20 +689,18 @@ $('a[data-toggle="tab"]').on('shown', function (e) {
           <h4>.tooltip('hide')</h4>
           <p>Esconde um tooltip</p>
           <pre class="prettyprint linenums">$('#element').tooltip('hide')</pre>
-					<h2>Usando tooltips como contador de caracteres</h2>
-					<form class="form-horizontal" action="#" method="get">
-						<fieldset>
-							<legend>Contador de caracteres em um input</legend>
-							<p>Usando o plugin charcount é possível estabelecer um contador de caracteres para o campo e informar o usuário em tempo real quando o limite está sendo excedido</p>
-							<div class="control-group">
-								<label class="control-label" for="input-charcount">Input de texto</label>
-								<div class="controls">
-								<input type="text" class="input-xlarge" id="input-charcount" data-chars="60" data-text="{n} caracteres restantes">
-								<p class="help-block">Do lado do input no seu foco deve aparecer um tooltip</p>
-								</div>
-							</div>
-						</fieldset>
-					</form>
+    </section>
+    <section id="charcount">
+      <div class="page-header">
+        <h1>Contador de caracteres <small>bootstrap-charcount.js</small></h1>
+      </div>
+      <div class="row">
+        <div class="span3 columns">
+          <h3>Sobre o contador</h3>
+          <p>O contador de caracteres oferece uma maneira simples de declarar em seus campos de texto o limite de caracteres restantes de um campo</p>
+          <a href="../js/bootstrap-charcount.js" target="_blank" class="btn">Download do arquivo</a>
+        </div>
+        <div class="span9 columns">
 					<h2>Usando bootstrap-charcount.js</h2>
 					<div class="alert">
   					<strong>Aviso!</strong> Para o contador de caracteres, é necessário ter o plugin bootstrap-tooltip.js
@@ -739,6 +738,21 @@ $('a[data-toggle="tab"]').on('shown', function (e) {
           <h4>$().charcount(opções)</h4>
           <p>Anexa um charcount com o tooltip em uma coleção de elementos</p>
           <pre class="prettyprint linenums">$('#element').charcount()</pre>
+          <h3>Exemplo</h3>
+          <h2>Usando tooltips como contador de caracteres</h2>
+					<form class="form-horizontal" action="#" method="get">
+						<fieldset>
+							<legend>Contador de caracteres em um input</legend>
+							<p>Usando o plugin charcount é possível estabelecer um contador de caracteres para o campo e informar o usuário em tempo real quando o limite está sendo excedido</p>
+							<div class="control-group">
+								<label class="control-label" for="input-charcount">Input de texto</label>
+								<div class="controls">
+								<input type="text" class="input-xlarge" id="input-charcount" data-chars="60" data-text="{n} caracteres restantes">
+								<p class="help-block">Do lado do input no seu foco deve aparecer um tooltip</p>
+								</div>
+							</div>
+						</fieldset>
+					</form>
           <h3>Exemplo de uso com o data do exemplo acima</h3>
 <pre class="prettyprint linenums">
 &lt;div class=&quot;control-group&quot;&gt;
@@ -751,7 +765,7 @@ $('a[data-toggle="tab"]').on('shown', function (e) {
 </pre>          
         </div>
       </div>
-    </section>
+      </section>
 
 
 

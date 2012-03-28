@@ -7,6 +7,7 @@
     <ul class="nav pills">
       <li><a href="#typography">Tipografia</a></li>
       <li><a href="#tables">Tabelas</a></li>
+      <li><a href="#boxes">Boxes</a></li>
       <li><a href="#forms">Formulários</a></li>
       <li><a href="#buttons">Botões</a></li>
       <li><a href="#icons">Ícones</a></li>
@@ -759,7 +760,104 @@
   </div>
 </section>
 
-
+<!-- Boxes
+================================================== -->
+<section id="boxes">
+  <div class="page-header">
+    <h1>Boxes <small>Para agrupar informações</small></h1>
+  </div>
+  <div class="row">
+	  <div class="span7">
+	  	<h2>Box primário</h2>
+	  	<p>Um box primário contém uma estrutura semelhante para agrupar informações, oferencendo uma elegante caixa arredonada onde pode agrupar funcões internamente</p>
+	  	<h3>Exemplo</h3>
+	  	<div class="box primary">
+	  		<div class="header">
+					<h2>Título do box</h2>	  			
+	  		</div>
+	  		<div class="content">
+	  			<p>conteúdo</p>		
+	  		</div>
+	  	</div>
+	  </div>
+	  <div class="span5">
+	  	<h3>Markup:</h3>
+<pre class="prettyprint linenums">
+&lt;div class=&quot;box primary&quot;&gt;
+	&lt;div class=&quot;header&quot;&gt;
+		&lt;h2&gt;T&iacute;tulo do box&lt;/h2&gt;	  			
+	&lt;/div&gt;
+	&lt;div class=&quot;content&quot;&gt;
+		&lt;p&gt;conte&uacute;do&lt;/p&gt;		
+	&lt;/div&gt;
+&lt;/div&gt;
+</pre>
+	  </div>
+  </div>
+  <div class="row">
+	  <div class="span12">
+	  	<h3>Box primário com lista de ações</h3>
+	  	<p>O box primário também pode ser usado para criar um menu estilo dashboard, que poderia ficar assim:</p>
+	  	<h3>Exemplo</h3>
+	  	<div class="box primary">
+	  		<div class="header">
+					<h2>Cadastro</h2>	  			
+	  		</div>
+	  		<div class="content">
+	  			<ul class="menu unstyled">
+	  				<li>
+	  					<div class="menu-item">
+								<div class="view">
+		  						<a href="#">Item 1</a>
+		  					</div>
+		  					<div class="actions">
+									<a href="#" class="btn small"><span class="icon plus"></span> Ação 1</a>	  						
+		  					</div>	  						
+	  					</div>
+  					</li>
+	  				<li>
+	  					<div class="menu-item">
+								<div class="view">
+		  						<a href="#">Item 2</a>
+		  					</div>
+		  					<div class="actions">
+									<a href="#" class="btn small"><span class="icon plus"></span> Ação 2</a>
+									<a href="#" class="btn small danger"><span class="icon remove"></span> Ação 2.2</a>	  						
+		  					</div>	  						
+	  					</div>
+  					</li>  					
+	  			</ul>
+	  		</div>
+	  	</div>
+	  </div>
+    </div>
+	  <div class="row">
+	  	<div class="span12">
+	  	<h3>Markup:</h3>
+<pre class="prettyprint linenums">
+&lt;div class=&quot;box primary&quot;&gt;
+	&lt;div class=&quot;header&quot;&gt;
+		&lt;h2&gt;Cadastro&lt;/h2&gt;	  			
+	&lt;/div&gt;
+	&lt;div class=&quot;content&quot;&gt;
+		&lt;ul class=&quot;menu unstyled&quot;&gt;
+			&lt;li&gt;
+				&lt;div class=&quot;menu-item&quot;&gt;
+					&lt;div class=&quot;view&quot;&gt;
+						&lt;a href=&quot;#&quot;&gt;Item 1&lt;/a&gt;
+					&lt;/div&gt;
+					&lt;div class=&quot;actions&quot;&gt;
+						&lt;a href=&quot;#&quot; class=&quot;btn small&quot;&gt;&lt;span class=&quot;icon plus&quot;&gt;&lt;/span&gt;A&ccedil;&atilde;o 1&lt;/a&gt;	  						
+					&lt;/div&gt;	  						
+				&lt;/div&gt;
+			&lt;/li&gt;
+		&lt;/ul&gt;
+	&lt;/div&gt;
+&lt;/div&gt;
+</pre>
+		</div>
+</div>
+</section>  
 
 <!-- Forms
 ================================================== -->
