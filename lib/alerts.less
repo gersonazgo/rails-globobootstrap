@@ -53,6 +53,43 @@
   color: @infoText;
 }
 
+.alert-curtain {
+	display: none;
+	border: none;
+	background-color: black;
+	color: white;
+	text-align: center;
+	height: 50px;
+	font-weight: bold;
+	.close {
+		color: white !important;
+	}
+	p {
+		font-size: 21px;
+		text-align: center;
+		margin-top: 10px;
+	}
+	&.success, &.error {
+		.state {
+			display: inline-block;
+			width: 34px;
+			height: 34px;
+			margin: 0 13px;
+			vertical-align: text-top;
+		}
+	}
+	&.success {
+		.state {
+			background: url('http://s.videos.globo.com/ca/images/admin/sprite-cma.png') no-repeat 0 -197px;
+		}
+	}
+	&.error {
+		.state {
+			background: url('http://s.videos.globo.com/ca/images/admin/sprite-cma.png') no-repeat 0 -161px;
+		}
+	}
+}
+
 
 // Block alerts
 // ------------------------

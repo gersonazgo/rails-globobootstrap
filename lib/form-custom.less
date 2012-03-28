@@ -2,8 +2,12 @@
 // -----------------------------
 
 .sbHolder{
+	&.disabled {
+		.opacity(50);
+	}
   background-color: white;
   #gradient > .vertical(#FFFFFF, #EEEEEE);
+  .box-shadow(0 1px 1px @grayLight);
   .border-radius(3px);
   border-bottom: solid 1px #E4E4E4;
   border-left: solid 1px #E4E4E4;
@@ -168,6 +172,9 @@
 		}
 		&.checked {
   		background-position: 0 0;
+		}
+		&.disabled {
+			.opacity(50);
 		}
 	}
 }

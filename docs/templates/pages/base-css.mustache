@@ -772,7 +772,7 @@
 	  	<p>Um box primário contém uma estrutura semelhante para agrupar informações, oferencendo uma elegante caixa arredonada onde pode agrupar funcões internamente</p>
 	  	<h3>Exemplo</h3>
 	  	<div class="box primary">
-	  		<div class="header">
+	  		<div class="box-header">
 					<h2>Título do box</h2>	  			
 	  		</div>
 	  		<div class="content">
@@ -800,7 +800,7 @@
 	  	<p>O box primário também pode ser usado para criar um menu estilo dashboard, que poderia ficar assim:</p>
 	  	<h3>Exemplo</h3>
 	  	<div class="box primary">
-	  		<div class="header">
+	  		<div class="box-header">
 					<h2>Cadastro</h2>	  			
 	  		</div>
 	  		<div class="content">
@@ -855,8 +855,55 @@
 	&lt;/div&gt;
 &lt;/div&gt;
 </pre>
+			</div>
 		</div>
-</div>
+		<div class="row">
+			<div class="span12">
+				<h2>Box secundário</h2>
+				<p>O box secundário é usado para agrupar conteúdos maiores, como formulários. A diferença deste box em relação ao primário é que ele tem um espaçamento interno para os títulos e não possui opção de menu de ações</p>
+				<p>Além disto, neste box é possível ter um footer onde é possível usar botões de ações para dar contexto no formulário</p>
+				<div class="box secondary">
+					<div class="box-header">
+						<h3>Titulo de um formulário</h3>							
+					</div>
+					<div class="content">
+						<form class="form-horizontal">
+		           <div class="control-group">
+		            <label class="control-label" for="input01">Input de texto</label>
+		            <div class="controls">
+		              <input type="text" class="input-xlarge" id="input01">
+		              <p class="help-block">Um input html5 está disponível além do texto livre</p>
+		            </div>
+		          </div>
+		          <div class="control-group">
+		            <label class="control-label" for="optionsCheckbox">Checkbox</label>
+		            <div class="controls">
+		              <label class="checkbox">
+		                <input type="checkbox" id="optionsCheckbox" value="option1">
+		                Opção um é esta
+		              </label>
+		            </div>
+		          </div>
+		          <div class="box-header">
+								<h3>Titulo de um formulário em outra secao</h3>							
+							</div>
+		          <div class="control-group">
+		            <label class="control-label" for="input01">Input de texto 2</label>
+		            <div class="controls">
+		              <input type="text" class="input-xlarge" id="input01">
+		            </div>
+		          </div>
+      			</form>
+					</div>
+					<div class="box-footer">
+						<div class="actions">
+							<a class="btn primary large">Sucesso</a>
+							<a class="btn danger large">Cancelar</a>	
+						</div>
+					</div>					
+				</div>
+			</div>
+		</div>
 </section>  
 
 <!-- Forms
@@ -1039,6 +1086,19 @@
             <label class="control-label" for="multiSelect">Select personalizado</label>
             <div class="controls">
               <select id="selectCustom" class="custom-select">
+                <option>personalizado 1</option>
+                <option>personalizado 2</option>
+                <option>personalizado 3</option>
+                <option>personalizado 4</option>
+                <option>personalizado 5</option>
+              </select>
+            </div>
+            <h3>Desabilitado</h3>
+            <p>Para desabilitar, basta adicionar a classe <code>disabled</code></p>
+            <div class="control-group">
+            <label class="control-label" for="multiSelect">Select personalizado</label>
+            <div class="controls">
+              <select id="selectCustom" disabled="disabled" class="custom-select disabled">
                 <option>personalizado 1</option>
                 <option>personalizado 2</option>
                 <option>personalizado 3</option>

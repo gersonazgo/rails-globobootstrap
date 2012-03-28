@@ -176,6 +176,18 @@ $(function () {
   // charcount with tooltip
   $('#input-charcount').charcount();
   
+	// alert with curtain demo
+	$('#link-alert-curtain-success-demo').bind('click',function(){
+		$('#alert-curtain-success-demo').alert('open');
+		return false;
+	});
+	
+	// alert with curtain demo
+	$('#link-alert-curtain-error-demo').bind('click',function(){
+		$('#alert-curtain-error-demo').alert('open');
+		return false;
+	});    
+  
 });
 
 

@@ -55,7 +55,27 @@
       $.support.transition && $parent.hasClass('fade') ?
         $parent.on($.support.transition.end, removeElement) :
         removeElement()
-    }
+   },
+   open: function() {
+   	var el = $(this);
+   	el.slideDown('normal', function(e){
+   		var self = $(this);
+   		function slide(e) {
+   			e.slideUp('slow').fadeOut('fast');
+   		}
+   		window.setTimeout(slide, 2000, self);
+   	}).fadeIn('fast').css({
+   		position: 'fixed',
+   		top: 0,
+   		left: 0,
+   		display: 'block',
+   		width: '100%',
+   		zIndex: '99999'
+   	});
+   },
+   error: function(e) {
+   	
+   }
 
   }
 

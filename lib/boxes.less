@@ -5,41 +5,65 @@
 	border: 1px solid @grayLight;
 	.border-radius();
 	.box-shadow();
-	.header {
+	.box-header {
 		border-bottom: 1px solid @grayLight;
-		h2 {
-			padding: 10px 20px;
+	}
+	&.primary {
+		.box-header {
+			h2, h3 {
+				padding: 10px 20px;
+			}
+		}
+		.content {
+			p {
+				padding: 10px;
+			}
+			ul.menu {
+				overflow: hidden;
+				margin: 0;
+				li {
+					.menu-item {
+						padding: 10px;
+						overflow: hidden;
+					}
+					border-bottom: 1px solid @grayLight;
+					.view {
+						width: 40%;
+						padding-left: 2%;
+						margin-top: 1%;
+						float: left;					
+					}
+					.actions {
+						width: 40%;
+						padding-right: 2%;
+						float: right;
+						text-align: right;
+					}
+					&:last-child {
+						border-bottom: none;
+					}
+					.clearfix();
+				}
+			}
 		}
 	}
-	.content {
-		p {
-			padding: 10px;
+	&.secondary {
+		h2, h3 {
+			padding: 20px 10px 0;
+			border-bottom: 1px solid @grayLighter;
 		}
-		ul.menu {
-			overflow: hidden;
-			margin: 0;
-			li {
-				.menu-item {
-					padding: 10px;
-					overflow: hidden;
+		.box-header, .content {
+			padding: 10px;
+			border-bottom: none;
+		}
+		.box-footer {
+			background: @grayLighter;
+			border-top: 1px solid darken(@grayLighter, 10%);
+			.actions {
+				padding: 10px 20px 20px 20px;
+				a {
+					margin: 10px 20px 0 0;	
 				}
-				border-bottom: 1px solid @grayLight;
-				.view {
-					width: 40%;
-					padding-left: 2%;
-					margin-top: 1%;
-					float: left;					
-				}
-				.actions {
-					width: 40%;
-					padding-right: 2%;
-					float: right;
-					text-align: right;
-				}
-				&:last-child {
-					border-bottom: none;
-				}
-				.clearfix();
 			}
 		}
 	}
