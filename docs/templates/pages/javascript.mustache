@@ -688,6 +688,67 @@ $('a[data-toggle="tab"]').on('shown', function (e) {
           <h4>.tooltip('hide')</h4>
           <p>Esconde um tooltip</p>
           <pre class="prettyprint linenums">$('#element').tooltip('hide')</pre>
+					<h2>Usando tooltips como contador de caracteres</h2>
+					<form class="form-horizontal" action="#" method="get">
+						<fieldset>
+							<legend>Contador de caracteres em um input</legend>
+							<p>Usando o plugin charcount é possível estabelecer um contador de caracteres para o campo e informar o usuário em tempo real quando o limite está sendo excedido</p>
+							<div class="control-group">
+								<label class="control-label" for="input-charcount">Input de texto</label>
+								<div class="controls">
+								<input type="text" class="input-xlarge" id="input-charcount" data-chars="60" data-text="{n} caracteres restantes">
+								<p class="help-block">Do lado do input no seu foco deve aparecer um tooltip</p>
+								</div>
+							</div>
+						</fieldset>
+					</form>
+					<h2>Usando bootstrap-charcount.js</h2>
+					<div class="alert">
+  					<strong>Aviso!</strong> Para o contador de caracteres, é necessário ter o plugin bootstrap-tooltip.js
+					</div>
+          <p>Usando o plugin via javascript:</p>
+          <pre class="prettyprint linenums">$('#example').charcount(opções)</pre>
+          <h3>Opções</h3>
+          <table class="table table-bordered table-striped">
+            <thead>
+             <tr>
+               <th style="width: 100px;">Nome</th>
+               <th style="width: 100px;">Tipo</th>
+               <th style="width: 50px;">Padrão</th>
+               <th>Descrição</th>
+             </tr>
+            </thead>
+            <tbody>
+             <tr>
+               <td>chars</td>
+               <td>number</td>
+               <td>60</td>
+               <td>Quantidade de caracteres padrão do início da contagem</td>
+             </tr>
+             <tr>
+               <td>text</td>
+               <td>string</td>
+               <td>{n} chars lenght</td>
+               <td>Template de texto usado para exibição onde o {n} é o valor de caracteres especificado em chars</td>
+             </tr>
+            </tbody>
+          </table>
+          <p><span class="label notice">Nota</span> As opções da instância do charcount também pode ser feita através de atributos data</p>
+          <h3>Chamada</h3>
+          <h3>Métodos</h3>
+          <h4>$().charcount(opções)</h4>
+          <p>Anexa um charcount com o tooltip em uma coleção de elementos</p>
+          <pre class="prettyprint linenums">$('#element').charcount()</pre>
+          <h3>Exemplo de uso com o data do exemplo acima</h3>
+<pre class="prettyprint linenums">
+&lt;div class=&quot;control-group&quot;&gt;
+	&lt;label class=&quot;control-label&quot; for=&quot;input-charcount&quot;&gt;Input de texto&lt;/label&gt;
+	&lt;div class=&quot;controls&quot;&gt;
+	&lt;input type=&quot;text&quot; class=&quot;input-xlarge&quot; id=&quot;input-charcount&quot; data-chars=&quot;60&quot; data-text=&quot;{n} caracteres restantes&quot;&gt;
+	&lt;p class=&quot;help-block&quot;&gt;Do lado do input no seu foco deve aparecer um tooltip&lt;/p&gt;
+	&lt;/div&gt;
+&lt;/div&gt;	
+</pre>          
         </div>
       </div>
     </section>

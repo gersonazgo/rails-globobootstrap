@@ -144,15 +144,15 @@ $(function () {
   // tooltip demo
   $('.tooltip-demo.well').tooltip({
     selector: "a[rel=tooltip]"
-  })
-  $('.tooltip-test').tooltip()
+  });
+  $('.tooltip-test').tooltip();
 
   // popover demo
   $("a[rel=popover]")
     .popover()
     .click(function(e) {
       e.preventDefault()
-    })
+    });
 
   // button state demo
   $('#fat-btn')
@@ -162,7 +162,7 @@ $(function () {
       setTimeout(function () {
         btn.button('reset')
       }, 3000)
-    })
+    });
 
   // carousel demo
   $('#myCarousel').carousel();
@@ -170,10 +170,13 @@ $(function () {
   // custom select demo
   $('.custom-select').selectbox();
   
+  // custom input demo
   $('.custom-checkbox').customInput();
   
+  // charcount with tooltip
+  $('#input-charcount').charcount();
   
-})
+});
 
 
 // Modified from the original jsonpi https://github.com/benvinegar/jquery-jsonpi
