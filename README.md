@@ -58,11 +58,11 @@ Roadmap
 ---------------
 
 ### 1.1
-* Usar imagens no bootstrap no projeto
 * Página de customização de download gerando o build corretamente
 * 
 
 ### 1.0
+* Usar imagens no bootstrap no projeto
 * Script de deploy para documentação webmedia
 * Formulários personalizados para selectbox e checkbox
 * Tipografia do H1 e H2
