@@ -57,12 +57,27 @@ https://github.com/globocom/bootstrap/issues
 Roadmap
 ---------------
 
-### 2.0
+### 1.1
+* Usar imagens no bootstrap no projeto
+* Página de customização de download gerando o build corretamente
+* 
+
+### 1.0
+* Script de deploy para documentação webmedia
 * Formulários personalizados para selectbox e checkbox
 * Tipografia do H1 e H2
 * Box principal
-* Barra de ferramentas
-* Fontes personalizada no título da documentação
+* Validação de formulários
+
+
+Changelog
+-----------------
+### 1.0
+* Tradução de todo conteúdo para português
+* Seção de box para criar dashboards e boxes de formulários no CMA
+* Criação de um plugin de contador de caracteres, integrado com o tooltip para inputs de formulário
+* Extensão de um alerta para criar avisos no modo cortina
+* Inserção de plugins para personalizar checkboxes e selectboxes
 
 
 Para desenvolvedores
@@ -71,12 +86,12 @@ Para desenvolvedores
 Há um makefile para poder gerar os estáticos
 
 + **build** - `make build`
-This will run the less compiler on the bootstrap lib and generate a bootstrap.css and bootstrap.min.css file.
-The lessc compiler is required for this command to run.
+Executa o compiler do less e gera o bootstrap.css e bootstrap.min.css
+O compilador lessc é necessário para o comando rodar.
 
 + **watch** - `make watch`
-This is a convenience method for watching your less files and automatically building them whenever you save.
-Watchr is required for this command to run.
+Método para automaticamente fazer o build a cada vez que o arquivo é salvo
+O Watchr é necessário para o comando funcionar
 
 
 Autores
