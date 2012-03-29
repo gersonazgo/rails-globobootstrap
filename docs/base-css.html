@@ -928,45 +928,88 @@
 				<p>O box secundário é usado para agrupar conteúdos maiores, como formulários. A diferença deste box em relação ao primário é que ele tem um espaçamento interno para os títulos e não possui opção de menu de ações</p>
 				<p>Além disto, neste box é possível ter um footer onde é possível usar botões de ações para dar contexto no formulário</p>
 				<div class="box secondary">
-					<div class="box-header">
-						<h3>Titulo de um formulário</h3>							
-					</div>
-					<div class="content">
-						<form class="form-horizontal">
-		           <div class="control-group">
-		            <label class="control-label" for="input01">Input de texto</label>
-		            <div class="controls">
-		              <input type="text" class="input-xlarge" id="input01">
-		              <p class="help-block">Um input html5 está disponível além do texto livre</p>
-		            </div>
-		          </div>
-		          <div class="control-group">
-		            <label class="control-label" for="optionsCheckbox">Checkbox</label>
-		            <div class="controls">
-		              <label class="checkbox">
-		                <input type="checkbox" id="optionsCheckbox" value="option1">
-		                Opção um é esta
-		              </label>
-		            </div>
-		          </div>
-		          <div class="box-header">
-								<h3>Titulo de um formulário em outra secao</h3>							
-							</div>
-		          <div class="control-group">
-		            <label class="control-label" for="input01">Input de texto 2</label>
-		            <div class="controls">
-		              <input type="text" class="input-xlarge" id="input01">
-		            </div>
-		          </div>
-      			</form>
-					</div>
-					<div class="box-footer">
-						<div class="actions">
-							<a class="btn primary large">Sucesso</a>
-							<a class="btn danger large">Cancelar</a>	
+					<form class="form-horizontal">
+						<div class="box-header">
+							<h3>Titulo de um formulário</h3>							
 						</div>
-					</div>					
+						<div class="content">
+			           <div class="control-group">
+			            <label class="control-label" for="input01">Input de texto</label>
+			            <div class="controls">
+			              <input type="text" class="input-xlarge" id="input01">
+			              <p class="help-block">Um input html5 está disponível além do texto livre</p>
+			            </div>
+			          </div>
+			          <div class="control-group">
+			            <label class="control-label" for="optionsCheckbox">Checkbox</label>
+			            <div class="controls">
+			              <label class="checkbox">
+			                <input type="checkbox" id="optionsCheckbox" value="option1">
+			                Opção um é esta
+			              </label>
+			            </div>
+			          </div>
+			          <div class="box-header">
+									<h3>Titulo de um formulário em outra secao</h3>							
+								</div>
+			          <div class="control-group">
+			            <label class="control-label" for="input01">Input de texto 2</label>
+			            <div class="controls">
+			              <input type="text" class="input-xlarge" id="input01">
+			            </div>
+			          </div>
+						</div>
+						<div class="box-footer">
+							<div class="actions">
+								<a class="btn primary large">Sucesso</a>
+								<a class="btn danger large">Cancelar</a>	
+							</div>
+						</div>
+					</form>					
 				</div>
+				<h2>Markup</h2>
+<pre class="prettyprint linenums">
+&lt;div class=&quot;box secondary&quot;&gt;
+	&lt;form class=&quot;form-horizontal&quot;&gt;
+		&lt;div class=&quot;box-header&quot;&gt;
+			&lt;h3&gt;Titulo de um formul&aacute;rio&lt;/h3&gt;							
+		&lt;/div&gt;
+		&lt;div class=&quot;content&quot;&gt;
+         &lt;div class=&quot;control-group&quot;&gt;
+          &lt;label class=&quot;control-label&quot; for=&quot;input01&quot;&gt;Input de texto&lt;/label&gt;
+          &lt;div class=&quot;controls&quot;&gt;
+            &lt;input type=&quot;text&quot; class=&quot;input-xlarge&quot; id=&quot;input01&quot;&gt;
+            &lt;p class=&quot;help-block&quot;&gt;Um input html5 est&aacute; dispon&iacute;vel al&eacute;m do texto livre&lt;/p&gt;
+          &lt;/div&gt;
+        &lt;/div&gt;
+        &lt;div class=&quot;control-group&quot;&gt;
+          &lt;label class=&quot;control-label&quot; for=&quot;optionsCheckbox&quot;&gt;Checkbox&lt;/label&gt;
+          &lt;div class=&quot;controls&quot;&gt;
+            &lt;label class=&quot;checkbox&quot;&gt;
+              &lt;input type=&quot;checkbox&quot; id=&quot;optionsCheckbox&quot; value=&quot;option1&quot;&gt;
+              Op&ccedil;&atilde;o um &eacute; esta
+            &lt;/label&gt;
+          &lt;/div&gt;
+        &lt;/div&gt;
+        &lt;div class=&quot;box-header&quot;&gt;
+					&lt;h3&gt;Titulo de um formul&aacute;rio em outra secao&lt;/h3&gt;							
+				&lt;/div&gt;
+        &lt;div class=&quot;control-group&quot;&gt;
+          &lt;label class=&quot;control-label&quot; for=&quot;input01&quot;&gt;Input de texto 2&lt;/label&gt;
+          &lt;div class=&quot;controls&quot;&gt;
+            &lt;input type=&quot;text&quot; class=&quot;input-xlarge&quot; id=&quot;input01&quot;&gt;
+          &lt;/div&gt;
+        &lt;/div&gt;
+		&lt;/div&gt;
+		&lt;div class=&quot;box-footer&quot;&gt;
+			&lt;div class=&quot;actions&quot;&gt;
+				&lt;a class=&quot;btn primary large&quot;&gt;Sucesso&lt;/a&gt;
+				&lt;a class=&quot;btn danger large&quot;&gt;Cancelar&lt;/a&gt;	
+			&lt;/div&gt;
+		&lt;/div&gt;
+	&lt;/form&gt;					
+&lt;/div&gt;	
+</pre>				
 			</div>
 		</div>
 </section>  

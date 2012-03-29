@@ -6,7 +6,7 @@
  * http://www.apache.org/licenses/LICENSE-2.0
  *
  * Designed and built with all the love in the world @twitter by @mdo and @fat.
- * Date: Wed Mar 28 19:31:31 BRT 2012
+ * Date: Thu Mar 29 10:52:40 BRT 2012
  */
 article,
 aside,
@@ -1252,6 +1252,9 @@ select:focus:required:invalid:focus {
 .box.secondary .content {
   padding: 10px;
   border-bottom: none;
+}
+.box.secondary form {
+  margin: 0;
 }
 .box.secondary .box-footer {
   background: #eeeeee;
