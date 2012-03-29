@@ -111,7 +111,8 @@ Autores
 
 ## Globo Bootstrap
 
-** Alexandre Magno **
+**Alexandre Magno**
+
 + http://blog.alexandremagno.net
 + github.com/alexanmtz
 + @alexanmtz
