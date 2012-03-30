@@ -6,7 +6,7 @@
  * http://www.apache.org/licenses/LICENSE-2.0
  *
  * Designed and built with all the love in the world @twitter by @mdo and @fat.
- * Date: Thu Mar 29 16:30:00 BRT 2012
+ * Date: Fri Mar 30 10:26:13 BRT 2012
  */
 article,
 aside,
@@ -1076,14 +1076,17 @@ select:focus:required:invalid:focus {
   outline: none;
 }
 .sbToggle {
-  background: url('http://s.videos.globo.com/gv/assets/images/icon-select-arrow.png') no-repeat center center;
+  border-left: 1px dotted #999999;
   display: block;
-  height: 29px;
+  height: 20px;
   outline: none;
   position: absolute;
   right: 0;
-  top: 0;
-  width: 30px;
+  top: 4px;
+  width: 20px;
+  font-family: "Lucida Grande";
+  font-size: 23px;
+  content: "\2193";
 }
 .sbHolderDisabled {
   background-color: #3C3C3C;
@@ -1190,7 +1193,7 @@ select:focus:required:invalid:focus {
   filter: alpha(opacity=50);
 }
 .box {
-  border: 1px solid #999999;
+  border: 1px solid #c8c8c8;
   -webkit-border-radius: 5px;
   -moz-border-radius: 5px;
   border-radius: 5px;
@@ -1199,7 +1202,7 @@ select:focus:required:invalid:focus {
   box-shadow: 0 1px 3px rgba(0, 0, 0, 0.25);
 }
 .box .box-header {
-  border-bottom: 1px solid #999999;
+  border-bottom: 1px solid #c8c8c8;
 }
 .box.primary .box-header h2,
 .box.primary .box-header h3 {
@@ -1213,7 +1216,7 @@ select:focus:required:invalid:focus {
   margin: 0;
 }
 .box.primary .content ul.menu li {
-  border-bottom: 1px solid #999999;
+  border-bottom: 1px solid #c8c8c8;
   *zoom: 1;
 }
 .box.primary .content ul.menu li .menu-item {
@@ -1246,7 +1249,7 @@ select:focus:required:invalid:focus {
 .box.secondary h2,
 .box.secondary h3 {
   padding: 20px 10px 0;
-  border-bottom: 1px solid #eeeeee;
+  border-bottom: 1px solid #c8c8c8;
 }
 .box.secondary .box-header,
 .box.secondary .content {
@@ -1258,7 +1261,7 @@ select:focus:required:invalid:focus {
 }
 .box.secondary .box-footer {
   background: #eeeeee;
-  border-top: 1px solid #d5d5d5;
+  border-top: 1px solid #c8c8c8;
 }
 .box.secondary .box-footer .actions {
   padding: 10px 20px 20px 20px;
