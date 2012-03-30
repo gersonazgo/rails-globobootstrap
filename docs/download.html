@@ -68,7 +68,11 @@
 ================================================== -->
 <header class="jumbotron subhead" id="overview">
   <h1>Customizar e download</h1>
-  <p class="lead"><a href="https://github.com/twitter/bootstrap/zipball/master">Download do repositório completo</a> Ou customize os componentes da forma que desejar</p>
+  <div class="alert alert-block alert-error">
+  	<h4 class="alert-heading">Em desenvolvimento</h4>
+  	Esta página está em desenvolvimento para que você possa selecionar componentes e personalizar seu download, por enquanto, é possível apenas fazer download do repositório completo.
+  </div>
+  <p class="lead"><a href="https://github.com/globocom/bootstrap/zipball/master">Download do repositório completo</a> <span style="text-decoration:line-through">Ou customize os componentes da forma que desejar</span></p>
   <div class="subnav">
     <ul class="nav pills">
       <li><a href="#components">1. Selecionar componentes</a></li>
@@ -293,12 +297,14 @@
     </h1>
   </div>
   <div class="download-btn">
-    <a class="btn xlarge primary" href="#">Customizar e fazer Download</a>
+    <a class="btn xlarge primary" id="make-build" href="#">Customizar e fazer Download</a>
     <h4>O que será incluído?</h4>
     <p>O download inclui css compilado, compilado e minificado, e compila plugins jQuery, todos compactados em um zip para sua conveniência</p>
   </div>
 </section><!-- /download -->
-
+<div class="alert-curtain" id="build-error">
+  <p><span class="cms-icon error"></span>Não foi possível realizar o build</p>
+</div>
 
      <!-- Footer
       ================================================== -->

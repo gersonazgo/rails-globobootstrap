@@ -6,7 +6,7 @@
  * http://www.apache.org/licenses/LICENSE-2.0
  *
  * Designed and built with all the love in the world @twitter by @mdo and @fat.
- * Date: Fri Mar 30 10:26:13 BRT 2012
+ * Date: Fri Mar 30 14:42:44 BRT 2012
  */
 article,
 aside,
@@ -1076,17 +1076,33 @@ select:focus:required:invalid:focus {
   outline: none;
 }
 .sbToggle {
-  border-left: 1px dotted #999999;
   display: block;
-  height: 20px;
+  height: 0;
   outline: none;
   position: absolute;
-  right: 0;
-  top: 4px;
-  width: 20px;
-  font-family: "Lucida Grande";
-  font-size: 23px;
-  content: "\2193";
+  right: 7px;
+  top: 12px;
+  width: 0;
+  border-left: 6px solid transparent;
+  border-right: 6px solid transparent;
+  border-top: 6px solid #0289e8;
+  -webkit-transition: border-color 0.15s linear;
+  -moz-transition: border-color 0.15s linear;
+  -ms-transition: border-color 0.15s linear;
+  -o-transition: border-color 0.15s linear;
+  transition: border-color 0.15s linear;
+}
+.sbToggle:hover {
+  text-decoration: none;
+  border-top-color: #000000;
+}
+.sbToggle:after {
+  border-left: 1px dotted #999999;
+  content: "";
+  height: 20px;
+  position: absolute;
+  right: 13px;
+  top: -14px;
 }
 .sbHolderDisabled {
   background-color: #3C3C3C;

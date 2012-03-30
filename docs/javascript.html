@@ -1029,19 +1029,22 @@ $('#my-alert').bind('closed', function () {
 						<a class="btn success large" id="link-alert-curtain-success-demo">Abrir cortina como sucesso</a>
           	<a class="btn danger large" id="link-alert-curtain-error-demo">Abrir cortina como erro</a>          	
           </div>
+          <div class="alert">
+    					<strong>Aviso!</strong> É aconselhável colocar o markup no body para não herdar estilos do pai
+    			</div>
           <h4>Exemplo de markup de erro (conteúdo escondido até o método <code>.alert('open)</code>) ser chamado</h4>
 <pre class="prettyprint linenums">
-&lt;div class=&quot;alert-curtain error&quot; id=&quot;alert-curtain-error-demo&quot;&gt;
+&lt;div class=&quot;alert-curtain&quot; id=&quot;alert-curtain-error-demo&quot;&gt;
 	&lt;div class=&quot;close&quot;&gt;x&lt;/div&gt;
-	&lt;p&gt;&lt;span class=&quot;state&quot;&gt;&lt;/span&gt;Eita, alguma coisa deu errado&lt;/p&gt;
+	&lt;p&gt;&lt;span class=&quot;cms-icon error&quot;&gt;&lt;/span&gt;Eita, alguma coisa deu errado&lt;/p&gt;
 &lt;/div&gt;
 </pre>
 					<h4>Exemplo de markup de sucesso</h4>
 <pre class="prettyprint linenums">
-&lt;div class=&quot;alert-curtain success&quot; id=&quot;alert-curtain-success-demo&quot;&gt;
+&lt;div class=&quot;alert-curtain&quot; id=&quot;alert-curtain-success-demo&quot;&gt;
 	&lt;div class=&quot;close&quot;&gt;x&lt;/div&gt;
-	&lt;p&gt;&lt;span class=&quot;state&quot;&gt;&lt;/span&gt;Mais do que nunca, tudo foi salvo como esperado&lt;/p&gt;
-&lt;/div&gt;	
+	&lt;p&gt;&lt;span class=&quot;cms-icon success&quot;&gt;&lt;/span&gt;Mais do que nunca, tudo foi salvo como esperado&lt;/p&gt;
+&lt;/div&gt;
 </pre>	          
         </div>
       </div>
