@@ -6,7 +6,7 @@
  * http://www.apache.org/licenses/LICENSE-2.0
  *
  * Designed and built with all the love in the world @twitter by @mdo and @fat.
- * Date: Fri Mar 30 14:42:44 BRT 2012
+ * Date: Fri Mar 30 16:30:03 BRT 2012
  */
 article,
 aside,
@@ -328,6 +328,14 @@ h6 {
   font-size: 11px;
   color: #999999;
   text-transform: uppercase;
+}
+.page-header {
+  margin: 18px 0;
+  border-bottom: 1px solid #eee;
+}
+.page-header h1 {
+  margin-bottom: 17px;
+  line-height: 1;
 }
 ul,
 ol {

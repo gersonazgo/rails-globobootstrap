@@ -58,8 +58,8 @@ Roadmap
 ---------------
 
 ### 1.1
+* Barra da globo estendendo a barra do bootstrap
 * Página de customização de download gerando o build corretamente
-* 
 
 ### 1.0
 * Usar imagens no bootstrap no projeto
