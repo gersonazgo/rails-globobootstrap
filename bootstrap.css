@@ -6,7 +6,7 @@
  * http://www.apache.org/licenses/LICENSE-2.0
  *
  * Designed and built with all the love in the world @twitter by @mdo and @fat.
- * Date: Mon Apr  2 19:54:28 BRT 2012
+ * Date: Tue Apr  3 09:22:57 BRT 2012
  */
 article,
 aside,
@@ -106,7 +106,7 @@ body {
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-size: 13px;
   line-height: 18px;
-  color: #555555;
+  color: #666666;
   background-color: #ffffff;
 }
 .container {
@@ -515,7 +515,9 @@ textarea {
 label {
   display: block;
   margin-bottom: 5px;
-  color: #333333;
+  color: #666666;
+  font-size: 14px;
+  font-weight: bold;
 }
 input,
 textarea,
@@ -523,12 +525,12 @@ select,
 .uneditable-input {
   display: inline-block;
   width: 210px;
-  height: 18px;
+  height: 24px;
   padding: 4px;
   margin-bottom: 9px;
   font-size: 13px;
   line-height: 18px;
-  color: #555555;
+  color: #666666;
   border: 1px solid #ccc;
   -webkit-border-radius: 3px;
   -moz-border-radius: 3px;
@@ -575,7 +577,7 @@ input[type=submit] {
 }
 select,
 input[type=file] {
-  height: 28px;
+  height: 30px;
   /* In IE7, the height of the select element cannot be changed by height, only font-size */
 
   *margin-top: 4px;
@@ -1018,16 +1020,16 @@ select:focus:required:invalid:focus {
   padding-top: 27px;
 }
 .form-horizontal .control-group {
-  margin-bottom: 18px;
+  margin-bottom: 30px;
 }
 .form-horizontal .control-group > label {
   float: left;
-  width: 140px;
-  padding-top: 5px;
+  width: 153px;
+  padding-top: 7px;
   text-align: right;
 }
 .form-horizontal .controls {
-  margin-left: 160px;
+  margin-left: 175px;
 }
 .form-horizontal .form-actions {
   padding-left: 160px;
@@ -1058,7 +1060,8 @@ select:focus:required:invalid:focus {
   font-weight: normal;
   height: 29px;
   position: relative;
-  margin-top: 5px;
+  float: none;
+  margin-left: 0;
 }
 .sbHolder.disabled {
   opacity: 0.5;
@@ -1129,7 +1132,7 @@ select:focus:required:invalid:focus {
   width: 0;
   border-left: 6px solid transparent;
   border-right: 6px solid transparent;
-  border-top: 6px solid #0289e8;
+  border-top: 6px solid #999999;
   -webkit-transition: border-color 0.15s linear;
   -moz-transition: border-color 0.15s linear;
   -ms-transition: border-color 0.15s linear;
@@ -1218,13 +1221,22 @@ select:focus:required:invalid:focus {
 }
 .custom-checkbox {
   position: relative;
+  margin-bottom: 20px;
 }
 .custom-checkbox input {
   position: absolute;
   margin: 0;
   z-index: 0;
-  left: 20px;
   top: 3px;
+  opacity: 0;
+  filter: alpha(opacity=0);
+}
+.custom-checkbox.disabled {
+  opacity: 0.5;
+}
+.custom-checkbox.disabledinput {
+  opacity: 0;
+  filter: alpha(opacity=0);
 }
 .custom-checkbox label {
   display: block;
@@ -1253,7 +1265,7 @@ select:focus:required:invalid:focus {
   filter: alpha(opacity=50);
 }
 .box {
-  border: 1px solid #c8c8c8;
+  border: 1px solid #e1e1e1;
   margin: 10px 0;
   -webkit-border-radius: 5px;
   -moz-border-radius: 5px;
@@ -1263,7 +1275,7 @@ select:focus:required:invalid:focus {
   box-shadow: 0 1px 3px rgba(0, 0, 0, 0.25);
 }
 .box .box-header {
-  border-bottom: 1px solid #c8c8c8;
+  border-bottom: 1px solid #e1e1e1;
 }
 .box.primary .box-header h2,
 .box.primary .box-header h3 {
@@ -1277,7 +1289,7 @@ select:focus:required:invalid:focus {
   margin: 0;
 }
 .box.primary .content ul.menu li {
-  border-bottom: 1px solid #c8c8c8;
+  border-bottom: 1px solid #e1e1e1;
   *zoom: 1;
 }
 .box.primary .content ul.menu li .menu-item {
@@ -1314,7 +1326,7 @@ select:focus:required:invalid:focus {
 .box.secondary h2,
 .box.secondary h3 {
   padding: 20px 10px 0;
-  border-bottom: 1px solid #c8c8c8;
+  border-bottom: 1px solid #eeeeee;
 }
 .box.secondary .box-header,
 .box.secondary .content {
@@ -1326,7 +1338,7 @@ select:focus:required:invalid:focus {
 }
 .box.secondary .box-footer {
   background: #eeeeee;
-  border-top: 1px solid #c8c8c8;
+  border-top: 1px solid #eeeeee;
 }
 .box.secondary .box-footer .actions {
   padding: 10px 20px 20px 20px;
@@ -1838,7 +1850,7 @@ table .span12 {
   clear: both;
   font-weight: normal;
   line-height: 18px;
-  color: #555555;
+  color: #666666;
   white-space: nowrap;
 }
 .dropdown-menu li > a:hover,
@@ -2006,7 +2018,7 @@ table .span12 {
 }
 .tabs > .active > a,
 .tabs > .active > a:hover {
-  color: #555555;
+  color: #666666;
   background-color: #ffffff;
   border: 1px solid #ddd;
   border-bottom-color: transparent;

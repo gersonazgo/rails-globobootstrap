@@ -44,7 +44,9 @@ textarea {
 label {
   display: block;
   margin-bottom: 5px;
-  color: @grayDark;
+  color: @gray;
+  font-size: 14px;
+  font-weight: bold;
 }
 
 // Inputs, Textareas, Selects
@@ -54,7 +56,7 @@ select,
 .uneditable-input {
   display: inline-block;
   width: 210px;
-  height: @baseLineHeight;
+  height: 24px;
   padding: 4px;
   margin-bottom: 9px;
   font-size: @baseFontSize;
@@ -110,7 +112,7 @@ input[type=submit] {
 // Set the height of select and file controls to match text inputs
 select,
 input[type=file] {
-  height: 28px; /* In IE7, the height of the select element cannot be changed by height, only font-size */
+  height: 30px; /* In IE7, the height of the select element cannot be changed by height, only font-size */
   *margin-top: 4px; /* For IE7, add top margin to align select with labels */
   line-height: 28px;
 }
@@ -493,18 +495,18 @@ select:focus:required:invalid {
   }
   // Increase spacing between groups
   .control-group {
-    margin-bottom: @baseLineHeight;
+    margin-bottom: 30px;
   }
   // Float the labels left
   .control-group > label {
     float: left;
-    width: 140px;
-    padding-top: 5px;
+    width: 153px;
+    padding-top: 7px;
     text-align: right;
   }
   // Move over all input controls and content
   .controls {
-    margin-left: 160px;
+    margin-left: 175px;
   }
   // Move over buttons in .form-actions to align with .controls
   .form-actions {

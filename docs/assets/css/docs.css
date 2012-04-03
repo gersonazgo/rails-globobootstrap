@@ -22,14 +22,17 @@ body {
 .navbar-fixed .brand {
   padding-right: 0;
   padding-left: 0;
-  margin-left: 20px;
-  float: right;
+  margin-right: 20px;
+  vertical-align: middle;
+  padding: 10px;
+  float: left;
   font-weight: bold;
   color: #000;
   text-shadow: 0 1px 0 rgba(255,255,255,.1), 0 0 30px rgba(255,255,255,.125);
   -webkit-transition: all .2s linear;
      -moz-transition: all .2s linear;
           transition: all .2s linear;
+  font-family: VolkswagenSerial-Bold;
 }
 .navbar-fixed .brand:hover {
   text-decoration: none;
@@ -61,9 +64,10 @@ hr.soften {
 }
 .jumbotron h1 {
   margin-bottom: 9px;
-  font-size: 108px;
+  font-size: 90px;
   letter-spacing: -1px;
   line-height: 1;
+  font-family: VolkswagenSerial-Bold;
 }
 .jumbotron p {
   margin-bottom: 18px;

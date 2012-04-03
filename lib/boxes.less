@@ -2,12 +2,12 @@
 // -----------
 
 .box {
-	border: 1px solid darken(@grayLighter, 15%);
+	border: 1px solid darken(@grayLighter, 5%);
 	margin: 10px 0;
 	.border-radius();
 	.box-shadow();
 	.box-header {
-		border-bottom: 1px solid darken(@grayLighter, 15%);
+		border-bottom: 1px solid darken(@grayLighter, 5%);
 	}
 	&.primary {
 		.box-header {
@@ -27,7 +27,7 @@
 						padding: 10px;
 						overflow: hidden;
 					}
-					border-bottom: 1px solid darken(@grayLighter, 15%);
+					border-bottom: 1px solid darken(@grayLighter, 5%);
 					.view {
 						width: 40%;
 						padding-left: 2%;
@@ -55,7 +55,7 @@
 	&.secondary {
 		h2, h3 {
 			padding: 20px 10px 0;
-			border-bottom: 1px solid darken(@grayLighter, 15%);
+			border-bottom: 1px solid @grayLighter;
 		}
 		.box-header, .content {
 			padding: 10px;
@@ -66,7 +66,7 @@
 		}
 		.box-footer {
 			background: @grayLighter;
-			border-top: 1px solid darken(@grayLighter, 15%);
+			border-top: 1px solid @grayLighter;
 			.actions {
 				padding: 10px 20px 20px 20px;
 				a {

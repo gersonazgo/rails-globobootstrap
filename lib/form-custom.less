@@ -19,7 +19,8 @@
   font-weight: normal;
   height: 29px;
   position: relative;
-  margin-top: 5px;
+  float: none;
+  margin-left: 0;
   &.span1     { .inputColumns(1); }
   &.span2     { .inputColumns(2); }
   &.span3     { .inputColumns(3); }
@@ -64,7 +65,7 @@
   width: 0;
 	border-left: 6px solid transparent;
   border-right: 6px solid transparent;
-  border-top: 6px solid @linkColor;
+  border-top: 6px solid @grayLight;
   .transition(border-color .15s linear);
 
   &:hover {
@@ -172,13 +173,21 @@
 
 .custom-checkbox {
   position: relative;
+  margin-bottom: 20px;
 
  	input {
 	  position: absolute;
 	  margin: 0;
 	  z-index: 0;
-	  left: 20px;
 	  top: 3px;
+	  .opacity(0);
+	}
+	
+	&.disabled {
+		opacity: 0.5;
+		&input {
+			.opacity(0);
+		}
 	}
 
 	label {
