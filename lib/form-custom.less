@@ -2,9 +2,7 @@
 // -----------------------------
 
 .sbHolder{
-	&.disabled {
-		.opacity(50);
-	}
+	cursor: pointer;
   background-color: white;
   #gradient > .vertical(#FFFFFF, #EEEEEE);
   .box-shadow(0 1px 1px @grayLight);
@@ -33,6 +31,11 @@
   &.span10    { .inputColumns(10); }
   &.span11    { .inputColumns(11); }
   &.span12    { .inputColumns(12); }
+}
+
+.sbHolderDisabled {
+  .opacity(50);
+  curson: default;
 }
 
 .sbSelector{
@@ -82,11 +85,6 @@
   top: -14px;
 }
 
-.sbHolderDisabled{
-  background-color: #3C3C3C;
-  border: solid 1px #515151;
-}
-
 .sbOptions{
   background-color: white;
 
@@ -105,7 +103,7 @@
   top: 29px;
   width: 100%;
   max-height: 300px;
-  z-index: 1;
+  z-index: 2;
   overflow-y: auto;
   overflow-x: hidden;
 

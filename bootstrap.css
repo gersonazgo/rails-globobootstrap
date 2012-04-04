@@ -6,7 +6,7 @@
  * http://www.apache.org/licenses/LICENSE-2.0
  *
  * Designed and built with all the love in the world @twitter by @mdo and @fat.
- * Date: Tue Apr  3 09:50:53 BRT 2012
+ * Date: Wed Apr  4 17:42:49 BRT 2012
  */
 article,
 aside,
@@ -1035,6 +1035,7 @@ select:focus:required:invalid:focus {
   padding-left: 160px;
 }
 .sbHolder {
+  cursor: pointer;
   background-color: white;
   background-color: #eeeeee;
   background-image: -moz-linear-gradient(top, #ffffff, #eeeeee);
@@ -1062,10 +1063,6 @@ select:focus:required:invalid:focus {
   position: relative;
   float: none;
   margin-left: 0;
-}
-.sbHolder.disabled {
-  opacity: 0.5;
-  filter: alpha(opacity=50);
 }
 .sbHolder.span1 {
   width: 50px;
@@ -1102,6 +1099,11 @@ select:focus:required:invalid:focus {
 }
 .sbHolder.span12 {
   width: 930px;
+}
+.sbHolderDisabled {
+  opacity: 0.5;
+  filter: alpha(opacity=50);
+  curson: default;
 }
 .sbSelector {
   display: block;
@@ -1151,10 +1153,6 @@ select:focus:required:invalid:focus {
   right: 13px;
   top: -14px;
 }
-.sbHolderDisabled {
-  background-color: #3C3C3C;
-  border: solid 1px #515151;
-}
 .sbOptions {
   background-color: white;
   border-bottom: solid 1px #E4E4E4;
@@ -1169,7 +1167,7 @@ select:focus:required:invalid:focus {
   top: 29px;
   width: 100%;
   max-height: 300px;
-  z-index: 1;
+  z-index: 2;
   overflow-y: auto;
   overflow-x: hidden;
 }

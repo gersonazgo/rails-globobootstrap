@@ -170,6 +170,8 @@ $(function () {
   // custom select demo
   $('.custom-select').selectbox();
   
+  $('#selectCustomDisabled').selectbox('disable');
+  
   // custom input demo
   $('.custom-checkbox').customInput();
   
