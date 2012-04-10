@@ -72,6 +72,10 @@ Roadmap
 
 Changelog
 -----------------
+### 1.1.1
+* Caminho absoluto do sprite do globocms apontando para página de documentação
+* Altura da cortina um pouco maior no plugin de alerta
+
 ### 1.1
 * Estados de erro do selectbox personalizado
 * Usando fonte da globo na página principal e a Proxima nos títulos das seções

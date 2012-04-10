@@ -345,7 +345,7 @@ table .span12{float:none;width:924px;margin-left:0;}
 .plus{background-position:-408px -96px;}
 .minus{background-position:-432px -96px;}
 .asterisk{background-position:-456px -96px;}
-.cms-icon{background-image:url(docs/assets/img/sprite-globo-cms.png);background-position:0 0;background-repeat:no-repeat;display:inline-block;width:34px;height:34px;margin:0 13px;vertical-align:text-top;}
+.cms-icon{background-image:url(http://docs.webmedia.globoi.com/bootstrap/docs/assets/img/sprite-globo-cms.png);background-position:0 0;background-repeat:no-repeat;display:inline-block;width:34px;height:34px;margin:0 13px;vertical-align:text-top;}
 .dropdown{position:relative;}
 .caret{display:inline-block;width:0;height:0;text-indent:-99999px;vertical-align:top;border-left:4px solid transparent;border-right:4px solid transparent;border-top:4px solid #000000;opacity:0.3;filter:alpha(opacity=30);content:"\2193";}
 .dropdown .caret{margin-top:8px;margin-left:2px;*margin-top:7px;}
@@ -537,8 +537,8 @@ button.btn::-moz-focus-inner,input[type=submit].btn::-moz-focus-inner{padding:0;
 .alert-danger,.alert-error,.alert-danger .alert-heading,.alert-error .alert-heading{color:#dd1144;}
 .alert-info{background-color:#d9edf7;border-color:#bfe1f2;}
 .alert-info,.alert-info .alert-heading{color:#3a87ad;}
-.alert-curtain{display:none;border:none;background-color:black;color:white;text-align:center;height:50px;font-weight:bold;}.alert-curtain .close{color:white !important;}
-.alert-curtain p{font-size:21px;text-align:center;margin-top:10px;}
+.alert-curtain{display:none;border:none;background-color:black;color:white;text-align:center;height:60px;font-weight:bold;}.alert-curtain .close{color:white !important;}
+.alert-curtain p{font-size:21px;text-align:center;margin-top:15px;}
 .alert-curtain .success{background-position:0 -197px;}
 .alert-curtain .error{background-position:0 -161px;}
 .alert-block{padding-top:14px;padding-bottom:14px;}
