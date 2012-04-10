@@ -103,7 +103,6 @@
         "class": inst.settings.classHolder + " " + (($target.attr("class") != undefined) ? $target.attr("class") : ""),
         "click": function (e) {
           if(!$(e.target).parent().is('li')) {
-            console.info('so entra se nao for ul');
             e.preventDefault();
             closeOthers.apply($(this), []);
             var uid = $(this).attr("id").split("_")[1];

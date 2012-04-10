@@ -15,9 +15,10 @@
   font-family: Arial, sans-serif;
   font-size: 13px;
   font-weight: normal;
-  height: 29px;
+  height: 30px;
   position: relative;
   float: none;
+  vertical-align: middle;
   margin-left: 0;
   &.span1     { .inputColumns(1); }
   &.span2     { .inputColumns(2); }
@@ -31,6 +32,22 @@
   &.span10    { .inputColumns(10); }
   &.span11    { .inputColumns(11); }
   &.span12    { .inputColumns(12); }
+}
+
+.error .sbHolder {
+  border-color: @errorText;
+  display: inline-block;
+  .sbOptions {
+    border-color: @errorText;
+  }
+  a {
+    color: @errorText;
+    outline: none;    
+  }
+  &:focus {
+    border-color: darken(@errorText, 10%);
+    .box-shadow(0 0 6px lighten(@errorText, 20%));
+  }
 }
 
 .sbHolderDisabled {
@@ -52,7 +69,7 @@
   text-decoration: none !important;
 
   &:link, &:visited, &:hover {
-    color: #323232 !important;
+    color: #323232;
     outline: none;
   }
 }
@@ -112,8 +129,8 @@
 
   li {
     border-bottom: solid 1px #E5E5E5;
-    width: 93% !important;
-    padding: 0 7px;
+    width: 96% !important;
+    padding: 0 10px;
     margin: 0 20px 0px 0;
 
     &:first-child {
