@@ -72,6 +72,10 @@ Roadmap
 
 Changelog
 -----------------
+### 1.1.2
+* Acertado tamanho dos add-ons que ficaram com altura errada após todos os inputs no projeto terem um tamanho maior
+* Tooltip nao contava apropriadamente os caracteres quando o usuário saia do campo e voltava novamente
+
 ### 1.1.1
 * Caminho absoluto do sprite do globocms apontando para página de documentação
 * Altura da cortina um pouco maior no plugin de alerta
