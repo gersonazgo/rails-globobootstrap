@@ -72,6 +72,9 @@ Roadmap
 
 Changelog
 -----------------
+### 1.1.3
+* Retirado bold dos botoes primários
+
 ### 1.1.2
 * Acertado tamanho dos add-ons que ficaram com altura errada após todos os inputs no projeto terem um tamanho maior
 * Tooltip nao contava apropriadamente os caracteres quando o usuário saia do campo e voltava novamente
