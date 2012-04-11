@@ -76,6 +76,7 @@ Changelog
 * Acertado tamanho dos add-ons que ficaram com altura errada após todos os inputs no projeto terem um tamanho maior
 * Tooltip nao contava apropriadamente os caracteres quando o usuário saia do campo e voltava novamente
 * Modificando cor do texto no input com erro para a cor normal e mantendo o estado de erro no input e o texto auxiliar
+* sinalização de disable no selecbox personalizado
 
 ### 1.1.1
 * Caminho absoluto do sprite do globocms apontando para página de documentação

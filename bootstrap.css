@@ -6,7 +6,7 @@
  * http://www.apache.org/licenses/LICENSE-2.0
  *
  * Designed and built with all the love in the world @twitter by @mdo and @fat.
- * Date: Wed Apr 11 11:08:46 BRT 2012
+ * Date: Wed Apr 11 11:22:03 BRT 2012
  */
 article,
 aside,
@@ -1120,7 +1120,7 @@ select:focus:required:invalid:focus {
 .sbHolderDisabled {
   opacity: 0.5;
   filter: alpha(opacity=50);
-  curson: default;
+  cursor: not-allowed;
 }
 .sbSelector {
   display: block;
