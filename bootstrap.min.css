@@ -227,7 +227,7 @@ input:focus:required:invalid,textarea:focus:required:invalid,select:focus:requir
 .box.secondary h2,.box.secondary h3{padding:20px 10px 0;border-bottom:1px solid #eeeeee;}
 .box.secondary .box-header,.box.secondary .content{padding:10px;border-bottom:none;}
 .box.secondary form{margin:0;}
-.box.secondary .box-footer{background:#eeeeee;border-top:1px solid #eeeeee;}.box.secondary .box-footer .actions{padding:10px 20px 20px 20px;}.box.secondary .box-footer .actions a,.box.secondary .box-footer .actions button{margin:10px 20px 0 0;}
+.box.secondary .box-footer{background:#eeeeee;border-top:1px solid #eeeeee;}.box.secondary .box-footer .actions{padding:10px 20px 20px 20px;}.box.secondary .box-footer .actions a,.box.secondary .box-footer .actions button,.box.secondary .box-footer .actions input[type="submit"]{margin:10px 20px 0 0;}
 table{max-width:100%;border-collapse:collapse;border-spacing:0;}
 .table{width:100%;margin-bottom:18px;}.table th,.table td{padding:8px;line-height:18px;text-align:left;border-top:1px solid #ddd;}
 .table th{font-weight:bold;vertical-align:bottom;}
