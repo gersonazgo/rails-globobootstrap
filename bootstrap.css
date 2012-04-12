@@ -6,7 +6,7 @@
  * http://www.apache.org/licenses/LICENSE-2.0
  *
  * Designed and built with all the love in the world @twitter by @mdo and @fat.
- * Date: Thu Apr 12 11:37:55 BRT 2012
+ * Date: Thu Apr 12 11:41:55 BRT 2012
  */
 article,
 aside,
@@ -1240,7 +1240,7 @@ select:focus:required:invalid:focus {
 .custom-checkbox input {
   position: absolute;
   margin: 0;
-  z-index: 0;
+  z-index: 2;
   top: 3px;
   left: 20px;
   opacity: 0;

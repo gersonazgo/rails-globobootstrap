@@ -210,7 +210,7 @@ input:focus:required:invalid,textarea:focus:required:invalid,select:focus:requir
 .sbOptions .sbDisabled{border-bottom:dotted 1px #515151;color:#999;display:block;padding:7px 0 7px 3px;}
 .sbOptions .sbGroup{border-bottom:dotted 1px #515151;color:#EBB52D;display:block;font-weight:bold;padding:7px 0 7px 3px;}
 .sbOptions .sbSub{padding-left:17px;}
-.custom-checkbox{position:relative;margin-bottom:20px;}.custom-checkbox input{position:absolute;margin:0;z-index:0;top:3px;left:20px;opacity:0;filter:alpha(opacity=0);}
+.custom-checkbox{position:relative;margin-bottom:20px;}.custom-checkbox input{position:absolute;margin:0;z-index:2;top:3px;left:20px;opacity:0;filter:alpha(opacity=0);}
 .custom-checkbox.disabled{opacity:0.5;}.custom-checkbox.disabledinput{opacity:0;filter:alpha(opacity=0);}
 .custom-checkbox label{display:block;position:relative;z-index:1;font-size:13px;padding-right:10px;line-height:1;padding:2px 0 1px 22px;margin-left:0px !important;cursor:pointer;width:auto;background:url('http://s.videos.globo.com/gv/assets/images/icon/checkbox.png') no-repeat;background-position:0 -26px;height:16px;}.custom-checkbox label.hover,.custom-checkbox label.focus{background-position:0 -26px;}
 .custom-checkbox label.checked{background-position:0 0;}
