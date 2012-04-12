@@ -1,0 +1,1813 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Globo Bootstrap</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <!-- Le HTML5 shim, for IE6-8 support of HTML elements -->
+    <!--[if lt IE 9]>
+      <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Le styles -->
+    <link href="http://s.glbimg.com/po/fo/globo-fontface.css" rel="stylesheet">
+    <link href="../bootstrap.css" rel="stylesheet">
+    <link href="../bootstrap-responsive.css" rel="stylesheet">
+    <link href="assets/css/docs.css" rel="stylesheet">
+    <link href="assets/js/google-code-prettify/prettify.css" rel="stylesheet">
+
+    <!-- Le fav and touch icons -->
+    <link rel="shortcut icon" href="assets/ico/favicon.ico">
+    <link rel="apple-touch-icon" href="images/apple-touch-icon.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="images/apple-touch-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="images/apple-touch-icon-114x114.png">
+  </head>
+
+  <body data-spy="scroll" data-target=".subnav" data-offset="50">
+  
+  
+  <!-- Navbar
+    ================================================== -->
+    <div class="navbar navbar-fixed">
+      <div class="navbar-inner">
+        <div class="container">
+          <a class="brand" href="./index.html">Globo Bootstrap</a>
+          <ul class="nav">
+            <li class="">
+              <a href="./index.html">Geral</a>
+            </li>
+            <li class="">
+              <a href="./scaffolding.html">Grid</a>
+            </li>
+            <li class="active">
+              <a href="./base-css.html">CSS base</a>
+            </li>
+            <li class="">
+              <a href="./components.html">Componentes</a>
+            </li>
+            <li class="">
+              <a href="./javascript.html">Plugins Javascript</a>
+            </li>
+            <li class="">
+              <a href="./less.html">Usando LESS</a>
+            </li>
+            <li class="">
+              <a href="./download.html">Download</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <div class="container">
+
+<!-- Masthead
+================================================== -->
+<header class="jumbotron subhead" id="overview">
+  <h1>CSS Base</h1>
+  <p class="lead">Elementos HTML básicos estilizados e aperfeiçoados com classes extensivas para prover a consistência na aparência e usabilidade</p>
+  <div class="subnav">
+    <ul class="nav pills">
+      <li><a href="#typography">Tipografia</a></li>
+      <li><a href="#tables">Tabelas</a></li>
+      <li><a href="#boxes">Boxes</a></li>
+      <li><a href="#forms">Formulários</a></li>
+      <li><a href="#buttons">Botões</a></li>
+      <li><a href="#icons">Ícones</a></li>
+    </ul>
+  </div>
+</header>
+
+
+<!-- Typography
+================================================== -->
+<section id="typography">
+  <div class="page-header">
+    <h1>Tipografia <small>Cabeçalhos, parágrafos, listas, e outros elementos inline</small></h1>
+  </div>
+
+  <h2>Cabeçalho e corpo</h2>
+
+  <!-- Headings & Paragraph Copy -->
+  <div class="row">
+    <div class="span4">
+      <h3>Escala da tipografia</h3>
+      <p>Toda a tipografia é baseada em duas variáveis Less no arquivo preboot.less: <code>@baseFontSize</code> e <code>@baseLineHeight</code></p>
+      <p>Estas variáveis, com alguma ajuda matemática é usado como base para criar margens, paddings e line-heights para toda tipografia</p>
+    </div>
+    <div class="span4">
+      <h3>Exemplo de um corpo de texto</h3>
+      <p>Nullam quis risus eget urna mollis ornare vel eu leo. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
+      <p>Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor. Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Donec sed odio dui.</p>
+    </div>
+    <div class="span4">
+      <div class="well">
+        <h1>h1. Cabeçalho nível 1</h1>
+        <h2>h2. Cabeçalho nível 2</h2>
+        <h3>h3. Cabeçalho nível 3</h3>
+        <h4>h4. Cabeçalho nível 4</h4>
+        <h5>h5. Cabeçalho nível 5</h5>
+        <h6>h6. Cabeçalho nível 6</h6>
+      </div>
+      <h2>Cabeçalho de título</h2>
+      <p>Para títulos com espaçamento e borda inferior, declare a classe <code>page-header</code></p>
+    </div>
+  </div>
+
+  <!-- Misc Elements -->
+  <h2>Ênfase, endereço e abreviação</h2>
+  <table class="table table-bordered table-striped">
+    <thead>
+      <tr>
+        <th>Elemento</th>
+        <th>Uso</th>
+        <th>Opcional</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>
+          <code>&lt;strong&gt;</code>
+        </td>
+        <td>
+           For ênfase um modelo de texto com <strong>important</strong>
+        </td>
+        <td>
+          <span class="muted">Não</span>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <code>&lt;em&gt;</code>
+        </td>
+        <td>
+          Para ênfase, um modelo de texto com <em>italico</em>
+        </td>
+        <td>
+          <span class="muted">Não</span>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <code>&lt;abbr&gt;</code>
+        </td>
+        <td>
+        	Use abreviação e acrônimo para mostrar uma versão expdandida no estado hover
+        </td>
+        <td>
+        	Inclui opcional <code>title</code> para texto expandido
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <code>&lt;address&gt;</code>
+        </td>
+        <td>
+        	Para informações de contato para o ancestral mais próximo para o corpo de trabalho
+        </td>
+        <td>
+        	Preserve formatação por terminar as linhas com <code>&lt;br&gt;</code>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+
+  <div class="row">
+    <div class="span4">
+      <h3>Usando ênfase</h3>
+      <p><a href="#">Fusce dapibus</a>, <strong>tellus ac cursus commodo</strong>, <em>tortor mauris condimentum nibh</em>, ut fermentum massa justo sit amet risus. Maecenas faucibus mollis interdum. Nulla vitae elit libero, a pharetra augue.</p>
+      <p><strong>Nota:</strong> Sinta-se a vontade para usar <code>&lt;b&gt;</code> e <code>&lt;i&gt;</code> do HTML5, mas seu uso muda um pouco. <code>&lt;b&gt;</code> foi feito para destacar palavras sem dar importância adicional. <code>&lt;i&gt;</code> é destinado mais integralmente para voz, termos técnicos etc</p>
+    </div>
+    <div class="span4">
+      <h3>Exemplo de endereço</h3>
+      <p>Abaixo exemplo de como as tags de endereço podem ser usadas:</p>
+      <address>
+        <strong>Globo.com</strong><br>
+        Avenida das américas, 700<br>
+        Rio de Janeiro, RJ 22640-085<br>
+        <abbr title="Phone">P:</abbr> (21) 3496-XXXX
+      </address>
+      <address>
+        <strong>Nome Completo</strong><br>
+        <a href="mailto:#">atendimento@corp.globo.com</a>
+      </address>
+    </div>
+    <div class="span4">
+      <h3>Exemplos de abreviações</h3>
+      <p>Abreviações são estilizadas com caixa alta e com uma borda pontilhada clara abaixo. Eles também possuem um cursor de ajuda que demonstra que você poderá ver o termo completo quando o mouse passar por cima (estado hover)</p>
+      <p><abbr title="HyperText Markup Language">HTML</abbr> rocks!</p>
+      <p>Uma abreviação para a palavra atributo é <abbr title="attribute">attr</abbr>.</p>
+    </div>
+  </div>
+
+
+  <!-- Blockquotes -->
+  <h2>Blockqute</h2>
+  <table class="table table-bordered table-striped">
+    <thead>
+      <tr>
+        <th>Elemento</th>
+        <th>Uso</th>
+        <th>Opcional</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>
+          <code>&lt;blockquote&gt;</code>
+        </td>
+        <td>
+          Elemento bloco para destacar citações externas
+        </td>
+        <td>
+          <p>Adicione o atributo <code>cite</code> para a URL de origem</p>
+          Use <code>.pull-left</code> e <code>.pull-right</code> para opções de float
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <code>&lt;small&gt;</code>
+        </td>
+        <td>
+        	Elemento opcional para ser usaod para adicionar citações, tipicamente de um autor como referência ao seu trabalho
+        </td>
+        <td>
+          Coloque <code>&lt;cite&gt;</code> em volta do nome e da origem
+        </td>
+      </tr>
+    </tbody>
+  </table>
+  <div class="row">
+    <div class="span4">
+      <p>Para incluir blockquote, coloque a tag <code>&lt;blockquote&gt;</code> em volta do <abbr title="HyperText Markup Language">HTML</abbr> que será usado como conteúdo. Para blockquotes diretos, é recomendável usar <code>&lt;p&gt;</code>.</p>
+      <p>Inclui um opcional <code>&lt;small&gt;</code> elemento que cita a fonte e você terá uma barra <code>&amp;mdash;</code> antes para estilização</p>
+    </div>
+    <div class="span8">
+<pre class="prettyprint linenums">
+&lt;blockquote&gt;
+  &lt;p&gt;Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante venenatis.&lt;/p&gt;
+  &lt;small&gt;Alguém famoso&lt;/small&gt;
+&lt;/blockquote&gt;
+</pre>
+    </div>
+  </div><!--/row-->
+
+  <h3>Blockquotes de exemplo</h3>
+  <div class="row">
+    <div class="span6">
+      <p>Padrão:</p>
+      <blockquote>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante venenatis.</p>
+        <small>Alguém famoso no <cite title="">corpo de trabalho</cite></small>
+      </blockquote>
+    </div>
+    <div class="span6">
+      <p>Para flutuar o blockquote para a direita, adicione <code>class="pull-right"</code>:</p>
+      <blockquote class="pull-right">
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante venenatis.</p>
+        <small>Alguém famoso no <cite title="">trabalho</cite></small>
+      </blockquote>
+    </div>
+  </div>
+
+
+  <!-- Lists -->
+  <h2>Listas</h2>
+  <div class="row">
+    <div class="span3">
+      <h4>Não ordenadas</h4>
+      <p><code>&lt;ul&gt;</code></p>
+      <ul>
+        <li>Lorem ipsum dolor sit amet</li>
+        <li>Consectetur adipiscing elit</li>
+        <li>Integer molestie lorem at massa</li>
+        <li>Facilisis in pretium nisl aliquet</li>
+        <li>Nulla volutpat aliquam velit
+          <ul>
+            <li>Phasellus iaculis neque</li>
+            <li>Purus sodales ultricies</li>
+            <li>Vestibulum laoreet porttitor sem</li>
+            <li>Ac tristique libero volutpat at</li>
+          </ul>
+        </li>
+        <li>Faucibus porta lacus fringilla vel</li>
+        <li>Aenean sit amet erat nunc</li>
+        <li>Eget porttitor lorem</li>
+      </ul>
+    </div>
+    <div class="span3">
+      <h4>Sem estilização</h4>
+      <p><code>&lt;ul class="unstyled"&gt;</code></p>
+      <ul class="unstyled">
+        <li>Lorem ipsum dolor sit amet</li>
+        <li>Consectetur adipiscing elit</li>
+        <li>Integer molestie lorem at massa</li>
+        <li>Facilisis in pretium nisl aliquet</li>
+        <li>Nulla volutpat aliquam velit
+          <ul>
+            <li>Phasellus iaculis neque</li>
+            <li>Purus sodales ultricies</li>
+            <li>Vestibulum laoreet porttitor sem</li>
+            <li>Ac tristique libero volutpat at</li>
+          </ul>
+        </li>
+        <li>Faucibus porta lacus fringilla vel</li>
+        <li>Aenean sit amet erat nunc</li>
+        <li>Eget porttitor lorem</li>
+      </ul>
+    </div>
+    <div class="span3">
+      <h4>Ordenada</h4>
+      <p><code>&lt;ol&gt;</code></p>
+      <ol>
+        <li>Lorem ipsum dolor sit amet</li>
+        <li>Consectetur adipiscing elit</li>
+        <li>Integer molestie lorem at massa</li>
+        <li>Facilisis in pretium nisl aliquet</li>
+        <li>Nulla volutpat aliquam velit</li>
+        <li>Faucibus porta lacus fringilla vel</li>
+        <li>Aenean sit amet erat nunc</li>
+        <li>Eget porttitor lorem</li>
+      </ol>
+    </div>
+    <div class="span3">
+      <h4>Definições</h4>
+      <p><code>&lt;dl&gt;</code></p>
+      <dl>
+        <dt>Listas de definição</dt>
+        <dd>Uma lista de definição é usada para listas de definição de termos, como um FAQ</dd>
+        <dt>Euismod</dt>
+        <dd>Vestibulum id ligula porta felis euismod semper eget lacinia odio sem nec elit.</dd>
+        <dd>Donec id elit non mi porta gravida at eget metus.</dd>
+        <dt>Malesuada porta</dt>
+        <dd>Etiam porta sem malesuada magna mollis euismod.</dd>
+      </dl>
+    </div>
+  </div><!-- /row -->
+
+
+  <!-- Code -->
+
+  <h2>Código <small>Inline e block</small></h2>
+  <table class="table table-bordered table-striped">
+    <thead>
+      <tr>
+        <th style="width: 190px;">Elemento</th>
+        <th>Resultado</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><code>&lt;code&gt;</code></td>
+        <td>Em uma linha de texto como esta seu código ficará assim <code>&lt;html&gt;</code></td>
+      </tr>
+      <tr>
+        <td><code>&lt;pre&gt;</code></td>
+        <td>
+<pre>&lt;div&gt;
+  &lt;h1&gt;Cabeçalho&lt;/h1&gt;
+  &lt;p&gt;Algo bem aqui…&lt;/p&gt;
+&lt;/div&gt;</pre>
+          <p><strong>Nota:</strong> Mantenha o código dentro da tag <code>&lt;pre&gt;</code> na esquerda, pois ele renderiza tabs</p>
+        </td>
+      </tr>
+      <tr>
+        <td><code>&lt;pre class="prettyprint"&gt;</code></td>
+        <td>
+        	<p>Usando o google-code-prettify, seus blocos de código de exemplo terão um visual diferenciado com sintaxe de código estilizada. Você pode declarar uma classe adicional para obter número de linhas</p>
+<pre class="prettyprint">&lt;div&gt;
+  &lt;h1&gt;cabecalho&lt;/h1&gt;
+  &lt;p&gt;algo aqui&lt;/p&gt;
+&lt;/div&gt;</pre>
+<pre class="prettyprint linenums">&lt;div&gt;
+  &lt;h1&gt;cabecalho&lt;/h1&gt;
+  &lt;p&gt;algo aqui&lt;/p&gt;
+&lt;/div&gt;</pre>
+          <p><a href="http://code.google.com/p/google-code-prettify/">Faça o download do google-code-prettify</a> e leia a documentação em <a href="http://google-code-prettify.googlecode.com/svn/trunk/README.html">how to use</a>.</p>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+
+  <!-- Labels -->
+  <h2>Notificações inline <small>para atenção especial</small></h2>
+  <table class="table table-bordered table-striped">
+    <thead>
+      <tr>
+        <th style="width: 190px;">Notificações</th>
+        <th>Markup</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>
+          <span class="label">Padrão</span>
+        </td>
+        <td>
+          <code>&lt;span class="label"&gt;padrão&lt;/span&gt;</code>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <span class="label success">novo</span>
+        </td>
+        <td>
+          <code>&lt;span class="label success"&gt;novo&lt;/span&gt;</code>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <span class="label warning">aviso</span>
+        </td>
+        <td>
+          <code>&lt;span class="label warning"&gt;Aviso&lt;/span&gt;</code>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <span class="label important">importante</span>
+        </td>
+        <td>
+          <code>&lt;span class="label important"&gt;importante}&lt;/span&gt;</code>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <span class="label notice">Notificação</span>
+        </td>
+        <td>
+          <code>&lt;span class="label notice"&gt;Notificação&lt;/span&gt;</code>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+
+</section>
+
+
+
+<!-- Tables
+================================================== -->
+<section id="tables">
+  <div class="page-header">
+    <h1>Tabelas <small>Para dados tabulares</small></h1>
+  </div>
+
+  <h2>Markup de uma tabela</h2>
+  <div class="row">
+    <div class="span8">
+      <table class="table table-bordered table-striped">
+        <thead>
+          <tr>
+            <th>Tag</th>
+            <th>Descrição</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>
+              <code>&lt;table&gt;</code>
+            </td>
+            <td>
+            	Elementos exibidos de uma forma tabular
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <code>&lt;thead&gt;</code>
+            </td>
+            <td>
+            	Elemento principal para cabecalhos de tabela para linhas (<code>&lt;tr&gt;</code>)
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <code>&lt;tbody&gt;</code>
+            </td>
+            <td>
+            	Container para elementos das linhas da tabela (<code>&lt;tr&gt;</code>) no seu corpo 
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <code>&lt;tr&gt;</code>
+            </td>
+            <td>
+            	Elemento pai para células da tabela (<code>&lt;td&gt;</code> ou <code>&lt;th&gt;</code>) que aparecem em uma única linha
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <code>&lt;td&gt;</code>
+            </td>
+            <td>
+              Padrão para célula da tabela
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <code>&lt;th&gt;</code>
+            </td>
+            <td>
+            	Célula da tabela especial para coluna (ou linha, dependendo do escopo)
+            	Deve estar dentro de um <code>&lt;thead&gt;</code>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <code>&lt;caption&gt;</code>
+            </td>
+            <td>
+            	Uma descrição do conteúdo que a tabela possui, especialmente útil para leitores de tela
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+    <div class="span4">
+<pre class="prettyprint linenums">
+&lt;table&gt;
+  &lt;thead&gt;
+    &lt;tr&gt;
+      &lt;th&gt;…&lt;/th&gt;
+      &lt;th&gt;…&lt;/th&gt;
+    &lt;/tr&gt;
+  &lt;/thead&gt;
+  &lt;tbody&gt;
+    &lt;tr&gt;
+      &lt;td&gt;…&lt;/td&gt;
+      &lt;td&gt;…&lt;/td&gt;
+    &lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;
+</pre>
+    </div>
+  </div>
+
+  <h2>Opções da tabela</h2>
+  <table class="table table-bordered table-striped">
+  <thead>
+      <tr>
+        <th>Nome</th>
+        <th>Classe</th>
+        <th>Descrição</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>Padrão</td>
+        <td class="muted">Nenhum</td>
+        <td>Sem estilo, somente colunas e linhas</td>
+      </tr>
+      <tr>
+        <td>Básico</td>
+        <td>
+          <code>.table</code>
+        </td>
+        <td>Somente linhas horizontais entre as linhas</td>
+      </tr>
+      <tr>
+        <td>Com borda</td>
+        <td>
+          <code>.table-bordered</code>
+        </td>
+        <td>Bordas arredondadas por volta da tabela</td>
+      </tr>
+      <tr>
+        <td>Tabela zebrada</td>
+        <td>
+          <code>.table-striped</code>
+        </td>
+        <td>Adicionar uma cor clara nos itens ímpares</td>
+      </tr>
+      <tr>
+        <td>Condensada</td>
+        <td>
+          <code>.table-condensed</code>
+        </td>
+        <td>Cortando o padding vertical ao meio, com todos <code>td</code> e <code>th</code></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <h2>Tabelas de exemplo</h2>
+
+  <h3>1. Estilos de tabela padrão</h3>
+  <div class="row">
+    <div class="span4">
+    	<p>Tabelas são automaticamente estilizadas com poucas bordas para manter a sua leitura e manter a estrutura</p>
+<pre class="prettyprint linenums">
+&lt;table class="table"&gt;
+  …
+&lt;/table&gt;</pre>
+    </div>
+    <div class="span8">
+      <table class="table">
+        <thead>
+          <tr>
+            <th>#</th>
+            <th>Primeiro nome</th>
+            <th>Último nome</th>
+            <th>Línguagem</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>1</td>
+            <td>Mark</td>
+            <td>Otto</td>
+            <td>CSS</td>
+          </tr>
+          <tr>
+            <td>2</td>
+            <td>Jacob</td>
+            <td>Thornton</td>
+            <td>Javascript</td>
+          </tr>
+          <tr>
+            <td>3</td>
+            <td>Stu</td>
+            <td>Dent</td>
+            <td>HTML</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+
+
+  <h3>2. Tabelas zebradas</h3>
+  <div class="row">
+    <div class="span4">
+    	<p>Deixe suas tabelas mais sofisticadas adicionando o estilo zebrada somente adicionando a classe <code>.table-striped</code> </p>
+      <p class="muted"><strong>Nota:</strong> Tabelas zebradas usam <code>:nth-child</code> que não funciona no IE7-IE8.</p>
+<pre class="prettyprint linenums" style="margin-bottom: 18px;">
+&lt;table class="table table-striped"&gt;
+  …
+&lt;/table&gt;</pre>
+    </div>
+    <div class="span8">
+      <table class="table table-striped">
+        <thead>
+          <tr>
+            <th>#</th>
+            <th>Primeiro nome</th>
+            <th>Último nome</th>
+            <th>Linguagem</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>1</td>
+            <td>Mark</td>
+            <td>Otto</td>
+            <td>CSS</td>
+          </tr>
+          <tr>
+            <td>2</td>
+            <td>Jacob</td>
+            <td>Thornton</td>
+            <td>Javascript</td>
+          </tr>
+          <tr>
+            <td>3</td>
+            <td>Stu</td>
+            <td>Dent</td>
+            <td>HTML</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+
+
+  <h3>3. Tabelas com bordas</h3>
+  <div class="row">
+    <div class="span4">
+    	<p>Adicione bordas em volta da tabela e bordas arredondadas para propósitos estéticos</p>
+<pre class="prettyprint linenums">
+&lt;table class="table table-bordered"&gt;
+  …
+&lt;/table&gt;</pre>
+    </div>
+    <div class="span8">
+      <table class="table table-bordered">
+        <thead>
+          <tr>
+            <th>#</th>
+           	<th>Primeiro nome</th>
+            <th>Último nome</th>
+            <th>Linguagem</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>1</td>
+            <td colspan="2">Mark Otto</td>
+            <td>CSS</td>
+          </tr>
+          <tr>
+            <td>2</td>
+            <td>Jacob</td>
+            <td>Thornton</td>
+            <td rowspan="2">Javascript</td>
+          </tr>
+          </tr>
+            <td>3</td>
+            <td>Stu</td>
+            <td>Dent</td>
+          </tr>
+          <tr>
+            <td>3</td>
+            <td>Brosef</td>
+            <td>Stalin</td>
+            <td>HTML</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+
+
+  <h3>4. Tabelas condensadas</h3>
+  <div class="row">
+    <div class="span4">
+    	<p>Deixe suas tabelas mais compactas adicionando a classe <code>.table-condensed</code> para cortar a célula do padding na tabela na metade</p>
+<pre class="prettyprint linenums" style="margin-bottom: 18px;">
+&lt;table class="table table-condensed"&gt;
+  …
+&lt;/table&gt;</pre>
+    </div>
+    <div class="span8">
+      <table class="table table-condensed">
+        <thead>
+          <tr>
+            <th>#</th>
+          	<th>Primeiro nome</th>
+            <th>Último nome</th>
+            <th>Linguagem</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>1</td>
+            <td>Mark</td>
+            <td>Otto</td>
+            <td>CSS</td>
+          </tr>
+          <tr>
+            <td>2</td>
+            <td>Jacob</td>
+            <td>Thornton</td>
+            <td>Javascript</td>
+          </tr>
+          <tr>
+            <td>3</td>
+            <td>Stu</td>
+            <td>Dent</td>
+            <td>HTML</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+
+
+
+  <h3>5. Combinando tudo</h3>
+  <div class="row">
+    <div class="span4">
+    	<p>Sinta-se livre para combinar qualquer das classes da tabela para conseguir diferentes efeitos estilizando com as classes disponíveis</p>
+<pre class="prettyprint linenums" style="margin-bottom: 18px;">
+&lt;table class="table table-striped table-bordered table-condensed"&gt;
+  ...
+&lt;/table&gt;</pre>
+    </div>
+    <div class="span8">
+      <table class="table table-striped table-bordered table-condensed">
+        <thead>
+          <tr>
+            <th>#</th>
+  					<th>Primeiro nome</th>
+						<th>Último nome</th>
+						<th>Linguagem</th>          
+					</tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>1</td>
+            <td>Mark</td>
+            <td>Otto</td>
+            <td>CSS</td>
+          </tr>
+          <tr>
+            <td>2</td>
+            <td>Jacob</td>
+            <td>Thornton</td>
+            <td>Javascript</td>
+          </tr>
+          <tr>
+            <td>3</td>
+            <td>Stu</td>
+            <td>Dent</td>
+            <td>HTML</td>
+          </tr>
+          <tr>
+            <td>4</td>
+            <td>Brosef</td>
+            <td>Stalin</td>
+            <td>HTML</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+</section>
+
+<!-- Boxes
+================================================== -->
+<section id="boxes">
+  <div class="page-header">
+    <h1>Boxes <small>Para agrupar informações</small></h1>
+  </div>
+  <div class="row">
+	  <div class="span7">
+	  	<h2>Box primário</h2>
+	  	<p>Um box primário contém uma estrutura semelhante para agrupar informações, oferencendo uma elegante caixa arredonada onde pode agrupar funcões internamente</p>
+	  	<h3>Exemplo</h3>
+	  	<div class="box primary">
+	  		<div class="box-header">
+					<h2>Título do box</h2>	  			
+	  		</div>
+	  		<div class="content">
+	  			<p>conteúdo</p>		
+	  		</div>
+	  	</div>
+	  </div>
+	  <div class="span5">
+	  	<h3>Markup:</h3>
+<pre class="prettyprint linenums">
+&lt;div class=&quot;box primary&quot;&gt;
+	&lt;div class=&quot;box-header&quot;&gt;
+		&lt;h2&gt;T&iacute;tulo do box&lt;/h2&gt;	  			
+	&lt;/div&gt;
+	&lt;div class=&quot;content&quot;&gt;
+		&lt;p&gt;conte&uacute;do&lt;/p&gt;		
+	&lt;/div&gt;
+&lt;/div&gt;
+</pre>
+	  </div>
+  </div>
+  <div class="row">
+	  <div class="span12">
+	  	<h3>Box primário com lista de ações</h3>
+	  	<p>O box primário também pode ser usado para criar um menu estilo dashboard, que poderia ficar assim:</p>
+	  	<h3>Exemplo</h3>
+	  	<div class="box primary">
+	  		<div class="box-header">
+					<h2>Cadastro</h2>	  			
+	  		</div>
+	  		<div class="content">
+	  			<ul class="menu unstyled">
+	  				<li>
+	  					<div class="menu-item">
+								<div class="view">
+		  						<a href="#">Item 1</a>
+		  					</div>
+		  					<div class="actions">
+									<a href="#" class="btn small"><span class="icon plus"></span> Ação 1</a>	  						
+		  					</div>	  						
+	  					</div>
+  					</li>
+	  				<li>
+	  					<div class="menu-item">
+								<div class="view">
+		  						<a href="#">Item 2</a>
+		  					</div>
+		  					<div class="actions">
+									<a href="#" class="btn small"><span class="icon plus"></span> Ação 2</a>
+									<a href="#" class="btn small danger"><span class="icon remove"></span> Ação 2.2</a>	  						
+		  					</div>	  						
+	  					</div>
+  					</li>  					
+	  			</ul>
+	  		</div>
+	  	</div>
+	  </div>
+    </div>
+	  <div class="row">
+	  	<div class="span12">
+	  	<h3>Markup:</h3>
+<pre class="prettyprint linenums">
+&lt;div class=&quot;box primary&quot;&gt;
+	&lt;div class=&quot;box-header&quot;&gt;
+		&lt;h2&gt;Cadastro&lt;/h2&gt;	  			
+	&lt;/div&gt;
+	&lt;div class=&quot;content&quot;&gt;
+		&lt;ul class=&quot;menu unstyled&quot;&gt;
+			&lt;li&gt;
+				&lt;div class=&quot;menu-item&quot;&gt;
+					&lt;div class=&quot;view&quot;&gt;
+						&lt;a href=&quot;#&quot;&gt;Item 1&lt;/a&gt;
+					&lt;/div&gt;
+					&lt;div class=&quot;actions&quot;&gt;
+						&lt;a href=&quot;#&quot; class=&quot;btn small&quot;&gt;&lt;span class=&quot;icon plus&quot;&gt;&lt;/span&gt;A&ccedil;&atilde;o 1&lt;/a&gt;	  						
+					&lt;/div&gt;	  						
+				&lt;/div&gt;
+			&lt;/li&gt;
+		&lt;/ul&gt;
+	&lt;/div&gt;
+&lt;/div&gt;
+</pre>
+			</div>
+		</div>
+		<div class="row">
+			<div class="span12">
+				<h2>Box secundário</h2>
+				<p>O box secundário é usado para agrupar conteúdos maiores, como formulários. A diferença deste box em relação ao primário é que ele tem um espaçamento interno para os títulos e não possui opção de menu de ações</p>
+				<p>Além disto, neste box é possível ter um footer onde é possível usar botões de ações para dar contexto no formulário</p>
+				<div class="box secondary">
+					<form class="form-horizontal">
+						<div class="box-header">
+							<h3>Titulo de um formulário</h3>							
+						</div>
+						<div class="content">
+			           <div class="control-group">
+			            <label class="control-label" for="input01">Input de texto</label>
+			            <div class="controls">
+			              <input type="text" class="input-xlarge" id="input01">
+			              <p class="help-block">Um input html5 está disponível além do texto livre</p>
+			            </div>
+			          </div>
+			          <div class="control-group">
+			            <label class="control-label" for="optionsCheckbox">Checkbox</label>
+			            <div class="controls">
+			              <label class="checkbox">
+			                <input type="checkbox" id="optionsCheckbox" value="option1">
+			                Opção um é esta
+			              </label>
+			            </div>
+			          </div>
+			          <div class="box-header">
+									<h3>Titulo de um formulário em outra secao</h3>							
+								</div>
+			          <div class="control-group">
+			            <label class="control-label" for="input01">Input de texto 2</label>
+			            <div class="controls">
+			              <input type="text" class="input-xlarge" id="input01">
+			            </div>
+			          </div>
+						</div>
+						<div class="box-footer">
+							<div class="actions">
+								<a class="btn primary large">Sucesso</a>
+								<a class="btn danger large">Cancelar</a>	
+							</div>
+						</div>
+					</form>					
+				</div>
+				<h2>Markup</h2>
+<pre class="prettyprint linenums">
+&lt;div class=&quot;box secondary&quot;&gt;
+	&lt;form class=&quot;form-horizontal&quot;&gt;
+		&lt;div class=&quot;box-header&quot;&gt;
+			&lt;h3&gt;Titulo de um formul&aacute;rio&lt;/h3&gt;							
+		&lt;/div&gt;
+		&lt;div class=&quot;content&quot;&gt;
+         &lt;div class=&quot;control-group&quot;&gt;
+          &lt;label class=&quot;control-label&quot; for=&quot;input01&quot;&gt;Input de texto&lt;/label&gt;
+          &lt;div class=&quot;controls&quot;&gt;
+            &lt;input type=&quot;text&quot; class=&quot;input-xlarge&quot; id=&quot;input01&quot;&gt;
+            &lt;p class=&quot;help-block&quot;&gt;Um input html5 est&aacute; dispon&iacute;vel al&eacute;m do texto livre&lt;/p&gt;
+          &lt;/div&gt;
+        &lt;/div&gt;
+        &lt;div class=&quot;control-group&quot;&gt;
+          &lt;label class=&quot;control-label&quot; for=&quot;optionsCheckbox&quot;&gt;Checkbox&lt;/label&gt;
+          &lt;div class=&quot;controls&quot;&gt;
+            &lt;label class=&quot;checkbox&quot;&gt;
+              &lt;input type=&quot;checkbox&quot; id=&quot;optionsCheckbox&quot; value=&quot;option1&quot;&gt;
+              Op&ccedil;&atilde;o um &eacute; esta
+            &lt;/label&gt;
+          &lt;/div&gt;
+        &lt;/div&gt;
+        &lt;div class=&quot;box-header&quot;&gt;
+					&lt;h3&gt;Titulo de um formul&aacute;rio em outra secao&lt;/h3&gt;							
+				&lt;/div&gt;
+        &lt;div class=&quot;control-group&quot;&gt;
+          &lt;label class=&quot;control-label&quot; for=&quot;input01&quot;&gt;Input de texto 2&lt;/label&gt;
+          &lt;div class=&quot;controls&quot;&gt;
+            &lt;input type=&quot;text&quot; class=&quot;input-xlarge&quot; id=&quot;input01&quot;&gt;
+          &lt;/div&gt;
+        &lt;/div&gt;
+		&lt;/div&gt;
+		&lt;div class=&quot;box-footer&quot;&gt;
+			&lt;div class=&quot;actions&quot;&gt;
+				&lt;a class=&quot;btn primary large&quot;&gt;Sucesso&lt;/a&gt;
+				&lt;a class=&quot;btn danger large&quot;&gt;Cancelar&lt;/a&gt;	
+			&lt;/div&gt;
+		&lt;/div&gt;
+	&lt;/form&gt;					
+&lt;/div&gt;	
+</pre>				
+			</div>
+		</div>
+</section>  
+
+<!-- Forms
+================================================== -->
+<section id="forms">
+  <div class="page-header">
+    <h1>Formulários</h1>
+  </div>
+  <div class="row">
+    <div class="span4">
+      <h2>HTML e CSS flexíveis</h2>
+      <p>A melhor coisa sobre os forms no GloboCMS Bootstrap é que todos os inputs e controles de formulários ficam bem apresentáveis independente de como você os controlas no markup. Não é necessário nenhum HTML desnecessário</p>
+      <p>Para layouts de formulários mais complexos há classes para fácil estilização e bind de eventos, para toda a etapa de envio de informações</p>
+    </div>
+    <div class="span4">
+      <h2>Quatro layouts inclusos</h2>
+      <p>O Bootstrap vem com quatro tipos de layout para formulários</p>
+      <ul>
+        <li>Vertical (padrão)</li>
+        <li>Busca</li>
+        <li>Inline</li>
+        <li>Horizontal</li>
+      </ul>
+      <p>Diferentes tipos de form para layouts requer algum markup extra, mas os controles permanecem com o mesmo comportamento</p>
+    </div>
+    <div class="span4">
+    	<h2>Controle dos estados e mais</h2>
+    	<p>Os forms do Bootstrap incluem estilos para todos os controles básicos como input, textarea, e select. Mas além disto ele contem componentes customizados como inputs informativos e suporte para lista de checkboxes</p>
+      <p>Estados como erro, aviso, e sucesso são incluídos para cada controle de formulário. Também é incluído estilos para controles desabilitados</p>
+    </div>
+  </div>
+
+  <h2>Quatro tipos de forms</h2>
+  <p>O Bootstrap tem um markup simples para os quatro estilos de form</p>
+  <table class="table table-bordered table-striped">
+    <thead>
+      <tr>
+        <th>Nome</th>
+        <th>Classe</th>
+        <th>Descrição</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <th>Vertical (padrão)</th>
+        <td><code>.form-vertical</code> <span class="muted">(Não obrigatório)</span></td>
+        <td>Estagnado, alinhado a esquerda e os labels sobre os elementos</td>
+      </tr>
+      <tr>
+        <th>Horizontal</th>
+        <td><code>.form-horizontal</code></td>
+        <td>Flutuando a esquerda, alinhado a direita e labels na mesma linha dos elementos do formulário</td>
+      </tr>
+      <tr>
+        <th>Inline</th>
+        <td><code>.form-inline</code></td>
+        <td>Alinhado a esquerda com um label e controles dispostos de uma forma inline-block para um estilo compacto</td>
+      </tr>
+      <tr>
+        <th>Busca</th>
+        <td><code>.form-search</code></td>
+        <td>Input de texto arredondado para uma busca típica para uma busca estética</td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <h2>Forms de exemplo <small>usando somente controles de formulário, sem markup extra</small></h2>
+  <h3>Form básico</h3>
+  <div class="row">
+    <div class="span3">
+    	<p>Com a versão 2.0, temos um estilo mais limpo e inteligente para estilos do formulário mais inteligentes. Sem markup extra, só controle de formulários</p>
+    </div>
+    <div class="span9">
+      <form class="well">
+        <label>Nome do label</label>
+        <input type="text" class="span3" placeholder="Digite algo"> <span class="help-inline">Texto de ajuda associado!</span>
+        <label class="checkbox">
+          <input type="checkbox"> me marque!
+        </label>
+        <button type="submit" class="btn">Enviar</button>
+      </form>
+    </div>
+  </div> <!-- /row -->
+  <h3>Formulário de busca</h3>
+  <div class="row">
+    <div class="span3">
+    	<p>Refletindo o estilo default do WebKit, simplesmente adicione <code>.form-search</code> para campos de busca arredondados</p>
+    </div>
+    <div class="span9">
+      <form class="well form-search">
+        <input type="text" class="input-medium search-query">
+        <button type="submit" class="btn">Busca</button>
+      </form>
+    </div>
+  </div> <!-- /row -->
+  <h3>Formulários inline</h3>
+  <div class="row">
+    <div class="span3">
+    	<p>Inputs são por definição elementos Block. Para <code>.form-inline</code> e <code>.form-horizontal</code>, pode usar inline-block</p>
+    </div>
+    <div class="span9">
+      <form class="well form-search">
+        <input type="text" class="input-small" placeholder="Email">
+        <input type="password" class="input-small" placeholder="Senha">
+        <button type="submit" class="btn">Ir</button>
+      </form>
+    </div>
+  </div><!-- /row -->
+
+  <br>
+
+  <h2>Form Horizontal</h2>
+  <div class="row">
+    <div class="span8">
+      <form class="form-horizontal">
+        <fieldset>
+          <legend>Elementos suportados pelo Bootstrap</legend>
+          <div class="control-group">
+            <label class="control-label" for="input01">Input de texto</label>
+            <div class="controls">
+              <input type="text" class="input-xlarge" id="input01">
+              <p class="help-block">Um input html5 está disponível além do texto livre</p>
+            </div>
+          </div>
+          <div class="control-group">
+            <label class="control-label" for="optionsCheckbox">Checkbox</label>
+            <div class="controls">
+              <label class="checkbox">
+                <input type="checkbox" id="optionsCheckbox" value="option1">
+                Opção um é esta
+              </label>
+            </div>
+          </div>
+          <div class="control-group">
+            <label class="control-label" for="select01">Select</label>
+            <div class="controls">
+              <select id="select01">
+                <option>1</option>
+                <option>2</option>
+                <option>3</option>
+                <option>4</option>
+                <option>5</option>
+              </select>
+            </div>
+          </div>
+          <div class="control-group">
+            <label class="control-label" for="multiSelect">Multi select</label>
+            <div class="controls">
+              <select multiple="multiple" id="multiSelect">
+                <option>1</option>
+                <option>2</option>
+                <option>3</option>
+                <option>4</option>
+                <option>5</option>
+              </select>
+            </div>
+          </div>
+          <div class="control-group">
+            <label class="control-label" for="fileInput">Input de arquivo</label>
+            <div class="controls">
+              <input class="input-file" id="fileInput" type="file">
+            </div>
+          </div>
+          <div class="control-group">
+            <label class="control-label" for="textarea">Textarea</label>
+            <div class="controls">
+              <textarea class="input-xlarge" id="textarea" rows="3"></textarea>
+            </div>
+          </div>
+          <div class="form-actions">
+            <button type="submit" class="btn primary">Salvar modificações</button>
+            <button type="reset" class="btn">cancelar</button>
+          </div>
+        </fieldset>
+        <fieldset>
+          <legend>SelectBox Personalizado</legend>
+          <p>Há a possibilidade de deixar os selectboxes personalizados, usando CSS e o <a target="_blank" href="http://info.wsisiz.edu.pl/~suszynsk/jQuery/demos/jquery-selectbox/">plugin do jQuery custom selectbox</a></p>
+          <div class="control-group">
+            <label class="control-label" for="multiSelect">Select personalizado</label>
+            <div class="controls">
+              <select id="selectCustom" class="custom-select">
+                <option>personalizado 1</option>
+                <option>personalizado 2</option>
+                <option>personalizado 3</option>
+                <option>personalizado 4</option>
+                <option>personalizado 5</option>
+              </select>
+            </div>
+            <h3>Desabilitado</h3>
+            <p>Para desabilitar, basta chamar o método disabled do plugin <code>$('#selectCustomDisabled').selectbox('disable');</code></p>
+            <div class="control-group">
+            <label class="control-label" for="multiSelect">Select personalizado</label>
+            <div class="controls">
+              <select id="selectCustomDisabled" disabled class="custom-select">
+                <option>personalizado 1</option>
+                <option>personalizado 2</option>
+                <option>personalizado 3</option>
+                <option>personalizado 4</option>
+                <option>personalizado 5</option>
+              </select>
+            </div>
+            <h3>Select com erro</h3>
+            <p>Para acionar o estado de erro, basta adicionar a classe <code>error</code> no control group assim como é feito com um select nativo</p>
+            <div class="control-group error">
+            <label class="control-label" for="multiSelect">Select com erro</label>
+            <div class="controls">
+              <select id="selectCustomError" class="custom-select span4">
+                <option>personalizado 1</option>
+                <option>personalizado 2</option>
+                <option>personalizado 3</option>
+                <option>personalizado 4</option>
+                <option>personalizado 5</option>
+              </select>
+              <span class="help-inline">Algo deu errado</span>
+            </div>
+          </div>
+          <p>Para deixá-lo desta forma, inclua o plugin selectbox e use o seguinte código:</p>
+<pre class="prettyprint linenums">
+$('.select-custom').selectbox();
+</pre>          
+				<p>E no markup:</p>
+<pre class="prettyprint linenums">
+&lt;div class=&quot;control-group&quot;&gt;
+  &lt;label class=&quot;control-label&quot; for=&quot;multiSelect&quot;&gt;Select personalizado&lt;/label&gt;
+  &lt;div class=&quot;controls&quot;&gt;
+    &lt;select id=&quot;selectCustom&quot; class=&quot;select-custom&quot;&gt;
+      &lt;option&gt;personalizado 1&lt;/option&gt;
+      &lt;option&gt;personalizado 2&lt;/option&gt;
+      &lt;option&gt;personalizado 3&lt;/option&gt;
+      &lt;option&gt;personalizado 4&lt;/option&gt;
+      &lt;option&gt;personalizado 5&lt;/option&gt;
+    &lt;/select&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+</pre>				
+        </fieldset>
+				<fieldset>
+          <legend>Checkbox Personalizado</legend>
+          <p>Há a possibilidade também de deixar os checkboxes personalizados, usando CSS e o <a target="_blank" href="https://github.com/filamentgroup/jQuery-Custom-Input">plugin do jQuery custom input</a></p>
+           <div class="control-group">
+            <div class="controls">
+              <div class="checkbox">
+                <input type="checkbox" id="optionsCustomCheckbox" value="option1" class="custom-checkbox">
+                <label for="optionsCustomCheckbox">Opção um de um checkbox personalizado</label>
+              </div>
+            </div>
+          </div>
+          <p>Para deixá-lo desta forma, inclua o plugin customInput e use o seguinte código:</p>
+<pre class="prettyprint linenums">
+$('.custom-checkbox').customInput();
+</pre>          
+				<p>E no markup:</p>
+<pre class="prettyprint linenums">
+&lt;div class=&quot;control-group&quot;&gt;
+  &lt;div class=&quot;controls&quot;&gt;
+    &lt;div class=&quot;checkbox&quot;&gt;
+      &lt;input type=&quot;checkbox&quot; id=&quot;optionsCustomCheckbox&quot; value=&quot;option1&quot; class=&quot;custom-checkbox&quot;&gt;
+      &lt;label for=&quot;optionsCustomCheckbox&quot;&gt;Op&ccedil;&atilde;o um de um checkbox personalizado&lt;/label&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+</pre>				
+        </fieldset>
+      </form>
+    </div>
+    <div class="span4">
+      <div class="form-docs">
+        <h3>O que está incluso</h3>
+        <p>Mostrar na esquerda todos os controles padrões que é suportado. Aqui está uma lista</p>
+        <ul>
+          <li>text inputs(texto, password)</li>
+          <li>checkbox</li>
+          <li>radio</li>
+          <li>select</li>
+          <li>select múltiplo</li>
+          <li>input de arquivo</li>
+          <li>textarea</li>
+        </ul>
+        <hr>
+      </div>
+    </div>
+  </div>
+
+  <br>
+
+  <div class="row">
+    <div class="span8">
+      <form class="form-horizontal">
+        <fieldset>
+          <legend>Estados de controle de formulário</legend>
+          <div class="control-group">
+            <label class="control-label" for="focusedInput">Input com foco</label>
+            <div class="controls">
+              <input class="input-xlarge focused" id="focusedInput" type="text" value="isto está focado">
+            </div>
+          </div>
+          <div class="control-group">
+            <label class="control-label" for="disabledInput">Input desabilitado</label>
+            <div class="controls">
+              <input class="input-xlarge disabled" id="disabledInput" type="text" placeholder="Input desabilitado aqui" disabled>
+            </div>
+          </div>
+           <div class="control-group">
+            <label class="control-label" for="select01">Select</label>
+            <div class="controls">
+              <select>
+                <option>1</option>
+                <option>2</option>
+                <option>3</option>
+                <option>4</option>
+                <option>5</option>
+              </select>
+            </div>
+          </div>
+          <div class="control-group">
+            <label class="control-label" for="optionsCheckbox2">Checkbox desabilitado</label>
+            <div class="controls">
+              <label class="checkbox">
+                <input type="checkbox" id="optionsCheckbox2" value="option1" disabled>
+                Este é um checkbox desabilitado
+              </label>
+            </div>
+          </div>
+          <div class="control-group warning">
+            <label class="control-label" for="inputError">Input com aviso</label>
+            <div class="controls">
+              <input type="text" id="inputError">
+              <span class="help-inline">Alguma coisa deu errado</span>
+            </div>
+          </div>
+          <div class="control-group error">
+            <label class="control-label" for="inputError">Input com erro</label>
+            <div class="controls">
+              <input type="text" id="inputError">
+              <span class="help-inline">Por favor, corrija o erro</span>
+            </div>
+          </div>
+          <div class="control-group success">
+            <label class="control-label" for="inputError">Input com sucesso</label>
+            <div class="controls">
+              <input type="text" id="inputError">
+              <span class="help-inline">Uhuuu!</span>
+            </div>
+          </div>
+          <div class="control-group success">
+            <label class="control-label" for="selectError">Select com sucesso</label>
+            <div class="controls">
+              <select id="selectError">
+                <option>1</option>
+                <option>2</option>
+                <option>3</option>
+                <option>4</option>
+                <option>5</option>
+              </select>
+              <span class="help-inline">Uhu!</span>
+            </div>
+          </div>
+          <div class="form-actions">
+            <button type="submit" class="btn primary">Salvar mudanças</button>
+            <button type="reset" class="btn">Cancelar</button>
+          </div>
+        </fieldset>
+      </form>
+    </div>
+    <div class="span4">
+      <div class="form-docs">
+      	<h3>Redesenho dos estados do browser</h3>
+      	<p>As funcionalidades dos estilos do Bootstrap para estados desabilitados. Foi removido o outline padrão do Webkit e aplicamos um box-shadow no lugar do <code>:focus</code></p>
+        <hr>
+        <h3>Validação de formulários</h3>
+        <p>Foi incluído também validação para erros, avisos e sucesso. Para usar, adicione a classe ao <code>.control-group</code> correspondente</p>
+<pre class="prettyprint linenums">
+&lt;fieldset
+  class="control-group error"&gt;
+  …
+&lt;/fieldset&gt;
+</pre>
+      </div>
+    </div>
+  </div>
+
+  <br>
+
+  <div class="row">
+    <div class="span8">
+      <form class="form-horizontal">
+        <fieldset>
+          <legend>Estendendo controles de formulários</legend>
+          <div class="control-group">
+            <label class="control-label">Tamanhos dos formulários</label>
+            <div class="controls docs-input-sizes">
+              <input class="span2" type="text" placeholder=".span2">
+              <input class="span3" type="text" placeholder=".span3">
+              <input class="span4" type="text" placeholder=".span4">
+              <p class="help-block">Use as mesmas classes <code>.span*</code> do sistema de grid para controlar o tamanho</p>
+            </div>
+          </div>
+          <div class="control-group">
+            <label class="control-label" for="prependedInput">Texto inserido antes</label>
+            <div class="controls">
+              <div class="input-prepend">
+                <span class="add-on">@</span>
+                <input class="span2" id="prependedInput" size="16" type="text">
+              </div>
+              <p class="help-block">Aqui está um exemplo de texto de ajuda</p>
+            </div>
+          </div>
+          <div class="control-group">
+            <label class="control-label" for="appendedInput">Texto pós</label>
+            <div class="controls">
+              <div class="input-append">
+                <input class="span2" id="appendedInput" size="16" type="text">
+                <span class="add-on">.00</span>
+              </div>
+              <p class="help-block">Aqui está mais um texto de ajuda</p>
+            </div>
+          </div>
+          <div class="control-group">
+            <label class="control-label" for="inlineCheckboxes">Checkbox inline</label>
+            <div class="controls">
+              <label class="checkbox inline">
+                <input type="checkbox" id="inlineCheckbox1" value="option1"> 1
+              </label>
+              <label class="checkbox inline">
+                <input type="checkbox" id="inlineCheckbox2" value="option2"> 2
+              </label>
+              <label class="checkbox inline">
+                <input type="checkbox" id="inlineCheckbox3" value="option3"> 3
+              </label>
+            </div>
+          </div>
+          <div class="control-group">
+            <label class="control-label" for="optionsCheckboxList">Checkboxes</label>
+            <div class="controls">
+              <label class="checkbox">
+                <input type="checkbox" name="optionsCheckboxList1" value="option1">
+                Opção 1 incluida
+              </label>
+              <label class="checkbox">
+                <input type="checkbox" name="optionsCheckboxList2" value="option2">
+                Opção 2 incluída
+              </label>
+              <label class="checkbox">
+                <input type="checkbox" name="optionsCheckboxList3" value="option3">
+                Opção 3 incluída
+              </label>
+              <p class="help-text"><strong>Nota:</strong> Labels em volta dos elementos aumenta a área de clique.</p>
+            </div>
+          </div>
+          <div class="control-group">
+            <label class="control-label">Botões radio</label>
+            <div class="controls">
+              <label class="radio">
+                <input type="radio" id="optionsRadios1" value="option1" checked>
+                Opção 1 inclusa
+              </label>
+              <label class="radio">
+                <input type="radio" id="optionsRadios2" value="option2">
+                Opção 2 inclusa
+              </label>
+            </div>
+          </div>
+          <div class="form-actions">
+            <button type="submit" class="btn primary">Salvar modificações</button>
+            <button type="reset" class="btn">Cancelar</button>
+          </div>
+        </fieldset>
+      </form>
+    </div>
+    <div class="span4">
+      <div class="form-docs">
+      	<h3>Inputs com textos de auxílio</h3>
+      	<p>Grupos de input de auxílio é uma maneira fácil de dar mais contexto aos seus inputs. Ótimos exemplos incluem o sinal @ para o twitter e o símbolo $ para moedas</p>
+        <hr>
+        <h3>Checkboxes e radios</h3>
+        <p>O Bootstrap requer markup extra em volta dos checkboxes e radio buttons para deixá-los estagnados. Agora, é uma maneira simples de repetir <code>&lt;label class="checkbox"&gt;</code> que circunda os <code>&lt;input type="checkbox"&gt;</code> </p>
+        <p>Checkboxes inline e radios também são suportados. Basta adicionar <code>.inline</code> em cada <code>.checkbox</code> ou <code>.radio</code> e você está pronto</p>
+      </div>
+    </div>
+  </div><!-- /row -->
+</section>
+
+
+
+<section id="buttons">
+  <div class="page-header">
+    <h1>Botões</h1>
+  </div>
+  <table class="table table-bordered table-striped">
+    <thead>
+      <tr>
+        <th>Botões</th>
+        <th>Classes</th>
+        <th>Descrição</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="btn" href="#">Padrão</a></td>
+        <td><code>.btn</code></td>
+        <td>Botão padrão cinza com gradiente</td>
+      </tr>
+      <tr>
+        <td><a class="btn primary" href="#">Primário</a></td>
+        <td><code>.primary</code></td>
+        <td>Provê um peso visual e identificação de botão que corresponde a uma ação primária</td>
+      </tr>
+      <tr>
+        <td><a class="btn info" href="#">Informações</a></td>
+        <td><code>.info</code></td>
+        <td>Usado como alternaativa para o estilo padrão</td>
+      </tr>
+      <tr>
+        <td><a class="btn success" href="#">Sucesso</a></td>
+        <td><code>.success</code></td>
+        <td>Indica o sucesso de uma ação positiva</td>
+      </tr>
+      <tr>
+        <td><a class="btn danger" href="#">Perigo</a></td>
+        <td><code>.danger</code></td>
+        <td>Indica um perigo e uma ação perigosa a ser feita</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <div class="row">
+    <div class="span4">
+      <h3>Botões e ações</h3>
+      <p>Como convenção, botões devem ser usado par ações enquanto hyperlinks devem ser usados para objetos. Por exemplo, um botão de Download deveria ser um botão enquanto "Atividades recentes poderia ser um link" </p>
+    </div>
+    <div class="span4">
+      <h3>Âncoras e formulários</h3>
+      <p>Estilos de botões podem ser aplicados em qualquer coisa com o <code>.btn</code>. Entretanto, tipicamente você irá querer aplicar somente em elementos <code>&lt;a&gt;</code> e <code>&lt;button&gt;</code></p>
+    </div>
+    <div class="span4">
+    	<p><strong>Nota:</strong> Todos botões devem incluir a classe <code>.btn</code>. Estilos de botões podem ser aplicados em elementos <code>&lt;button&gt;</code> e <code>&lt;a&gt;</code> para consistência</p>
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="span4">
+      <h3>Tamanhos múltiplos</h3>
+      <p>Botões maiores ou menores? A gente tem!</p>
+      <p>
+        <a href="#" class="btn large primary">Ação Primária</a>
+        <a href="#" class="btn large">Ações</a>
+      </p>
+      <p>
+        <a href="#" class="btn small primary">Ação primária</a>
+        <a href="#" class="btn small">Ações</a>
+      </p>
+    </div>
+    <div class="span8">
+      <h3>Estados desabilitados</h3>
+      <p>Para botões que estão desabilitados pela aplicação por alguma razão, use o estado disbale. Há uma classe <code>.disabled</code> para links e <code>:disabled</code> para elementos <code>&lt;button&gt;</code></p>
+      <p>
+        <a href="#" class="btn large primary disabled">Ação Primária</a>
+        <a href="#" class="btn large disabled">Ação</a>
+      </p>
+      <p>
+        <button class="btn large primary disabled" disabled="disabled">Ação Primária</button>
+        <button class="btn large" disabled>Ação</button>
+      </p>
+    </div>
+  </div>
+
+  <br>
+
+</section>
+
+
+
+<!-- Icons
+================================================== -->
+<section id="icons">
+  <div class="page-header">
+    <h1>Ícones <small> do <a href="http://glyphicons.com" target="_blank">Glyphicons</a></small></h1>
+  </div>
+  <div class="row">
+    <div class="span3">
+      <div class="the-icons">
+        <i class="icon glass"></i>
+        <i class="icon music"></i>
+        <i class="icon search"></i>
+        <i class="icon envelope"></i>
+        <i class="icon heart"></i>
+        <i class="icon star"></i>
+        <i class="icon star-empty"></i>
+        <i class="icon user"></i>
+        <i class="icon film"></i>
+        <i class="icon th-large"></i>
+        <i class="icon th"></i>
+        <i class="icon th-list"></i>
+        <i class="icon ok"></i>
+        <i class="icon remove"></i>
+        <i class="icon zoom-in"></i>
+        <i class="icon zoom-out"></i>
+        <i class="icon off"></i>
+        <i class="icon signal"></i>
+        <i class="icon cog"></i>
+        <i class="icon trash"></i>
+
+        <i class="icon home"></i>
+        <i class="icon file"></i>
+        <i class="icon time"></i>
+      </div>
+    </div>
+    <div class="span3">
+      <div class="the-icons">
+        <i class="icon road"></i>
+        <i class="icon download-alt"></i>
+        <i class="icon download"></i>
+        <i class="icon upload"></i>
+        <i class="icon inbox"></i>
+        <i class="icon play-circle"></i>
+        <i class="icon repeat"></i>
+        <i class="icon refresh"></i>
+        <i class="icon calendar"></i>
+        <i class="icon lock"></i>
+        <i class="icon flag"></i>
+        <i class="icon headphones"></i>
+        <i class="icon volume-off"></i>
+        <i class="icon volume-down"></i>
+        <i class="icon volume-up"></i>
+        <i class="icon qrcode"></i>
+        <i class="icon barcode"></i>
+
+        <i class="icon tag"></i>
+        <i class="icon tags"></i>
+        <i class="icon book"></i>
+        <i class="icon bookmark"></i>
+        <i class="icon print"></i>
+        <i class="icon camera"></i>
+      </div>
+    </div>
+    <div class="span3">
+      <div class="the-icons">
+        <i class="icon font"></i>
+        <i class="icon bold"></i>
+        <i class="icon italic"></i>
+        <i class="icon text-height"></i>
+        <i class="icon text-width"></i>
+        <i class="icon align-left"></i>
+        <i class="icon align-center"></i>
+        <i class="icon align-right"></i>
+        <i class="icon align-justify"></i>
+        <i class="icon list"></i>
+        <i class="icon indent-left"></i>
+        <i class="icon indent-right"></i>
+        <i class="icon facetime-video"></i>
+        <i class="icon picture"></i>
+
+        <i class="icon pencil"></i>
+        <i class="icon map-marker"></i>
+        <i class="icon adjust"></i>
+        <i class="icon tint"></i>
+        <i class="icon edit"></i>
+        <i class="icon share"></i>
+        <i class="icon check"></i>
+        <i class="icon move"></i>
+        <i class="icon step-backward"></i>
+      </div>
+    </div>
+    <div class="span3">
+      <div class="the-icons">
+        <i class="icon fast-backward"></i>
+        <i class="icon backward"></i>
+        <i class="icon play"></i>
+        <i class="icon pause"></i>
+        <i class="icon stop"></i>
+        <i class="icon forward"></i>
+        <i class="icon fast-forward"></i>
+        <i class="icon step-forward"></i>
+        <i class="icon eject"></i>
+        <i class="icon chevron-left"></i>
+        <i class="icon chevron-right"></i>
+
+        <i class="icon arrow-left"></i>
+        <i class="icon arrow-right"></i>
+        <i class="icon arrow-up"></i>
+        <i class="icon arrow-down"></i>
+        <i class="icon share-alt"></i>
+        <i class="icon resize-full"></i>
+        <i class="icon resize-small"></i>
+        <i class="icon plus"></i>
+        <i class="icon minus"></i>
+        <i class="icon asterisk"></i>
+      </div>
+    </div>
+  </div>
+  <div class="alert alert-info">
+  	<strong>Atenção</strong> No hover colocamos um background só para sabermos o tamanho do botão. No uso dele em botões isto não acontece.
+  </div>
+
+  <br>
+
+  <div class="row">
+    <div class="span4">
+      <h3>Construído com sprite</h3>
+      <p>Ao invés de fazer um request para cada imagem, usamos um sprite onde há todas as imagens e assim usamos <code>background-position</code></p>
+      <p><a href="http://glyphicons.com" target="_blank">Glyphicons</a> é uma biblioteca open source de ícones</p>
+    </div>
+    <div class="span4">
+      <h3>Como usar</h3>
+      <p>No Bootstrap 2.0, optamos por usar uma tag <code>&lt;i&gt;</code> para todos ícones com a classe base <code>.icon</code></p>
+<pre class="prettyprint linenums">
+&lt;i class="icon search"&gt;&lt;/i&gt;
+</pre>
+    </div>
+    <div class="span4">
+      <h3>Casos de uso</h3>
+      <p>Ícones são ótimos, mas onde usá-los?</p>
+      <ul>
+        <li>Apelo visual para navegação nas laterais</li>
+        <li>Navegação puramente orientada em ícones</li>
+        <li>Para explicitar ações do botão</li>
+        <li>Contexto do destino do usuário</li>
+      </ul>
+    </div>
+  </div>
+
+  <h3>Exemplos</h3>
+  <div class="row">
+    <div class="span4">
+      <p>Use para botões e para botões no estilo barra de ferramentas</p>
+      <p>
+        <a class="btn" href="#"><i class="icon refresh"></i> Atualizar</a>
+        <a class="btn" href="#"><i class="icon cog"></i> Configurações</a>
+      </p>
+      <div class="btn-toolbar">
+        <div class="btn-group">
+          <a class="btn" href="#"><i class="icon font"></i></a>
+          <a class="btn" href="#"><i class="icon bold"></i></a>
+          <a class="btn" href="#"><i class="icon italic"></i></a>
+        </div>
+        <div class="btn-group">
+          <a class="btn" href="#"><i class="icon align-left"></i></a>
+          <a class="btn" href="#"><i class="icon align-center"></i></a>
+          <a class="btn" href="#"><i class="icon align-right"></i></a>
+          <a class="btn" href="#"><i class="icon align-justify"></i></a>
+        </div>
+      </div>
+    </div>
+    <div class="span3">
+      <p>Ou use para navegação</p>
+      <div class="well" style="padding: 8px 0;">
+        <ul class="nav list">
+          <li class="active"><a href="#"><i class="icon home"></i> Home</a></li>
+          <li><a href="#"><i class="icon book"></i> Biblioteca</a></li>
+          <li><a href="#"><i class="icon pencil"></i> Aplicação</a></li>
+        </ul>
+      </div> <!-- /well -->
+    </div>
+  </div>
+</section>
+
+     <!-- Footer
+      ================================================== -->
+      <footer class="footer">
+        <p class="pull-right"><a href="#">Voltar ao topo</a></p>
+        <p>Este é um fork do twitter boostrap construído para o rápido desenvolvimento de componentes de interface para a Globo.com</p>
+        <p>Desenvolvido pelo <a href="http://twitter.com/twitter" target="_blank">@twitter</a> por <a href="http://twitter.com/mdo" target="_blank">@mdo</a> e <a href="http://twitter.com/fat" target="_blank">@fat</a>.</p>
+				<p>O fork é mantido por <a href="http://twitter.com/alexanmtz" target="_blank">Alexandre Magno</a></p>
+        <p>Licensiado pela <a href="http://www.apache.org/licenses/LICENSE-2.0" target="_blank">Apache License v2.0</a>. Documentação licenciada sob <a href="http://creativecommons.org/licenses/by/3.0/">CC BY 3.0</a>.</p>
+        <p>Ícones do <a href="http://glyphicons.com">Glyphicons Free</a>, licenciado por <a href="http://creativecommons.org/licenses/by/3.0/">CC BY 3.0</a>.</p>
+      </footer>
+
+    </div><!-- /container -->
+
+
+
+    <!-- Le javascript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script type="text/javascript" src="http://platform.twitter.com/widgets.js"></script>
+    <script src="../js/tests/vendor/jquery.js"></script>
+    <script src="assets/js/google-code-prettify/prettify.js"></script>
+    <script src="../js/bootstrap-transition.js"></script>
+    <script src="../js/bootstrap-alert.js"></script>
+    <script src="../js/bootstrap-modal.js"></script>
+    <script src="../js/bootstrap-dropdown.js"></script>
+    <script src="../js/bootstrap-scrollspy.js"></script>
+    <script src="../js/bootstrap-tab.js"></script>
+    <script src="../js/bootstrap-tooltip.js"></script>
+    <script src="../js/bootstrap-popover.js"></script>
+    <script src="../js/bootstrap-button.js"></script>
+    <script src="../js/bootstrap-collapse.js"></script>
+    <script src="../js/bootstrap-carousel.js"></script>
+    <script src="../js/bootstrap-typeahead.js"></script>
+    <script src="../js/bootstrap-charcount.js"></script>
+    <script src="../js/jquery.selectbox-0.1.3.js"></script>
+    <script src="../js/jquery.customInput.js"></script>
+    <script src="assets/js/application.js"></script>
+  </body>
+</html>

@@ -1,0 +1,1519 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Globo Bootstrap</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <!-- Le HTML5 shim, for IE6-8 support of HTML elements -->
+    <!--[if lt IE 9]>
+      <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Le styles -->
+    <link href="http://s.glbimg.com/po/fo/globo-fontface.css" rel="stylesheet">
+    <link href="../bootstrap.css" rel="stylesheet">
+    <link href="../bootstrap-responsive.css" rel="stylesheet">
+    <link href="assets/css/docs.css" rel="stylesheet">
+    <link href="assets/js/google-code-prettify/prettify.css" rel="stylesheet">
+
+    <!-- Le fav and touch icons -->
+    <link rel="shortcut icon" href="assets/ico/favicon.ico">
+    <link rel="apple-touch-icon" href="images/apple-touch-icon.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="images/apple-touch-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="images/apple-touch-icon-114x114.png">
+  </head>
+
+  <body data-spy="scroll" data-target=".subnav" data-offset="50">
+  
+  
+  <!-- Navbar
+    ================================================== -->
+    <div class="navbar navbar-fixed">
+      <div class="navbar-inner">
+        <div class="container">
+          <a class="brand" href="./index.html">Globo Bootstrap</a>
+          <ul class="nav">
+            <li class="">
+              <a href="./index.html">Geral</a>
+            </li>
+            <li class="">
+              <a href="./scaffolding.html">Grid</a>
+            </li>
+            <li class="">
+              <a href="./base-css.html">CSS base</a>
+            </li>
+            <li class="">
+              <a href="./components.html">Componentes</a>
+            </li>
+            <li class="active">
+              <a href="./javascript.html">Plugins Javascript</a>
+            </li>
+            <li class="">
+              <a href="./less.html">Usando LESS</a>
+            </li>
+            <li class="">
+              <a href="./download.html">Download</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <div class="container">
+
+      <!-- Masthead
+      ================================================== -->
+      <header class="jumbotron subhead" id="overview">
+        <h1>Javascript para o Bootstrap</h1>
+        <p class="lead">Trazendo componentes a vida&mdash;com plugins personalizados de <a href="http://jquery.com/" target="_blank">jQuery</a></p>
+        <div class="subnav">
+          <ul class="nav pills">
+            <li><a href="#javascript">Geral</a></li>
+            <li><a href="#modals">Modal</a></li>
+            <li><a href="#dropdowns">Dropdown</a></li>
+            <li><a href="#scrollspy">Scroll spy</a></li>
+            <li><a href="#tabs">Tab</a></li>
+            <li><a href="#tooltips">Tooltips</a></li>
+            <li><a href="#charcount">Charcount</a></li>
+            <li><a href="#popovers">Popover</a></li>
+            <li><a href="#alerts">Alertas</a></li>
+            <li><a href="#buttons">Botões</a></li>
+            <li><a href="#collapse">Colapse</a></li>
+            <li><a href="#carousel">Carousel</a></li>
+            <li><a href="#typeahead">Typeahead</a></li>
+          </ul>
+        </div>
+      </header>
+
+
+      <!-- Using Javascript w/ Bootstrap
+      ================================================== -->
+      <section id="javascript">
+        <div class="page-header">
+          <h1>Plugins jQuery <small>Dezenas de plugins jQuery para você começar</small></h1>
+        </div>
+      <div class="row">
+        <div class="span3">
+          <label>
+            <h3><a href="./javascript.html#modals">Modais</a></h3>
+            <p>Um flexível plugin para modais com somente o mínimo necessário de funcionalidades e padrões inteligentes</p>
+          </label>
+        </div>
+        <div class="span3">
+          <label>
+            <h3><a href="./javascript.html#dropdowns">Dropdowns</a></h3>
+            <p>Adicionar menus dropdown em um simples plugin. Um dropdown completo que suporta barra de navegação, tabs e pílulas</p>
+          </label>
+        </div>
+        <div class="span3">
+          <label>
+            <h3><a href="./javascript.html#scrollspy">Scrollspy</a></h3>
+            <p>Use o scrollspy para automaticamente atualizar os links na navegação para mostrar o link ativo</p>
+          </label>
+        </div>
+        <div class="span3">
+          <label>
+            <h3><a href="./javascript.html#tabs">Tabs</a></h3>
+            <p>Use este plugin para tornar as tabs e pílulas mais útil e permitir a criações de painéis</p>
+          </label>
+        </div>
+      </div> <!-- /row -->
+      <div class="row">
+        <div class="span3">
+          <label>
+            <h3><a href="./javascript.html#tooltips">Tooltips</a></h3>
+            <p>Um Tooltip que não usa imagens, somente CSS3 para animações e atributos html5 para gravação local(local storage)</p>
+          </label>
+        </div>
+        <div class="span3">
+          <label>
+            <h3><a href="./javascript.html#popovers">Popovers</a> <small class="muted">*</small></h3>
+            <p>Adicione pequenos overlays de conteúdos, como no ipad, para qualquer elemento para exibir informações secundárias</p>
+            <p class="muted"><strong>*</strong> Requer <a href="#tooltips">Tooltips</a> para serem incluídas</p>
+          </label>
+        </div>
+        <div class="span3">
+          <label>
+            <h3><a href="./javascript.html#alerts">Mensagens de alerta</a></h3>
+            <p>O plugin de alerta é uma classe para adicionar funcionalidades para os alertas</p>
+          </label>
+        </div>
+        <div class="span3">
+          <label>
+            <h3><a href="./javascript.html#buttons">Botões</a></h3>
+            <p>Faça mais com botões. Controle os estados dos botões e crie grupos de botões para componentes parecidos com barras de navegação</p>
+          </label>
+        </div>
+      </div> <!-- /row -->
+      <div class="row">
+        <div class="span3">
+          <label>
+            <h3><a href="./javascript.html#collapse">Colapse</a></h3>
+            <p>Obtenha estilos base e um suporte flexível para componentes colapsáveis como acordeons e navegação</p>
+          </label>
+        </div>
+        <div class="span3">
+          <label>
+            <h3><a href="./javascript.html#carousel">Carousel</a></h3>
+            <p>Crie um conteúdo deslizável e provê interações para conteúdos no estilo slideshow</p>
+          </label>
+        </div>
+        <div class="span3">
+          <label>
+            <h3><a href="./javascript.html#typeahead">Typeahead</a></h3>
+            <p>Um básico e extensível autocomplete para qualquer input de texto</p>
+          </label>
+        </div>
+        <div class="span3">
+          <label>
+            <h3>Transições <small class="muted">*</small></h3>
+            <p>Para simples efeitos de transição, basta incluir bootstrap-transition.js uma vez para deslizar modais e inserir fade em alertas</p>
+            <p class="muted"><strong>*</strong> Obrigatório para todos plugins que usam animação</p>
+          </label>
+        </div>
+      </div> <!-- /row -->
+    </section>
+
+
+
+    <!-- Modal
+    ================================================== -->
+    <section id="modals">
+      <div class="page-header">
+        <h1>Modais <small>bootstrap-modal.js</small></h1>
+      </div>
+      <div class="row">
+        <div class="span3 columns">
+          <h3>Sobre modais</h3>
+          <p>Modais flexíveis com o mínimo de funcionalidades necessárias e com padrões inteligentes</p>
+          <a href="../js/bootstrap-modal.js" target="_blank" class="btn">Download do arquivo</a>
+        </div>
+        <div class="span9 columns">
+          <h2>Exemplo estático</h2>
+          <p>Abaixo um modal renderizado estaticamente</p>
+          <div class="well" style="background-color: #888; border: none;">
+            <div class="modal" style="position: relative; top: auto; left: auto; margin: 0 auto; z-index: 1">
+              <div class="modal-header">
+                <a href="#" class="close" data-dismiss="modal">&times;</a>
+                <h3>Cabeçalho do modal</h3>
+              </div>
+              <div class="modal-body">
+                <p>Um corpão de modal</p>
+              </div>
+              <div class="modal-footer">
+                <a href="#" class="btn primary">Salvar modificações</a>
+                <a href="#" class="btn">Fechar</a>
+              </div>
+            </div>
+          </div> <!-- /well -->
+
+          <h2>Demonstração</h2>
+          <p>Abra um modal por javascript clicando no botão abaixo. Isto irá realizar um slide com efeito de fade do topo da página</p>
+          <!-- sample modal content -->
+          <div id="myModal" class="modal hide fade">
+            <div class="modal-header">
+              <a class="close" data-dismiss="modal" >&times;</a>
+              <h3>Cabeçalho do modal</h3>
+            </div>
+            <div class="modal-body">
+              <h4>Textos em Modal</h4>
+              <p>Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem.</p>
+
+              <h4>Popover em modal</h4>
+              <p>Isto <a href="#" class="btn" rel="popover" title="A Title" data-content="Aqui é uma dica que pode ser aberta">botão</a> deve disparar o popover no hover</p>
+
+              <h4>Tooltips no modal</h4>
+              <p><a href="#" class="tooltip-test" title="Tooltip">Este link</a> e <a href="#" class="tooltip-test" title="Tooltip">aquele link</a> deve ter tooltips no evento hover</p>
+            </div>
+            <div class="modal-footer">
+              <a href="#" class="btn primary">Salvar mudanças</a>
+              <a href="#" class="btn" data-dismiss="modal" >Fechar</a>
+            </div>
+          </div>
+          <a data-toggle="modal" href="#myModal" class="btn primary large">Executar modal demo</a>
+
+          <hr>
+
+          <h2>Usando o bootstrap-modal</h2>
+          <p>Chamada do modal via javascript:</p>
+          <pre class="prettyprint linenums">$('#myModal').modal(options)</pre>
+          <h3>Opções</h3>
+          <table class="table table-bordered table-striped">
+            <thead>
+             <tr>
+               <th style="width: 100px;">Nome</th>
+               <th style="width: 50px;">Tipo</th>
+               <th style="width: 50px;">Padrão</th>
+               <th>Descrição</th>
+             </tr>
+            </thead>
+            <tbody>
+             <tr>
+               <td>backdrop</td>
+               <td>boolean</td>
+               <td>true</td>
+               <td>Inclui um elemento modal-backdrop</td>
+             </tr>
+             <tr>
+               <td>keyboard</td>
+               <td>boolean</td>
+               <td>true</td>
+               <td>Fecha o modal ao apertar esc</td>
+             </tr>
+            </tbody>
+          </table>
+          <h3>Markup</h3>
+          <p>Você pode ativar o modal na sua página facilmente sem ter que escrever uma única linha de javascript. Simplesmente use <code>data-toggle="modal"</code> em um elemento de controle e um <code>data-target="#foo"</code> ou <code>href="#foo"</code> que corresponda ao id do elemento, e quando clicado, ele irá executar o modal</p>
+          <p>Também, para adicionar opções para a instância do modal, simplesmente inclua como atributos do data adicionais no markup do modal</p>
+<pre class="prettyprint linenums">
+&lt;a class="btn" data-toggle="modal" href="#myModal" &gt;Executar modal&lt;/a&gt;
+</pre>
+
+<pre class="prettyprint linenums">
+&lt;div class="modal"&gt;
+  &lt;div class="modal-header"&gt;
+    &lt;a class="close" data-dismiss="modal"&gt;&times;&lt;/a&gt;
+    &lt;h3&gt;Modal header&lt;/h3&gt;
+  &lt;/div&gt;
+  &lt;div class="modal-body"&gt;
+    &lt;p&gt;Um corpinho lindo de modal&lt;/p&gt;
+  &lt;/div&gt;
+  &lt;div class="modal-footer"&gt;
+    &lt;a href="#" class="btn primary"&gt;Salvar&lt;/a&gt;
+    &lt;a href="#" class="btn"&gt;Fechar&lt;/a&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+</pre>
+          <p><span class="label notice">Nota</span> Se você quer que um modal seja animado, adicione a classe <code>.fade</code> ao elemento <code>.modal</code> (veja o exemplo em ação).</p>
+          <h3>Métodos</h3>
+          <h4>.modal(opcoes)</h4>
+          <p>Ativa conteúdo como um modal. Aceita um objeto de opções do tipo <code>object</code> opcional</p>
+<pre class="prettyprint linenums">
+$('#myModal').modal({
+  keyboard: false
+})</pre>
+          <h4>.modal('toggle')</h4>
+          <p>Manualmente abra ou feche o modal, de acordo com seu estado atual (toggle)</p>
+          <pre class="prettyprint linenums">$('#myModal').modal('toggle')</pre>
+          <h4>.modal('show')</h4>
+          <p>Manualmente abra o modal</p>
+          <pre class="prettyprint linenums">$('#myModal').modal('show')</pre>
+          <h4>.modal('hide')</h4>
+          <p>Manualmente esconda o modal</p>
+          <pre class="prettyprint linenums">$('#myModal').modal('hide')</pre>
+          <h3>Eventos</h3>
+          <p>A classe do modal do Bootstrap expõe alguns eventos para estender a sua funcionalidade</p>
+          <table class="table table-bordered table-striped">
+            <thead>
+             <tr>
+               <th style="width: 150px;">Evento</th>
+               <th>Descrição</th>
+             </tr>
+            </thead>
+            <tbody>
+             <tr>
+               <td>show</td>
+               <td>Este evento é disparado imediatamente quando a instância do modal com o <code>show</code> é chamado</td>
+             </tr>
+             <tr>
+               <td>shown</td>
+               <td>Este evento é disparado quando o modal está visível para o usuário(com a transição css completa)</td>
+             </tr>
+             <tr>
+               <td>hide</td>
+               <td>Este evento é chamado imediatamente quando o método da instância <code>hide</code> é chamado</td>
+             </tr>
+             <tr>
+               <td>hidden</td>
+               <td>Este evento é disparado quando o modal acabou de ser escondido do usuário (aguarda pela transição css estar completada)</td>
+             </tr>
+            </tbody>
+          </table>
+
+<pre class="prettyprint linenums">
+$('#myModal').on('hidden', function () {
+  // faca algo
+})</pre>
+        </div>
+      </div>
+    </section>
+
+
+
+    <!-- Dropdown
+    ================================================== -->
+    <section id="dropdowns">
+      <div class="page-header">
+        <h1>Dropdowns <small>bootstrap-dropdown.js</small></h1>
+      </div>
+      <div class="row">
+        <div class="span3 columns">
+          <h3>Sobre dropdowns</h3>
+          <p>Adicionar um menu dropdown com este simples plugin. Ele tem um suporte completo para barra de navegação, tabs, e pílulas</p>
+          <a href="../js/bootstrap-dropdown.js" target="_blank" class="btn">Download do arquivo</a>
+        </div>
+        <div class="span9 columns">
+          <h2>Exemplos</h2>
+          <p>Clique nos links de navegação da barra de navegação para testar os dropdownsl</p>
+          <div id="navbar-example" class="navbar navbar-static">
+            <div class="navbar-inner">
+              <div class="container" style="width: auto;">
+                <a class="brand" href="#">Nome do programa</a>
+                <ul class="nav">
+                  <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">Dropdown <b class="caret"></b></a>
+                    <ul class="dropdown-menu">
+                      <li><a href="#">Ação</a></li>
+                      <li><a href="#">Outra ação</a></li>
+                      <li><a href="#">Algo mais</a></li>
+                      <li class="divider"></li>
+                      <li><a href="#">Link separado</a></li>
+                    </ul>
+                  </li>
+                  <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">Dropdown 2<b class="caret"></b></a>
+                    <ul class="dropdown-menu">
+                      <li><a href="#">Ação</a></li>
+                      <li><a href="#">Outra ação</a></li>
+                      <li><a href="#">Algo mais aqui</a></li>
+                      <li class="divider"></li>
+                      <li><a href="#">Link separado</a></li>
+                    </ul>
+                  </li>
+                </ul>
+                <ul class="nav pull-right">
+                  <li id="fat-menu" class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">Dropdown 3 <b class="caret"></b></a>
+                    <ul class="dropdown-menu">
+                      <li><a href="#">Ação</a></li>
+                      <li><a href="#">Outra ação</a></li>
+                      <li><a href="#">Algo mais aqui</a></li>
+                      <li class="divider"></li>
+                      <li><a href="#">Link separado</a></li>
+                    </ul>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div> <!-- /navbar-example -->
+
+          <ul class="nav pills">
+            <li class="active"><a href="#">Link regular</a></li>
+            <li class="dropdown">
+              <a class="dropdown-toggle" data-toggle="dropdown" href="#">Dropdown <b class="caret"></b></a>
+              <ul id="menu1" class="dropdown-menu">
+                <li><a href="#">Ação</a></li>
+                <li><a href="#">Outra ação</a></li>
+                <li><a href="#">Algo mais aqui</a></li>
+                <li class="divider"></li>
+                <li><a href="#">Link separado</a></li>
+              </ul>
+            </li>
+            <li class="dropdown">
+              <a class="dropdown-toggle" data-toggle="dropdown" href="#">Dropdown 2<b class="caret"></b></a>
+              <ul id="menu2" class="dropdown-menu">
+                <li><a href="#">Ação</a></li>
+                <li><a href="#">Outra ação</a></li>
+                <li><a href="#">Algo mais aqui</a></li>
+                <li class="divider"></li>
+                <li><a href="#">Link separado</a></li>
+              </ul>
+            </li>
+            <li class="dropdown">
+              <a class="dropdown-toggle" data-toggle="dropdown" href="#">Dropdown 3 <b class="caret"></b></a>
+              <ul id="menu3" class="dropdown-menu">
+                <li><a href="#">Ação</a></li>
+                <li><a href="#">Outra ação</a></li>
+                <li><a href="#">Algo mais aqui</a></li>
+                <li class="divider"></li>
+                <li><a href="#">link separado</a></li>
+              </ul>
+            </li>
+          </ul> <!-- /tabs -->
+
+          <hr>
+
+          <h2>Usando o bootstrap-dropdown.js</h2>
+          <p>Chamando o dropdown via javascript:</p>
+          <pre class="prettyprint linenums">$('.dropdown-toggle').dropdown()</pre>
+          <h3>Markup</h3>
+          <p>A maneira mais rápida para adicionar funcionalidade no elemento dropdown é apenas adicionar o atributo <code>data-toggle="dropdown"</code> em qualquer dropdown válido do Bootstrap e ele será automaticamente ativado</p>
+          <p><span class="label notice">Nota</span> Para maior flexibilidade, você pode adicionar <code>data-target="#fat"</code> ou <code>href="#fat"</code> - isto permitirá escolher dropdowns específicos</p>
+
+<pre class="prettyprint linenums">
+&lt;ul class="nav pills"&gt;
+  &lt;li class="active"&gt;&lt;a href="#"&gt;Regular link&lt;/a&gt;&lt;/li&gt;
+  &lt;li class="dropdown" id="menu1"&gt;
+    &lt;a class="dropdown-toggle" data-toggle="dropdown" href="#menu1"&gt;
+      Dropdown
+      &lt;b class="caret"&gt;&lt;/b&gt;
+    &lt;/a&gt;
+    &lt;ul class="dropdown-menu"&gt;
+      &lt;li&gt;&lt;a href="#"&gt;Ação&lt;/a&gt;&lt;/li&gt;
+      &lt;li&gt;&lt;a href="#"&gt;Outra ação&lt;/a&gt;&lt;/li&gt;
+      &lt;li&gt;&lt;a href="#"&gt;Algo mais aqui&lt;/a&gt;&lt;/li&gt;
+      &lt;li class="divider"&gt;&lt;/li&gt;
+      &lt;li&gt;&lt;a href="#"&gt;Link separado&lt;/a&gt;&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  ...
+&lt;/ul&gt;</pre>
+          <h3>Métodos</h3>
+          <h4>$().dropdown()</h4>
+          <p>Uma api programada para ativar menus de uma barra de navegação ou navegação em abas</p>
+        </div>
+      </div>
+    </section>
+
+
+
+   <!-- ScrollSpy
+    ================================================== -->
+    <section id="scrollspy">
+      <div class="page-header">
+        <h1>ScrollSpy <small>bootstrap-scrollspy.js</small></h1>
+      </div>
+      <div class="row">
+        <div class="span3 columns">
+        	<p>O plugin de ScrollSpy é para automaticamente atualizar navegação baseado na posição do scroll</p>
+          <a href="../js/bootstrap-scrollspy.js" target="_blank" class="btn">Download do arquivo</a>
+        </div>
+        <div class="span9 columns">
+          <h2>Exemplo de barra de navegação com o ScrollSpy</h2>
+          <p>Use o Scroll na ára abaixo e veja a navegação se atualizando. Os subitens do dropdown também serão destacados. Tente!</p>
+          <div id="navbarExample" class="navbar navbar-static">
+            <div class="navbar-inner">
+              <div class="container" style="width: auto;">
+                <a class="brand" href="#">Nome do projeto</a>
+                <ul class="nav">
+                  <li><a href="#fat">@fat</a></li>
+                  <li><a href="#mdo">@mdo</a></li>
+                  <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">Dropdown <b class="caret"></b></a>
+                    <ul class="dropdown-menu">
+                      <li><a href="#one">Um</a></li>
+                      <li><a href="#two">Dois</a></li>
+                      <li class="divider"></li>
+                      <li><a href="#three">Três</a></li>
+                    </ul>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div data-spy="scroll" data-target="#navbarExample" data-offset="0" class="scrollspy-example">
+            <h4 id="fat">@fat</h4>
+            <p>
+            Ad leggings keytar, brunch id art party dolor labore. Pitchfork yr enim lo-fi before they sold out qui. Tumblr farm-to-table bicycle rights whatever. Anim keffiyeh carles cardigan. Velit seitan mcsweeney's photo booth 3 wolf moon irure. Cosby sweater lomo jean shorts, williamsburg hoodie minim qui you probably haven't heard of them et cardigan trust fund culpa biodiesel wes anderson aesthetic. Nihil tattooed accusamus, cred irony biodiesel keffiyeh artisan ullamco consequat.
+            </p>
+            <h4 id="mdo">@mdo</h4>
+            <p>
+            Veniam marfa mustache skateboard, adipisicing fugiat velit pitchfork beard. Freegan beard aliqua cupidatat mcsweeney's vero. Cupidatat four loko nisi, ea helvetica nulla carles. Tattooed cosby sweater food truck, mcsweeney's quis non freegan vinyl. Lo-fi wes anderson +1 sartorial. Carles non aesthetic exercitation quis gentrify. Brooklyn adipisicing craft beer vice keytar deserunt.
+            </p>
+            <h4 id="one">one</h4>
+            <p>
+            Occaecat commodo aliqua delectus. Fap craft beer deserunt skateboard ea. Lomo bicycle rights adipisicing banh mi, velit ea sunt next level locavore single-origin coffee in magna veniam. High life id vinyl, echo park consequat quis aliquip banh mi pitchfork. Vero VHS est adipisicing. Consectetur nisi DIY minim messenger bag. Cred ex in, sustainable delectus consectetur fanny pack iphone.
+            </p>
+            <h4 id="two">two</h4>
+            <p>
+            In incididunt echo park, officia deserunt mcsweeney's proident master cleanse thundercats sapiente veniam. Excepteur VHS elit, proident shoreditch +1 biodiesel laborum craft beer. Single-origin coffee wayfarers irure four loko, cupidatat terry richardson master cleanse. Assumenda you probably haven't heard of them art party fanny pack, tattooed nulla cardigan tempor ad. Proident wolf nesciunt sartorial keffiyeh eu banh mi sustainable. Elit wolf voluptate, lo-fi ea portland before they sold out four loko. Locavore enim nostrud mlkshk brooklyn nesciunt.
+            </p>
+            <h4 id="three">three</h4>
+            <p>
+            Ad leggings keytar, brunch id art party dolor labore. Pitchfork yr enim lo-fi before they sold out qui. Tumblr farm-to-table bicycle rights whatever. Anim keffiyeh carles cardigan. Velit seitan mcsweeney's photo booth 3 wolf moon irure. Cosby sweater lomo jean shorts, williamsburg hoodie minim qui you probably haven't heard of them et cardigan trust fund culpa biodiesel wes anderson aesthetic. Nihil tattooed accusamus, cred irony biodiesel keffiyeh artisan ullamco consequat.
+            </p>
+            <p>Keytar twee blog, culpa messenger bag marfa whatever delectus food truck. Sapiente synth id assumenda. Locavore sed helvetica cliche irony, thundercats you probably haven't heard of them consequat hoodie gluten-free lo-fi fap aliquip. Labore elit placeat before they sold out, terry richardson proident brunch nesciunt quis cosby sweater pariatur keffiyeh ut helvetica artisan. Cardigan craft beer seitan readymade velit. VHS chambray laboris tempor veniam. Anim mollit minim commodo ullamco thundercats.
+            </p>
+          </div>
+          <hr>
+          <h2>Usando bootstrap-scrollspy.js</h2>
+          <p>Chamando o scrollspy via javascript:</p>
+          <pre class="prettyprint linenums">$('#navbar').scrollspy()</pre>
+          <h3>Markup</h3>
+          <p>Para facilmente adicionar o comportamento de scrollspy para sua navegação, adicione o atributo <code>data-spy="scroll"</code> no elemento que você quer "espiar"(normalmente o body)</p>
+          <pre class="prettyprint linenums">&lt;body data-spy="scroll" &gt;...&lt;/body&gt;</pre>
+           <p><span class="label notice">Nota</span> Tags de links devem possuir ids específicos. Por exemplo, um <code>&lt;a href="#home"&gt;home&lt;/a&gt;</code> deve corresponder no dom a algo como <code>&lt;div id="home"&gt;&lt;/div&gt;</code>.</p>
+          <h3>Opções</h3>
+          <table class="table table-bordered table-striped">
+            <thead>
+             <tr>
+               <th style="width: 100px;">Nome</th>
+               <th style="width: 100px;">Tipo</th>
+               <th style="width: 50px;">Padrões</th>
+               <th>descrição</th>
+             </tr>
+            </thead>
+            <tbody>
+             <tr>
+               <td>offset</td>
+               <td>number</td>
+               <td>10</td>
+               <td>Offset em pixels do top que calcula as dimensões do scroll</td>
+             </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </section>
+
+
+
+    <!-- Tabs
+    ================================================== -->
+    <section id="tabs">
+      <div class="page-header">
+        <h1>Tabs <small>bootstrap-tab.js</small></h1>
+      </div>
+      <div class="row">
+        <div class="span3 columns">
+        	<p>Este plugin adiciona um sistema de tabs rápido e dinânico para transições entre conteúdo localizado </p>
+          <a href="../js/bootstrap-tab.js" target="_blank" class="btn">Download do arquivo</a>
+        </div>
+        <div class="span9 columns">
+          <h2>Tabs de exemplo</h2>
+          <p>Clique nas tabs abaixo para variar entre painéis escondidos, mesmo com menus dropdown</p>
+          <ul id="tab" class="nav tabs">
+            <li class="active"><a href="#home" data-toggle="tab">Home</a></li>
+            <li><a href="#profile" data-toggle="tab">Perfil</a></li>
+            <li class="dropdown">
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown">Dropdown <b class="caret"></b></a>
+              <ul class="dropdown-menu">
+                <li><a href="#dropdown1" data-toggle="tab">@fat</a></li>
+                <li><a href="#dropdown2" data-toggle="tab">@mdo</a></li>
+              </ul>
+            </li>
+          </ul>
+          <div id="myTabContent" class="tab-content">
+            <div class="tab-pane fade in active" id="home">
+              <p>Raw denim you probably haven't heard of them jean shorts Austin. Nesciunt tofu stumptown aliqua, retro synth master cleanse. Mustache cliche tempor, williamsburg carles vegan helvetica. Reprehenderit butcher retro keffiyeh dreamcatcher synth. Cosby sweater eu banh mi, qui irure terry richardson ex squid. Aliquip placeat salvia cillum iphone. Seitan aliquip quis cardigan american apparel, butcher voluptate nisi qui.</p>
+            </div>
+            <div class="tab-pane fade" id="profile">
+              <p>Food truck fixie locavore, accusamus mcsweeney's marfa nulla single-origin coffee squid. Exercitation +1 labore velit, blog sartorial PBR leggings next level wes anderson artisan four loko farm-to-table craft beer twee. Qui photo booth letterpress, commodo enim craft beer mlkshk aliquip jean shorts ullamco ad vinyl cillum PBR. Homo nostrud organic, assumenda labore aesthetic magna delectus mollit. Keytar helvetica VHS salvia yr, vero magna velit sapiente labore stumptown. Vegan fanny pack odio cillum wes anderson 8-bit, sustainable jean shorts beard ut DIY ethical culpa terry richardson biodiesel. Art party scenester stumptown, tumblr butcher vero sint qui sapiente accusamus tattooed echo park.</p>
+            </div>
+            <div class="tab-pane fade" id="dropdown1">
+              <p>Etsy mixtape wayfarers, ethical wes anderson tofu before they sold out mcsweeney's organic lomo retro fanny pack lo-fi farm-to-table readymade. Messenger bag gentrify pitchfork tattooed craft beer, iphone skateboard locavore carles etsy salvia banksy hoodie helvetica. DIY synth PBR banksy irony. Leggings gentrify squid 8-bit cred pitchfork. Williamsburg banh mi whatever gluten-free, carles pitchfork biodiesel fixie etsy retro mlkshk vice blog. Scenester cred you probably haven't heard of them, vinyl craft beer blog stumptown. Pitchfork sustainable tofu synth chambray yr.</p>
+            </div>
+            <div class="tab-pane fade" id="dropdown2">
+              <p>Trust fund seitan letterpress, keytar raw denim keffiyeh etsy art party before they sold out master cleanse gluten-free squid scenester freegan cosby sweater. Fanny pack portland seitan DIY, art party locavore wolf cliche high life echo park Austin. Cred vinyl keffiyeh DIY salvia PBR, banh mi before they sold out farm-to-table VHS viral locavore cosby sweater. Lomo wolf viral, mustache readymade thundercats keffiyeh craft beer marfa ethical. Wolf salvia freegan, sartorial keffiyeh echo park vegan.</p>
+            </div>
+          </div>
+          <hr>
+          <h2>Usando bootstrap-tab.js</h2>
+          <p>Liberar tabs via javascript:</p>
+          <pre class="prettyprint linenums">$('#myTab').tab('show')</pre>
+          <h3>Markup</h3>
+          <p>Você pode ativar uma tab ou pílula sem escrever javascript simplesmente especificando <code>data-toggle="tab"</code> ou <code>data-toggle="pill"</code> em um elemento</p>
+<pre class="prettyprint linenums">
+&lt;ul class="tabs"&gt;
+  &lt;li&gt;&lt;a href="#home" data-toggle="tab"&gt;Home&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href="#profile" data-toggle="tab"&gt;Perfil&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href="#messages" data-toggle="tab"&gt;Mensagens&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href="#ettings" data-toggle="tab"&gt;Configurações&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;</pre>
+          <h3>Métodos</h3>
+          <h4>$().tab</h4>
+          <p>
+          	Ativar um elemento tab e o container de conteúdo. A tab deve ter um atributo 'data-target' ou um 'href' especificando um elemento no dom.
+          </p>
+<pre class="prettyprint linenums">
+&lt;ul class="tabs"&gt;
+  &lt;li class="active"&gt;&lt;a href="#home"&gt;Home&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href="#profile"&gt;Perfil&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href="#messages"&gt;Mensagens&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href="#settings"&gt;Configurações&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;div class="tab-content"&gt;
+  &lt;div class="active" id="home"&gt;...&lt;/div&gt;
+  &lt;div id="profile"&gt;...&lt;/div&gt;
+  &lt;div id="messages"&gt;...&lt;/div&gt;
+  &lt;div id="settings"&gt;...&lt;/div&gt;
+&lt;/div&gt;
+
+&lt;script&gt;
+  $(function () {
+    $('.tabs a:last').tab('show')
+  })
+&lt;/script&gt;</pre>
+          <h3>Eventos</h3>
+          <table class="table table-bordered table-striped">
+            <thead>
+             <tr>
+               <th style="width: 150px;">Evento</th>
+               <th>Descrição</th>
+             </tr>
+            </thead>
+            <tbody>
+             <tr>
+               <td>show</td>
+               <td>este evento dispara quando a tab é exibida, mas antes da tab ser mostrada. Use <code>event.target</code> e <code>event.relatedTarget</code> para usar a tab ativa ou a tab previamente clicada</td>
+            </tr>
+            <tr>
+               <td>shown</td>
+               <td>Este evento é disparado na tab depois dela ser exibida. Use <code>event.target</code> e <code>event.relatedTarget</code> para saber o elemento da tab ativa e da tab previamente clicada (se disponível)</td>
+             </tr>
+            </tbody>
+          </table>
+
+          <pre class="prettyprint linenums">
+$('a[data-toggle="tab"]').on('shown', function (e) {
+  e.target // activated tab
+  e.relatedTarget // previous tab
+})</pre>
+       </div>
+      </div>
+    </section>
+
+
+    <!-- Tooltips
+    ================================================== -->
+    <section id="tooltips">
+      <div class="page-header">
+        <h1>Tooltips <small>bootstrap-tooltip.js</small></h1>
+      </div>
+      <div class="row">
+        <div class="span3 columns">
+          <h3>Sobre tooltips</h3>
+          <p>Inspirado no excelente plugin jQuery.tispy escrito por Jason Frame, Tooltips são uma versão atualizada, sem usar imagem, somente usado para animações css3, e atributos de data para armazenamento local de informações</p>
+          <a href="../js/bootstrap-tooltip.js" target="_blank" class="btn">Download do arquivo</a>
+        </div>
+        <div class="span9 columns">
+          <h2>Exemplo do uso dos tooltips</h2>
+          <p>Passe o mouse em cima dos links abaixo para ver os tooltips:</p>
+          <div class="tooltip-demo well">
+            <p class="muted" style="margin-bottom: 0;">Tight pants next level keffiyeh <a href="#" rel='tooltip' title="first tooltip">you probably</a> haven't heard of them. Photo booth beard raw denim letterpress vegan messenger bag stumptown. Farm-to-table seitan, mcsweeney's fixie sustainable quinoa 8-bit american apparel <a href="#" rel='tooltip' title='Another tooltip'>have a</a> terry richardson vinyl chambray. Beard stumptown, cardigans banh mi lomo thundercats. Tofu biodiesel williamsburg marfa, four loko mcsweeney's cleanse vegan chambray. A <a href="#" rel='tooltip' title='Another one here too'>really ironic</a> artisan whatever keytar, scenester farm-to-table banksy Austin <a href="#" rel='tooltip' title='The last tip!'>twitter handle</a> freegan cred raw denim single-origin coffee viral.
+            </p>
+          </div>
+          <hr>
+          <h2>Usando bootstrap-tooltip.js</h2>
+          <p>Usando o plugin via javascript:</p>
+          <pre class="prettyprint linenums">$('#example').tooltip(opções)</pre>
+          <h3>Opções</h3>
+          <table class="table table-bordered table-striped">
+            <thead>
+             <tr>
+               <th style="width: 100px;">Nome</th>
+               <th style="width: 100px;">Tipo</th>
+               <th style="width: 50px;">Padrão</th>
+               <th>Descrição</th>
+             </tr>
+            </thead>
+            <tbody>
+             <tr>
+               <td>animation</td>
+               <td>boolean</td>
+               <td>true</td>
+               <td>Aplica uma animação css fade no tooltip</td>
+             </tr>
+             <tr>
+               <td>placement</td>
+               <td>string</td>
+               <td>'top'</td>
+               <td>Como posicionar o tooltip - top | bottom | left | right</td>
+             </tr>
+             <tr>
+               <td>selector</td>
+               <td>string</td>
+               <td>false</td>
+               <td>Se um seletor é especificado, o tooltip será aplicado nele</td>
+             </tr>
+             <tr>
+               <td>title</td>
+               <td>string | function</td>
+               <td>''</td>
+               <td>Título padrão se o atributo title não estiver presente</td>
+             </tr>
+             <tr>
+               <td>trigger</td>
+               <td>string</td>
+               <td>'hover'</td>
+               <td>Em que evento o tooltip é disparado - hover | focus | manual</td>
+             </tr>
+             <tr>
+               <td>delay</td>
+               <td>number | object</td>
+               <td>0</td>
+               <td>
+               	<p>Delay em milisegundos em que o tooltip é mostrado</p>
+               	<p>Se um número é fornecido, o delay é aplicado em ambos momentos de mostrar / esconder</p>
+               	<p>Você pode fornecer um objeto customizado em que a estrutura seria: <code>delay: { show: 500, hide: 100 }</code></p>
+               </td>
+             </tr>
+            </tbody>
+          </table>
+          <p><span class="label notice">Nota</span> As opções da instância do tooltip também pode ser feita através de atributos data</p>
+          <h3>Markup</h3>
+          <h3>Métodos</h3>
+          <h4>$().tooltip(opções)</h4>
+          <p>Anexa um tooltip em uma coleção de elementos</p>
+          <h4>.tooltip('show')</h4>
+          <p>Mostra um tooltip</p>
+          <pre class="prettyprint linenums">$('#element').tooltip('show')</pre>
+          <h4>.tooltip('hide')</h4>
+          <p>Esconde um tooltip</p>
+          <pre class="prettyprint linenums">$('#element').tooltip('hide')</pre>
+    </section>
+    <section id="charcount">
+      <div class="page-header">
+        <h1>Contador de caracteres <small>bootstrap-charcount.js</small></h1>
+      </div>
+      <div class="row">
+        <div class="span3 columns">
+          <h3>Sobre o contador</h3>
+          <p>O contador de caracteres oferece uma maneira simples de declarar em seus campos de texto o limite de caracteres restantes de um campo</p>
+          <a href="../js/bootstrap-charcount.js" target="_blank" class="btn">Download do arquivo</a>
+        </div>
+        <div class="span9 columns">
+					<h2>Usando bootstrap-charcount.js</h2>
+					<div class="alert">
+  					<strong>Aviso!</strong> Para o contador de caracteres, é necessário ter o plugin bootstrap-tooltip.js
+					</div>
+          <p>Usando o plugin via javascript:</p>
+          <pre class="prettyprint linenums">$('#example').charcount(opções)</pre>
+          <h3>Opções</h3>
+          <table class="table table-bordered table-striped">
+            <thead>
+             <tr>
+               <th style="width: 100px;">Nome</th>
+               <th style="width: 100px;">Tipo</th>
+               <th style="width: 50px;">Padrão</th>
+               <th>Descrição</th>
+             </tr>
+            </thead>
+            <tbody>
+             <tr>
+               <td>chars</td>
+               <td>number</td>
+               <td>60</td>
+               <td>Quantidade de caracteres padrão do início da contagem</td>
+             </tr>
+             <tr>
+               <td>text</td>
+               <td>string</td>
+               <td>{n} chars lenght</td>
+               <td>Template de texto usado para exibição onde o {n} é o valor de caracteres especificado em chars</td>
+             </tr>
+            </tbody>
+          </table>
+          <p><span class="label notice">Nota</span> As opções da instância do charcount também pode ser feita através de atributos data</p>
+          <h3>Chamada</h3>
+          <h3>Métodos</h3>
+          <h4>$().charcount(opções)</h4>
+          <p>Anexa um charcount com o tooltip em uma coleção de elementos</p>
+          <pre class="prettyprint linenums">$('#element').charcount()</pre>
+          <h3>Exemplo</h3>
+          <h2>Usando tooltips como contador de caracteres</h2>
+					<form class="form-horizontal" action="#" method="get">
+						<fieldset>
+							<legend>Contador de caracteres em um input</legend>
+							<p>Usando o plugin charcount é possível estabelecer um contador de caracteres para o campo e informar o usuário em tempo real quando o limite está sendo excedido</p>
+							<div class="control-group">
+								<label class="control-label" for="input-charcount">Input de texto</label>
+								<div class="controls">
+								<input type="text" class="input-xlarge" id="input-charcount" data-chars="60" data-text="{n} caracteres restantes">
+								<p class="help-block">Do lado do input no seu foco deve aparecer um tooltip</p>
+								</div>
+							</div>
+						</fieldset>
+					</form>
+          <h3>Exemplo de uso com o data do exemplo acima</h3>
+<pre class="prettyprint linenums">
+&lt;div class=&quot;control-group&quot;&gt;
+	&lt;label class=&quot;control-label&quot; for=&quot;input-charcount&quot;&gt;Input de texto&lt;/label&gt;
+	&lt;div class=&quot;controls&quot;&gt;
+	&lt;input type=&quot;text&quot; class=&quot;input-xlarge&quot; id=&quot;input-charcount&quot; data-chars=&quot;60&quot; data-text=&quot;{n} caracteres restantes&quot;&gt;
+	&lt;p class=&quot;help-block&quot;&gt;Do lado do input no seu foco deve aparecer um tooltip&lt;/p&gt;
+	&lt;/div&gt;
+&lt;/div&gt;	
+</pre>          
+        </div>
+      </div>
+      </section>
+
+
+
+    <!-- Popovers
+    ================================================== -->
+    <section id="popovers">
+      <div class="page-header">
+        <h1>Popovers <small>bootstrap-popover.js</small></h1>
+      </div>
+      <div class="row">
+        <div class="span3 columns">
+          <h3>Sobre popovers</h3>
+          <p>Adiciona um pequeno overlay de conteúdo, como aqueles no iPad, para um elemento em que carrega informações secundárias</p>
+          <p class="muted"><strong>*</strong> Requer que o  <a href="#tooltip">Tooltip</a> seja incluído</p>
+          <a href="../js/bootstrap-popover.js" target="_blank" class="btn">Download do arquivo</a>
+        </div>
+        <div class="span9 columns">
+          <h2>Exemplos de popovers</h2>
+          <p>Passe o mouse nos botões para exibir os popovers</p>
+          <div class="well">
+            <a href="#" class="btn danger" rel="popover" title="A Title" data-content="And here's some amazing content. It's very engaging. right?">hover popover</a>
+          </div>
+          <hr>
+          <h2>Usando o bootstrap-popover.js</h2>
+          <p>Usando o popover via javascript:</p>
+          <pre class="prettyprint linenums">$('#example').popover(opções)</pre>
+          <h3>Opções</h3>
+          <table class="table table-bordered table-striped">
+            <thead>
+             <tr>
+               <th style="width: 100px;">Nome</th>
+               <th style="width: 100px;">Tipo</th>
+               <th style="width: 50px;">Padrão</th>
+               <th>Descrição</th>
+             </tr>
+            </thead>
+            <tbody>
+             <tr>
+               <td>animation</td>
+               <td>boolean</td>
+               <td>true</td>
+               <td>Aplica uma transição css no tooltip</td>
+             </tr>
+             <tr>
+               <td>placement</td>
+               <td>string</td>
+               <td>'right'</td>
+               <td>Como posicionar o popover - top | bottom | left | right</td>
+             </tr>
+             <tr>
+               <td>selector</td>
+               <td>string</td>
+               <td>false</td>
+               <td>Se um seletor é fornecido, o popover será aplicado no seletor especificado</td>
+             </tr>
+             <tr>
+               <td>trigger</td>
+               <td>string</td>
+               <td>'hover'</td>
+               <td>Como o tooltip é disparado - hover | focus | manual</td>
+             </tr>
+             <tr>
+               <td>title</td>
+               <td>string | function</td>
+               <td>''</td>
+               <td>Valor padrão se o atributo title não for definido</td>
+             </tr>
+             <tr>
+               <td>content</td>
+               <td>string | function</td>
+               <td>''</td>
+               <td>padrão se o atributo 'data-content' não estiver presente</td>
+             </tr>
+             <tr>
+               <td>delay</td>
+               <td>number | object</td>
+               <td>0</td>
+               <td>
+                <p>Delay para mostrar / esconder o popover</p>
+                <p>Se num número é fornecido, o delay é aplicado em ambos esconder / mostrar</p>
+                <p>Se um objeto for fornecido, é possível controlar em cada estado, a estrutura do objeto seria: <code>delay: { show: 500, hide: 100 }</code></p>
+               </td>
+             </tr>
+            </tbody>
+          </table>
+          <p><span class="label notice">Nota</span> Opções individuais de instâncias dos popovers podem ser usados usando atributos data.</p>
+          <h3>Markup</h3>
+          <h3>Métodos</h3>
+          <h4>$().popover(opções)</h4>
+          <p>Inicializa um popover em uma coleção de elementos</p>
+          <h4>.popover('show')</h4>
+          <p>Revela um elemento popover</p>
+          <pre class="prettyprint linenums">$('#element').popover('show')</pre>
+          <h4>.popover('hide')</h4>
+          <p>Esconde um elemento popover</p>
+          <pre class="prettyprint linenums">$('#element').popover('hide')</pre>
+        </div>
+      </div>
+    </section>
+
+
+
+    <!-- Alert
+    ================================================== -->
+    <section id="alerts">
+      <div class="page-header">
+        <h1>Mensagens de alerta <small>bootstrap-alert.js</small></h1>
+      </div>
+      <div class="row">
+        <div class="span3 columns">
+          <h3>Sobre os alertas</h3>
+          <p>O plugin de alerta é uma classe simples para adicionar funcionalidades nos alertas.</p>
+          <a href="../js/bootstrap-alert.js" target="_blank" class="btn">Download</a>
+        </div>
+        <div class="span9 columns">
+          <h2>Exemplos de alerta</h2>
+          <p>Os plugins de alerta trabalha com mensagens de alerta, e mensagens de bloqueio</p>
+          <div class="alert fade in">
+            <a class="close" data-dismiss="alert" href="#">&times;</a>
+            <strong>Que queijo bom sô</strong> Melhor dar uma olhada, está gostoso dimais!
+          </div>
+          <div class="alert alert-block alert-error fade in">
+            <a class="close" data-dismiss="alert" href="#">&times;</a>
+            <h4 class="alert-heading">Você tem um erro!</h4>
+            <p>Conserte os erros e tente novamente. Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Cras mattis consectetur purus sit amet fermentum.</p>
+            <p>
+              <a class="btn danger small" href="#">Faça esta ação</a> <a class="btn small" href="#">ou faça isto</a>
+            </p>
+          </div>
+          <hr>
+          <h2>Usando o bootstrap-alerts.js</h2>
+          <p>Exiba ou negue um alerta via javascript:</p>
+          <pre class="prettyprint linenums">$(".alert-message").alert()</pre>
+          <h3>Markup</h3>
+          <p>Simplesmente adicione <code>data-dismiss="alert"</code> para que seu botão de fechar automaticamente dê um alerta de fechar</p>
+          <pre class="prettyprint linenums">&lt;a class="close" data-dismiss="alert" href="#"&gt;&amp;times;&lt;/a&gt;</pre>
+          <h3>Métodos</h3>
+          <p>O alerta do Bootstrap possui alguns métodos para serem usados</p>
+          <table class="table table-bordered table-striped">
+            <thead>
+             <tr>
+               <th style="width: 150px;">Método</th>
+               <th>Descrição</th>
+             </tr>
+            </thead>
+            <tbody>
+             <tr>
+             	<td>.alert()</td>
+             	<td>Dá uma funcionalidade de fechar um alerta. Para fazer os seus alertas animados quando fecharem, certifique-se de ter a classe <code>.fade</code> and <code>.in</code></td>
+             </tr>
+             <tr>
+               <td>open</td>
+               <td>Este é um método usado para abrir o alert na forma de cortina</td>
+             </tr>
+             <tr>
+             		<td>close</td>
+             		<td>Fecha um alerta</td>
+             </tr>
+            </tbody>
+          </table>
+          <h3>Eventos</h3>
+          <p>O alerta do Bootstrap possui alguns eventos onde você pode interferir no seu funcionamento</p>
+          <table class="table table-bordered table-striped">
+            <thead>
+             <tr>
+               <th style="width: 150px;">Evento</th>
+               <th>Descrição</th>
+             </tr>
+            </thead>
+            <tbody>
+             <tr>
+               <td>close</td>
+               <td>Este evento é chamado imediatamente quando a instância do <code>close</code> é chamada</td>
+             </tr>
+             <tr>
+               <td>closed</td>
+               <td>Este evento é chamado quando o alerta foi fechado (espera pelas transições css estarem completas)</td>
+             </tr>
+            </tbody>
+          </table>
+<pre class="prettyprint linenums">
+$('#my-alert').bind('closed', function () {
+  // faça algo
+})</pre>
+          <h2>Demonstração</h2>
+          <p>Abaixo uma demonstração de como usar o modo cortina para uma mensagem de erro</p>
+          <div class="alert-curtain" id="alert-curtain-success-demo">
+          	<div class="close">x</div>
+          	<p><span class="cms-icon success"></span>Mais do que nunca, tudo foi salvo como esperado</p>
+          </div>
+          <div class="alert-curtain" id="alert-curtain-error-demo">
+          	<div class="close">x</div>
+          	<p><span class="cms-icon error"></span>Eita, alguma coisa deu errado</p>
+          </div>
+          <div style="margin: 10px 0;">
+						<a class="btn success large" id="link-alert-curtain-success-demo">Abrir cortina como sucesso</a>
+          	<a class="btn danger large" id="link-alert-curtain-error-demo">Abrir cortina como erro</a>          	
+          </div>
+          <div class="alert">
+    					<strong>Aviso!</strong> É aconselhável colocar o markup no body para não herdar estilos do pai
+    			</div>
+          <h4>Exemplo de markup de erro (conteúdo escondido até o método <code>.alert('open)</code>) ser chamado</h4>
+<pre class="prettyprint linenums">
+&lt;div class=&quot;alert-curtain&quot; id=&quot;alert-curtain-error-demo&quot;&gt;
+	&lt;div class=&quot;close&quot;&gt;x&lt;/div&gt;
+	&lt;p&gt;&lt;span class=&quot;cms-icon error&quot;&gt;&lt;/span&gt;Eita, alguma coisa deu errado&lt;/p&gt;
+&lt;/div&gt;
+</pre>
+					<h4>Exemplo de markup de sucesso</h4>
+<pre class="prettyprint linenums">
+&lt;div class=&quot;alert-curtain&quot; id=&quot;alert-curtain-success-demo&quot;&gt;
+	&lt;div class=&quot;close&quot;&gt;x&lt;/div&gt;
+	&lt;p&gt;&lt;span class=&quot;cms-icon success&quot;&gt;&lt;/span&gt;Mais do que nunca, tudo foi salvo como esperado&lt;/p&gt;
+&lt;/div&gt;
+</pre>	          
+        </div>
+      </div>
+    </section>
+
+
+
+    <!-- Buttons
+    ================================================== -->
+    <section id="buttons">
+      <div class="page-header">
+        <h1>Botões <small>bootstrap-button.js</small></h1>
+      </div>
+      <div class="row">
+        <div class="span3 columns">
+          <h3>Sobre</h3>
+          <p>Vá além com os botões. Controle estados dos botões ou crie grupos de botões para ter componentes como barra de ferramentas</p>
+          <a href="../js/bootstrap-button.js" target="_blank" class="btn">Download do arquivo</a>
+        </div>
+        <div class="span9 columns">
+          <h2>Exemplo de uso</h2>
+          <p>Use o plugin de botão para estados e toggles</p>
+          <table class="table table-bordered table-striped">
+            <tbody>
+             <tr>
+               <td>Estados</td>
+               <td>
+                  <button id="fat-btn" data-loading-text="loading..." class="btn primary">
+                    Estados de carregando
+                  </button>
+                </td>
+             </tr>
+             <tr>
+               <td>Single toggle</td>
+               <td>
+                  <button class="btn primary" data-toggle="button">Single toggle</button>
+                </td>
+             </tr>
+             <tr>
+               <td>Checkbox</td>
+               <td>
+                  <div class="btn-group" data-toggle="buttons-checkbox">
+                    <button class="btn primary">Esquerda</button>
+                    <button class="btn primary">Meio</button>
+                    <button class="btn primary">Direita</button>
+                  </div>
+               </td>
+             </tr>
+             <tr>
+               <td>Radio</td>
+               <td>
+                  <div class="btn-group" data-toggle="buttons-radio">
+                    <button class="btn primary">Esquerda</button>
+                    <button class="btn primary">Meio</button>
+                    <button class="btn primary">Direita</button>
+                  </div>
+               </td>
+             </tr>
+            </tbody>
+          </table>
+          <hr>
+          <h2>Usando o bootstrap-button.js</h2>
+          <p>Usando os botões via javascrpt:</p>
+          <pre class="prettyprint linenums">$('.tabs').button()</pre>
+            <h3>Markup</h3>
+            <p>Atributos data são integrais para o plugin de botão. Veja o exemplo abaixo para variações do markup</p>
+<pre class="prettyprint linenums">
+&lt;!-- Add data-toggle="button" to activate toggling on a single button --&gt;
+&lt;button class="btn" data-toggle="button"&gt;Single Toggle&lt;/button&gt;
+
+&lt;!-- Add data-toggle="buttons-checkbox" for checkbox style toggling on btn-group --&gt;
+&lt;div class="btn-group" data-toggle="buttons-checkbox"&gt;
+  &lt;button class="btn"&gt;Left&lt;/button&gt;
+  &lt;button class="btn"&gt;Middle&lt;/button&gt;
+  &lt;button class="btn"&gt;Right&lt;/button&gt;
+&lt;/div&gt;
+
+&lt;!-- Add data-toggle="buttons-radio" for radio style toggling on btn-group --&gt;
+&lt;div class="btn-group" data-toggle="buttons-radio"&gt;
+  &lt;button class="btn"&gt;Left&lt;/button&gt;
+  &lt;button class="btn"&gt;Middle&lt;/button&gt;
+  &lt;button class="btn"&gt;Right&lt;/button&gt;
+&lt;/div&gt;
+</pre>
+          <h3>Métodos</h3>
+          <h4>$().button('toggle')</h4>
+          <p>realiza uma troca de estados. Dê ao botão a aparência de que ele está sendo ativado</p>
+          <p><span class="label notice">Nota</span> Você pode habilitar auto toggle usando o atributo <code>data-toggle</code>.</p>
+          <pre class="prettyprint linenums">&lt;button class="btn" data-toggle="button" &gt;…&lt;/button&gt;</pre>
+          <h4>$().button('loading')</h4>
+          <p>Escolha de botões no estado de loading - desabilite a troca de botão trocando o texto de loading. Texto de loading deve ser definidos usando o atributo <code>data-loading-text</code>.</p>
+          </p>
+           <pre class="prettyprint linenums">&lt;button class="btn" data-loading-text="loading stuff..." &gt;...&lt;/button&gt;</pre>
+          <p>
+            <span class="label notice">Nota</span> O firefox persiste o estado loading entre requests. Uma saída para isto seria usar: <code>autocomplete="off"</code>. Mais informações podem ser encontradas <a href="https://github.com/twitter/bootstrap/issues/793">aqui</a>.
+          </p>
+           <h4>$().button('reset')</h4>
+           <p>Resetar o estado do botão. Isto volta o botão ao seu estado inicial</p>
+           <h4>$().button(string)</h4>
+           <p>Troque o texto para o especificado</p>
+<pre class="prettyprint linenums">&lt;button class="btn" data-complete-text="finished!" &gt;...&lt;/button&gt;
+&lt;script&gt;
+  $('.btn').button('complete')
+&lt;/script&gt;</pre>
+        </div>
+      </div>
+    </section>
+
+
+
+    <!-- Collapse
+    ================================================== -->
+    <section id="collapse">
+      <div class="page-header">
+        <h1>Collapse <small>bootstrap-collapse.js</small></h1>
+      </div>
+      <div class="row">
+        <div class="span3 columns">
+          <h3>Sobre</h3>
+          <p>Obtenha o estilo base e suporte flexível para elementos colapsáveis como acordions e navegação</p>
+          <a href="../js/bootstrap-collapse.js" target="_blank" class="btn">Download do arquivo</a>
+        </div>
+        <div class="span9 columns">
+          <h2>Acordion de exemplo</h2>
+          <p>Usando o plugin colapsável, construímos um simples widget de acordion:</p>
+        
+          <div class="accordion" id="accordion2">
+            <div class="accordion-group">
+              <div class="accordion-heading">
+                <a data-toggle="collapse" data-parent="#accordion2" href="#collapseOne">
+                  grupo colapsável #1
+                </a>
+              </div>
+              <div id="collapseOne" class="accordion-body collapse in">
+                <div class="accordion-inner">
+                  Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+                </div>
+              </div>
+            </div>
+            <div class="accordion-group">
+              <div class="accordion-heading">
+                <a data-toggle="collapse" data-parent="#accordion2" href="#collapseTwo">
+                  grupo colapsável #2
+                </a>
+              </div>
+              <div id="collapseTwo" class="accordion-body collapse">
+                <div class="accordion-inner">
+                  Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+                </div>
+              </div>
+            </div>
+            <div class="accordion-group">
+              <div class="accordion-heading">
+                <a data-toggle="collapse" data-parent="#accordion2" href="#collapseThree">
+                  grupo colapsável #2
+                </a>
+              </div>
+              <div id="collapseThree" class="accordion-body collapse">
+                <div class="accordion-inner">
+                  Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+                </div>
+              </div>
+            </div>
+          </div>
+
+          
+          <hr>
+          <h2>Usando o bootstrap-collapse.js</h2>
+          <p>Usando via javascript:</p>
+          <pre class="prettyprint linenums">$(".collapse").collapse()</pre>
+          <h3>Opções</h3>
+          <table class="table table-bordered table-striped">
+            <thead>
+             <tr>
+               <th style="width: 100px;">Nome</th>
+               <th style="width: 50px;">Tipo</th>
+               <th style="width: 50px;">Padrão</th>
+               <th>Descrição</th>
+             </tr>
+            </thead>
+            <tbody>
+             <tr>
+               <td>parent</td>
+               <td>selector</td>
+               <td>false</td>
+               <td>Se o seletor for especificado então todos elementos colapsáveis abaixo do pai especificado serão fechado quando o item colapsável for mostrado(similar ao comportamento de um acordion tradicional)</td>
+             </tr>
+             <tr>
+               <td>toggle</td>
+               <td>boolean</td>
+               <td>true</td>
+               <td>Alterne a invocação dos elementos colapsáveis</td>
+             </tr>
+            </tbody>
+          </table>
+          <h3>Markup</h3>
+          <p>Simplesmente adicione <code>data-toggle="collapse"</code> e um <code>data-target</code> ao elemento para automaticamente dar um controle aos elementos colapsáveis. O atributo <code>data-target</code> aceita um seletor css para aplicar no elemento colapsável. Certifique-se de adicionar a classe <code>collapse</code> ao elemento colapsável. Se desejar que fique aberto por padrão, adicione a classe adicional <code>in</code></p>
+          <pre class="prettyprint linenums">
+&lt;button class="btn danger" data-toggle="collapse" data-target="#demo"&gt;
+  colapse simples
+&lt;/button&gt;
+
+&lt;div id="demo" class="collapse in"&gt; … &lt;/div&gt;</pre>
+          <h3>Métodos</h3>
+          <h4>.collapse(opções)</h4>
+          <p>Ativa seu conteúdo em um elemento colapsável. Aceita as opções opcionais em um <code>object</code></p>
+<pre class="prettyprint linenums">
+$('#myCollapsible').collapse({
+  toggle: false
+})</pre>
+          <h4>.collapse('toggle')</h4>
+          <p>Alterna o estado entre exibir ou esconder</p>
+          <h4>.collapse('show')</h4>
+          <p>Mostra um elemento colapsável</p>
+          <h4>.collapse('hide')</h4>
+          <p>Esconde o elemento colapsável</p>
+          <h3>Eventos</h3>
+          <p>
+            O Bootstrap collapse tem alguns eventos descritos abaixo:
+          </p>
+          <table class="table table-bordered table-striped">
+            <thead>
+             <tr>
+               <th style="width: 150px;">Eventos</th>
+               <th>Descrição</th>
+             </tr>
+            </thead>
+            <tbody>
+             <tr>
+               <td>show</td>
+               <td>Este evento é chamado imediatamente quando a instância do método <code>show</code> é chamado</td>
+             </tr>
+             <tr>
+               <td>shown</td>
+               <td>Este evento é chamado quando um elemento colapsável fica visível para o usuário (quando a transição css é finalizada)</td>
+             </tr>
+             <tr>
+               <td>hide</td>
+               <td>
+               	Este evento é disparado imediatamente quando o método <code>hide</code> é chamado
+               </td>
+             </tr>
+             <tr>
+               <td>hidden</td>
+               <td>Este evento é chamado quando um elemento colapsável ficou escondido para o usuário (espera até a transição completar)</td>
+             </tr>
+            </tbody>
+          </table>
+
+<pre class="prettyprint linenums">
+$('#myCollapsible').on('hidden', function () {
+  // faca algo
+})</pre>
+        </div>
+      </div>
+    </section>
+
+
+
+     <!-- Carousel
+    ================================================== -->
+    <section id="carousel">
+      <div class="page-header">
+        <h1>Carousel <small>bootstrap-carousel.js</small></h1>
+      </div>
+      <div class="row">
+        <div class="span3 columns">
+          <h3>Sobre</h3>
+          <p>Um plugin genérico para elementos em cíclicos</p>
+          <a href="../js/bootstrap-carousel.js" target="_blank" class="btn">Download do arquivo</a>
+        </div>
+        <div class="span9 columns">
+          <h2>Carousel de exemplo</h2>
+          <p>Assista o slideshow abaixo</p>
+          <div id="myCarousel" class="carousel slide">
+            <div class="carousel-inner">
+              <div class="item active">
+                <img src="assets/img/bootstrap-mdo-sfmoma-01.jpg" alt="">
+                <div class="carousel-caption">
+                  <h4>Primeiro thumbnail</h4>
+                  <p>Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
+                </div>
+              </div>
+              <div class="item">
+                <img src="assets/img/bootstrap-mdo-sfmoma-02.jpg" alt="">
+                <div class="carousel-caption">
+                  <h4>Segundo thumbnail</h4>
+                  <p>Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
+                </div>
+              </div>
+              <div class="item">
+                <img src="assets/img/bootstrap-mdo-sfmoma-03.jpg" alt="">
+                <div class="carousel-caption">
+                  <h4>Terceiro thumbnail</h4>
+                  <p>Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
+                </div>
+              </div>
+            </div>
+            <a class="left carousel-control" href="#myCarousel" data-slide="prev">&lsaquo;</a>
+            <a class="right carousel-control" href="#myCarousel" data-slide="next">&rsaquo;</a>
+          </div>
+          <hr>
+          <h2>Usando o bootstrap-carousel.js</h2>
+          <p>Chamando via javascript:</p>
+          <pre class="prettyprint linenums">$('.carousel').carousel()</pre>
+          <h3>Opções</h3>
+          <table class="table table-bordered table-striped">
+            <thead>
+             <tr>
+               <th style="width: 100px;">Nome</th>
+               <th style="width: 50px;">Tipo</th>
+               <th style="width: 50px;">Padrão</th>
+               <th>descrição</th>
+             </tr>
+            </thead>
+            <tbody>
+             <tr>
+               <td>interval</td>
+               <td>number</td>
+               <td>5000</td>
+               <td>A quantidade de delay para um cíclo automático</td>
+             </tr>
+            </tbody>
+          </table>
+          <h3>Markup</h3>
+          <p>Atributos data são integrais no plugin de carousel. Dê uma olhada no exemplo abaixo para ver os diferentes estilos de markup</p>
+<pre class="prettyprint linenums">
+&lt;div class="carousel"&gt;
+  &lt;!-- Carousel items --&gt;
+  &lt;div class="carousel-inner"&gt;
+    ...
+  &lt;/div&gt;
+  &lt;!-- Carousel nav --&gt;
+  &lt;a class="carousel-control left" href="#myCarousel" data-slide="prev"&gt;&amp;lsaquo;&lt;/a&gt;
+  &lt;a class="carousel-control right" href="#myCarousel" data-slide="next"&gt;&amp;rsaquo;&lt;/a&gt;
+&lt;/div&gt;
+</pre>
+          <h3>Métodos</h3>
+          <h4>.carousel(opções)</h4>
+          <p>Inicializa um carousel com um objeto de opções e assim inicia a transição ciclica entre os itens</p>
+<pre class="prettyprint linenums">
+$('.myCarousel').carousel({
+  interval: 2000
+})
+</pre>
+          <h4>.carousel('cycle')</h4>
+          <p>Aplica um ciclo no carousel da esquerda para direita</p>
+          <h4>.carousel('pause')</h4>
+          <p>Para o carousel de realizar ciclos automaticamente</p>
+          <h4>.carousel(number)</h4>
+          <p>avance o carousel para um determinado ponto (inicia com 0, como um array)</p>
+          <h4>.carousel('prev')</h4>
+          <p>Volte um item</p>
+          <h4>.carousel('next')</h4>
+          <p>Avance um item</p>
+          <h3>Eventos</h3>
+          <p>A classe do Bootstrap carousel expõe alguns eventos para modificar a funcionalidade</p>
+          <table class="table table-bordered table-striped">
+            <thead>
+             <tr>
+               <th style="width: 150px;">Evento</th>
+               <th>Descrição</th>
+             </tr>
+            </thead>
+            <tbody>
+             <tr>
+               <td>slide</td>
+               <td>Este evento é chamado quando o método de instância <code>slide</code> é chamado</td>
+             </tr>
+             <tr>
+               <td>slid</td>
+               <td>É chamado quando o carousel completou a chamada</td>
+             </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </section>
+
+
+
+    <!-- Typeahead
+    ================================================== -->
+    <section id="typeahead">
+      <div class="page-header">
+        <h1>Typeahead <small>bootstrap-typeahead.js</small></h1>
+      </div>
+      <div class="row">
+        <div class="span3 columns">
+          <h3>Sobre</h3>
+          <p>Um plugin simples para criar autocompletes elegantes para inputs de texto</p>
+          <a href="../js/bootstrap-typeahead.js" target="_blank" class="btn">Download do arquivo</a>
+        </div>
+        <div class="span9 columns">
+          <h2>Exemplo</h2>
+          <p>Começe a digitar no campo e veja os resultados</p>
+          <div class="well">
+            <input type="text" class="span3" style="margin: 0 auto;" data-provide="typeahead" data-items="4" data-data='["Alabama","Alaska","Arizona","Arkansas","California","Colorado","Connecticut","Delaware","Florida","Georgia","Hawaii","Idaho","Illinois","Indiana","Iowa","Kansas","Kentucky","Louisiana","Maine","Maryland","Massachusetts","Michigan","Minnesota","Mississippi","Missouri","Montana","Nebraska","Nevada","New Hampshire","New Jersey","New Mexico","New York","North Dakota","North Carolina","Ohio","Oklahoma","Oregon","Pennsylvania","Rhode Island","South Carolina","South Dakota","Tennessee","Texas","Utah","Vermont","Virginia","Washington","West Virginia","Wisconsin","Wyoming"]'>
+          </div>
+          <hr>
+          <h2>Usando o bootstrap-typeahead.js</h2>
+          <p>Chamar o typeahead por javascript</p>
+          <pre class="prettyprint linenums">$('.typeahead').typeahead()</pre>
+          <h3>Opções</h3>
+          <table class="table table-bordered table-striped">
+            <thead>
+             <tr>
+               <th style="width: 100px;">Nome</th>
+               <th style="width: 50px;">Tipo</th>
+               <th style="width: 50px;">Padrão</th>
+               <th>Descrição</th>
+             </tr>
+            </thead>
+            <tbody>
+             <tr>
+               <td>items</td>
+               <td>number</td>
+               <td>8</td>
+               <td>O número de itens para exibir no dropdown</td>
+             </tr>
+            </tbody>
+          </table>
+
+          <h3>Markup</h3>
+          <p>Adicione os atributos data para registrar um elemento com a funcionalidade do typeahead</p>
+<pre class="prettyprint linenums">
+&lt;input type="text" data-provide="typeahead"&gt;
+</pre>
+        </div>
+      </div>
+    </section>
+
+     <!-- Footer
+      ================================================== -->
+      <footer class="footer">
+        <p class="pull-right"><a href="#">Voltar ao topo</a></p>
+        <p>Este é um fork do twitter boostrap construído para o rápido desenvolvimento de componentes de interface para a Globo.com</p>
+        <p>Desenvolvido pelo <a href="http://twitter.com/twitter" target="_blank">@twitter</a> por <a href="http://twitter.com/mdo" target="_blank">@mdo</a> e <a href="http://twitter.com/fat" target="_blank">@fat</a>.</p>
+				<p>O fork é mantido por <a href="http://twitter.com/alexanmtz" target="_blank">Alexandre Magno</a></p>
+        <p>Licensiado pela <a href="http://www.apache.org/licenses/LICENSE-2.0" target="_blank">Apache License v2.0</a>. Documentação licenciada sob <a href="http://creativecommons.org/licenses/by/3.0/">CC BY 3.0</a>.</p>
+        <p>Ícones do <a href="http://glyphicons.com">Glyphicons Free</a>, licenciado por <a href="http://creativecommons.org/licenses/by/3.0/">CC BY 3.0</a>.</p>
+      </footer>
+
+    </div><!-- /container -->
+
+
+
+    <!-- Le javascript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script type="text/javascript" src="http://platform.twitter.com/widgets.js"></script>
+    <script src="../js/tests/vendor/jquery.js"></script>
+    <script src="assets/js/google-code-prettify/prettify.js"></script>
+    <script src="../js/bootstrap-transition.js"></script>
+    <script src="../js/bootstrap-alert.js"></script>
+    <script src="../js/bootstrap-modal.js"></script>
+    <script src="../js/bootstrap-dropdown.js"></script>
+    <script src="../js/bootstrap-scrollspy.js"></script>
+    <script src="../js/bootstrap-tab.js"></script>
+    <script src="../js/bootstrap-tooltip.js"></script>
+    <script src="../js/bootstrap-popover.js"></script>
+    <script src="../js/bootstrap-button.js"></script>
+    <script src="../js/bootstrap-collapse.js"></script>
+    <script src="../js/bootstrap-carousel.js"></script>
+    <script src="../js/bootstrap-typeahead.js"></script>
+    <script src="../js/bootstrap-charcount.js"></script>
+    <script src="../js/jquery.selectbox-0.1.3.js"></script>
+    <script src="../js/jquery.customInput.js"></script>
+    <script src="assets/js/application.js"></script>
+  </body>
+</html>
