@@ -74,6 +74,7 @@ Changelog
 -----------------
 ### 1.1.3
 * Retirado bold dos botoes primários
+* Posicionamento do checkbox original escondido no checkbox personalizado
 
 ### 1.1.2
 * Acertado tamanho dos add-ons que ficaram com altura errada após todos os inputs no projeto terem um tamanho maior
