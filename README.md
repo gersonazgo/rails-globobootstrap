@@ -73,7 +73,8 @@ Roadmap
 Changelog
 -----------------
 ### 1.1.3
-* Retirado bold dos botoes primários
+* Retirado bold dos botoes primários, pois davam diferença de altura com outros botões
+* Espaçamento do checkbox personalizado internamente para corrigir um bug no firefox
 
 ### 1.1.2
 * Acertado tamanho dos add-ons que ficaram com altura errada após todos os inputs no projeto terem um tamanho maior
