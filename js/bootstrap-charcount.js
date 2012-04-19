@@ -32,9 +32,10 @@
 			self.type = type;
       self.$element = $(element);
       self.options = this.getOptions(options);
+      
       var box = self.$element.val();
-			var amount = self.options.chars;
-			var count = parseInt(amount) - box.length;
+      var amount = self.options.chars;
+      var count = parseInt(amount) - box.length;
       self.$element.attr('title', self.options.text.replace('{n}', count));
       
 			self.$element.tooltip({
@@ -42,10 +43,15 @@
 		  	trigger: 'manual'
 		  }).focus(function(){
 		  	$(this).tooltip('show');
+		  	box = self.$element.val();
+        var amount = self.options.chars;
+        var count = parseInt(amount) - box.length;
+        self.$element.attr('title', self.options.text.replace('{n}', count));
+        $('.tooltip-inner').html(self.options.text.replace('{n}', count));  
 		  }).blur(function(){
 		  	$(this).tooltip('hide');
 		  }).keyup(function(){
-		  	box = self.$element.val();
+		    box = self.$element.val();
 				amount = self.options.chars;
 				count = parseInt(amount) - box.length;
 				$('.tooltip-inner').html(self.options.text.replace('{n}', count));

@@ -2,9 +2,7 @@
 // -----------------------------
 
 .sbHolder{
-	&.disabled {
-		.opacity(50);
-	}
+	cursor: pointer;
   background-color: white;
   #gradient > .vertical(#FFFFFF, #EEEEEE);
   .box-shadow(0 1px 1px @grayLight);
@@ -17,9 +15,10 @@
   font-family: Arial, sans-serif;
   font-size: 13px;
   font-weight: normal;
-  height: 29px;
+  height: 30px;
   position: relative;
   float: none;
+  vertical-align: middle;
   margin-left: 0;
   &.span1     { .inputColumns(1); }
   &.span2     { .inputColumns(2); }
@@ -35,6 +34,26 @@
   &.span12    { .inputColumns(12); }
 }
 
+.error .sbHolder {
+  border-color: @errorText;
+  display: inline-block;
+  .sbOptions {
+    border-color: @errorText;
+  }
+  a {
+    outline: none;    
+  }
+  &:focus {
+    border-color: darken(@errorText, 10%);
+    .box-shadow(0 0 6px lighten(@errorText, 20%));
+  }
+}
+
+.sbHolderDisabled {
+  .opacity(50);
+  cursor: not-allowed;
+}
+
 .sbSelector{
   display: block;
   height: 29px;
@@ -45,12 +64,11 @@
   position: absolute;
   text-indent: 10px;
   top: 0;
-  width: 170px;
 
   text-decoration: none !important;
 
   &:link, &:visited, &:hover {
-    color: #323232 !important;
+    color: #323232;
     outline: none;
   }
 }
@@ -82,11 +100,6 @@
   top: -14px;
 }
 
-.sbHolderDisabled{
-  background-color: #3C3C3C;
-  border: solid 1px #515151;
-}
-
 .sbOptions{
   background-color: white;
 
@@ -105,7 +118,7 @@
   top: 29px;
   width: 100%;
   max-height: 300px;
-  z-index: 1;
+  z-index: 2;
   overflow-y: auto;
   overflow-x: hidden;
 
@@ -115,8 +128,8 @@
 
   li {
     border-bottom: solid 1px #E5E5E5;
-    width: 93% !important;
-    padding: 0 7px;
+    width: 96% !important;
+    padding: 0 10px;
     margin: 0 20px 0px 0;
 
     &:first-child {
@@ -178,8 +191,9 @@
  	input {
 	  position: absolute;
 	  margin: 0;
-	  z-index: 0;
+	  z-index: 2;
 	  top: 3px;
+	  left: 20px;
 	  .opacity(0);
 	}
 	

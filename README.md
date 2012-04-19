@@ -57,7 +57,7 @@ https://github.com/globocom/bootstrap/issues
 Roadmap
 ---------------
 
-### 1.1
+### 2.0
 * Barra da globo estendendo a barra do bootstrap
 * Página de customização de download gerando o build corretamente
 
@@ -72,6 +72,27 @@ Roadmap
 
 Changelog
 -----------------
+### 1.1.3
+* Retirado bold dos botoes primários
+* Posicionamento do checkbox original escondido no checkbox personalizado
+
+### 1.1.2
+* Acertado tamanho dos add-ons que ficaram com altura errada após todos os inputs no projeto terem um tamanho maior
+* Tooltip nao contava apropriadamente os caracteres quando o usuário saia do campo e voltava novamente
+* Modificando cor do texto no input com erro para a cor normal e mantendo o estado de erro no input e o texto auxiliar
+* sinalização de disable no selecbox personalizado
+
+### 1.1.1
+* Caminho absoluto do sprite do globocms apontando para página de documentação
+* Altura da cortina um pouco maior no plugin de alerta
+
+### 1.1
+* Estados de erro do selectbox personalizado
+* Usando fonte da globo na página principal e a Proxima nos títulos das seções
+* Alterada cor dos estados de erro geral para um vermelho mais claro
+* Adicionado ao core o page-header para criar uma estrutura de título com borda inferior e possibilidade de ter botoes ao lado
+* Adicionado na documentação a versão
+
 ### 1.0
 * Tradução de todo conteúdo para português
 * Seção de box para criar dashboards e boxes de formulários no CMA

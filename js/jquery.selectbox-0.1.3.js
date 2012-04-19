@@ -100,39 +100,31 @@
 
       sbHolder = $("<div>", {
         "id": "sbHolder_" + inst.uid,
-        "class": inst.settings.classHolder + " " + (($target.attr("class") != undefined) ? $target.attr("class") : "")
+        "class": inst.settings.classHolder + " " + (($target.attr("class") != undefined) ? $target.attr("class") : ""),
+        "click": function (e) {
+          if(!$(e.target).parent().is('li')) {
+            e.preventDefault();
+            closeOthers.apply($(this), []);
+            var uid = $(this).attr("id").split("_")[1];
+            if (self._state[uid]) {
+              self._closeSelectbox(target);
+            } else {
+              self._openSelectbox(target);
+            }            
+          }
+        }
       });
 
       sbSelector = $("<a>", {
         "id": "sbSelector_" + inst.uid,
         "href": "#",
-        "class": inst.settings.classSelector,
-        "click": function (e) {
-          e.preventDefault();
-          closeOthers.apply($(this), []);
-          var uid = $(this).attr("id").split("_")[1];
-          if (self._state[uid]) {
-            self._closeSelectbox(target);
-          } else {
-            self._openSelectbox(target);
-          }
-        }
+        "class": inst.settings.classSelector
       });
 
       sbToggle = $("<a>", {
         "id": "sbToggle_" + inst.uid,
         "href": "#",
-        "class": inst.settings.classToggle,
-        "click": function (e) {
-          e.preventDefault();
-          closeOthers.apply($(this), []);
-          var uid = $(this).attr("id").split("_")[1];
-          if (self._state[uid]) {
-            self._closeSelectbox(target);
-          } else {
-            self._openSelectbox(target);
-          }
-        }
+        "class": inst.settings.classToggle
       });
       sbToggle.appendTo(sbHolder);
 

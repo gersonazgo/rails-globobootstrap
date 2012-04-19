@@ -67,8 +67,13 @@ hr.soften {
   font-size: 90px;
   letter-spacing: -1px;
   line-height: 1;
-  font-family: VolkswagenSerial-Bold;
+  font-family: ProximaNovaS-Semibold;
 }
+
+.jumbotron h1.logo {
+	font-family: VolkswagenSerial-Bold;
+}
+
 .jumbotron p {
   margin-bottom: 18px;
   font-size: 25px;
