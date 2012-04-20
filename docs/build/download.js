@@ -27,19 +27,17 @@ http.createServer(function (req, res) {
        
         if(post.css) {
           post.css = (post.css.constructor == Array ? post.css : [post.css])  
+          for(var i=0; i<post.css.length; i++){
+            archive.addLessCss(post.css[i])
+          }
         }
         
         if(post.js) {
           post.js = (post.js.constructor == Array ? post.js : [post.js])
-        }
-        
-        for(var i=0; i<post.css.length; i++){
-            archive.addLessCss(post.css[i])
-        }
-        
-        for(var i=0; i<post.js.length; i++) {
+          for(var i=0; i<post.js.length; i++) {
               archive.addJavascript(post.js[i])
           }
+        }
         
         var buffer = archive.toBuffer();
         res.write(buffer);
