@@ -24,7 +24,7 @@ http.createServer(function (req, res) {
     req.on("end", function() {
 
         var json = qs.parse(data);
-        var variables = "";
+        var variables = fs.readFileSync( resolvePath(__dirname + '/../../lib/variables.less'), 'utf-8' );
         var archive = new zip();
         for (var variavel in json) {
             if (variavel[0] == "@"){
