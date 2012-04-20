@@ -195,6 +195,19 @@ $(function () {
 		$('#build-error').alert('open');
 		return false;
 	});*/
+	
+	$('.toggle-all').bind('click', function(){
+	  var section = $(this).parent().parent();
+	  section.find('input:checkbox').each(function(){
+	    if($(this).attr('checked')) {
+	       $(this).removeAttr('checked');  
+	    } else {
+	      $(this).attr('checked', 'checked');
+	    }
+	    
+	  });
+	  return false;
+	});
   
 });
 
