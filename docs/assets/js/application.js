@@ -148,13 +148,6 @@ $(function () {
   $('.tooltip-test').tooltip();
 
   // popover demo
-  $("a[rel=ensina]")
-    .ensina('show')
-    .click(function(e) {
-      e.preventDefault()
-    }); 
-
-  // popover demo
   $("a[rel=popover]")
     .popover('show')
     .click(function(e) {

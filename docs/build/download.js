@@ -24,12 +24,18 @@ http.createServer(function (req, res) {
                 archive.setVariable(variable, post[variable])
             }
         }
+       
+        post.css = (post.css.constructor == Array ? post.css : [post.css])
+        
+        post.js = (post.js.constructor == Array ? post.js : [post.js])
+        
         for(var i=0; i<post.css.length; i++){
             archive.addLessCss(post.css[i])
         }
         for(var i=0; i<post.js.length; i++) {
-            archive.addJavascript(post.js[i])
-        }
+              archive.addJavascript(post.js[i])
+          }
+        
         var buffer = archive.toBuffer();
         res.write(buffer);
         res.end();
