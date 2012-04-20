@@ -33,12 +33,18 @@ http.createServer(function (req, res) {
         };
         var mixins = fs.readFileSync( resolvePath(__dirname + '/../../lib/mixins.less'), 'utf-8' );
         
-        for(var i=0; i<json.file.length; i++){
-          var css_less = fs.readFileSync( resolvePath(__dirname + '/../../lib/' + json.file[i] + '.less'), 'utf-8' );
+        for(var i=0; i<json.css.length; i++){
+          var css_less = fs.readFileSync( resolvePath(__dirname + '/../../lib/' + json.css[i] + '.less'), 'utf-8' );
           parser.parse(mixins + variables + css_less, function (e, tree) {
               var css = tree.toCSS({ compress: false })
-              archive.add(json.file[i] + '.css' , new Buffer(css, "utf8"));
+              archive.add(json.css[i] + '.css' , new Buffer(css, "utf8"));
           });
+        }
+        if(json.js) {
+          for(var i=0; i<json.js.length; i++) {
+            var javascripts = fs.readFileSync( resolvePath(__dirname + '/../../js/'+ json.js[i]), 'utf-8' );
+            archive.add(json.js[i], new Buffer(javascripts, "utf8"));            
+          }
         }
         var buffer = archive.toBuffer();
         res.write(buffer);
