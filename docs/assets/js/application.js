@@ -191,10 +191,10 @@ $(function () {
 	});    
 	
 	// make build alert demo
-	$('#make-build').bind('click', function(){
+	/*$('#make-build').bind('click', function(){
 		$('#build-error').alert('open');
 		return false;
-	});
+	});*/
   
 });
 

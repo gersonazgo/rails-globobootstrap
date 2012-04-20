@@ -17,7 +17,7 @@
     </ul>
   </div>
 </header>
-
+ <form action="http://127.0.0.1:1337/" method="POST">
 <section class="download" id="components">
   <div class="page-header">
     <a class="pull-right toggle-all" href="#">Inverter tudo</a>
@@ -29,7 +29,7 @@
   <div class="row download-builder">
     <div class="span3">
       <h3>Scaffolding</h3>
-      <label class="checkbox"><input type="checkbox" value=""> CSS reset</label>
+      <label class="checkbox"><input type="checkbox" checked="true" name="file" value="reset"> CSS reset</label>
       <label class="checkbox"><input type="checkbox" value=""> Sistema de Grid</label>
       <label class="checkbox"><input type="checkbox" value=""> Layouts</label>
       <h3>Base CSS</h3>
@@ -37,7 +37,7 @@
       <label class="checkbox"><input type="checkbox" value=""> Code and pre</label>
       <label class="checkbox"><input type="checkbox" value=""> Labels</label>
       <label class="checkbox"><input type="checkbox" value=""> Tabelas</label>
-      <label class="checkbox"><input type="checkbox" value=""> Formulários</label>
+      <label class="checkbox"><input type="checkbox" checked="true" name="file" value="forms"> Formulários</label>
       <label class="checkbox"><input type="checkbox" value=""> Botões</label>
       <label class="checkbox"><input type="checkbox" value=""> Ícones</label>
     </div><!-- /span -->
@@ -66,7 +66,7 @@
     </div><!-- /span -->
     <div class="span3">
       <h3>Outros</h3>
-      <label class="checkbox"><input type="checkbox" value=""> Wells</label>
+      <label class="checkbox"><input type="checkbox" checked="true" name="file" value="wells"> Wells</label>
       <label class="checkbox"><input type="checkbox" value=""> ícone fechar</label>
       <label class="checkbox"><input type="checkbox" value=""> Utilitários</label>
       <label class="checkbox"><input type="checkbox" value=""> Animação dos componentes</label>
@@ -232,11 +232,12 @@
     </h1>
   </div>
   <div class="download-btn">
-    <a class="btn xlarge primary" id="make-build" href="#">Customizar e fazer Download</a>
+    
+      <input type="submit" class="btn xlarge primary" id="make-build" value="Customizar e fazer Download" /> 
+    
     <h4>O que será incluído?</h4>
     <p>O download inclui css compilado, compilado e minificado, e compila plugins jQuery, todos compactados em um zip para sua conveniência</p>
   </div>
+  
 </section><!-- /download -->
-<div class="alert-curtain" id="build-error">
-  <p><span class="cms-icon error"></span>Não foi possível realizar o build</p>
-</div>
+</form>
