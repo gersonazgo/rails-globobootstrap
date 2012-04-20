@@ -1,5 +1,4 @@
 var http = require('http'),
-    zipper = require('zipper').Zipper,
     fs = require("fs"),
     zip = require("node-native-zip"),
     less = require("less"),
@@ -25,14 +24,18 @@ http.createServer(function (req, res) {
     req.on("end", function() {
 
         var json = qs.parse(data);
-        
+        var variables = "";
         var archive = new zip();
-        var variables = fs.readFileSync( resolvePath(__dirname + '/../../lib/variables.less'), 'utf-8' ); 
+        for (var variavel in json) {
+            if (variavel[0] == "@"){
+                variables += (variavel + ": " + json[variavel] + ";\n");
+            }
+        };
         var mixins = fs.readFileSync( resolvePath(__dirname + '/../../lib/mixins.less'), 'utf-8' );
         
         for(var i=0; i<json.file.length; i++){
           var css_less = fs.readFileSync( resolvePath(__dirname + '/../../lib/' + json.file[i] + '.less'), 'utf-8' );
-          parser.parse(variables + mixins + css_less, function (e, tree) {
+          parser.parse(mixins + variables + css_less, function (e, tree) {
               var css = tree.toCSS({ compress: false })
               archive.add(json.file[i] + '.css' , new Buffer(css, "utf8"));
           });
