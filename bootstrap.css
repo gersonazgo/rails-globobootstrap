@@ -6,7 +6,7 @@
  * http://www.apache.org/licenses/LICENSE-2.0
  *
  * Designed and built with all the love in the world @twitter by @mdo and @fat.
- * Date: Tue Apr 17 16:09:51 BRT 2012
+ * Date: Wed Apr 25 10:58:00 BRT 2012
  */
 article,
 aside,
@@ -1783,8 +1783,8 @@ table .span12 {
 .asterisk {
   background-position: -456px -96px;
 }
-.cms-icon {
-  background-image: url(http://docs.webmedia.globoi.com/bootstrap/docs/assets/img/sprite-globo-cms.png);
+.cms-icons {
+  background-image: url(http://docs.webmedia.globoi.com/bootstrap/docs/assets/img/sprite-legacy-icons.png);
   background-position: 0 0;
   background-repeat: no-repeat;
   display: inline-block;
@@ -1792,6 +1792,25 @@ table .span12 {
   height: 34px;
   margin: 0 13px;
   vertical-align: text-top;
+}
+.cms-icons.success {
+  background-position: 0 -197px;
+}
+.cms-icons.error {
+  background-position: 0 -161px;
+}
+.ui-icons {
+  background-image: url(http://docs.webmedia.globoi.com/bootstrap/docs/assets/img/ui-icons.png);
+  background-position: 0 0;
+  background-repeat: no-repeat;
+  display: inline-block;
+  width: 34px;
+  height: 34px;
+  margin: 0 13px;
+  vertical-align: text-top;
+}
+.ui-icons.dotted-vertical {
+  background-position: 0 -224px;
 }
 .dropdown {
   position: relative;
@@ -3134,12 +3153,6 @@ input[type=submit].btn::-moz-focus-inner {
   font-size: 21px;
   text-align: center;
   margin-top: 15px;
-}
-.alert-curtain .success {
-  background-position: 0 -197px;
-}
-.alert-curtain .error {
-  background-position: 0 -161px;
 }
 .alert-block {
   padding-top: 14px;
