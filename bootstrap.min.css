@@ -75,8 +75,10 @@ dl{margin-bottom:18px;}
 dt,dd{line-height:18px;}
 dt{font-weight:bold;}
 dd{margin-left:9px;}
-.list-draggable{margin:0;padding:0;}.list-draggable li{border:1px solid #eeeeee;border-bottom:none;padding:5px 0;}.list-draggable li .drag-label{margin-left:5px;}
-.list-draggable li .drag-actions{margin:0 5px;}
+.list-draggable{margin:0;padding:0;color:#999999;}.list-draggable li{border:1px solid #eeeeee;border-bottom:none;padding:5px 0;}.list-draggable li .drag-label{margin-left:5px;}
+.list-draggable li .drag-actions a{border:1px solid transparent;padding:2px 0px 2px 6px;}
+.list-draggable li .drag-actions:last-child{margin-right:5px;}
+.list-draggable li:hover{color:#222222;cursor:move;background-color:#f7f7f7;}.list-draggable li:hover .drag-actions a{border:1px solid #ccc;border-bottom-color:#bbb;-webkit-border-radius:2px;-moz-border-radius:2px;border-radius:2px;background-color:#e6e6e6;background-image:-webkit-gradient(linear, 0 0, 0 100%, from(#ffffff), color-stop(25%, #ffffff), to(#e6e6e6));background-image:-webkit-linear-gradient(#ffffff, #ffffff 25%, #e6e6e6);background-image:-moz-linear-gradient(top, #ffffff, #ffffff 25%, #e6e6e6);background-image:-ms-linear-gradient(#ffffff, #ffffff 25%, #e6e6e6);background-image:-o-linear-gradient(#ffffff, #ffffff 25%, #e6e6e6);background-image:linear-gradient(#ffffff, #ffffff 25%, #e6e6e6);background-repeat:no-repeat;filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffffff', endColorstr='#e6e6e6', GradientType=0);}
 .list-draggable li:last-child{border:1px solid #eeeeee;}
 hr{margin:18px 0;border:0;border-top:1px solid #e5e5e5;border-bottom:1px solid #ffffff;}
 strong{font-weight:bold;}

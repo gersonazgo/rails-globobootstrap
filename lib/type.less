@@ -137,6 +137,7 @@ dd {
 .list-draggable {
   margin: 0;
   padding: 0;
+  color: @grayLight;
   li {
     border: 1px solid @grayLighter;
     border-bottom: none;
@@ -145,7 +146,25 @@ dd {
       margin-left: 5px;
     }
     .drag-actions {
-      margin: 0 5px;
+      
+      a {
+        border: 1px solid transparent;
+        padding: 2px 0px 2px 6px;
+      }
+      &:last-child {
+        margin-right: 5px;
+      }
+    }
+    &:hover {
+      color: @grayDarker;
+      cursor: move;
+      background-color: @grayHover;
+      .drag-actions a {
+        border: 1px solid #ccc;
+        border-bottom-color: #bbb;
+        .border-radius(2px);
+        #gradient > .vertical-three-colors(@white, @white, 25%, darken(@white, 10%)); // Don't use .gradientbar() here since it does a three-color gradient
+      }
     }
     &:last-child {
       border: 1px solid @grayLighter;
