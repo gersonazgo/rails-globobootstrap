@@ -75,6 +75,9 @@ dl{margin-bottom:18px;}
 dt,dd{line-height:18px;}
 dt{font-weight:bold;}
 dd{margin-left:9px;}
+.list-draggable{margin:0;padding:0;}.list-draggable li{border:1px solid #eeeeee;border-bottom:none;padding:5px 0;}.list-draggable li .drag-label{margin-left:5px;}
+.list-draggable li .drag-actions{margin:0 5px;}
+.list-draggable li:last-child{border:1px solid #eeeeee;}
 hr{margin:18px 0;border:0;border-top:1px solid #e5e5e5;border-bottom:1px solid #ffffff;}
 strong{font-weight:bold;}
 em{font-style:italic;}
@@ -347,7 +350,7 @@ table .span12{float:none;width:924px;margin-left:0;}
 .asterisk{background-position:-456px -96px;}
 .cms-icons{background-image:url(http://docs.webmedia.globoi.com/bootstrap/docs/assets/img/sprite-cms-icons.png);background-position:0 0;background-repeat:no-repeat;display:inline-block;width:34px;height:34px;margin:0 13px;vertical-align:text-top;}.cms-icons.success{background-position:0 -197px;}
 .cms-icons.error{background-position:0 -161px;}
-.ui-icons{background-image:url(http://docs.webmedia.globoi.com/bootstrap/docs/assets/img/ui-icons.png);background-position:0 0;background-repeat:no-repeat;display:inline-block;width:34px;height:34px;margin:0 13px;vertical-align:text-top;}.ui-icons.dotted-vertical{background-position:0 -224px;}
+.ui-icons{background-image:url(http://docs.webmedia.globoi.com/bootstrap/docs/assets/img/ui-icons.png);background-position:0 0;background-repeat:no-repeat;display:inline-block;width:15px;height:13px;margin:0 5px;vertical-align:text-top;}.ui-icons.dotted-vertical{background-position:0 -224px;}
 .dropdown{position:relative;}
 .caret{display:inline-block;width:0;height:0;text-indent:-99999px;vertical-align:top;border-left:4px solid transparent;border-right:4px solid transparent;border-top:4px solid #000000;opacity:0.3;filter:alpha(opacity=30);content:"\2193";}
 .dropdown .caret{margin-top:8px;margin-left:2px;*margin-top:7px;}

@@ -137,6 +137,20 @@ dd {
 .list-draggable {
   margin: 0;
   padding: 0;
+  li {
+    border: 1px solid @grayLighter;
+    border-bottom: none;
+    padding: 5px 0;
+    .drag-label {
+      margin-left: 5px;
+    }
+    .drag-actions {
+      margin: 0 5px;
+    }
+    &:last-child {
+      border: 1px solid @grayLighter;
+    }
+  }
 }
 
 // MISC
