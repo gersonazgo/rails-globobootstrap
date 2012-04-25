@@ -72,6 +72,11 @@ Roadmap
 
 Changelog
 -----------------
+### 1.2
+* Criada seção de um componente css lista reordenáveis
+* Importado sprite do jQuery UI, por enquanto somente com o mapeamento da classe do ícone que representa um item reordenável
+* Espacamento do box-footer do boxe primário para dar uma melhor leitura e separação da barra 
+
 ### 1.1.3
 * Retirado bold dos botoes primários
 * Posicionamento do checkbox original escondido no checkbox personalizado
