@@ -345,7 +345,7 @@ table .span12{float:none;width:924px;margin-left:0;}
 .plus{background-position:-408px -96px;}
 .minus{background-position:-432px -96px;}
 .asterisk{background-position:-456px -96px;}
-.cms-icons{background-image:url(http://docs.webmedia.globoi.com/bootstrap/docs/assets/img/sprite-legacy-icons.png);background-position:0 0;background-repeat:no-repeat;display:inline-block;width:34px;height:34px;margin:0 13px;vertical-align:text-top;}.cms-icons.success{background-position:0 -197px;}
+.cms-icons{background-image:url(http://docs.webmedia.globoi.com/bootstrap/docs/assets/img/sprite-cms-icons.png);background-position:0 0;background-repeat:no-repeat;display:inline-block;width:34px;height:34px;margin:0 13px;vertical-align:text-top;}.cms-icons.success{background-position:0 -197px;}
 .cms-icons.error{background-position:0 -161px;}
 .ui-icons{background-image:url(http://docs.webmedia.globoi.com/bootstrap/docs/assets/img/ui-icons.png);background-position:0 0;background-repeat:no-repeat;display:inline-block;width:34px;height:34px;margin:0 13px;vertical-align:text-top;}.ui-icons.dotted-vertical{background-position:0 -224px;}
 .dropdown{position:relative;}
