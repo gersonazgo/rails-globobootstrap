@@ -6,7 +6,7 @@
  * http://www.apache.org/licenses/LICENSE-2.0
  *
  * Designed and built with all the love in the world @twitter by @mdo and @fat.
- * Date: Wed Apr 25 16:30:11 BRT 2012
+ * Date: Thu Apr 26 15:21:04 BRT 2012
  */
 article,
 aside,
@@ -389,7 +389,8 @@ dd {
 }
 .list-draggable li .drag-actions a {
   border: 1px solid transparent;
-  padding: 2px 0px 2px 6px;
+  margin-right: 4px;
+  padding: 2px 0 2px 5px;
 }
 .list-draggable li .drag-actions:last-child {
   margin-right: 5px;
@@ -1398,6 +1399,7 @@ select:focus:required:invalid:focus {
 .box.secondary .box-footer {
   background: #eeeeee;
   border-top: 1px solid #eeeeee;
+  margin-top: 20px;
 }
 .box.secondary .box-footer .actions {
   padding: 10px 20px 20px 20px;
