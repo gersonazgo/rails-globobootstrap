@@ -72,6 +72,10 @@ Roadmap
 
 Changelog
 -----------------
+### 1.2.1
+* Corrigido alguns bugs na listagem ordenada
+* Introduzida na página de documentação exemplos de uso com o plugin de sortable do jQuery-ui
+
 ### 1.2
 * Criada seção de um componente css lista reordenáveis
 * Importado sprite do jQuery UI, por enquanto somente com o mapeamento da classe do ícone que representa um item reordenável

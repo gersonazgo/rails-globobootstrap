@@ -195,6 +195,17 @@ $(function () {
 		$('#build-error').alert('open');
 		return false;
 	});
+	
+	// sortable demo
+	$('.list-draggable').sortable({
+	  start: function(event, ui) {
+	    $(ui.item).addClass('ui-sorting');
+	    $(ui.item).prev().addClass('bordered');
+	  },
+	  stop: function(event, ui) {
+	    $(ui.item).removeClass('ui-sorting');
+	  }
+	});
   
 });
 
