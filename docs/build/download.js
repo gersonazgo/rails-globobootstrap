@@ -41,7 +41,7 @@ http.createServer(function (req, res) {
         
         var buffer = archive.toBuffer();
         res.write(buffer);
-        res.end();
+        res.end('Globo Bootstrap build');
     });
 
 }).listen(1337, '127.0.0.1');
