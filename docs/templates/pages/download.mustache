@@ -3,11 +3,7 @@
 ================================================== -->
 <header class="jumbotron subhead" id="overview">
   <h1>Customizar e download</h1>
-  <div class="alert alert-block alert-error">
-  	<h4 class="alert-heading">Em desenvolvimento</h4>
-  	Esta página está em desenvolvimento para que você possa selecionar componentes e personalizar seu download, por enquanto, é possível apenas fazer download do repositório completo.
-  </div>
-  <p class="lead"><a href="https://github.com/globocom/bootstrap/zipball/master">Download do repositório completo</a> <span style="text-decoration:line-through">Ou customize os componentes da forma que desejar</span></p>
+  <p class="lead"><a href="https://github.com/globocom/bootstrap/zipball/master">Download do repositório completo</a> <span>Ou customize os componentes da forma que desejar</span></p>
   <div class="subnav">
     <ul class="nav pills">
       <li><a href="#components">1. Selecionar componentes</a></li>
@@ -17,7 +13,7 @@
     </ul>
   </div>
 </header>
-
+ <form action="http://10.2.121.202:1337" method="POST">
 <section class="download" id="components">
   <div class="page-header">
     <a class="pull-right toggle-all" href="#">Inverter tudo</a>
@@ -29,51 +25,50 @@
   <div class="row download-builder">
     <div class="span3">
       <h3>Scaffolding</h3>
-      <label class="checkbox"><input type="checkbox" value=""> CSS reset</label>
-      <label class="checkbox"><input type="checkbox" value=""> Sistema de Grid</label>
-      <label class="checkbox"><input type="checkbox" value=""> Layouts</label>
+      <label class="checkbox"><input type="checkbox" checked="true" name="css" value="reset"> CSS reset</label>
+      <label class="checkbox"><input type="checkbox"checked="true" name="css" value="scaffolding"> Sistema de Grid</label>
+      <!-- <label class="checkbox"><input type="checkbox" value=""> Layouts</label> -->
       <h3>Base CSS</h3>
-      <label class="checkbox"><input type="checkbox" value=""> Cabeçalhos e corpo</label>
-      <label class="checkbox"><input type="checkbox" value=""> Code and pre</label>
-      <label class="checkbox"><input type="checkbox" value=""> Labels</label>
-      <label class="checkbox"><input type="checkbox" value=""> Tabelas</label>
-      <label class="checkbox"><input type="checkbox" value=""> Formulários</label>
-      <label class="checkbox"><input type="checkbox" value=""> Botões</label>
-      <label class="checkbox"><input type="checkbox" value=""> Ícones</label>
+      <label class="checkbox"><input type="checkbox" checked="true" name="css" value="type"> Cabeçalhos e corpo, code e pre</label>
+      <label class="checkbox"><input type="checkbox" checked="true" name="css" value="labels"> Labels</label>
+      <label class="checkbox"><input type="checkbox" checked="true" name="css" value="tables"> Tabelas</label>
+      <label class="checkbox"><input type="checkbox" checked="true" name="css" value="forms"> Formulários</label>
+      <label class="checkbox"><input type="checkbox" checked="true" name="css" value="buttons"> Botões</label>
+      <label class="checkbox"><input type="checkbox" checked="true" name="css" value="sprites"> Ícones</label>
     </div><!-- /span -->
     <div class="span3">
       <h3>Componentes</h3>
-      <label class="checkbox"><input type="checkbox" value=""> Grupo de botões</label>
-      <label class="checkbox"><input type="checkbox" value=""> Botões combo</label>
-      <label class="checkbox"><input type="checkbox" value=""> Navegação, Tabs e pílulas</label>
-      <label class="checkbox"><input type="checkbox" value=""> Barra de navegação</label>
-      <label class="checkbox"><input type="checkbox" value=""> Breadcrumbs</label>
-      <label class="checkbox"><input type="checkbox" value=""> Paginação</label>
-      <label class="checkbox"><input type="checkbox" value=""> Paginador</label>
-      <label class="checkbox"><input type="checkbox" value=""> Thumbnails</label>
-      <label class="checkbox"><input type="checkbox" value=""> Alertas</label>
-      <label class="checkbox"><input type="checkbox" value=""> Barra de progresso</label>
+      <label class="checkbox"><input type="checkbox" checked="true" name="css" value="button-groups"> Grupo de botões</label>
+      <!-- <label class="checkbox"><input type="checkbox" value=""> Botões combo</label> -->
+      <label class="checkbox"><input type="checkbox" checked="true" name="css" value="navs"> Navegação, Tabs e pílulas</label>
+      <label class="checkbox"><input type="checkbox" checked="true" name="css" value="navbar"> Barra de navegação</label>
+      <label class="checkbox"><input type="checkbox" checked="true" name="css" value="breadcrumbs"> Breadcrumbs</label>
+      <label class="checkbox"><input type="checkbox" checked="true" name="css" value="pagination"> Paginação</label>
+      <label class="checkbox"><input type="checkbox" checked="true" name="css" value="pager"> Paginador</label>
+      <label class="checkbox"><input type="checkbox" checked="true" name="css" value="thumbnails"> Thumbnails</label>
+      <label class="checkbox"><input type="checkbox" checked="true" name="css" value="alerts"> Alertas</label>
+      <label class="checkbox"><input type="checkbox" checked="true" name="css" value="progress-bars"> Barra de progresso</label>
     </div><!-- /span -->
     <div class="span3">
       <h3>Componentes JS</h3>
-      <label class="checkbox"><input type="checkbox" value=""> Tooltips</label>
-      <label class="checkbox"><input type="checkbox" value=""> Popovers</label>
-      <label class="checkbox"><input type="checkbox" value=""> Modals</label>
-      <label class="checkbox"><input type="checkbox" value=""> Dropdowns</label>
-      <label class="checkbox"><input type="checkbox" value=""> Tabs</label>
-      <label class="checkbox"><input type="checkbox" value=""> Collapse</label>
-      <label class="checkbox"><input type="checkbox" value=""> Carousel</label>
+      <label class="checkbox"><input type="checkbox" checked="true" name="css" value="tooltip"> Tooltips</label>
+      <label class="checkbox"><input type="checkbox" checked="true" name="css" value="popovers"> Popovers</label>
+      <label class="checkbox"><input type="checkbox" checked="true" name="css" value="modals"> Modals</label>
+      <label class="checkbox"><input type="checkbox" checked="true" name="css" value="dropdowns"> Dropdowns</label>
+      <!-- <label class="checkbox"><input type="checkbox" checked="true" name="css" value="navs"> Tabs</label> -->
+      <label class="checkbox"><input type="checkbox" checked="true" name="css" value="accordion"> Collapse</label>
+      <label class="checkbox"><input type="checkbox" checked="true" name="css" value="carousel"> Carousel</label>
     </div><!-- /span -->
     <div class="span3">
       <h3>Outros</h3>
-      <label class="checkbox"><input type="checkbox" value=""> Wells</label>
-      <label class="checkbox"><input type="checkbox" value=""> ícone fechar</label>
-      <label class="checkbox"><input type="checkbox" value=""> Utilitários</label>
-      <label class="checkbox"><input type="checkbox" value=""> Animação dos componentes</label>
+      <label class="checkbox"><input type="checkbox" checked="true" name="css" value="wells"> Wells</label>
+      <label class="checkbox"><input type="checkbox" checked="true" name="css" value="close"> ícone fechar</label>
+      <label class="checkbox"><input type="checkbox" checked="true" name="css" value="utilities"> Utilitários</label>
+      <label class="checkbox"><input type="checkbox" checked="true" name="css" value="component-animations"> Animação dos componentes</label>
       <h3>Responsive</h3>
-      <label class="checkbox"><input type="checkbox" value=""> Max-width 480px</label>
-      <label class="checkbox"><input type="checkbox" value=""> Max-width 768px</label>
-      <label class="checkbox"><input type="checkbox" value=""> Max-width 1210px</label>
+      <label class="checkbox"><input type="checkbox" checked="true" name="css" value="responsive"> Max-width 480px</label>
+      <label class="checkbox"><input type="checkbox" checked="true" name="css" value="responsive"> Max-width 768px</label>
+      <label class="checkbox"><input type="checkbox" checked="true" name="css" value="responsive"> Max-width 1210px</label>
     </div><!-- /span -->
   </div><!-- /row -->
 </section>
@@ -90,68 +85,69 @@
     <div class="span4">
       <h3>Links</h3>
       <label>@linkColor</label>
-      <input type="text" class="span3" value="#08c">
+      <input type="text" class="span3" name="@linkColor" value="#08c">
       <label>@linkColorHover</label>
-      <input type="text" class="span3" value="darken(@linkColor, 15%)">
+      <input type="text" class="span3" name="@linkColorHover" value="darken(@linkColor, 15%)">
       <h3>Grid</h3>
+
       <label>@gridColumns</label>
-      <input type="text" class="span3" value="">
+      <input type="text" class="span3" name="@gridColumns" value="12">
       <label>@gridColumnWidth</label>
-      <input type="text" class="span3" value="">
+      <input type="text" class="span3" name="@gridColumnWidth" value="60px">
       <label>@gridGutterWidth</label>
-      <input type="text" class="span3" value="">
+      <input type="text" class="span3" name="@gridGutterWidth" value="20px">
       <label>@siteWidth</label>
-      <input type="text" class="span3" value="">
+      <input type="text" class="span3" name="@siteWidth" value="(@gridColumns * @gridColumnWidth) + (@gridGutterWidth * (@gridColumns - 1))">
       <label>@fluidSidebarWidth</label>
-      <input type="text" class="span3" value="">
+      <input type="text" class="span3" name="@fluidSidebarWidth" value="220px">
     </div><!-- /span -->
     <div class="span4">
       <h3>Tipografia</h3>
       <label>@baseFontSize</label>
-      <input type="text" class="span3" value="13px">
+      <input type="text" class="span3" name="@baseFontSize" value="13px">
       <label>@baseFontFamily</label>
-      <input type="text" class="span3" value="'Helvetica Neue', Helvetica, Arial, sans-serif">
+      <input type="text" class="span3" name="@baseFontFamily" value="'Helvetica Neue', Helvetica, Arial, sans-serif">
       <label>@baseLineHeight</label>
-      <input type="text" class="span3" value="18px">
+      <input type="text" class="span3" name="@baseLineHeight" value="18px">
       <h3>Formulários</h3>
       <label>@primaryButtonColor</label>
-      <input type="text" class="span3" value="@blue">
+      <input type="text" class="span3" name="@primaryButtonColor" value="@blue">
       <label>@placeholderText</label>
-      <input type="text" class="span3" value="@grayLight">
+      <input type="text" class="span3" name="@placeholderText" value="@grayLight">
       <h3>Barra de navegação</h3>
       <label>@navbarHeight</label>
-      <input type="text" class="span3" value="40px">
+      <input type="text" class="span3" name="@navbarHeight" value="40px">
       <label>@navbarBackground</label>
-      <input type="text" class="span3" value="@grayDarker">
+      <input type="text" class="span3" name="@navbarBackground" value="@grayDarker">
       <label>@navbarBackgroundHighlight</label>
-      <input type="text" class="span3" value="@grayDark">
+      <input type="text" class="span3" name="@navbarBackgroundHighlight" value="@grayDark">
     </div><!-- /span -->
     <div class="span4">
       <h3>Estados do formulário e alertas</h3>
       <label>@warningText</label>
-      <input type="text" class="span3" value="#c09853">
+      <input type="text" class="span3" name="@warningText" value="#c09853">
       <label>@warningBackground</label>
-      <input type="text" class="span3" value="#fcf8e3">
+      <input type="text" class="span3" name="@warningBackground" value="#fcf8e3">
       <label>@warningBorder</label>
-      <input type="text" class="span3" value="#f3edd2">
+      <input type="text" class="span3" name="@warningBorder" value="#f3edd2">
       <label>@errorText</label>
-      <input type="text" class="span3" value="#b94a48">
+      <input type="text" class="span3" name="@errorText" value="#b94a48">
       <label>@errorBackground</label>
-      <input type="text" class="span3" value="#f2dede">
+      <input type="text" class="span3" name="@errorBackground" value="#f2dede">
       <label>@errorBorder</label>
-      <input type="text" class="span3" value="#e9c7c7">
+      <input type="text" class="span3" name="@errorBorder" value="#e9c7c7">
       <label>@successText</label>
-      <input type="text" class="span3" value="#468847">
+      <input type="text" class="span3" name="@successText" value="#468847">
       <label>@successBackground</label>
-      <input type="text" class="span3" value="#dff0d8">
+      <input type="text" class="span3" name="@successBackground" value="#dff0d8">
       <label>@successBorder</label>
-      <input type="text" class="span3" value="#cfe8c4">
+      <input type="text" class="span3" name="@successBorder" value="#cfe8c4">
       <label>@infoText</label>
-      <input type="text" class="span3" value="#3a87ad">
+      <input type="text" class="span3" name="@infoText" value="#3a87ad">
       <label>@infoBackground</label>
-      <input type="text" class="span3" value="#d9edf7">
+      <input type="text" class="span3" name="@infoBackground" value="#d9edf7">
       <label>@infoBorder</label>
-      <input type="text" class="span3" value="#bfe1f2">
+      <input type="text" class="span3" name="@infoBorder" value="#bfe1f2">
     </div><!-- /span -->
   </div><!-- /row -->
 </section>
@@ -167,53 +163,53 @@
   <div class="row download-builder">
     <div class="span4">
       <label class="checkbox">
-        <input type="checkbox" checked="true" value="bootstrap-modal.js">
+        <input type="checkbox" checked="true" name="js" value="bootstrap-modal.js">
         Modals
       </label>
       <label class="checkbox">
-        <input type="checkbox" checked="true" value="bootstrap-dropdown.js">
+        <input type="checkbox" checked="true" name="js" value="bootstrap-dropdown.js">
         Dropdowns
       </label>
       <label class="checkbox">
-        <input type="checkbox" checked="true" value="bootstrap-scrollspy.js">
+        <input type="checkbox" checked="true" name="js" value="bootstrap-scrollspy.js">
         Scrollspy
       </label>
       <label class="checkbox">
-        <input type="checkbox" checked="true" value="bootstrap-tab.js">
+        <input type="checkbox" checked="true" name="js" value="bootstrap-tab.js">
         Togglable tabs
       </label>
       <label class="checkbox">
-        <input type="checkbox" checked="true" value="bootstrap-tooltip.js">
+        <input type="checkbox" checked="true" name="js" value="bootstrap-tooltip.js">
         Tooltips
       </label>
       <label class="checkbox">
-        <input type="checkbox" checked="true" value="bootstrap-popover.js">
+        <input type="checkbox" checked="true" name="js" value="bootstrap-popover.js">
         Popovers <small>(requires Tooltips)</small>
       </label>
     </div><!-- /span -->
     <div class="span4">
       <label class="checkbox">
-        <input type="checkbox" checked="true" value="bootstrap-alert.js">
+        <input type="checkbox" checked="true" name="js" value="bootstrap-alert.js">
         Alert messages
       </label>
       <label class="checkbox">
-        <input type="checkbox" checked="true" value="bootstrap-button.js">
+        <input type="checkbox" checked="true" name="js" value="bootstrap-button.js">
         Buttons
       </label>
       <label class="checkbox">
-        <input type="checkbox" checked="true" value="bootstrap-collapse.js">
+        <input type="checkbox" checked="true" name="js" value="bootstrap-collapse.js">
         Collapse
       </label>
       <label class="checkbox">
-        <input type="checkbox" checked="true" value="bootstrap-carousel.js">
+        <input type="checkbox" checked="true" name="js" value="bootstrap-carousel.js">
         Carousel
       </label>
       <label class="checkbox">
-        <input type="checkbox" checked="true" value="bootstrap-typeahead.js">
+        <input type="checkbox" checked="true" name="js" value="bootstrap-typeahead.js">
         Typeahead
       </label>
       <label class="checkbox">
-        <input type="checkbox" checked="true" value="bootstrap-transition.js">
+        <input type="checkbox" checked="true" name="js" value="bootstrap-transition.js">
         Transitions <small>(para qualquer animação)</small>
       </label>
     </div><!-- /span -->
@@ -232,11 +228,12 @@
     </h1>
   </div>
   <div class="download-btn">
-    <a class="btn xlarge primary" id="make-build" href="#">Customizar e fazer Download</a>
+    
+      <input type="submit" class="btn xlarge primary" id="make-build" value="Customizar e fazer Download" /> 
+    
     <h4>O que será incluído?</h4>
     <p>O download inclui css compilado, compilado e minificado, e compila plugins jQuery, todos compactados em um zip para sua conveniência</p>
   </div>
+  
 </section><!-- /download -->
-<div class="alert-curtain" id="build-error">
-  <p><span class="cms-icon error"></span>Não foi possível realizar o build</p>
-</div>
+</form>

@@ -532,7 +532,7 @@ hr.soften {
 }
 .btn.xlarge {
   display: block;
-  width: auto;
+  width: 100%;
   padding: 19px 24px;
   margin-bottom: 27px;
   font-size: 30px;
