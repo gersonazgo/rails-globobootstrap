@@ -63,7 +63,8 @@ BootstrapZipBuilder.prototype.addLessCss = function(name){
         if (e) { return console.log(e) }
         try {
           var css = tree.toCSS({ compress: false })
-          addCSS.add(name + '.css', new Buffer(css, "utf8"));  
+          addCSS.add(name + '.css', new Buffer(css, "utf8")) 
+          console.log('file: ' + name ) 
         } catch(e) {
           console.log(e)
         }
