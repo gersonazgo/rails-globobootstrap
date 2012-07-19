@@ -256,3 +256,20 @@ $(function () {
     }
   })
 }(jQuery);
+
+// Component dependency control
+$('.download input:checkbox').bind('click', function(){
+  if (!$(this).is(":checked")) {
+    return true
+  }
+
+  var componentName = this.value
+  var dependencyTree = [{name: "form-custom", dependencies: ["forms"]}]
+  dependencyTree.forEach(function(dependency) {
+    if (dependency.name == componentName) {
+      dependency.dependencies.forEach(function(item) {
+        $("input:checkbox[value='forms']").attr("checked", true)
+      })
+    }
+  })
+});
