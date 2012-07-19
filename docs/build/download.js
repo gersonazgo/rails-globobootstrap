@@ -3,13 +3,13 @@ var http = require('http'),
     zip = require("node-native-zip"),
     less = require("less"),
     util = require("util"),
-    http = require('http'),
     qs = require('querystring'),
-    resolvePath = require('path').resolve;
+    resolvePath = require('path').resolve
 
 http.createServer(function (req, res) {
     res.writeHead(200, {
             'Content-Type': 'application/zip',
+            'Cache-Control': 'no-cache',
             'Content-Disposition': 'attachment; filename=bootstrap.zip'
     });
    var data = '';
@@ -18,7 +18,7 @@ http.createServer(function (req, res) {
     });
     req.on("end", function() {
         var post = qs.parse(data);
-        archive = new BootstrapZipBuilder();
+        var archive = new BootstrapZipBuilder();
         for (var variable in post) {
             if (variable[0] == "@"){
                 archive.setVariable(variable, post[variable])
@@ -38,10 +38,9 @@ http.createServer(function (req, res) {
               archive.addJavascript(post.js[i])
           }
         }
-        
-        var buffer = archive.toBuffer();
-        res.write(buffer);
-        res.end('Globo Bootstrap build');
+        var buffer = archive.toBuffer()
+        res.write(buffer)
+        res.end()
     });
 
 }).listen(1337, '0.0.0.0');
@@ -52,19 +51,18 @@ BootstrapZipBuilder = function(){
     this.pathBootstrap = resolvePath(__dirname + '/../../');
     this.variables = fs.readFileSync( this.pathBootstrap + '/lib/variables.less', 'utf-8' );
     this.mixins = fs.readFileSync( this.pathBootstrap + '/lib/mixins.less', 'utf-8' );
-    this.grid = fs.readFileSync( this.pathBootstrap + '/lib/scaffolding.less', 'utf-8' );
-    this.forms = fs.readFileSync( this.pathBootstrap + '/lib/forms.less', 'utf-8' );
 }
 BootstrapZipBuilder.prototype = new zip()
 BootstrapZipBuilder.prototype.addLessCss = function(name){
     var addCSS = this;
-    var content = this.mixins + this.variables + this.grid + this.forms + this.readCSSLess(name);
+    var content = this.mixins + this.variables  + this.readCSSLess(name);
+    console.info('antes do parse:' + name)
     parser.parse(content, function (e, tree) {
         if (e) { return console.log(e) }
         try {
           var css = tree.toCSS({ compress: false })
           addCSS.add(name + '.css', new Buffer(css, "utf8")) 
-          console.log('file: ' + name ) 
+          console.log('css file: ' + name + '.css' ) 
         } catch(e) {
           console.log(e)
         }
@@ -72,17 +70,18 @@ BootstrapZipBuilder.prototype.addLessCss = function(name){
     });
 }
 BootstrapZipBuilder.prototype.addJavascript = function(name){
-    var content = this.readJavascript(name);
-    this.add( name, new Buffer(content, "utf8") );
+    var content = this.readJavascript(name)
+    this.add( name, new Buffer(content, "utf8") )
 }
 BootstrapZipBuilder.prototype.setVariable = function(name, value){
-        this.variables += ( name + ": " + value + ";\n" );
+        this.variables += ( name + ": " + value + ";\n" )
 }
 BootstrapZipBuilder.prototype.readJavascript = function(name){
-    return fs.readFileSync( this.pathBootstrap + '/js/'+ name, 'utf-8' );
+    console.log('js file: ' + name);
+    return fs.readFileSync( this.pathBootstrap + '/js/'+ name, 'utf-8' )
 }
 BootstrapZipBuilder.prototype.readCSSLess = function(name){
-    return fs.readFileSync( this.pathBootstrap + '/lib/'+ name + '.less', 'utf-8' );
+    return fs.readFileSync( this.pathBootstrap + '/lib/'+ name + '.less', 'utf-8' )
 }
 
 var parser = new(less.Parser)({
