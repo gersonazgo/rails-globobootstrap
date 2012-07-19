@@ -262,13 +262,16 @@ $('.download input:checkbox').bind('click', function(){
   if (!$(this).is(":checked")) {
     return true
   }
-
+  
   var componentName = this.value
-  var dependencyTree = [{name: "form-custom", dependencies: ["forms"]}]
+  var dependencyTree = [
+  {name: "form-custom", dependencies: ["forms"]},
+  {name: "bootstrap-charcount", dependencies: ["bootstrap-tooltip"]},
+  {name: "bootstrap-popover", dependencies: ["bootstrap-tooltip"]}]
   dependencyTree.forEach(function(dependency) {
     if (dependency.name == componentName) {
       dependency.dependencies.forEach(function(item) {
-        $("input:checkbox[value='forms']").attr("checked", true)
+        $("input:checkbox[value='"+ item +"']").attr("checked", true)
       })
     }
   })
