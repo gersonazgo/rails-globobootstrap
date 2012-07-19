@@ -147,6 +147,14 @@ Autores
 + github.com/alexanmtz
 + @alexanmtz
 
+**Guilherme Garnier**
+
++ http://blog.guilhermegarnier.com
++ github/ggarnier
++ @guilhermgarnier
+
+
+
 
 Copyright and license
 ---------------------
