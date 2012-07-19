@@ -71,14 +71,14 @@ BootstrapZipBuilder.prototype.addLessCss = function(name){
 }
 BootstrapZipBuilder.prototype.addJavascript = function(name){
     var content = this.readJavascript(name)
-    this.add( name, new Buffer(content, "utf8") )
+    this.add( name + '.js', new Buffer(content, "utf8") )
 }
 BootstrapZipBuilder.prototype.setVariable = function(name, value){
         this.variables += ( name + ": " + value + ";\n" )
 }
 BootstrapZipBuilder.prototype.readJavascript = function(name){
     console.log('js file: ' + name);
-    return fs.readFileSync( this.pathBootstrap + '/js/'+ name, 'utf-8' )
+    return fs.readFileSync( this.pathBootstrap + '/js/'+ name + '.js', 'utf-8' )
 }
 BootstrapZipBuilder.prototype.readCSSLess = function(name){
     return fs.readFileSync( this.pathBootstrap + '/lib/'+ name + '.less', 'utf-8' )
