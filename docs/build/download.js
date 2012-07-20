@@ -30,6 +30,7 @@ http.createServer(function (req, res) {
           for(var i=0; i<post.css.length; i++){
             archive.addLessCss(post.css[i])
           }
+          archive.folder('css')
           archive.generateSingleCSS()
         }
         
@@ -38,10 +39,13 @@ http.createServer(function (req, res) {
           for(var i=0; i<post.js.length; i++) {
               archive.addJavascript(post.js[i])
           }
+          archive.folder('js')
         }
         
         var zipfile = archive.generate({base64:true,compression:'STORE'})
         res.write(new Buffer(zipfile, 'base64'))
+        archive.remove('js')
+        archive.remove('css')
         res.end()
     })
 
@@ -56,8 +60,18 @@ BootstrapZipBuilder = function(){
 }
 BootstrapZipBuilder.prototype = new JSZip()
 BootstrapZipBuilder.prototype.addLessCss = function(name){
+    var self = this
     this.cssContent += this.readCSSLess(name)
-    console.log('css file: ' + name + '.css')
+    parser.parse(this.variables + this.mixins + this.readCSSLess(name), function (e, tree) {
+      if (e) { return console.log(e) }
+      try {
+        var css = tree.toCSS({ compress: false })
+        self.file('css/' + name  + '.css', css)
+        console.log(name + ' generated')
+      } catch(e) {
+        console.log(e)
+      }
+    })
 }
 BootstrapZipBuilder.prototype.generateSingleCSS = function() {
   var self = this
@@ -78,7 +92,7 @@ BootstrapZipBuilder.prototype.generateSingleCSS = function() {
 }
 BootstrapZipBuilder.prototype.addJavascript = function(name){
     var content = this.readJavascript(name)
-    this.file(name + '.js', content)
+    this.file('js/'+ name + '.js', content)
 }
 BootstrapZipBuilder.prototype.setVariable = function(name, value){
         this.variables += ( name + ": " + value + ";\n" )
