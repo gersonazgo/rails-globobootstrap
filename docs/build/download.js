@@ -19,7 +19,6 @@ http.createServer(function (req, res) {
     req.on("end", function() {
         var post = qs.parse(data)
         var archive = new BootstrapZipBuilder()
-
         for (var variable in post) {
             if (variable[0] == "@"){
                 archive.setVariable(variable, post[variable])
@@ -31,6 +30,7 @@ http.createServer(function (req, res) {
           for(var i=0; i<post.css.length; i++){
             archive.addLessCss(post.css[i])
           }
+          archive.generateSingleCSS()
         }
         
         if(post.js) {
@@ -49,28 +49,33 @@ http.createServer(function (req, res) {
 }).listen(1337, '0.0.0.0')
 console.log('Server running...')
 
-
 BootstrapZipBuilder = function(){
     this.pathBootstrap = resolvePath(__dirname + '/../../')
-    this.variables = fs.readFileSync( this.pathBootstrap + '/lib/variables.less', 'utf-8' )
-    this.mixins = fs.readFileSync( this.pathBootstrap + '/lib/mixins.less', 'utf-8' )
+    this.variables = fs.readFileSync(this.pathBootstrap + '/lib/variables.less', 'utf-8')
+    this.mixins = fs.readFileSync(this.pathBootstrap + '/lib/mixins.less', 'utf-8')
+    this.cssContent = this.variables + this.mixins
 }
 BootstrapZipBuilder.prototype = new JSZip()
 BootstrapZipBuilder.prototype.addLessCss = function(name){
-    var addCSS = this
-    var content = this.mixins + this.variables  + this.readCSSLess(name)
+    this.cssContent += this.readCSSLess(name)
+    console.log('css file: ' + name + '.css')
+}
+BootstrapZipBuilder.prototype.generateSingleCSS = function() {
+  var self = this
+  parser.parse(this.cssContent, function (e, tree) {
+      if (e) { return console.log(e) }
+      try {
+        var css = tree.toCSS({ compress: false })
+        self.file('bootstrap.css', new Buffer(css, "utf8"))
+        console.log('bootstrap.css generated')
 
-    parser.parse(content, function (e, tree) {
-        if (e) { return console.log(e) }
-        try {
-          var css = tree.toCSS({ compress: false })
-
-          addCSS.file(name + '.css', css)
-          console.log('css file: ' + name + '.css')
-        } catch(e) {
-          console.log(e)
-        }
-    })
+        css = tree.toCSS({ compress: true })
+        self.file('bootstrap.min.css', new Buffer(css, "utf8"))
+        console.log('bootstrap.min.css generated')
+      } catch(e) {
+        console.log(e)
+      }
+  })
 }
 BootstrapZipBuilder.prototype.addJavascript = function(name){
     var content = this.readJavascript(name)
@@ -81,7 +86,7 @@ BootstrapZipBuilder.prototype.setVariable = function(name, value){
 }
 BootstrapZipBuilder.prototype.readJavascript = function(name){
     console.log('js file: ' + name)
-    return fs.readFileSync( this.pathBootstrap + '/js/'+ name, 'utf-8' )
+    return fs.readFileSync( this.pathBootstrap + '/js/'+ name + '.js', 'utf-8' )
 }
 BootstrapZipBuilder.prototype.readCSSLess = function(name){
     return fs.readFileSync( this.pathBootstrap + '/lib/'+ name + '.less', 'utf-8' )
