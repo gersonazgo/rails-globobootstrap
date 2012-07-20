@@ -4,7 +4,9 @@ var http = require('http'),
     less = require("less"),
     util = require("util"),
     qs = require('querystring'),
-    resolvePath = require('path').resolve
+    resolvePath = require('path').resolve,
+    jsp = require("uglify-js").parser,
+    pro = require("uglify-js").uglify
 
 http.createServer(function (req, res) {
     res.writeHead(200, {
@@ -43,12 +45,11 @@ http.createServer(function (req, res) {
               archive.addJavascript(post.js[i])
           }
           archive.folder('js')
+          archive.generateSingleJavascript()
         }
         
         var zipfile = archive.generate({base64:true,compression:'STORE'})
         res.write(new Buffer(zipfile, 'base64'))
-        archive.remove('js')
-        archive.remove('css')
         res.end()
     })
 
@@ -60,6 +61,7 @@ BootstrapZipBuilder = function(){
     this.variables = fs.readFileSync(this.pathBootstrap + '/lib/variables.less', 'utf-8')
     this.mixins = fs.readFileSync(this.pathBootstrap + '/lib/mixins.less', 'utf-8')
     this.cssContent = this.variables + this.mixins
+    this.jsContent = ''
 }
 BootstrapZipBuilder.prototype = new JSZip()
 BootstrapZipBuilder.prototype.addLessCss = function(name){
@@ -96,9 +98,25 @@ BootstrapZipBuilder.prototype.generateSingleCSS = function() {
 BootstrapZipBuilder.prototype.addJavascript = function(name){
     var content = this.readJavascript(name)
     this.file('js/'+ name + '.js', content)
+    this.jsContent += content + '\n'
+
+    var compressedContent = this.compressJavascript(content)
+    this.file('js/'+ name + '.min.js', compressedContent)
+}
+BootstrapZipBuilder.prototype.compressJavascript = function(content){
+    var ast = jsp.parse(content)
+    ast = pro.ast_mangle(ast)
+    ast = pro.ast_squeeze(ast)
+    return pro.gen_code(ast)
+}
+BootstrapZipBuilder.prototype.generateSingleJavascript = function() {
+  this.file('bootstrap.js', this.jsContent)
+
+  var compressedContent = this.compressJavascript(this.jsContent)
+  this.file('bootstrap.min.js', compressedContent)
 }
 BootstrapZipBuilder.prototype.setVariable = function(name, value){
-        this.variables += ( name + ": " + value + ";\n" )
+    this.variables += ( name + ": " + value + ";\n" )
 }
 BootstrapZipBuilder.prototype.readJavascript = function(name){
     console.log('js file: ' + name + '.js')
