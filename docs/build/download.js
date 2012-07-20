@@ -19,6 +19,9 @@ http.createServer(function (req, res) {
     req.on("end", function() {
         var post = qs.parse(data)
         var archive = new BootstrapZipBuilder()
+        for (var filename in archive.files) {
+          archive.remove(filename)
+        }
         for (var variable in post) {
             if (variable[0] == "@"){
                 archive.setVariable(variable, post[variable])
