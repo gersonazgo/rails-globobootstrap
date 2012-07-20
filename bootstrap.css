@@ -6,7 +6,7 @@
  * http://www.apache.org/licenses/LICENSE-2.0
  *
  * Designed and built with all the love in the world @twitter by @mdo and @fat.
- * Date: Thu Jul 19 18:37:20 BRT 2012
+ * Date: Fri Jul 20 14:45:46 BRT 2012
  */
 article,
 aside,
@@ -1132,40 +1132,40 @@ select:focus:required:invalid:focus {
   margin-left: 0;
 }
 .sbHolder.span1 {
-  width: 50px;
+  width: 60px;
 }
 .sbHolder.span2 {
-  width: 130px;
+  width: 140px;
 }
 .sbHolder.span3 {
-  width: 210px;
+  width: 220px;
 }
 .sbHolder.span4 {
-  width: 290px;
+  width: 300px;
 }
 .sbHolder.span5 {
-  width: 370px;
+  width: 380px;
 }
 .sbHolder.span6 {
-  width: 450px;
+  width: 460px;
 }
 .sbHolder.span7 {
-  width: 530px;
+  width: 540px;
 }
 .sbHolder.span8 {
-  width: 610px;
+  width: 620px;
 }
 .sbHolder.span9 {
-  width: 690px;
+  width: 700px;
 }
 .sbHolder.span10 {
-  width: 770px;
+  width: 780px;
 }
 .sbHolder.span11 {
-  width: 850px;
+  width: 860px;
 }
 .sbHolder.span12 {
-  width: 930px;
+  width: 940px;
 }
 .error .sbHolder {
   border-color: #dd1144;
