@@ -40,9 +40,8 @@ http.createServer(function (req, res) {
           }
         }
         
-        var buffer = archive.generate({base64:true,compression:'STORE'})
-        //fs.writeFileSync('teste.zip', buffer, 'base64')
-        res.write(buffer)
+        var zipfile = archive.generate({base64:true,compression:'STORE'})
+        res.write(new Buffer(zipfile, 'base64'))
         res.end()
     })
 
@@ -66,11 +65,11 @@ BootstrapZipBuilder.prototype.generateSingleCSS = function() {
       if (e) { return console.log(e) }
       try {
         var css = tree.toCSS({ compress: false })
-        self.file('bootstrap.css', new Buffer(css, "utf8"))
+        self.file('bootstrap.css', css)
         console.log('bootstrap.css generated')
 
         css = tree.toCSS({ compress: true })
-        self.file('bootstrap.min.css', new Buffer(css, "utf8"))
+        self.file('bootstrap.min.css', css)
         console.log('bootstrap.min.css generated')
       } catch(e) {
         console.log(e)
@@ -79,17 +78,17 @@ BootstrapZipBuilder.prototype.generateSingleCSS = function() {
 }
 BootstrapZipBuilder.prototype.addJavascript = function(name){
     var content = this.readJavascript(name)
-    this.add( name, new Buffer(content, "utf8") )
+    this.file(name + '.js', content)
 }
 BootstrapZipBuilder.prototype.setVariable = function(name, value){
         this.variables += ( name + ": " + value + ";\n" )
 }
 BootstrapZipBuilder.prototype.readJavascript = function(name){
-    console.log('js file: ' + name)
-    return fs.readFileSync( this.pathBootstrap + '/js/'+ name + '.js', 'utf-8' )
+    console.log('js file: ' + name + '.js')
+    return fs.readFileSync(this.pathBootstrap + '/js/'+ name + '.js', 'utf-8')
 }
 BootstrapZipBuilder.prototype.readCSSLess = function(name){
-    return fs.readFileSync( this.pathBootstrap + '/lib/'+ name + '.less', 'utf-8' )
+    return fs.readFileSync(this.pathBootstrap + '/lib/'+ name + '.less', 'utf-8')
 }
 
 var parser = new(less.Parser)({
