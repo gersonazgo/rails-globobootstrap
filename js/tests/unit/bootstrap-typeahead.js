@@ -38,7 +38,7 @@ $(function () {
 
       test("should show menu when query entered", function () {
         var $input = $('<input />').typeahead({
-              data: ['aa', 'ab', 'ac']
+              source: ['aa', 'ab', 'ac']
             })
           , typeahead = $input.data('typeahead')
 
@@ -52,10 +52,26 @@ $(function () {
         typeahead.$menu.remove()
       })
 
+      test("should not explode when regex chars are entered", function () {
+        var $input = $('<input />').typeahead({
+              source: ['aa', 'ab', 'ac', 'mdo*', 'fat+']
+            })
+          , typeahead = $input.data('typeahead')
+
+        $input.val('+')
+        typeahead.lookup()
+
+        ok(typeahead.$menu.is(":visible"), 'typeahead is visible')
+        equals(typeahead.$menu.find('li').length, 1, 'has 1 item in menu')
+        equals(typeahead.$menu.find('.active').length, 1, 'one item is active')
+
+        typeahead.$menu.remove()
+      })
+
       test("should hide menu when query entered", function () {
         stop()
         var $input = $('<input />').typeahead({
-              data: ['aa', 'ab', 'ac']
+              source: ['aa', 'ab', 'ac']
             })
           , typeahead = $input.data('typeahead')
 
@@ -78,7 +94,7 @@ $(function () {
 
       test("should set next item when down arrow is pressed", function () {
         var $input = $('<input />').typeahead({
-              data: ['aa', 'ab', 'ac']
+              source: ['aa', 'ab', 'ac']
             })
           , typeahead = $input.data('typeahead')
 
@@ -91,7 +107,7 @@ $(function () {
         ok(typeahead.$menu.find('li').first().hasClass('active'), "first item is active")
 
         $input.trigger({
-          type: 'keypress'
+          type: 'keydown'
         , keyCode: 40
         })
 
@@ -99,7 +115,7 @@ $(function () {
 
 
         $input.trigger({
-          type: 'keypress'
+          type: 'keydown'
         , keyCode: 38
         })
 
@@ -111,17 +127,21 @@ $(function () {
 
       test("should set input value to selected item", function () {
         var $input = $('<input />').typeahead({
-              data: ['aa', 'ab', 'ac']
+              source: ['aa', 'ab', 'ac']
             })
           , typeahead = $input.data('typeahead')
+          , changed = false
 
         $input.val('a')
         typeahead.lookup()
+
+        $input.change(function() { changed = true });
 
         $(typeahead.$menu.find('li')[2]).mouseover().click()
 
         equals($input.val(), 'ac', 'input value was correctly set')
         ok(!typeahead.$menu.is(':visible'), 'the menu was hidden')
+        ok(changed, 'a change event was fired')
 
         typeahead.$menu.remove()
       })

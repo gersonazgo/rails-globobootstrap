@@ -1,5 +1,5 @@
 /* ==========================================================
- * bootstrap-alert.js v2.0.0
+ * bootstrap-alert.js v2.0.4
  * http://twitter.github.com/bootstrap/javascript.html#alerts
  * ==========================================================
  * Copyright 2012 Twitter, Inc.
@@ -18,72 +18,57 @@
  * ========================================================== */
 
 
-!function( $ ){
+!function ($) {
 
-  "use strict"
+  "use strict"; // jshint ;_;
+
 
  /* ALERT CLASS DEFINITION
   * ====================== */
 
   var dismiss = '[data-dismiss="alert"]'
-    , Alert = function ( el ) {
+    , Alert = function (el) {
         $(el).on('click', dismiss, this.close)
       }
 
-  Alert.prototype = {
+  Alert.prototype.close = function (e) {
+    var $this = $(this)
+      , selector = $this.attr('data-target')
+      , $parent
 
-    constructor: Alert
+    if (!selector) {
+      selector = $this.attr('href')
+      selector = selector && selector.replace(/.*(?=#[^\s]*$)/, '') //strip for ie7
+    }
 
-  , close: function ( e ) {
-      var $this = $(this)
-        , selector = $this.attr('data-target') || $this.attr('href')
-        , $parent = $(selector)
+    $parent = $(selector)
 
-      $parent.trigger('close')
+    e && e.preventDefault()
 
-      e && e.preventDefault()
+    $parent.length || ($parent = $this.hasClass('alert') ? $this : $this.parent())
 
-      $parent.length || ($parent = $this.hasClass('alert') ? $this : $this.parent())
+    $parent.trigger(e = $.Event('close'))
 
-      $parent.removeClass('in')
+    if (e.isDefaultPrevented()) return
 
-      function removeElement() {
-        $parent.remove()
-        $parent.trigger('closed')
-      }
+    $parent.removeClass('in')
 
-      $.support.transition && $parent.hasClass('fade') ?
-        $parent.on($.support.transition.end, removeElement) :
-        removeElement()
-   },
-   open: function() {
-   	var el = $(this);
-   	el.slideDown('normal', function(e){
-   		var self = $(this);
-   		function slide(e) {
-   			e.slideUp('slow').fadeOut('fast');
-   		}
-   		window.setTimeout(slide, 2000, self);
-   	}).fadeIn('fast').css({
-   		position: 'fixed',
-   		top: 0,
-   		left: 0,
-   		display: 'block',
-   		width: '100%',
-   		zIndex: '99999'
-   	});
-   },
-   error: function(e) {
-   	
-   }
+    function removeElement() {
+      $parent
+        .trigger('closed')
+        .remove()
+    }
 
+    $.support.transition && $parent.hasClass('fade') ?
+      $parent.on($.support.transition.end, removeElement) :
+      removeElement()
   }
 
 
  /* ALERT PLUGIN DEFINITION
   * ======================= */
 
-  $.fn.alert = function ( option ) {
+  $.fn.alert = function (option) {
     return this.each(function () {
       var $this = $(this)
         , data = $this.data('alert')
@@ -102,4 +87,4 @@
     $('body').on('click.alert.data-api', dismiss, Alert.prototype.close)
   })
 
-}( window.jQuery )
+}(window.jQuery);

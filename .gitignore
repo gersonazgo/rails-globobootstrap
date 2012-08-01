@@ -6,12 +6,14 @@
 *.rej
 *.swo
 *.swp
+*.zip
 *.vi
 *~
 *.sass-cache
 .rvmrc
 # OS or Editor folders
 .DS_Store
+._*
 Thumbs.db
 .cache
 .project
@@ -31,6 +33,4 @@ nbproject
 .svn
 .CVS
 .idea
-
-# Misc
-js/min
+node_modules
