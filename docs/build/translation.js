@@ -1,7 +1,7 @@
 #!/usr/bin/env node
 var hogan = require('hogan.js')
 var fs    = require('fs')
-var cjson = require('cjson') , prod  = process.argv[2] == 'production', title = 'Twitter Bootstrap'
+var cjson = require('cjson') , prod  = process.argv[2] == 'production', title = 'Globo.com Bootstrap'
 var langchoose = process.argv[3] || "pt-br"
 var count = 0
 
