@@ -2,7 +2,7 @@
 <html lang="en">
   <head>
     <meta charset="utf-8">
-    <title>Upgrading · Twitter Bootstrap</title>
+    <title>Globo.com Bootstrap</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="">
     <meta name="author" content="">
@@ -44,29 +44,29 @@
           <div class="nav-collapse collapse">
             <ul class="nav">
               <li class="">
-                <a href="./index.html">Overview</a>
+                <a href="./index.html">Geral</a>
               </li>
               <li class="">
-                <a href="./scaffolding.html">Scaffolding</a>
+                <a href="./scaffolding.html">Fundação</a>
               </li>
               <li class="">
-                <a href="./base-css.html">Base CSS</a>
+                <a href="./base-css.html">CSS Base</a>
               </li>
               <li class="">
-                <a href="./components.html">Components</a>
+                <a href="./components.html">Componentes</a>
               </li>
               <li class="">
-                <a href="./javascript.html">Javascript plugins</a>
+                <a href="./javascript.html">Plugins de Javascript</a>
               </li>
               <li class="">
-                <a href="./less.html">Using LESS</a>
+                <a href="./less.html">Usando o LESS</a>
               </li>
               <li class="divider-vertical"></li>
               <li class="">
-                <a href="./download.html">Customize</a>
+                <a href="./download.html">Customizando</a>
               </li>
               <li class="">
-                <a href="./examples.html">Examples</a>
+                <a href="./examples.html">Exemplos</a>
               </li>
             </ul>
           </div>
@@ -79,8 +79,8 @@
 <!-- Masthead
 ================================================== -->
 <header class="jumbotron subhead" id="overview">
-  <h1>Upgrading to Bootstrap 2</h1>
-  <p class="lead">Learn about significant changes and additions since v1.4 with this handy guide.</p>
+  <h1>Atualizando para o Bootstrap 2</h1>
+  <p class="lead">Aprenda sobre mudanças significativas e adições desde a versão 1.4 com este guia de mão</p>
 </header>
 
 
@@ -89,13 +89,13 @@
 ================================================== -->
 <section id="docs">
   <div class="page-header">
-    <h1>Project changes</h1>
+    <h1>Mudanças do projeto</h1>
   </div>
   <ul>
-    <li>Docs: major updates across the board to general structure, examples, and code snippets. Also made responsive with new media queries.</li>
-    <li>Docs: all docs pages are now powered by Mustache templates and strings are wrapped in i18n tags for translation by the Twitter Translation Center. All changes to documentation must be done here and then compiled (similar to our CSS and LESS).</li>
-    <li>Repo directory structure: removed the compiled CSS from the root in favor of a large direct download link on the docs homepage. Compiled CSS is in <code>/docs/assets/css/</code>.</li>
-    <li>Docs and repo: one makefile, just type <code>make</code> in the Terminal and get updated docs and CSS.</li>
+    <li>Docs: atualizações maiores sobre a estrutura geral, exemplos e pedaços de código. Também um modo responsivo com os novos media queries</li>
+    <li>Docs: Todas páginas de documentação foram construídos com templates mustache e as strings estão circundadas em tags i18n para tradução pelo centro de tradução do Twitter. Todas mudanças na documentação devem ser feitas aqui e então compiladas (similar ao nosso CSS e LESS)</li>
+    <li>Estrutura de diretório do repositório: o css compilado foi removido da fonte em favor do download direto no link da página inicial. O CSS compilado encontra-se em <code>/docs/assets/css/</code></li>
+    <li>Docs e repo: Um arquivo make, simplesmente digite <code>make</code> no terminal e fique atualizado com documentação e CSS</li>
   </ul>
 </section>
 
@@ -105,18 +105,18 @@
 ================================================== -->
 <section id="scaffolding">
   <div class="page-header">
-    <h1>Scaffolding</h1>
+    <h1>Base do desenvolvimento</h1>
   </div>
-  <h3>Grid system</h3>
+  <h3>Sistema de Grid</h3>
   <ul>
-    <li>Updated grid system, now only 12 columns instead of 16
-    <li>Responsive approach means your projects virtually work out of the box on smartphones, tablets, and more</li>
-    <li>Removed unused (by default) grid columns support for 17-24 columns</li>
+    <li>Sistema de grid atualizado, somente 12 colunas ao invés de 16
+    <li>O uso do design responsivo significa que seus projetos virtualmente irá funcionar fora da caixa em smartphones, tables e mais</li>
+    <li>Removido do grid (por padrão) colunas do grid para 17-24 colunas</li>
   </ul>
-  <h3>Responsive (media queries)</h3>
+  <h3>Responsivo (media queries)</h3>
   <ul>
-    <li>Media queries added for <strong>basic support</strong> across mobile and tablet devices
-    <li>Responsive CSS is compiled separately, as bootstrap-responsive.css</li>
+    <li>Media queries adicionados para <strong>suporte básico</strong> para dispositivos móveis e dispositivos tablets
+    <li>CSS responsivo é compilado separadamente, como boostrap-responsive.css</li>
   </ul>
 </section>
 
@@ -126,50 +126,50 @@
 ================================================== -->
 <section id="baseCSS">
   <div class="page-header">
-    <h1>Base CSS</h1>
+    <h1>CSS Base</h1>
   </div>
-  <h3>Typography</h3>
+  <h3>Tipografia</h3>
   <ul>
-    <li><code>h4</code> elements were dropped from 16px to 14px with a default <code>line-height</code> of 18px</li>
-    <li><code>h5</code> elements were dropped from 14px to 12px</li>
-    <li><code>h6</code> elements were dropped from 13px to 11px</li>
-    <li>Right-aligned option for blockquotes if <code>float: right;</code></li>
+    <li>Elementos <code>h4</code> foram passados de 16px para 14px com  um <code>line-height</code> padrão de 18px</li>
+    <li>Elementos <code>h5</code> foram dropados de 14px para 12px</li>
+    <li>Elementos <code>h6</code> foram dropados de 13px para 11px</li>
+    <li>Alinhamento a direita para blocos de citações se estiver <code>float: right;</code> habilitado</li>
   </ul>
-  <h3>Code</h3>
+  <h3>Código</h3>
   <ul>
-    <li>New graphical style for <code>&lt;code&gt;</code></li>
-    <li>Google Code Prettify styles updated (based on GitHub's gists)</li>
+    <li>Novo estilo gráfico para <code>&lt;code&gt;</code></li>
+    <li>Estilos do Google code Prettify atualizados (baseado nos gists do github)</li>
   </ul>
-  <h3>Tables</h3>
+  <h3>Tabelas</h3>
   <ul>
-    <li>Improved support for <code>colspan</code> and <code>rowspan</code></li>
-    <li>Styles now restricted to new base class, <code>.table</code></li>
-    <li>Table classes standardized with <code>.table-</code> required as a prefix</li>
-    <li>Removed unused table color options (too much code for such little impact)</li>
-    <li>Dropped support for TableSorter</li>
+    <li>Suporte otimizado para <code>colspan</code> e <code>rowspan</code></li>
+    <li>Os estilos agora estão restritos a nova classe base, <code>.table</code></li>
+    <li>Classes da tabela estão padronizadas com <code>.table-</code> requerida como prefixo</li>
+    <li>Removido as opções de cores não usadas de tabela (muito código para pouco impacto)</li>
+    <li>Retirado suporte para TableSorter</li>
   </ul>
-  <h3>Buttons</h3>
+  <h3>Botões</h3>
   <ul>
-    <li>New classes for colors and sizes, all prefixed with <code>.btn-</code></li>
-    <li>IE9: removed gradients and added rounded corners</li>
-    <li>Updated active state to make styling clearer in button groups (new) and look better with custom transition</li>
-    <li>New mixin, <code>.buttonBackground</code>, to set button gradients</li>
-    <li>The <code>.secondary</code> class was removed from modal examples in our docs as it never had associated styles.</li>
+    <li>Novas classes para cores e tamanhos, todos fixados com <code>.btn-</code></li>
+    <li>IE9: removido gradientes e adicionada bordas arredondadas</li>
+    <li>Atualizado estados ativos para tornar o estilo mais claro em grupos de botões (novos) e ficar melhor com transições customizadas</li>
+    <li>Novo mixin, <code>.buttonBackground</code> para gradientes de botões</li>
+    <li>A class <code>.secondary</code> foi removida dos exemplos do modal na nossa documentação por nunca ter tido estilo associado</li>
   </ul>
-  <h3>Forms</h3>
+  <h3>Formulários</h3>
   <ul>
-    <li>Default form style is now vertical (stacked) to use less CSS and add greater flexibility</li>
-    <li>Form classes standardized with <code>.form-</code> required as a prefix</li>
-    <li>New built-in form defaults for search, inline, and horizontal forms</li>
-    <li>For horizontal forms, previous classes <code>.clearfix</code> and <code>.input</code> are equivalent to the new <code>.control-group</code> and <code>.controls</code>.</li>
-    <li>More flexible horizontal form markup with classes for all styling, including new optional class for the <code>label</code></li>
-    <li>Form states: colors updated and customizable via new LESS variables</li>
+    <li>Estilos padrão para os formulários verticais (estagnados) para usar o less CSS e ter uma maior flexibilidade</li>
+    <li>Classes de formulário padronizadas com <code>.form-</code> requerido como prefixo</li>
+    <li>Novo padrão de formulários para busca, mesma linha e horizontal</li>
+    <li>Para formulários horizontais, as classes <code>.clearfix</code> e <code>.input</code> são equivalentes ao novo <code>.control-group</code> e <code>.controls</code>.</li>
+    <li>Markup de formulário horizontal com as classes para estilização, incluindo classes opcionais para a tag <code>label</code></li>
+    <li>Estados de formulário: cores atualizadas e customizadas via variáveis LESS</li>
   </ul>
-  <h3>Icons, by Glyphicons</h3>
+  <h3>Ícones por Glyphicons</h3>
   <ul>
-    <li>New Glyphicons Halflings icon set added in sprite form, in black and white</li>
-    <li>Simple markup required for an icon in tons of contexts: <code>&lt;i class="icon-cog"&gt;&lt;/&gt;</code></li>
-    <li>Add another class, <code>.icon-white</code>, for white variation of the same icon</li>
+    <li>Novos Glyphicons com tamanho diferente (metade) adicionado no sprite do formulário, em preto e branco</li>
+    <li>Marcação requerida para um ícone em tons e contexto: <code>&lt;i class="icon-cog"&gt;&lt;/&gt;</code></li>
+    <li>Adicionado uma nova classe, <code>.icon-white</code> para a variação branca do mesmo ícone</li>
   </ul>
 </section>
 
@@ -179,63 +179,63 @@
 ================================================== -->
 <section id="components">
   <div class="page-header">
-    <h1>Components</h1>
+    <h1>Componentes</h1>
   </div>
-  <h3>Button groups and dropdowns</h3>
+  <h3>Grupos de botões e dropdowns</h3>
   <ul>
-    <li>Two brand new components in 2.0: button groups and button dropdowns</li>
-    <li>Dependency: button dropdowns are built on button groups, and therefore require all their styles</li>
-    <li>Button groups, <code>.btn-group</code>, can be grouped one level higher with a button toolbar, <code>.btn-toolbar</code></li>
+    <li>Dois novos componentes de marca: grupos de botões e dropdowns de botões</li>
+    <li>Dependência: dropdowns de botões foram construídos como grupos de botões, e desta forma todos estilos são necessários</li>
+    <li>Botões de grupos, <code>.btn-group</code>, podem ser agrupados em um nível maior com uma barra de botão, o <code>.btn-toolbar</code></li>
   </ul>
-  <h3>Navigation</h3>
+  <h3>Navegação</h3>
   <ul>
-    <li>Tabs and pills now require the use of a new base class, <code>.nav</code>, on their <code>&lt;ul&gt;</code> and the class names are now <code>.nav-pills</code> and <code>.nav-tabs</code>.</li>
-    <li>New nav list variation added that uses the same base class, <code>.nav</code></li>
-    <li>Vertical tabs and pills have been added&mdash;just add <code>.nav-stacked</code> to the <code>&lt;ul&gt;</code></li>
-    <li>Pills were restyled to be less rounded by default</li>
-    <li>Pills now have dropdown menu support (they share the same markup and styles as tabs)</li>
+    <li>Abas e pílulas agora requer o uso de uma nova class base, <code>.nav</code>, no seus <code>&lt;ul&gt;</code> e os nomes das classes são agora <code>.nav-pills</code> e <code>.nav-tabs</code>.</li>
+    <li>Nova variação de uma lista de navegação adicionado que usam algumas classes base, a <code>.nav</code></li>
+    <li>Abas verticais e pílulas foram adicionadas, só adicione <code>.nav-stacked</code> à <code>&lt;ul&gt;</code></li>
+    <li>Pílulas foram reestilizadas com bordas arredondadas por padrão</li>
+    <li>Pílulas agora tem suporte a menus dropdown (Eles compartilham o mesmo markup de estilos e tabs)</li>
   </ul>
-  <h3>Navbar (formerly topbar)</h3>
+  <h3>Barra de navegação (neste caso no topo)</h3>
   <ul>
-    <li>Base class changed from <code>.topbar</code> to <code>.navbar</code></li>
-    <li>Now supports static position (default behavior, not fixed) and fixed to the top of viewport via <code>.navbar-fixed-top</code> (previously only supported fixed)</li>
-    <li>Added vertical dividers to top-level nav</li>
-    <li>Improved support for inline forms in the navbar, which now require <code>.navbar-form</code> to properly scope styles to only the intended forms.</li>
-    <li>Navbar search form now requires use of the <code>.navbar-search</code> class and its input the use of <code>.search-query</code>. To position the search form, you <strong>must</strong> use <code>.pull-left</code> or <code>.pull-right</code>.</li>
-    <li>Added optional responsive markup for collapsing navbar contents for smaller resolutions and devices. <a href="./components.html#navbar">See navbar docs</a> for how to utilize.</li>
+    <li>A classe base modificada de <code>.topbar</code> para <code>.navbar</code></li>
+    <li>Adicionado suporte a posição estática (comportamento padrão, não fixo) e fixado para o topo do viewport através do <code>.navbar-fixed-top</code> (previamente só suportado fixo)</li>
+    <li>Adicionado divisores verticais à navegação de maior nível</li>
+    <li>Suporte de formulários inline na navegação do topo, que agora requer <code>.navbar-form</code> para dar um estilo aos escopos somente para os formulários desejados</li>
+    <li>A busca na barra de navegação agora requer o uso da classe <code>.navbar-search</code> e o uso de <code>.search-query</code> no input. Para posicionar o formulário de busca, você <strong>deve</strong> usar  as classes <code>.pull-left</code> or <code>.pull-right</code>.</li>
+    <li>Adicionada marcação responsiva para colapsar conteúdos da barra de conteúdo para pequenas resoluções e dispositivos. <a href="./components.html#navbar">Veja a documentação das barras de navegação</a> para saber como utilizar.</li>
   </ul>
-  <h3>Dropdown menus</h3>
+  <h3>Menus dropdown</h3>
   <ul>
-    <li>Updated the <code>.dropdown-menu</code> to tighten up spacing</li>
-    <li>Now requires you to add a <code>&lt;span class="caret"&gt;&lt;/span&gt;</code> to show the dropdown arrow</li>
-    <li>Now requires you to add a <code>data-toggle="dropdown"</code> attribute to obtain toggling behavior</li>
-    <li>The navbar (fixed topbar) has brand new dropdowns. Gone are the dark versions and in their place are the standard white ones with an additional caret at their tops for clarity of position.</li>
+    <li>Atualizada a classe <code>.dropdown-menu</code> para diminuir o espaço</li>
+    <li>Agora requer que você adicione uma classe <code>&lt;span class="caret"&gt;&lt;/span&gt;</code> para mostrar a seta do dropdown</li>
+    <li>Requer que você adicione um atributo <code>data-toggle="dropdown"</code> para obter o comportamento de alternância</li>
+    <li>A barra de navegação(fixa) tem novos dropdowns.</li>
   </ul>
-  <h3>Labels</h3>
+  <h3>Labels(rótulos)</h3>
   <ul>
-    <li>Label colors updated to match form state colors</li>
-    <li>Not only do they match graphically, but they are powered by the same new variables</li>
+    <li>Nomes das cores atualizadas para funcionarem como estados das cores dos formulários</li>
+    <li>Não somente para funcionar graficamente, mas eles também vêm da mesma variável</li>
   </ul>
-  <h3>Thumbnails</h3>
+  <h3>Imagem miniaturas</h3>
   <ul>
-    <li>Formerly <code>.media-grid</code>, now just <code>.thumbnails</code>, we've thoroughly extended this component for more uses while maintaining overall simplicity out of the box.</li>
-    <li>Individual thumbnails now require <code>.thumbnail</code> class</li>
+    <li>Extendemos <code>.media-grid</code></li>
+    <li>Miniaturas agora tem uma classe <code>.thumbnail</code></li>
   </ul>
-  <h3>Alerts</h3>
+  <h3>Alertas</h3>
   <ul>
-    <li>New base class: <code>.alert</code> instead of <code>.alert-message</code></li>
-    <li>Class names standardized for other options, now all starting with <code>.alert-</code></li>
-    <li>Redesigned base alert styles to combine the default alerts and block-level alerts into one</li>
-    <li>Block level alert class changed: <code>.alert-block</code> instead of <code>.block-message</code></li>
+    <li>Nova classe base <code>.alert</code> ao invés de <code>.alert-message</code> </li>
+    <li>Nomes de classes padronizadas para outras opções, agora começam com a classe <code>.alert-</code></li>
+    <li>Redesenhado estilos bases para combinar com os alertas padrões e alertas níveis bloco em um só</li>
+    <li>Alertas em bloco tem nome de classe diferente: <code>.alert-block</code> ao invés de <code>.block-message</code></li>
   </ul>
-  <h3>Progress bars</h3>
+  <h3>Barra de progresso</h3>
   <ul>
-    <li>New in 2.0</li>
-    <li>Features multiple styles via classes, including striped and animated variations via CSS3</li>
+    <li>Novo no 2.0</li>
+    <li>Funcionalidades múltiplas via classes, incluindo animações zebradas em CSS3</li>
   </ul>
-  <h3>Miscellaneous components</h3>
+  <h3>Componentes gerais</h3>
   <ul>
-    <li>Added documentation for the well component and the close icon (used in modals and alerts)</li>
+    <li>Adicionada documentação para componentes e ícones de fechar (usado para modal e alerts)</li>
   </ul>
 </section>
 
@@ -245,24 +245,24 @@
 ================================================== -->
 <section id="javascript">
   <div class="page-header">
-    <h1>Javascript plugins</h1>
+    <h1>Plugins Javascript</h1>
   </div>
   <div class="alert alert-info">
-    <strong>Heads up!</strong> We've rewritten just about everything for our plugins, so head on over to <a href="./javascript.html">the Javascript page</a> to learn more.
+    <strong>Atenção!</strong> Nós reescrevemos tudo sobre plugins, então meta a cabeça na página <a href="./javascript.html">de Javascript</a> para saber mais
   </div>
-  <h3>Tooltips</h3>
+  <h3>Tooltip</h3>
   <ul>
-    <li>The plugin method has been renamed from <code>twipsy()</code> to <code>tooltip()</code>, and the class name changed from <code>twipsy</code> to <code>tooltip</code>.</li>
-    <li>The <code>placement</code> option value that was <code>below</code> is now <code>bottom</code>, and <code>above</code> is now <code>top</code>.</li>
-    <li>The <code>animate</code> option was renamed to <code>animation</code>.</li>
-    <li>The <code>html</code> option was removed, as the tooltips default to allowing HTML now.</li>
+    <li>O método do plugin foi renomeado de <code>twipsy()</code> para <code>tooltip()</code> e o nome da classe mudou de <code>twipsy</code> para <code>tooltip</code>.</li>
+    <li>A opção <code>placement</code> que era <code>below</code> é agora <code>bottom</code>, e <code>above</code> é agora <code>top</code>.</li>
+    <li>A opção <code>animate</code> foi renomeada para <code>animation</code> </li>
+    <li>A opção html foi removida, pois os tooltips HTML agora</li>
   </ul>
   <h3>Popovers</h3>
   <ul>
-    <li>Child elements now properly namespaced: <code>.title</code> to <code>.popover-title</code>, <code>.inner</code> to <code>.popover-inner</code>, and <code>.content</code> to <code>.popover-content</code>.</li>
-    <li>The <code>placement</code> option value that was <code>below</code> is now <code>bottom</code>, and <code>above</code> is now <code>top</code>.</li>
+    <li>Elementos filhos agora estão com namespace: <code>.title</code> para <code>.popover-title</code>, <code>.inner</code> para <code>.popover-inner</code>, e <code>.content</code> para <code>.popover-content</code>.</li>
+    <li>A opção <code>placement</code> que era <code>below</code> é agora <code>bottom</code>, e <code>above</code> é agora <code>top</code>.</li>
   </ul>
-  <h3>New plugins</h3>
+  <h3>Novos plugins</h3>
   <ul>
     <li><a href="./javascript.html#collapse">Collapse</a></li>
     <li><a href="./javascript.html#carousel">Carousel</a></li>
@@ -275,10 +275,11 @@
      <!-- Footer
       ================================================== -->
       <footer class="footer">
-        <p class="pull-right"><a href="#">Back to top</a></p>
-        <p>Designed and built with all the love in the world <a href="http://twitter.com/twitter" target="_blank">@twitter</a> by <a href="http://twitter.com/mdo" target="_blank">@mdo</a> and <a href="http://twitter.com/fat" target="_blank">@fat</a>.</p>
-        <p>Code licensed under the <a href="http://www.apache.org/licenses/LICENSE-2.0" target="_blank">Apache License v2.0</a>. Documentation licensed under <a href="http://creativecommons.org/licenses/by/3.0/">CC BY 3.0</a>.</p>
-        <p>Icons from <a href="http://glyphicons.com">Glyphicons Free</a>, licensed under <a href="http://creativecommons.org/licenses/by/3.0/">CC BY 3.0</a>.</p>
+        <p class="pull-right"><a href="#">Voltar ao topo</a></p>
+        <p>Desenvolvido com todo amor no mundo <a href="http://twitter.com/twitter" target="_blank">@twitter</a> por <a href="http://twitter.com/mdo" target="_blank">@mdo</a> e <a href="http://twitter.com/fat" target="_blank">@fat</a>.</p>
+        <p>Este projeto é uma versão do Twitter Bootstrap da globo.com mantido por <a href="http://blog.alexandremagno.net">Alexandre Magno</a></p>
+        <p>Código licenciado sob <a href="http://www.apache.org/licenses/LICENSE-2.0" target="_blank">Licença Apache v2.0</a>. A documentação é licenciada sob <a href="http://creativecommons.org/licenses/by/3.0/">CC 3.0</a>.</p>
+        <p>Ícones do <a href="http://glyphicons.com">Glyphicons Free</a>, licenciado sob <a href="http://creativecommons.org/licenses/by/3.0/">CC 3.0</a>.</p>
       </footer>
 
     </div><!-- /container -->
