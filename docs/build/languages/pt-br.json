@@ -441,7 +441,7 @@
     "Follow @twbootstrap": "Seguir @twbootstrap",
     "Designed for everyone, everywhere.": "Desenhado para todos, em qualquer lugar",
     "Need reasons to love Bootstrap? Look no further.": "Precisa de razões para amar o Bootstrap? Olhe adiante.",
-    "Built for and by nerds": "Feito para e por nerds",
+    "Built for and by nerds": "Feito para nerds e por nerds",
     "Like you, we love building awesome products on the web. We love it so much, we decided to help people just like us do it easier, better, and faster. Bootstrap is built for you.": "Como você, nós amamos construir maravilhosos produtods para a web. Nós amamos tanto, que nós decidimos ajudar pessoas como nós para tornar isto mais fácil, melhor e rápido. Bootstrap é construído para você.",
     "For all skill levels": "Para todos os níveis",
     "Bootstrap is designed to help people of all skill levels&mdash;designer or developer, huge nerd or early beginner. Use it as a complete kit or use to start something more complex.": "O Bootstrap foi desenvolvido para ajudar pessoas de todos os níveis&mdash;designer ou desenvolvedor, um grande nerd ou alguém iniciante. Use-o como um kit completo para iniciar algo mais complexo.",
@@ -1346,7 +1346,7 @@
     "This is a unofficial version of Twitter Bootstrap translated to portugueses kept by <a href=\"http://blog.alexandremagno.net/\" title=\"Alexandre Magno personal Blog\">Alexandre Magno</a>": "Esta é uma versão não oficial do Boostrap do Twitter traduzida para o português e mantido por <a href=\"http://blog.alexandremagno.net/\" title=\"Blog pessoal do Alexandre Magno\">Alexandre Magno</a>",
     "Globo.com sites using Bootstrap.":"Sites da Globo.com usando o Bootstrap",
     "See github project": "Ver projeto no Github",
-    "Bootstrap, from Globo.com":"Bootstrap, da Globo.com",
+    "Bootstrap, from globo.com":"Bootstrap, da globo.com",
     "This is a bootstrap used at <a href=\"http://globo.com/\" title=\"Globo.com\">Globo.com</a>":"Este é o Bootstrap usado na <a href=\"http://globo.com/\" title=\"Globo.com\">Globo.com</a>",
     "Projects using Globo Bootstrap":"Projetos usando o Bootsrap"
   }
