@@ -147,7 +147,8 @@
     $('body').on('click.alert.data-api', dismiss, Alert.prototype.close)
   })
 
-}(window.jQuery);/* ============================================================
+}(window.jQuery);
+/* ============================================================
  * bootstrap-button.js v2.0.4
  * http://twitter.github.com/bootstrap/javascript.html#buttons
  * ============================================================
