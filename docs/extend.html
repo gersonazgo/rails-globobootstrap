@@ -2,12 +2,13 @@
 <html lang="en">
   <head>
     <meta charset="utf-8">
-    <title>Extend · Twitter Bootstrap</title>
+    <title>Globo.com Bootstrap</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="">
     <meta name="author" content="">
 
     <!-- Le styles -->
+    <link href="http://s.glbimg.com/po/fo/globo-fontface.css" rel="stylesheet">
     <link href="assets/css/bootstrap.css" rel="stylesheet">
     <link href="assets/css/bootstrap-responsive.css" rel="stylesheet">
     <link href="assets/css/docs.css" rel="stylesheet">
@@ -49,19 +50,19 @@
                 <a href="./getting-started.html">Get started</a>
               </li>
               <li class="">
-                <a href="./scaffolding.html">Scaffolding</a>
+                <a href="./scaffolding.html">Fundação</a>
               </li>
               <li class="">
-                <a href="./base-css.html">Base CSS</a>
+                <a href="./base-css.html">CSS Base</a>
               </li>
               <li class="">
-                <a href="./components.html">Components</a>
+                <a href="./components.html">Componentes</a>
               </li>
               <li class="">
                 <a href="./javascript.html">Javascript</a>
               </li>
               <li class="">
-                <a href="./customize.html">Customize</a>
+                <a href="./customize.html">Customizando</a>
               </li>
             </ul>
           </div>
@@ -85,8 +86,8 @@
     <div class="row">
       <div class="span3 bs-docs-sidebar">
         <ul class="nav nav-list bs-docs-sidenav">
-          <li><a href="#built-with-less"><i class="icon-chevron-right"></i> Built with LESS</a></li>
-          <li><a href="#compiling"><i class="icon-chevron-right"></i> Compiling Bootstrap</a></li>
+          <li><a href="#built-with-less"><i class="icon-chevron-right"></i> Construído com o LESS</a></li>
+          <li><a href="#compiling"><i class="icon-chevron-right"></i> Compilando o Bootstrap</a></li>
           <li><a href="#static-assets"><i class="icon-chevron-right"></i> Use as static assets</a></li>
         </ul>
       </div>
@@ -98,13 +99,13 @@
         ================================================== -->
         <section id="built-with-less">
           <div class="page-header">
-            <h1>Built with LESS</h1>
+            <h1>Construído com o LESS</h1>
           </div>
 
           <img style="float: right; height: 36px; margin: 10px 20px 20px" src="assets/img/less-logo-large.png" alt="LESS CSS">
-          <p class="lead">Bootstrap is made with LESS at its core, a dynamic stylesheet language created by our good friend, <a href="http://cloudhead.io">Alexis Sellier</a>. It makes developing systems-based CSS faster, easier, and more fun.</p>
+          <p class="lead">O Bootstrap foi feito com o LESS desde seu início, uma linguagem de estilos dinâmica criada pelo nosso bom amigo <a href="http://cloudhead.io">Alexis Sellier</a>. Foi desenvolvido para deixar o CSS mais rápido, mais fácil e mais divertido</p>
 
-          <h3>Why LESS?</h3>
+          <h3>Por que LESS?</h3>
           <p>One of Bootstrap's creators wrote a quick <a href="http://www.wordsbyf.at/2012/03/08/why-less/">blog post about this</a>, summarized here:</p>
           <ul>
             <li>Bootstrap compiles faster ~6x faster with Less compared to Sass</li>
@@ -112,11 +113,11 @@
             <li>Less is more; we want to feel like we're writing CSS and making Bootstrap approachable to all.</li>
           </ul>
 
-          <h3>What's included?</h3>
-          <p>As an extension of CSS, LESS includes variables, mixins for reusable snippets of code, operations for simple math, nesting, and even color functions.</p>
+          <h3>O que é incluso?</h3>
+          <p>Como uma extensão do CSS, LESS inclui variáveis, mixins para pedaços reusáveis de código, operações para simples matemática, aninhamento, ou até mesmo função de cores</p>
 
-          <h3>Learn more</h3>
-          <p>Visit the official website at <a href="http://lesscss.org">http://lesscss.org</a> to learn more.</p>
+          <h3>Aprenda mais</h3>
+          <p>Visite o website oficial em <a href="http://lesscss.org">http://lesscss.org</a> para saber mais</p>
         </section>
 
 
@@ -131,38 +132,38 @@
           <p class="lead">Since our CSS is written with Less and utilizes variables and mixins, it needs to be compiled for final production implementation. Here's how.</p>
 
           <div class="alert alert-info">
-            <strong>Note:</strong> If you're submitting a pull request to GitHub with modified CSS, you <strong>must</strong> recompile the CSS via any of these methods.
+            <strong>Nota:</strong> Se você está enviando um pull request no Github com CSS modificado, você <strong>deve</strong> recompilar o CSS por qualquer um destes métodos
           </div>
 
-          <h2>Tools for compiling</h2>
+          <h2>Ferramentas para compilar</h2>
 
-          <h3>Node with makefile</h3>
-          <p>Install the LESS command line compiler, JSHint, Recess, and uglify-js globally with npm by running the following command:</p>
+          <h3>Node com makefile</h3>
+          <p>Instala uma linha de comando LESS ao compilador, JSHint, Recess, e uglify-js globalmente com npm executando o seguinte comando</p>
           <pre>$ npm install -g less jshint recess uglify-js</pre>
-          <p>Once installed just run <code>make</code> from the root of your bootstrap directory and you're all set.</p>
-          <p>Additionally, if you have <a href="https://github.com/mynyml/watchr">watchr</a> installed, you may run <code>make watch</code> to have bootstrap automatically rebuilt every time you edit a file in the bootstrap lib (this isn't required, just a convenience method).</p>
+          <p>Uma vez instalado execute <code>make</code> da origem do seu diretório bootstrap e você está configurado.</p>
+          <p>Adicionalemnte, se você tiver um <a href="https://github.com/mynyml/watchr">watchr</a> instalado, você pode executar <code>make watch</code> para o bootstrap automaticamente reconstruir cada vez que você edita um arquivo na biblioteca do bootstrap(isto não é obrigatório, é só um método auxiliar)</p>
 
-          <h3>Command line</h3>
-          <p>Install the LESS command line tool via Node and run the following command:</p>
+          <h3>Linha de comando</h3>
+          <p>Instale a linha de comando LESS via Node e execute o seguinte comando:</p>
           <pre>$ lessc ./less/bootstrap.less > bootstrap.css</pre>
-          <p>Be sure to include <code>--compress</code> in that command if you're trying to save some bytes!</p>
+          <p>Tenha certeza de incluir <code>--compress</code> no comando para você economizar alguns bytes!</p>
 
           <h3>Javascript</h3>
-          <p><a href="http://lesscss.org/">Download the latest Less.js</a> and include the path to it (and Bootstrap) in the <code>&lt;head&gt;</code>.</p>
+          <p><a href="http://lesscss.org/">Faça download do último Less.js</a> e inclua o caminho (e o Bootstrap) no <code>&lt;head&gt;</code>.</p>
 <pre class="prettyprint">
 &lt;link rel="stylesheet/less" href="/path/to/bootstrap.less"&gt;
 &lt;script src="/path/to/less.js"&gt;&lt;/script&gt;
 </pre>
-          <p>To recompile the .less files, just save them and reload your page. Less.js compiles them and stores them in local storage.</p>
+          <p>Para recompilar os arquivos .less, simplesmente salve-os e recarregue sua página. Less.js compila e os armazena com armazenamento local</p>
 
-          <h3>Unofficial Mac app</h3>
+          <h3>Aplicativo não oficial para Mac</h3>
           <p><a href="http://incident57.com/less/">The unofficial Mac app</a> watches directories of .less files and compiles the code to local files after every save of a watched .less file. If you like, you can toggle preferences in the app for automatic minifying and which directory the compiled files end up in.</p>
 
           <h3>More apps</h3>
           <h4><a href="http://crunchapp.net/" target="_blank">Crunch</a></h4>
-          <p>Crunch is a great looking LESS editor and compiler built on Adobe Air.</p>
+          <p>Crunch é um editor ótimo de CSS e um compilador construído sob o Adobe Air</p>
           <h4><a href="http://incident57.com/codekit/" target="_blank">CodeKit</a></h4>
-          <p>Created by the same guy as the unofficial Mac app, CodeKit is a Mac app that compiles LESS, SASS, Stylus, and CoffeeScript.</p>
+          <p>Criado pelos mesmos criados do aplicativo não oficial para Mac, CodeKit é um aplicativo que compila LESS, SASS, Stylus, e CoffeeScript</p>
           <h4><a href="http://wearekiss.com/simpless" target="_blank">Simpless</a></h4>
           <p>Mac, Linux, and Windows app for drag and drop compiling of LESS files. Plus, the <a href="https://github.com/Paratron/SimpLESS" target="_blank">source code is on GitHub</a>.</p>
 
@@ -245,10 +246,11 @@
     ================================================== -->
     <footer class="footer">
       <div class="container">
-        <p class="pull-right"><a href="#">Back to top</a></p>
-        <p>Designed and built with all the love in the world <a href="http://twitter.com/twitter" target="_blank">@twitter</a> by <a href="http://twitter.com/mdo" target="_blank">@mdo</a> and <a href="http://twitter.com/fat" target="_blank">@fat</a>.</p>
-        <p>Code licensed under the <a href="http://www.apache.org/licenses/LICENSE-2.0" target="_blank">Apache License v2.0</a>. Documentation licensed under <a href="http://creativecommons.org/licenses/by/3.0/">CC BY 3.0</a>.</p>
-        <p>Icons from <a href="http://glyphicons.com">Glyphicons Free</a>, licensed under <a href="http://creativecommons.org/licenses/by/3.0/">CC BY 3.0</a>.</p>
+        <p class="pull-right"><a href="#">Voltar ao topo</a></p>
+        <p>Desenvolvido com todo amor no mundo <a href="http://twitter.com/twitter" target="_blank">@twitter</a> por <a href="http://twitter.com/mdo" target="_blank">@mdo</a> e <a href="http://twitter.com/fat" target="_blank">@fat</a>.</p>
+        <p>Este projeto é uma versão do Twitter Bootstrap da globo.com mantido por <a href="http://blog.alexandremagno.net">Alexandre Magno</a></p>
+        <p>Código licenciado sob <a href="http://www.apache.org/licenses/LICENSE-2.0" target="_blank">Licença Apache v2.0</a>. A documentação é licenciada sob <a href="http://creativecommons.org/licenses/by/3.0/">CC 3.0</a>.</p>
+        <p>Ícones do <a href="http://glyphicons.com">Glyphicons Free</a>, licenciado sob <a href="http://creativecommons.org/licenses/by/3.0/">CC 3.0</a>.</p>
         <ul class="footer-links">
           <li><a href="http://blog.getbootstrap.com">Read the blog</a></li>
           <li><a href="https://github.com/twitter/bootstrap/issues?state=open">Submit issues</a></li>
