@@ -534,7 +534,7 @@
     "If you want your modal to animate in and out, just add a <code>.fade</code> class to the <code>.modal</code> element (refer to the demo to see this in action) and include bootstrap-transition.js.": "Se você quer seu modal anime dentro e fora, simplesmente adicione a classe <code>.fade</code> para o elemento <code>.modal</code>(veja o demo para ver em ação) e inclua o bootstrap-transition.js",
     ">Methods": ">Métodos",
     "options": "opções",
-    "Activates your content as a modal. Accepts an optional options <code>object</code>.": "Ativa seu conteúdo como modal. Aceita um objeto de opções <code>object</object>",
+    "Activates your content as a modal. Accepts an optional options <code>object</code>.": "Ativa seu conteúdo como modal. Aceita um objeto de opções <code>object</code>",
     "Manually toggles a modal.": "Manualmente alterne em um modal",
     "Manually opens a modal.": "Manualmente abra um modal",
     "Manually hides a modal.": "Manualmente esconda um modal",
