@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Twitter Bootstrap</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <!-- Le styles -->
+    <link href="assets/css/bootstrap.css" rel="stylesheet">
+    <link href="assets/css/bootstrap-responsive.css" rel="stylesheet">
+    <link href="assets/css/docs.css" rel="stylesheet">
+    <link href="assets/js/google-code-prettify/prettify.css" rel="stylesheet">
+
+    <!-- Le HTML5 shim, for IE6-8 support of HTML5 elements -->
+    <!--[if lt IE 9]>
+      <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Le fav and touch icons -->
+    <link rel="shortcut icon" href="assets/ico/favicon.ico">
+    <link rel="apple-touch-icon-precomposed" sizes="144x144" href="assets/ico/apple-touch-icon-144-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="assets/ico/apple-touch-icon-114-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" sizes="72x72" href="assets/ico/apple-touch-icon-72-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" href="assets/ico/apple-touch-icon-57-precomposed.png">
+
+  </head>
+
+  <body data-spy="scroll" data-target=".subnav" data-offset="50">
+
+
+  <!-- Navbar
+    ================================================== -->
+    <div class="navbar navbar-fixed-top">
+      <div class="navbar-inner">
+        <div class="container">
+          <button type="button"class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="brand" href="./index.html">Bootstrap</a>
+          <div class="nav-collapse collapse">
+            <ul class="nav">
+              <li class="">
+                <a href="./index.html">Geral</a>
+              </li>
+              <li class="">
+                <a href="./scaffolding.html">Fundação</a>
+              </li>
+              <li class="">
+                <a href="./base-css.html">CSS Base</a>
+              </li>
+              <li class="">
+                <a href="./components.html">Componentes</a>
+              </li>
+              <li class="">
+                <a href="./javascript.html">Plugins de Javascript</a>
+              </li>
+              <li class="">
+                <a href="./less.html">Usando o LESS</a>
+              </li>
+              <li class="divider-vertical"></li>
+              <li class="">
+                <a href="./download.html">Customizando</a>
+              </li>
+              <li class="">
+                <a href="./examples.html">Exemplos</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="container">
+
+<!-- Masthead
+================================================== -->
+<header class="jumbotron subhead" id="overview">
+  <h1>Atualizando para o Bootstrap 2</h1>
+  <p class="lead">Aprenda sobre mudanças significativas e adições desde a versão 1.4 com este guia de mão</p>
+</header>
+
+
+
+<!-- Project
+================================================== -->
+<section id="docs">
+  <div class="page-header">
+    <h1>Mudanças do projeto</h1>
+  </div>
+  <ul>
+    <li>Docs: atualizações maiores sobre a estrutura geral, exemplos e pedaços de código. Também um modo responsivo com os novos media queries</li>
+    <li>Docs: Todas páginas de documentação foram construídos com templates mustache e as strings estão circundadas em tags i18n para tradução pelo centro de tradução do Twitter. Todas mudanças na documentação devem ser feitas aqui e então compiladas (similar ao nosso CSS e LESS)</li>
+    <li>Estrutura de diretório do repositório: o css compilado foi removido da fonte em favor do download direto no link da página inicial. O CSS compilado encontra-se em <code>/docs/assets/css/</code></li>
+    <li>Docs e repo: Um arquivo make, simplesmente digite <code>make</code> no terminal e fique atualizado com documentação e CSS</li>
+  </ul>
+</section>
+
+
+
+<!-- Scaffolding
+================================================== -->
+<section id="scaffolding">
+  <div class="page-header">
+    <h1>Base do desenvolvimento</h1>
+  </div>
+  <h3>Sistema de Grid</h3>
+  <ul>
+    <li>Sistema de grid atualizado, somente 12 colunas ao invés de 16
+    <li>O uso do design responsivo significa que seus projetos virtualmente irá funcionar fora da caixa em smartphones, tables e mais</li>
+    <li>Removido do grid (por padrão) colunas do grid para 17-24 colunas</li>
+  </ul>
+  <h3>Responsivo (media queries)</h3>
+  <ul>
+    <li>Media queries adicionados para <strong>suporte básico</strong> para dispositivos móveis e dispositivos tablets
+    <li>CSS responsivo é compilado separadamente, como boostrap-responsive.css</li>
+  </ul>
+</section>
+
+
+
+<!-- Base CSS
+================================================== -->
+<section id="baseCSS">
+  <div class="page-header">
+    <h1>CSS Base</h1>
+  </div>
+  <h3>Tipografia</h3>
+  <ul>
+    <li>Elementos <code>h4</code> foram passados de 16px para 14px com  um <code>line-height</code> padrão de 18px</li>
+    <li>Elementos <code>h5</code> foram dropados de 14px para 12px</li>
+    <li>Elementos <code>h6</code> foram dropados de 13px para 11px</li>
+    <li>Alinhamento a direita para blocos de citações se estiver <code>float: right;</code> habilitado</li>
+  </ul>
+  <h3>Código</h3>
+  <ul>
+    <li>Novo estilo gráfico para <code>&lt;code&gt;</code></li>
+    <li>Estilos do Google code Prettify atualizados (baseado nos gists do github)</li>
+  </ul>
+  <h3>Tabelas</h3>
+  <ul>
+    <li>Suporte otimizado para <code>colspan</code> e <code>rowspan</code></li>
+    <li>Os estilos agora estão restritos a nova classe base, <code>.table</code></li>
+    <li>Classes da tabela estão padronizadas com <code>.table-</code> requerida como prefixo</li>
+    <li>Removido as opções de cores não usadas de tabela (muito código para pouco impacto)</li>
+    <li>Retirado suporte para TableSorter</li>
+  </ul>
+  <h3>Botões</h3>
+  <ul>
+    <li>Novas classes para cores e tamanhos, todos fixados com <code>.btn-</code></li>
+    <li>IE9: removido gradientes e adicionada bordas arredondadas</li>
+    <li>Atualizado estados ativos para tornar o estilo mais claro em grupos de botões (novos) e ficar melhor com transições customizadas</li>
+    <li>Novo mixin, <code>.buttonBackground</code> para gradientes de botões</li>
+    <li>A class <code>.secondary</code> foi removida dos exemplos do modal na nossa documentação por nunca ter tido estilo associado</li>
+  </ul>
+  <h3>Formulários</h3>
+  <ul>
+    <li>Estilos padrão para os formulários verticais (estagnados) para usar o less CSS e ter uma maior flexibilidade</li>
+    <li>Classes de formulário padronizadas com <code>.form-</code> requerido como prefixo</li>
+    <li>Novo padrão de formulários para busca, mesma linha e horizontal</li>
+    <li>Para formulários horizontais, as classes <code>.clearfix</code> e <code>.input</code> são equivalentes ao novo <code>.control-group</code> e <code>.controls</code>.</li>
+    <li>Markup de formulário horizontal com as classes para estilização, incluindo classes opcionais para a tag <code>label</code></li>
+    <li>Estados de formulário: cores atualizadas e customizadas via variáveis LESS</li>
+  </ul>
+  <h3>Ícones por Glyphicons</h3>
+  <ul>
+    <li>Novos Glyphicons com tamanho diferente (metade) adicionado no sprite do formulário, em preto e branco</li>
+    <li>Marcação requerida para um ícone em tons e contexto: <code>&lt;i class="icon-cog"&gt;&lt;/&gt;</code></li>
+    <li>Adicionado uma nova classe, <code>.icon-white</code> para a variação branca do mesmo ícone</li>
+  </ul>
+</section>
+
+
+
+<!-- Components
+================================================== -->
+<section id="components">
+  <div class="page-header">
+    <h1>Componentes</h1>
+  </div>
+  <h3>Grupos de botões e dropdowns</h3>
+  <ul>
+    <li>Dois novos componentes de marca: grupos de botões e dropdowns de botões</li>
+    <li>Dependência: dropdowns de botões foram construídos como grupos de botões, e desta forma todos estilos são necessários</li>
+    <li>Botões de grupos, <code>.btn-group</code>, podem ser agrupados em um nível maior com uma barra de botão, o <code>.btn-toolbar</code></li>
+  </ul>
+  <h3>Navegação</h3>
+  <ul>
+    <li>Abas e pílulas agora requer o uso de uma nova class base, <code>.nav</code>, no seus <code>&lt;ul&gt;</code> e os nomes das classes são agora <code>.nav-pills</code> e <code>.nav-tabs</code>.</li>
+    <li>Nova variação de uma lista de navegação adicionado que usam algumas classes base, a <code>.nav</code></li>
+    <li>Abas verticais e pílulas foram adicionadas, só adicione <code>.nav-stacked</code> à <code>&lt;ul&gt;</code></li>
+    <li>Pílulas foram reestilizadas com bordas arredondadas por padrão</li>
+    <li>Pílulas agora tem suporte a menus dropdown (Eles compartilham o mesmo markup de estilos e tabs)</li>
+  </ul>
+  <h3>Barra de navegação (neste caso no topo)</h3>
+  <ul>
+    <li>A classe base modificada de <code>.topbar</code> para <code>.navbar</code></li>
+    <li>Adicionado suporte a posição estática (comportamento padrão, não fixo) e fixado para o topo do viewport através do <code>.navbar-fixed-top</code> (previamente só suportado fixo)</li>
+    <li>Adicionado divisores verticais à navegação de maior nível</li>
+    <li>Suporte de formulários inline na navegação do topo, que agora requer <code>.navbar-form</code> para dar um estilo aos escopos somente para os formulários desejados</li>
+    <li>A busca na barra de navegação agora requer o uso da classe <code>.navbar-search</code> e o uso de <code>.search-query</code> no input. Para posicionar o formulário de busca, você <strong>deve</strong> usar  as classes <code>.pull-left</code> or <code>.pull-right</code>.</li>
+    <li>Adicionada marcação responsiva para colapsar conteúdos da barra de conteúdo para pequenas resoluções e dispositivos. <a href="./components.html#navbar">Veja a documentação das barras de navegação</a> para saber como utilizar.</li>
+  </ul>
+  <h3>Menus dropdown</h3>
+  <ul>
+    <li>Atualizada a classe <code>.dropdown-menu</code> para diminuir o espaço</li>
+    <li>Agora requer que você adicione uma classe <code>&lt;span class="caret"&gt;&lt;/span&gt;</code> para mostrar a seta do dropdown</li>
+    <li>Requer que você adicione um atributo <code>data-toggle="dropdown"</code> para obter o comportamento de alternância</li>
+    <li>A barra de navegação(fixa) tem novos dropdowns.</li>
+  </ul>
+  <h3>Labels(rótulos)</h3>
+  <ul>
+    <li>Nomes das cores atualizadas para funcionarem como estados das cores dos formulários</li>
+    <li>Não somente para funcionar graficamente, mas eles também vêm da mesma variável</li>
+  </ul>
+  <h3>Imagem miniaturas</h3>
+  <ul>
+    <li>Extendemos <code>.media-grid</code></li>
+    <li>Miniaturas agora tem uma classe <code>.thumbnail</code></li>
+  </ul>
+  <h3>Alertas</h3>
+  <ul>
+    <li>Nova classe base <code>.alert</code> ao invés de <code>.alert-message</code> </li>
+    <li>Nomes de classes padronizadas para outras opções, agora começam com a classe <code>.alert-</code></li>
+    <li>Redesenhado estilos bases para combinar com os alertas padrões e alertas níveis bloco em um só</li>
+    <li>Alertas em bloco tem nome de classe diferente: <code>.alert-block</code> ao invés de <code>.block-message</code></li>
+  </ul>
+  <h3>Barra de progresso</h3>
+  <ul>
+    <li>Novo no 2.0</li>
+    <li>Funcionalidades múltiplas via classes, incluindo animações zebradas em CSS3</li>
+  </ul>
+  <h3>Componentes gerais</h3>
+  <ul>
+    <li>Adicionada documentação para componentes e ícones de fechar (usado para modal e alerts)</li>
+  </ul>
+</section>
+
+
+
+<!-- Javascript
+================================================== -->
+<section id="javascript">
+  <div class="page-header">
+    <h1>Plugins Javascript</h1>
+  </div>
+  <div class="alert alert-info">
+    <strong>Atenção!</strong> Nós reescrevemos tudo sobre plugins, então meta a cabeça na página <a href="./javascript.html">de Javascript</a> para saber mais
+  </div>
+  <h3>Tooltip</h3>
+  <ul>
+    <li>O método do plugin foi renomeado de <code>twipsy()</code> para <code>tooltip()</code> e o nome da classe mudou de <code>twipsy</code> para <code>tooltip</code>.</li>
+    <li>A opção <code>placement</code> que era <code>below</code> é agora <code>bottom</code>, e <code>above</code> é agora <code>top</code>.</li>
+    <li>A opção <code>animate</code> foi renomeada para <code>animation</code> </li>
+    <li>A opção html foi removida, pois os tooltips HTML agora</li>
+  </ul>
+  <h3>Popovers</h3>
+  <ul>
+    <li>Elementos filhos agora estão com namespace: <code>.title</code> para <code>.popover-title</code>, <code>.inner</code> para <code>.popover-inner</code>, e <code>.content</code> para <code>.popover-content</code>.</li>
+    <li>A opção <code>placement</code> que era <code>below</code> é agora <code>bottom</code>, e <code>above</code> é agora <code>top</code>.</li>
+  </ul>
+  <h3>Novos plugins</h3>
+  <ul>
+    <li><a href="./javascript.html#collapse">Collapse</a></li>
+    <li><a href="./javascript.html#carousel">Carousel</a></li>
+    <li><a href="./javascript.html#typeahead">Typeahead</a></li>
+  </ul>
+</section>
+
+
+
+     <!-- Footer
+      ================================================== -->
+      <footer class="footer">
+        <p class="pull-right"><a href="#">Voltar ao topo</a></p>
+        <p>Desenvolvido com todo amor no mundo <a href="http://twitter.com/twitter" target="_blank">@twitter</a> por <a href="http://twitter.com/mdo" target="_blank">@mdo</a> e <a href="http://twitter.com/fat" target="_blank">@fat</a>.</p>
+        <p>Código licenciado sob <a href="http://www.apache.org/licenses/LICENSE-2.0" target="_blank">Licença Apache v2.0</a>. A documentação é licenciada sob <a href="http://creativecommons.org/licenses/by/3.0/">CC 3.0</a>.</p>
+        <p>Ícones do <a href="http://glyphicons.com">Glyphicons Free</a>, licenciado sob <a href="http://creativecommons.org/licenses/by/3.0/">CC 3.0</a>.</p>
+        <p>Esta é uma versão em português do twitter Bootstrap do Bootstrap oficial do Twitter. Mantido por <a href="http://blog.alexandremagno.net">Alexandre Magno</a></p>
+      </footer>
+
+    </div><!-- /container -->
+
+
+
+    <!-- Le javascript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script type="text/javascript" src="http://platform.twitter.com/widgets.js"></script>
+    <script src="assets/js/jquery.js"></script>
+    <script src="assets/js/google-code-prettify/prettify.js"></script>
+    <script src="assets/js/bootstrap-transition.js"></script>
+    <script src="assets/js/bootstrap-alert.js"></script>
+    <script src="assets/js/bootstrap-modal.js"></script>
+    <script src="assets/js/bootstrap-dropdown.js"></script>
+    <script src="assets/js/bootstrap-scrollspy.js"></script>
+    <script src="assets/js/bootstrap-tab.js"></script>
+    <script src="assets/js/bootstrap-tooltip.js"></script>
+    <script src="assets/js/bootstrap-popover.js"></script>
+    <script src="assets/js/bootstrap-button.js"></script>
+    <script src="assets/js/bootstrap-collapse.js"></script>
+    <script src="assets/js/bootstrap-carousel.js"></script>
+    <script src="assets/js/bootstrap-typeahead.js"></script>
+    <script src="assets/js/application.js"></script>
+
+
+  </body>
+</html>

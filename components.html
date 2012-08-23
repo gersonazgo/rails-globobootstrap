@@ -1,0 +1,2330 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Globo.com Bootstrap</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <!-- Le styles -->
+    <link href="http://s.glbimg.com/po/fo/globo-fontface.css" rel="stylesheet">
+    <link href="assets/css/bootstrap.css" rel="stylesheet">
+    <link href="assets/css/bootstrap-responsive.css" rel="stylesheet">
+    <link href="assets/css/docs.css" rel="stylesheet">
+    <link href="assets/js/google-code-prettify/prettify.css" rel="stylesheet">
+
+    <!-- Le HTML5 shim, for IE6-8 support of HTML5 elements -->
+    <!--[if lt IE 9]>
+      <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Le fav and touch icons -->
+    <link rel="shortcut icon" href="assets/ico/favicon.ico">
+    <link rel="apple-touch-icon-precomposed" sizes="144x144" href="assets/ico/apple-touch-icon-144-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="assets/ico/apple-touch-icon-114-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" sizes="72x72" href="assets/ico/apple-touch-icon-72-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" href="assets/ico/apple-touch-icon-57-precomposed.png">
+
+  </head>
+
+  <body data-spy="scroll" data-target=".bs-docs-sidebar">
+
+    <!-- Navbar
+    ================================================== -->
+    <div class="navbar navbar-inverse navbar-fixed-top">
+      <div class="navbar-inner">
+        <div class="container">
+          <button type="button" class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="brand" href="./index.html">Bootstrap</a>
+          <div class="nav-collapse collapse">
+            <ul class="nav">
+              <li class="">
+                <a href="./index.html">Home</a>
+              </li>
+              <li class="">
+                <a href="./getting-started.html">Ponto de partida</a>
+              </li>
+              <li class="">
+                <a href="./scaffolding.html">Fundação</a>
+              </li>
+              <li class="">
+                <a href="./base-css.html">CSS Base</a>
+              </li>
+              <li class="">
+                <a href="./components.html">Componentes</a>
+              </li>
+              <li class="">
+                <a href="./javascript.html">Javascript</a>
+              </li>
+              <li class="">
+                <a href="./customize.html">Customizando</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+
+<!-- Subhead
+================================================== -->
+<header class="jumbotron subhead" id="overview">
+  <div class="container">
+    <h1>Componentes</h1>
+    <p class="lead">Dezenas de componentes reusáveis construídos para prover navegação, alertas, popovers e mais</p>
+  </div>
+</header>
+
+
+  <div class="container">
+
+    <!-- Docs nav
+    ================================================== -->
+    <div class="row">
+      <div class="span3 bs-docs-sidebar">
+        <ul class="nav nav-list bs-docs-sidenav">
+          <li><a href="#dropdowns"><i class="icon-chevron-right"></i> Dropdowns</a></li>
+          <li><a href="#buttonGroups"><i class="icon-chevron-right"></i> Grupos de botões</a></li>
+          <li><a href="#buttonDropdowns"><i class="icon-chevron-right"></i> Dropdown de botões</a></li>
+          <li><a href="#navs"><i class="icon-chevron-right"></i> Navegações</a></li>
+          <li><a href="#navbar"><i class="icon-chevron-right"></i> Barra de navegação</a></li>
+          <li><a href="#breadcrumbs"><i class="icon-chevron-right"></i> Breadcrumbs(migalhas de pão)</a></li>
+          <li><a href="#pagination"><i class="icon-chevron-right"></i> Paginação</a></li>
+          <li><a href="#labels-badges"><i class="icon-chevron-right"></i> rótulos e emblemas</a></li>
+          <li><a href="#typography"><i class="icon-chevron-right"></i> Tipografia</a></li>
+          <li><a href="#thumbnails"><i class="icon-chevron-right"></i> Imagem miniaturas</a></li>
+          <li><a href="#alerts"><i class="icon-chevron-right"></i> Alertas</a></li>
+          <li><a href="#progress"><i class="icon-chevron-right"></i> Barra de progresso</a></li>
+          <li><a href="#misc"><i class="icon-chevron-right"></i> Outros</a></li>
+        </ul>
+      </div>
+      <div class="span9">
+
+
+
+        <!-- Dropdowns
+        ================================================== -->
+        <section id="dropdowns">
+          <div class="page-header">
+            <h1>Menus dropdown</h1>
+          </div>
+
+          <h2>Exemplo</h2>
+          <p>Menus alternáveis e contextuais para exibir listas de links. Tornar interativo com um <a href="./javascript.html#dropdowns">plugin dropdown de javascript</a>.</p>
+          <div class="bs-docs-example">
+            <div class="dropdown clearfix">
+              <ul class="dropdown-menu" role="menu" aria-labelledby="dropdownMenu" style="display: block; position: static; margin-bottom: 5px; *width: 180px;">
+                <li><a tabindex="-1" href="#">Ação</a></li>
+                <li><a tabindex="-1" href="#">Outra ação</a></li>
+                <li><a tabindex="-1" href="#">Algo a mais aqui</a></li>
+                <li class="divider"></li>
+                <li><a tabindex="-1" href="#">Link separador</a></li>
+              </ul>
+            </div>
+          </div>
+<pre class="prettyprint linenums">
+&lt;ul class="dropdown-menu" role="menu" aria-labelledby="dropdownMenu"&gt;
+  &lt;li&gt;&lt;a tabindex="-1" href="#"&gt;Ação&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a tabindex="-1" href="#"&gt;Outra ação&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a tabindex="-1" href="#"&gt;Algo a mais aqui&lt;/a&gt;&lt;/li&gt;
+  &lt;li class="divider"&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a tabindex="-1" href="#"&gt;Link separador&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+</pre>
+
+          <h2>Marcação</h2>
+          <p>Olhando somente o menu dropdown, aqui está o HTML requerido. Você precisa colocar em volta do elemento que dispara o menu dropdown em um <code>.dropdown</code>, ou outro elemento que declara <code>position: relative;</code>.. Então simplesmente cria o menu.</p>
+
+<pre class="prettyprint linenums">
+&lt;div class="dropdown"&gt;
+  &lt;!-- Link or button to toggle dropdown --&gt;
+  &lt;ul class="dropdown-menu" role="menu" aria-labelledby="dLabel"&gt;
+    &lt;li&gt;&lt;a tabindex="-1" href="#"&gt;Ação&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a tabindex="-1" href="#"&gt;Outra ação&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a tabindex="-1" href="#"&gt;Algo a mais aqui&lt;/a&gt;&lt;/li&gt;
+    &lt;li class="divider"&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a tabindex="-1" href="#"&gt;Link separador&lt;/a&gt;&lt;/li&gt;
+  &lt;/ul&gt;
+&lt;/div&gt;
+</pre>
+
+          <h2>Opções</h2>
+          <p>Alinhar menus para a direita e adicionar níveis diferentes de dropdowns</p>
+
+          <h3>Alinhando os menus</h3>
+          <p>Adicione <code>.pull-right</code> para um <code>.dropdown-menu</code> para alinhar a direita um menu dropdown</p>
+<pre class="prettyprint linenums">
+&lt;ul class="dropdown-menu pull-right" role="menu" aria-labelledby="dLabel"&gt;
+  ...
+&lt;/ul&gt;
+</pre>
+
+          <h3>Sub menus em um dropdown</h3>
+          <p>Adicione um nível extra de menu dropdown, aparecendo no hover como é feito no OS X, com adição de algumas marcações. Adicione <code>.dropdown-submenu</code> em qualquer <code>li</code> em um dropdown existente para estilização automática</p>
+          <div class="bs-docs-example">
+            <div class="dropdown clearfix">
+              <ul class="dropdown-menu" role="menu" aria-labelledby="dropdownMenu" style="display: block; position: static; margin-bottom: 5px; *width: 180px;">
+                <li><a tabindex="-1" href="#">Ação</a></li>
+                <li><a tabindex="-1" href="#">Outra ação</a></li>
+                <li><a tabindex="-1" href="#">Algo a mais aqui</a></li>
+                <li class="divider"></li>
+                <li class="dropdown-submenu">
+                  <a tabindex="-1" href="#">Mais opções</a>
+                  <ul class="dropdown-menu">
+                    <li><a tabindex="-1" href="#">Link no segundo nível</a></li>
+                    <li><a tabindex="-1" href="#">Link no segundo nível</a></li>
+                    <li><a tabindex="-1" href="#">Link no segundo nível</a></li>
+                    <li><a tabindex="-1" href="#">Link no segundo nível</a></li>
+                    <li><a tabindex="-1" href="#">Link no segundo nível</a></li>
+                  </ul>
+                </li>
+              </ul>
+            </div>
+          </div>
+<pre class="prettyprint linenums">
+&lt;ul class="dropdown-menu" role="menu" aria-labelledby="dLabel"&gt;
+  ...
+  &lt;li class="dropdown-submenu"&gt;
+    &lt;a tabindex="-1" href="#"&gt;Mais opções&lt;/a&gt;
+    &lt;ul class="dropdown-menu"&gt;
+      ...
+    &lt;/ul&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+</pre>
+
+        </section>
+
+
+
+
+        <!-- Button Groups
+        ================================================== -->
+        <section id="buttonGroups">
+          <div class="page-header">
+            <h1>Grupos de botões</h1>
+          </div>
+
+          <h2>Exemplos</h2>
+          <p>Duas opções básicas, ao longe de mais variações específicas</p>
+
+          <h3>Grupo de botão único</h3>
+          <p>Coloque em volta de uma série de botões <code>.btn</code> uma classe <code>.btn-group</code>.</p>
+          <div class="bs-docs-example">
+            <div class="btn-group" style="margin: 9px 0 5px;">
+              <button class="btn">Esquerda</button>
+              <button class="btn">Meio</button>
+              <button class="btn">Direita</button>
+            </div>
+          </div>
+<pre class="prettyprint linenums">
+&lt;div class="btn-group"&gt;
+  &lt;button class="btn"&gt;1&lt;/button&gt;
+  &lt;button class="btn"&gt;2&lt;/button&gt;
+  &lt;button class="btn"&gt;3&lt;/button&gt;
+&lt;/div&gt;
+</pre>
+
+          <h3>Grupos de botões múltiplos</h3>
+          <p>Combine as escolhas da estrutura <code>&lt;div class="btn-group"&gt;</code> em  um <code>&lt;div class="btn-toolbar"&gt;</code> para componentes mais complexos.</p>
+          <div class="bs-docs-example">
+            <div class="btn-toolbar" style="margin: 0;">
+              <div class="btn-group">
+                <button class="btn">1</button>
+                <button class="btn">2</button>
+                <button class="btn">3</button>
+                <button class="btn">4</button>
+              </div>
+              <div class="btn-group">
+                <button class="btn">5</button>
+                <button class="btn">6</button>
+                <button class="btn">7</button>
+              </div>
+              <div class="btn-group">
+                <button class="btn">8</button>
+              </div>
+            </div>
+          </div>
+<pre class="prettyprint linenums">
+&lt;div class="btn-toolbar"&gt;
+  &lt;div class="btn-group"&gt;
+    ...
+  &lt;/div&gt;
+&lt;/div&gt;
+</pre>
+
+          <h3>Grupos de botões verticais</h3>
+          <p>Faça uma coleção de botões aparecerm verticalmente estagnados ao invés de horizontalmente</p>
+          <div class="bs-docs-example">
+            <div class="btn-group btn-group-vertical">
+              <button type="button" class="btn"><i class="icon-align-left"></i></button>
+              <button type="button" class="btn"><i class="icon-align-center"></i></button>
+              <button type="button" class="btn"><i class="icon-align-right"></i></button>
+              <button type="button" class="btn"><i class="icon-align-justify"></i></button>
+            </div>
+          </div>
+<pre class="prettyprint linenums">
+&lt;div class="btn-group btn-group-vertical"&gt;
+  ...
+&lt;/div&gt;
+</pre>
+
+
+          <hr class="bs-docs-separator">
+
+
+          <h4>Checkbox e radio em diferentes sabores</h4>
+          <p>Grupos de botões também funciona como radios, onde somente um pode estar ativo, ou checkboxes, onde qualquer número de elementos podem estar ativos. Veja a <a href="./javascript.html#buttons">documentação do javascript</a> para isto.</p>
+
+          <h4>Dropdown nos grupos de botões</h4>
+          <p><span class="label label-info">Atenção!</span> Botões com dropdowns devem ser individualmente colocados com uma classe <code>.btn-group</code> dentro de um <code>.btn-toolbar</code> para renderizar corretamente</p>
+        </section>
+
+
+
+        <!-- Split button dropdowns
+        ================================================== -->
+        <section id="buttonDropdowns">
+          <div class="page-header">
+            <h1>Botões de menu dropdown</h1>
+          </div>
+
+
+          <h2>Visão geral e exemplos</h2>
+          <p>Use qualquer botão para disparar um menu dropdown colocados dentro de um <code>.btn-group</code> e provê o markup apropriado</p>
+          <div class="bs-docs-example">
+            <div class="btn-toolbar" style="margin: 0;">
+              <div class="btn-group">
+                <button class="btn dropdown-toggle" data-toggle="dropdown">Ação <span class="caret"></span></button>
+                <ul class="dropdown-menu">
+                  <li><a href="#">Ação</a></li>
+                  <li><a href="#">Outra ação</a></li>
+                  <li><a href="#">Algo a mais aqui</a></li>
+                  <li class="divider"></li>
+                  <li><a href="#">Link separador</a></li>
+                </ul>
+              </div><!-- /btn-group -->
+              <div class="btn-group">
+                <button class="btn btn-primary dropdown-toggle" data-toggle="dropdown">Ação <span class="caret"></span></button>
+                <ul class="dropdown-menu">
+                  <li><a href="#">Ação</a></li>
+                  <li><a href="#">Outra ação</a></li>
+                  <li><a href="#">Algo a mais aqui</a></li>
+                  <li class="divider"></li>
+                  <li><a href="#">Link separador</a></li>
+                </ul>
+              </div><!-- /btn-group -->
+              <div class="btn-group">
+                <button class="btn btn-danger dropdown-toggle" data-toggle="dropdown">Perigo <span class="caret"></span></button>
+                <ul class="dropdown-menu">
+                  <li><a href="#">Ação</a></li>
+                  <li><a href="#">Outra ação</a></li>
+                  <li><a href="#">Algo a mais aqui</a></li>
+                  <li class="divider"></li>
+                  <li><a href="#">Link separador</a></li>
+                </ul>
+              </div><!-- /btn-group -->
+              <div class="btn-group">
+                <button class="btn btn-warning dropdown-toggle" data-toggle="dropdown">Aviso <span class="caret"></span></button>
+                <ul class="dropdown-menu">
+                  <li><a href="#">Ação</a></li>
+                  <li><a href="#">Outra ação</a></li>
+                  <li><a href="#">Algo a mais aqui</a></li>
+                  <li class="divider"></li>
+                  <li><a href="#">Link separador</a></li>
+                </ul>
+              </div><!-- /btn-group -->
+              <div class="btn-group">
+                <button class="btn btn-success dropdown-toggle" data-toggle="dropdown">Sucesso <span class="caret"></span></button>
+                <ul class="dropdown-menu">
+                  <li><a href="#">Ação</a></li>
+                  <li><a href="#">Outra ação</a></li>
+                  <li><a href="#">Algo a mais aqui</a></li>
+                  <li class="divider"></li>
+                  <li><a href="#">Link separador</a></li>
+                </ul>
+              </div><!-- /btn-group -->
+              <div class="btn-group">
+                <button class="btn btn-info dropdown-toggle" data-toggle="dropdown">Informações <span class="caret"></span></button>
+                <ul class="dropdown-menu">
+                  <li><a href="#">Ação</a></li>
+                  <li><a href="#">Outra ação</a></li>
+                  <li><a href="#">Algo a mais aqui</a></li>
+                  <li class="divider"></li>
+                  <li><a href="#">Link separador</a></li>
+                </ul>
+              </div><!-- /btn-group -->
+              <div class="btn-group">
+                <button class="btn btn-inverse dropdown-toggle" data-toggle="dropdown">Inverso <span class="caret"></span></button>
+                <ul class="dropdown-menu">
+                  <li><a href="#">Ação</a></li>
+                  <li><a href="#">Outra ação</a></li>
+                  <li><a href="#">Algo a mais aqui</a></li>
+                  <li class="divider"></li>
+                  <li><a href="#">Link separador</a></li>
+                </ul>
+              </div><!-- /btn-group -->
+            </div><!-- /btn-toolbar -->
+          </div>
+<pre class="prettyprint linenums">
+&lt;div class="btn-group"&gt;
+  &lt;a class="btn dropdown-toggle" data-toggle="dropdown" href="#"&gt;
+    Ação
+    &lt;span class="caret"&gt;&lt;/span&gt;
+  &lt;/a&gt;
+  &lt;ul class="dropdown-menu"&gt;
+    &lt;!-- Links de menu dropdown --&gt;
+  &lt;/ul&gt;
+&lt;/div&gt;
+</pre>
+
+          <h3>Trabalha com todos tamanhos de botões</h3>
+          <p>Dropdown de botões trabalha em qualquer tamanho: <code>.btn-large</code>, <code>.btn-small</code>, ou <code>.btn-mini</code>.</p>
+          <div class="bs-docs-example">
+            <div class="btn-toolbar" style="margin: 0;">
+              <div class="btn-group">
+                <button class="btn btn-large dropdown-toggle" data-toggle="dropdown">Botão grande <span class="caret"></span></button>
+                <ul class="dropdown-menu">
+                  <li><a href="#">Ação</a></li>
+                  <li><a href="#">Outra ação</a></li>
+                  <li><a href="#">Algo a mais aqui</a></li>
+                  <li class="divider"></li>
+                  <li><a href="#">Link separador</a></li>
+                </ul>
+              </div><!-- /btn-group -->
+              <div class="btn-group">
+                <button class="btn btn-small dropdown-toggle" data-toggle="dropdown">Botão pequeno <span class="caret"></span></button>
+                <ul class="dropdown-menu">
+                  <li><a href="#">Ação</a></li>
+                  <li><a href="#">Outra ação</a></li>
+                  <li><a href="#">Algo a mais aqui</a></li>
+                  <li class="divider"></li>
+                  <li><a href="#">Link separador</a></li>
+                </ul>
+              </div><!-- /btn-group -->
+              <div class="btn-group">
+                <button class="btn btn-mini dropdown-toggle" data-toggle="dropdown">Botão miniatura <span class="caret"></span></button>
+                <ul class="dropdown-menu">
+                  <li><a href="#">Ação</a></li>
+                  <li><a href="#">Outra ação</a></li>
+                  <li><a href="#">Algo a mais aqui</a></li>
+                  <li class="divider"></li>
+                  <li><a href="#">Link separador</a></li>
+                </ul>
+              </div><!-- /btn-group -->
+            </div><!-- /btn-toolbar -->
+          </div>
+
+          <h3>Requer javascript</h3>
+          <p>Botões dropdown requerem <a href="./javascript.html#dropdowns">O Bootstrap dropdown plugin</a> para funcionar.</p>
+          <p>Em alguns casos&mdash;como mobile&mdash;menus dropdown irão ultrapassar a visão do browser. Você precisa resolver o alinhamento manualmente ou com algum javascript customizado.</p>
+
+
+          <hr class="bs-docs-separator">
+
+
+          <h2>Quebrando botões dropdown</h2>
+          <p>Para construir estilos e markup de grupos de botões, nós podemos simplesmente quebrar os botões. A funcionalidade de quebrar botões permite que você tenha uma ação padrão na esquerda e um dropdown na direita com links contextuais.</p>
+          <div class="bs-docs-example">
+            <div class="btn-toolbar" style="margin: 0;">
+              <div class="btn-group">
+                <button class="btn">Ação</button>
+                <button class="btn dropdown-toggle" data-toggle="dropdown"><span class="caret"></span></button>
+                <ul class="dropdown-menu">
+                  <li><a href="#">Ação</a></li>
+                  <li><a href="#">Outra ação</a></li>
+                  <li><a href="#">Algo a mais aqui</a></li>
+                  <li class="divider"></li>
+                  <li><a href="#">Link separador</a></li>
+                </ul>
+              </div><!-- /btn-group -->
+              <div class="btn-group">
+                <button class="btn btn-primary">Ação</button>
+                <button class="btn btn-primary dropdown-toggle" data-toggle="dropdown"><span class="caret"></span></button>
+                <ul class="dropdown-menu">
+                  <li><a href="#">Ação</a></li>
+                  <li><a href="#">Outra ação</a></li>
+                  <li><a href="#">Algo a mais aqui</a></li>
+                  <li class="divider"></li>
+                  <li><a href="#">Link separador</a></li>
+                </ul>
+              </div><!-- /btn-group -->
+              <div class="btn-group">
+                <button class="btn btn-danger">Perigo</button>
+                <button class="btn btn-danger dropdown-toggle" data-toggle="dropdown"><span class="caret"></span></button>
+                <ul class="dropdown-menu">
+                  <li><a href="#">Ação</a></li>
+                  <li><a href="#">Outra ação</a></li>
+                  <li><a href="#">Algo a mais aqui</a></li>
+                  <li class="divider"></li>
+                  <li><a href="#">Link separador</a></li>
+                </ul>
+              </div><!-- /btn-group -->
+              <div class="btn-group">
+                <button class="btn btn-warning">Aviso</button>
+                <button class="btn btn-warning dropdown-toggle" data-toggle="dropdown"><span class="caret"></span></button>
+                <ul class="dropdown-menu">
+                  <li><a href="#">Ação</a></li>
+                  <li><a href="#">Outra ação</a></li>
+                  <li><a href="#">Algo a mais aqui</a></li>
+                  <li class="divider"></li>
+                  <li><a href="#">Link separador</a></li>
+                </ul>
+              </div><!-- /btn-group -->
+              <div class="btn-group">
+                <button class="btn btn-success">Sucesso</button>
+                <button class="btn btn-success dropdown-toggle" data-toggle="dropdown"><span class="caret"></span></button>
+                <ul class="dropdown-menu">
+                  <li><a href="#">Ação</a></li>
+                  <li><a href="#">Outra ação</a></li>
+                  <li><a href="#">Algo a mais aqui</a></li>
+                  <li class="divider"></li>
+                  <li><a href="#">Link separador</a></li>
+                </ul>
+              </div><!-- /btn-group -->
+              <div class="btn-group">
+                <button class="btn btn-info">Informações</button>
+                <button class="btn btn-info dropdown-toggle" data-toggle="dropdown"><span class="caret"></span></button>
+                <ul class="dropdown-menu">
+                  <li><a href="#">Ação</a></li>
+                  <li><a href="#">Outra ação</a></li>
+                  <li><a href="#">Algo a mais aqui</a></li>
+                  <li class="divider"></li>
+                  <li><a href="#">Link separador</a></li>
+                </ul>
+              </div><!-- /btn-group -->
+              <div class="btn-group">
+                <button class="btn btn-inverse">Inverso</button>
+                <button class="btn btn-inverse dropdown-toggle" data-toggle="dropdown"><span class="caret"></span></button>
+                <ul class="dropdown-menu">
+                  <li><a href="#">Ação</a></li>
+                  <li><a href="#">Outra ação</a></li>
+                  <li><a href="#">Algo a mais aqui</a></li>
+                  <li class="divider"></li>
+                  <li><a href="#">Link separador</a></li>
+                </ul>
+              </div><!-- /btn-group -->
+            </div><!-- /btn-toolbar -->
+          </div>
+<pre class="prettyprint linenums">
+&lt;div class="btn-group"&gt;
+  &lt;button class="btn"&gt;Ação&lt;/button&gt;
+  &lt;button class="btn dropdown-toggle" data-toggle="dropdown"&gt;
+    &lt;span class="caret"&gt;&lt;/span&gt;
+  &lt;/button&gt;
+  &lt;ul class="dropdown-menu"&gt;
+    &lt;!-- Links de menu dropdown --&gt;
+  &lt;/ul&gt;
+&lt;/div&gt;
+</pre>
+
+          <h3>Tamanhos</h3>
+          <p>Utilize as classes extras de botões <code>.btn-mini</code>, <code>.btn-small</code>, ou <code>.btn-large</code> para dimensionamento.</p>
+          <div class="bs-docs-example">
+            <div class="btn-toolbar">
+              <div class="btn-group">
+                <button class="btn btn-large">Ação maior</button>
+                <button class="btn btn-large dropdown-toggle" data-toggle="dropdown"><span class="caret"></span></button>
+                <ul class="dropdown-menu">
+                  <li><a href="#">Ação</a></li>
+                  <li><a href="#">Outra ação</a></li>
+                  <li><a href="#">Algo a mais aqui</a></li>
+                  <li class="divider"></li>
+                  <li><a href="#">Link separador</a></li>
+                </ul>
+              </div><!-- /btn-group -->
+            </div><!-- /btn-toolbar -->
+            <div class="btn-toolbar">
+              <div class="btn-group">
+                <button class="btn btn-small">Ação pequena</button>
+                <button class="btn btn-small dropdown-toggle" data-toggle="dropdown"><span class="caret"></span></button>
+                <ul class="dropdown-menu">
+                  <li><a href="#">Ação</a></li>
+                  <li><a href="#">Outra ação</a></li>
+                  <li><a href="#">Algo a mais aqui</a></li>
+                  <li class="divider"></li>
+                  <li><a href="#">Link separador</a></li>
+                </ul>
+              </div><!-- /btn-group -->
+            </div><!-- /btn-toolbar -->
+            <div class="btn-toolbar">
+              <div class="btn-group">
+                <button class="btn btn-mini">Ação miniatura</button>
+                <button class="btn btn-mini dropdown-toggle" data-toggle="dropdown"><span class="caret"></span></button>
+                <ul class="dropdown-menu">
+                  <li><a href="#">Ação</a></li>
+                  <li><a href="#">Outra ação</a></li>
+                  <li><a href="#">Algo a mais aqui</a></li>
+                  <li class="divider"></li>
+                  <li><a href="#">Link separador</a></li>
+                </ul>
+              </div><!-- /btn-group -->
+            </div><!-- /btn-toolbar -->
+          </div>
+<pre class="prettyprint linenums">
+&lt;div class="btn-group"&gt;
+  &lt;button class="btn btn-mini"&gt;Ação&lt;/button&gt;
+  &lt;button class="btn btn-mini dropdown-toggle" data-toggle="dropdown"&gt;
+    &lt;span class="caret"&gt;&lt;/span&gt;
+  &lt;/button&gt;
+  &lt;ul class="dropdown-menu"&gt;
+    &lt;!-- Links de menu dropdown --&gt;
+  &lt;/ul&gt;
+&lt;/div&gt;
+</pre>
+
+          <h3>Menus Dropup</h3>
+          <p>Menus Dropdown pode também ser alternados da parte inferior adicionando uma classe simples no pai imediato, classe é <code>.dropdown-menu</code>. Isto irá modificar a direção do <code>.caret</code> e reposiciona o menu para mover de cima pra baixo ebaixo de topo pra baixo</p>
+          <div class="bs-docs-example">
+            <div class="btn-toolbar" style="margin: 0;">
+              <div class="btn-group dropup">
+                <button class="btn">Dropup</button>
+                <button class="btn dropdown-toggle" data-toggle="dropdown"><span class="caret"></span></button>
+                <ul class="dropdown-menu">
+                  <li><a href="#">Ação</a></li>
+                  <li><a href="#">Outra ação</a></li>
+                  <li><a href="#">Algo a mais aqui</a></li>
+                  <li class="divider"></li>
+                  <li><a href="#">Link separador</a></li>
+                </ul>
+              </div><!-- /btn-group -->
+              <div class="btn-group dropup">
+                <button class="btn primary">Dropup da direita</button>
+                <button class="btn primary dropdown-toggle" data-toggle="dropdown"><span class="caret"></span></button>
+                <ul class="dropdown-menu pull-right">
+                  <li><a href="#">Ação</a></li>
+                  <li><a href="#">Outra ação</a></li>
+                  <li><a href="#">Algo a mais aqui</a></li>
+                  <li class="divider"></li>
+                  <li><a href="#">Link separador</a></li>
+                </ul>
+              </div><!-- /btn-group -->
+            </div>
+          </div>
+<pre class="prettyprint linenums">
+&lt;div class="btn-group dropup"&gt;
+  &lt;button class="btn"&gt;Dropup&lt;/button&gt;
+  &lt;button class="btn dropdown-toggle" data-toggle="dropdown"&gt;
+    &lt;span class="caret"&gt;&lt;/span&gt;
+  &lt;/button&gt;
+  &lt;ul class="dropdown-menu"&gt;
+    &lt;!-- Links de menu dropdown --&gt;
+  &lt;/ul&gt;
+&lt;/div&gt;
+</pre>
+
+        </section>
+
+
+
+        <!-- Nav, Tabs, & Pills
+        ================================================== -->
+        <section id="navs">
+          <div class="page-header">
+            <h1>Navegação: abas, pílulas e listas</small></h1>
+          </div>
+
+          <h2>Padrões leves <small>Mesmo markup, classes diferentes</small></h2>
+          <p>Todos componentes de navegação aqui&mdash;abas, pílulas, e listas&mdash;<strong>compartilham a mesma marcação base e estilos</strong> através da classe <code>.nav</code></p>
+
+          <h3>Tabs básica</h3>
+          <p>Use um regular <code>&lt;ul&gt;</code> de links e adicione a classe <code>.nav-tabs</code>:</p>
+          <div class="bs-docs-example">
+            <ul class="nav nav-tabs">
+              <li class="active"><a href="#">Início</a></li>
+              <li><a href="#">Perfil</a></li>
+              <li><a href="#">Mensagens</a></li>
+            </ul>
+          </div>
+<pre class="prettyprint linenums">
+&lt;ul class="nav nav-tabs"&gt;
+  &lt;li class="active"&gt;
+    &lt;a href="#"&gt;Início&lt;/a&gt;
+  &lt;/li&gt;
+  &lt;li&gt;&lt;a href="#"&gt;...&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href="#"&gt;...&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+</pre>
+
+          <h3>Pílulas básicas</h3>
+          <p>Use algum HTML, mas use <code>.nav-pills</code> ao invés disto</p>
+          <div class="bs-docs-example">
+            <ul class="nav nav-pills">
+              <li class="active"><a href="#">Início</a></li>
+              <li><a href="#">Perfil</a></li>
+              <li><a href="#">Mensagens</a></li>
+            </ul>
+          </div>
+<pre class="prettyprint linenums">
+&lt;ul class="nav nav-pills"&gt;
+  &lt;li class="active"&gt;
+    &lt;a href="#"&gt;Início&lt;/a&gt;
+  &lt;/li&gt;
+  &lt;li&gt;&lt;a href="#"&gt;...&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href="#"&gt;...&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+</pre>
+
+          <h3>Estado desabilitado</h3>
+          <p>Para qualquer componente de navegação(abas, pílulas e lista), adicione <code>.disabled</code> para <strong>links cinzas e para efeitos de hover</strong>. Links irão permanecer clicáveis, entretanto, ao menos que um javascript seja implementado para prever estes cliques</p>
+          <div class="bs-docs-example">
+            <ul class="nav nav-pills">
+              <li><a href="#">Link clicável</a></li>
+              <li><a href="#">Link clicável</a></li>
+              <li class="disabled"><a href="#">Link desabilitado</a></li>
+            </ul>
+          </div>
+<pre class="prettyprint linenums">
+&lt;ul class="nav nav-pills"&gt;
+  ...
+  &lt;li class="disabled"&gt;&lt;a href="#"&gt;Início&lt;/a&gt;&lt;/li&gt;
+  ...
+&lt;/ul&gt;
+</pre>
+
+          <h3>Alinhamento do componente</h3>
+          <p>Para alinhar links de navegação, use as classes <code>.pull-left</code> ou <code>.pull-right</code>. Ambas as classes irão adicionar um float css na direção especificada </p>
+
+
+          <hr class="bs-docs-separator">
+
+
+          <h2>Estagnadas</h2>
+          <p>Com abas e pílulas são horizontais por padrão, mas somente adicione uma classe, a <code>.nav-stacked</code>, para deixar verticalmente estagnados</p>
+
+          <h3>Tabs estagnadas</h3>
+          <div class="bs-docs-example">
+            <ul class="nav nav-tabs nav-stacked">
+              <li class="active"><a href="#">Início</a></li>
+              <li><a href="#">Perfil</a></li>
+              <li><a href="#">Mensagens</a></li>
+            </ul>
+          </div>
+<pre class="prettyprint linenums">
+&lt;ul class="nav nav-tabs nav-stacked"&gt;
+  ...
+&lt;/ul&gt;
+</pre>
+
+          <h3>Pílulas estagnadas</h3>
+          <div class="bs-docs-example">
+            <ul class="nav nav-pills nav-stacked">
+              <li class="active"><a href="#">Início</a></li>
+              <li><a href="#">Perfil</a></li>
+              <li><a href="#">Mensagens</a></li>
+            </ul>
+          </div>
+<pre class="prettyprint linenums">
+&lt;ul class="nav nav-pills nav-stacked"&gt;
+  ...
+&lt;/ul&gt;
+</pre>
+
+
+          <hr class="bs-docs-separator">
+
+
+          <h2>Dropdowns</h2>
+          <p>Adicoine menus dropdown com um HTML extra e um <a href="./javascript.html#dropdowns">Plugin javascript de dropdown</a>. </p>
+
+          <h3>Tabs com dropdown</h3>
+          <div class="bs-docs-example">
+            <ul class="nav nav-tabs">
+              <li class="active"><a href="#">Início</a></li>
+              <li><a href="#">Ajuda</a></li>
+              <li class="dropdown">
+                <a class="dropdown-toggle" data-toggle="dropdown" href="#">Dropdown <b class="caret"></b></a>
+                <ul class="dropdown-menu">
+                  <li><a href="#">Ação</a></li>
+                  <li><a href="#">Outra ação</a></li>
+                  <li><a href="#">Algo a mais aqui</a></li>
+                  <li class="divider"></li>
+                  <li><a href="#">Link separador</a></li>
+                </ul>
+              </li>
+            </ul>
+          </div>
+<pre class="prettyprint linenums">
+&lt;ul class="nav nav-tabs"&gt;
+  &lt;li class="dropdown"&gt;
+    &lt;a class="dropdown-toggle"
+       data-toggle="dropdown"
+       href="#"&gt;
+        Dropdown
+        &lt;b class="caret"&gt;&lt;/b&gt;
+      &lt;/a&gt;
+    &lt;ul class="dropdown-menu"&gt;
+      &lt;!-- links --&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+</pre>
+
+          <h3>Pílulas com dropdowns</h3>
+          <div class="bs-docs-example">
+            <ul class="nav nav-pills">
+              <li class="active"><a href="#">Início</a></li>
+              <li><a href="#">Ajuda</a></li>
+              <li class="dropdown">
+                <a class="dropdown-toggle" data-toggle="dropdown" href="#">Dropdown <b class="caret"></b></a>
+                <ul class="dropdown-menu">
+                  <li><a href="#">Ação</a></li>
+                  <li><a href="#">Outra ação</a></li>
+                  <li><a href="#">Algo a mais aqui</a></li>
+                  <li class="divider"></li>
+                  <li><a href="#">Link separador</a></li>
+                </ul>
+              </li>
+            </ul>
+          </div>
+<pre class="prettyprint linenums">
+&lt;ul class="nav nav-pills"&gt;
+  &lt;li class="dropdown"&gt;
+    &lt;a class="dropdown-toggle"
+       data-toggle="dropdown"
+       href="#"&gt;
+        Dropdown
+        &lt;b class="caret"&gt;&lt;/b&gt;
+      &lt;/a&gt;
+    &lt;ul class="dropdown-menu"&gt;
+      &lt;!-- links --&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+</pre>
+
+
+          <hr class="bs-docs-separator">
+
+
+          <h2>Listas de navegação</h2>
+          <p>Uma simples e fácil maneira de construir grupos de navegação em links com cabeçalhos opcionais. Eles são usados de melhor forma em barras laterais como o finder in OS X.</p>
+
+          <h3>Exemplo de listas de navegação</h3>
+          <p>Pegue uma lista de links e adicione <code>class="nav nav-list"</code>:</p>
+          <div class="bs-docs-example">
+            <div class="well" style="max-width: 340px; padding: 8px 0;">
+              <ul class="nav nav-list">
+                <li class="nav-header">Cabeçalho de lista</li>
+                <li class="active"><a href="#">Início</a></li>
+                <li><a href="#">Biblioteca</a></li>
+                <li><a href="#">Aplicações</a></li>
+                <li class="nav-header">Outro cabeçalho de lista</li>
+                <li><a href="#">Perfil</a></li>
+                <li><a href="#">Configurações</a></li>
+                <li class="divider"></li>
+                <li><a href="#">Ajuda</a></li>
+              </ul>
+            </div> <!-- /well -->
+          </div>
+<pre class="prettyprint linenums">
+&lt;ul class="nav nav-list"&gt;
+  &lt;li class="nav-header"&gt;Cabeçalho de lista&lt;/li&gt;
+  &lt;li class="active"&gt;&lt;a href="#"&gt;Início&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href="#"&gt;Biblioteca&lt;/a&gt;&lt;/li&gt;
+  ...
+&lt;/ul&gt;
+</pre>
+          <p>
+            <span class="label label-info">Nota</span>
+            Para aninhamento com uma lista de navegação, <code>class="nav nav-list"</code> em um <code>&lt;ul&gt;</code>.
+          </p>
+
+          <h3>Divisores horizontais</h3>
+          <p>Adicione um divisor horizontal simplesmente com um item de lista vazio com a classe <code>.divider</code>, como descrito:</p>
+<pre class="prettyprint linenums">
+&lt;ul class="nav nav-list"&gt;
+  ...
+  &lt;li class="divider"&gt;&lt;/li&gt;
+  ...
+&lt;/ul&gt;
+</pre>
+
+
+          <hr class="bs-docs-separator">
+
+
+          <h2>Navegação tabeável</h2>
+          <p>Traga suas abas para vida com um simples plugin para alternar entre conteúdo via abas. O Bootstrap integra tabs em abas em quatro estilos, topo (padrão), direita, parte inferior, e esquerda.</p>
+
+          <h3>Exemplo tabeável</h3>
+          <p>Para fazer abas tabeáveis, criar um <code>.tab-pane</code> com um id único para cada aba e coloque em volta delas um <code>.tab-content</code></p>
+          <div class="bs-docs-example">
+            <div class="tabbable" style="margin-bottom: 18px;">
+              <ul class="nav nav-tabs">
+                <li class="active"><a href="#tab1" data-toggle="tab">Seção 1</a></li>
+                <li><a href="#tab2" data-toggle="tab">Seção 2</a></li>
+                <li><a href="#tab3" data-toggle="tab">Seção 3</a></li>
+              </ul>
+              <div class="tab-content" style="padding-bottom: 9px; border-bottom: 1px solid #ddd;">
+                <div class="tab-pane active" id="tab1">
+                  <p>Estou na seção 1</p>
+                </div>
+                <div class="tab-pane" id="tab2">
+                  <p>Olá, estou na seção 2</p>
+                </div>
+                <div class="tab-pane" id="tab3">
+                  <p>O que há garota, estou na seção 3</p>
+                </div>
+              </div>
+            </div> <!-- /tabbable -->
+          </div>
+<pre class="prettyprint linenums">
+&lt;div class="tabbable"&gt; &lt;!-- Only required for left/right tabs --&gt;
+  &lt;ul class="nav nav-tabs"&gt;
+    &lt;li class="active"&gt;&lt;a href="#tab1" data-toggle="tab"&gt;Seção 1&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href="#tab2" data-toggle="tab"&gt;Seção 2&lt;/a&gt;&lt;/li&gt;
+  &lt;/ul&gt;
+  &lt;div class="tab-content"&gt;
+    &lt;div class="tab-pane active" id="tab1"&gt;
+      &lt;p&gt;Estou na seção 1&lt;/p&gt;
+    &lt;/div&gt;
+    &lt;div class="tab-pane" id="tab2"&gt;
+      &lt;p&gt;Olá, estou na seção 2&lt;/p&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+</pre>
+
+          <h4>Efeito de desaparecer gradualmente em abas</h4>
+          <p>Para fazer abas desaparecem gradualmente, adicione <code>.fade</code> para cada <code>.tab-pane</code>.</p>
+
+          <h4>Requer plugin jQuery</h4>
+          <p>Todas abas tabeáveis são alimentados pelo nosso leve plugin do jQuery. Leia mais sobre como trazer abas tabeáveis para vida no <a href="./javascript.html#tabs">na página de documentação javascript</a>.</p>
+
+          <h3>Tabeável em qualquer direção</h3>
+
+          <h4>Tabs na parte inferior</h4>
+          <p>Mudando a ordem dos HTML's e modificando uma classe você coloca as tabs na parte inferior</p>
+          <div class="bs-docs-example">
+            <div class="tabbable tabs-below">
+              <div class="tab-content">
+                <div class="tab-pane active" id="A">
+                  <p>Estou na Seção A</p>
+                </div>
+                <div class="tab-pane" id="B">
+                  <p>Olá, Estou na seção B</p>
+                </div>
+                <div class="tab-pane" id="C">
+                  <p>E ai garota, estou na Seção C</p>
+                </div>
+              </div>
+              <ul class="nav nav-tabs">
+                <li class="active"><a href="#A" data-toggle="tab">Seção 1</a></li>
+                <li><a href="#B" data-toggle="tab">Seção 2</a></li>
+                <li><a href="#C" data-toggle="tab">Seção 3</a></li>
+              </ul>
+            </div> <!-- /tabbable -->
+          </div>
+<pre class="prettyprint linenums">
+&lt;div class="tabbable tabs-below"&gt;
+  &lt;div class="tab-content"&gt;
+    ...
+  &lt;/div&gt;
+  &lt;ul class="nav nav-tabs"&gt;
+    ...
+  &lt;/ul&gt;
+&lt;/div&gt;
+</pre>
+
+          <h4>Tabs na esquerda</h4>
+          <p>Mude a classe para colocar as tabs na esquerda</p>
+          <div class="bs-docs-example">
+            <div class="tabbable tabs-left">
+              <ul class="nav nav-tabs">
+                <li class="active"><a href="#lA" data-toggle="tab">Seção 1</a></li>
+                <li><a href="#lB" data-toggle="tab">Seção 2</a></li>
+                <li><a href="#lC" data-toggle="tab">Seção 3</a></li>
+              </ul>
+              <div class="tab-content">
+                <div class="tab-pane active" id="lA">
+                  <p>Estou na Seção A</p>
+                </div>
+                <div class="tab-pane" id="lB">
+                  <p>Olá, Estou na seção B</p>
+                </div>
+                <div class="tab-pane" id="lC">
+                  <p>E ai garota, estou na Seção C</p>
+                </div>
+              </div>
+            </div> <!-- /tabbable -->
+          </div>
+<pre class="prettyprint linenums">
+&lt;div class="tabbable tabs-left"&gt;
+  &lt;ul class="nav nav-tabs"&gt;
+    ...
+  &lt;/ul&gt;
+  &lt;div class="tab-content"&gt;
+    ...
+  &lt;/div&gt;
+&lt;/div&gt;
+</pre>
+
+          <h4>Tabs na direita</h4>
+          <p>Mude a classe para colocar as tabs na direita</p>
+          <div class="bs-docs-example">
+            <div class="tabbable tabs-right">
+              <ul class="nav nav-tabs">
+                <li class="active"><a href="#rA" data-toggle="tab">Seção 1</a></li>
+                <li><a href="#rB" data-toggle="tab">Seção 2</a></li>
+                <li><a href="#rC" data-toggle="tab">Seção 3</a></li>
+              </ul>
+              <div class="tab-content">
+                <div class="tab-pane active" id="rA">
+                  <p>Estou na Seção A</p>
+                </div>
+                <div class="tab-pane" id="rB">
+                  <p>Olá, Estou na seção B</p>
+                </div>
+                <div class="tab-pane" id="rC">
+                  <p>E ai garota, estou na Seção C</p>
+                </div>
+              </div>
+            </div> <!-- /tabbable -->
+          </div>
+<pre class="prettyprint linenums">
+&lt;div class="tabbable tabs-right"&gt;
+  &lt;ul class="nav nav-tabs"&gt;
+    ...
+  &lt;/ul&gt;
+  &lt;div class="tab-content"&gt;
+    ...
+  &lt;/div&gt;
+&lt;/div&gt;
+</pre>
+
+        </section>
+
+
+
+        <!-- Navbar
+        ================================================== -->
+        <section id="navbar">
+          <div class="page-header">
+            <h1>Barra de navegação</h1>
+          </div>
+
+
+          <h2>Navegação básica</h2>
+          <p>Para começar, barras de navegação são estáticas (não fixas no topo) e incluem suporte para um nome de projeto para navegação básica. Coloque em qualquer lugar dentro de um <code>.container</code>, que especifica uma largura do site e do conteúdo</p>
+          <div class="bs-docs-example">
+            <div class="navbar">
+              <div class="navbar-inner">
+                <a class="brand" href="#">Título</a>
+                <ul class="nav">
+                  <li class="active"><a href="#">Início</a></li>
+                  <li><a href="#">Link</a></li>
+                  <li><a href="#">Link</a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+<pre class="prettyprint linenums">
+&lt;div class="navbar"&gt;
+  &lt;div class="navbar-inner"&gt;
+    &lt;a class="brand" href="#"&gt;Título&lt;/a&gt;
+    &lt;ul class="nav"&gt;
+      &lt;li class="active"&gt;&lt;a href="#"&gt;Início&lt;/a&gt;&lt;/li&gt;
+      &lt;li&gt;&lt;a href="#"&gt;Link&lt;/a&gt;&lt;/li&gt;
+      &lt;li&gt;&lt;a href="#"&gt;Link&lt;/a&gt;&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+</pre>
+
+
+          <hr class="bs-docs-separator">
+
+
+          <h2>Componentes de barra de navegação</h2>
+
+          <h3>Marca</h3>
+          <p>Um link simples para mostrar sua marca ou nome do projeto requer apenas uma tag de link</p>
+          <div class="bs-docs-example">
+            <div class="navbar">
+              <div class="navbar-inner">
+                <a class="brand" href="#">Título</a>
+              </div>
+            </div>
+          </div>
+<pre class="prettyprint linenums">
+&lt;a class="brand" href="#"&gt;Nome do projeto&lt;/a&gt;
+</pre>
+
+          <h3>Links de navegação</h3>
+          <p>Itens de navegação são simplesmente adicionados via listas não ordenadas</p>
+          <div class="bs-docs-example">
+            <div class="navbar">
+              <div class="navbar-inner">
+                <ul class="nav">
+                  <li class="active"><a href="#">Início</a></li>
+                  <li><a href="#">Link</a></li>
+                  <li><a href="#">Link</a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+<pre class="prettyprint linenums">
+&lt;ul class="nav"&gt;
+  &lt;li class="active"&gt;
+    &lt;a href="#">Início&lt;/a&gt;
+  &lt;/li&gt;
+  &lt;li&gt;&lt;a href="#"&gt;Link&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href="#"&gt;Link&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+</pre>
+          <p>Você pode facilmente adicionar divisores em links de navegação com uma lista vazia e adicionando uma classe. Simplesmente adicione isto entre os links</p>
+          <div class="bs-docs-example">
+            <div class="navbar">
+              <div class="navbar-inner">
+                <ul class="nav">
+                  <li class="active"><a href="#">Início</a></li>
+                  <li class="divider-vertical"></li>
+                  <li><a href="#">Link</a></li>
+                  <li class="divider-vertical"></li>
+                  <li><a href="#">Link</a></li>
+                  <li class="divider-vertical"></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+<pre class="prettyprint linenums">
+&lt;ul class="nav"&gt;
+  ...
+  &lt;li class="divider-vertical"&gt;&lt;/li&gt;
+  ...
+&lt;/ul&gt;
+</pre>
+
+          <h3>Formulários</h3>
+          <p>Para estilizar e posicionar apropriadamente um formulário dentro da barra de navegação, adicione a classe apropriada como mostrado abaixo. Para um formulário padrão, inclua <code>.navbar-form</code> ou <code>.pull-left</code> ou <code>.pull-right</code> para alinhar</p>
+          <div class="bs-docs-example">
+            <div class="navbar">
+              <div class="navbar-inner">
+                <form class="navbar-form pull-left">
+                  <input type="text" class="span2">
+                  <button type="submit" class="btn">Enviar</button>
+                </form>
+              </div>
+            </div>
+          </div>
+<pre class="prettyprint linenums">
+&lt;form class="navbar-form pull-left"&gt;
+  &lt;input type="text" class="span2"&gt;
+  &lt;button type="submit" class="btn"&gt;Enviar&lt;/button&gt;
+&lt;/form&gt;
+</pre>
+
+          <h3>Formulário de busca</h3>
+          <p>Para um formulário customizado de busca, adicione <code>.navbar-search</code> para o <code>form</code> e <code>.search-query</code> para o input para estilos especializados na barra de navegação</p>
+          <div class="bs-docs-example">
+            <div class="navbar">
+              <div class="navbar-inner">
+                <form class="navbar-search pull-left">
+                  <input type="text" class="search-query" placeholder="Busca">
+                </form>
+              </div>
+            </div>
+          </div>
+<pre class="prettyprint linenums">
+&lt;form class="navbar-search pull-left"&gt;
+  &lt;input type="text" class="search-query" placeholder="Busca"&gt;
+&lt;/form&gt;
+</pre>
+
+          <h3>Alinhamento do componente</h3>
+          <p>Alinhar links de navegação, formulário de busca, ou texto, use o <code>.pull-left</code> ou <code>.pull-right</code>. Ambas classes irão adicionar um float no CSS na direção especificada</p>
+
+          <h3>Usando dropdowns</h3>
+          <p>Adicione dropdowns e dropups para a navegação com um pouco de marcação e um <a href="./javascript.html#dropdowns">plugin de dropdowns</a>.</p>
+<pre class="prettyprint linenums">
+&lt;ul class="nav"&gt;
+  &lt;li class="dropdown"&gt;
+    &lt;a href="#" class="dropdown-toggle" data-toggle="dropdown">
+      Conta
+      &lt;b class="caret"&gt;&lt;/b&gt;
+    &lt;/a&gt;
+    &lt;ul class="dropdown-menu"&gt;
+      ...
+    &lt;/ul&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+</pre>
+          <p>Visite a <a href="./javascript.html#dropdowns">documentação do dropdowns javascript </a></p>
+
+          <h3>Texto</h3>
+          <p>Colocar em volta de strings de texto em um elemento <code>.navbar-text</code>, usualmente em uma tag <code>&lt;p&gt;</code> para apropriadamente colocar uma cor</p>
+
+
+          <hr class="bs-docs-separator">
+
+
+          <h2>Variações opcionais de exibição</h2>
+          <p>Conserte a barra de navegação no topo ou na parte inferior da janela do browser com uma classe adicional na div mais externa, o <code>.navbar</code>.</p>
+
+          <h3>Fixed to top</h3>
+          <p>Adicione <code>.navbar-fixed-top</code> e lembre-se de contar com a área abaixo adicionando ao menos 40px <code>padding</code> para o <code>&lt;body&gt;</code>. Certifique-se de adicionar isto depois do core do Bootstrap CSS e antes do CSS responsivo opcional</p>
+          <div class="bs-docs-example bs-navbar-top-example">
+            <div class="navbar navbar-fixed-top" style="position: absolute;">
+              <div class="navbar-inner">
+                <div class="container" style="width: auto; padding: 0 20px;">
+                  <a class="brand" href="#">Título</a>
+                  <ul class="nav">
+                    <li class="active"><a href="#">Início</a></li>
+                    <li><a href="#">Link</a></li>
+                    <li><a href="#">Link</a></li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+<pre class="prettyprint linenums">
+&lt;div class="navbar navbar-fixed-top"&gt;
+  ...
+&lt;/div&gt;
+</pre>
+
+          <h3>Fixed to bottom</h3>
+          <p>Ao invés disto, adicione <code>.navbar-fixed-bottom</code></p>
+          <div class="bs-docs-example bs-navbar-bottom-example">
+            <div class="navbar navbar-fixed-bottom" style="position: absolute;">
+              <div class="navbar-inner">
+                <div class="container" style="width: auto; padding: 0 20px;">
+                  <a class="brand" href="#">Título</a>
+                  <ul class="nav">
+                    <li class="active"><a href="#">Início</a></li>
+                    <li><a href="#">Link</a></li>
+                    <li><a href="#">Link</a></li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+<pre class="prettyprint linenums">
+&lt;div class="navbar navbar-fixed-bottom"&gt;
+  ...
+&lt;/div&gt;
+</pre>
+
+          <h3>Navegação do topo estática</h3>
+          <p>Crie uma barra de navegação de largura inteira que executa scroll junto com a página adicionando <code>.navbar-static-top</code>. Diferente da classe <code>.navbar-fixed-top</code>, você não precisa mudar qualquer padding no <code>body</code>.</p>
+          <div class="bs-docs-example bs-navbar-top-example">
+            <div class="navbar navbar-static-top" style="margin: -1px -1px 0;">
+              <div class="navbar-inner">
+                <div class="container" style="width: auto; padding: 0 20px;">
+                  <a class="brand" href="#">Título</a>
+                  <ul class="nav">
+                    <li class="active"><a href="#">Início</a></li>
+                    <li><a href="#">Link</a></li>
+                    <li><a href="#">Link</a></li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+<pre class="prettyprint linenums">
+&lt;div class="navbar navbar-static-top"&gt;
+  ...
+&lt;/div&gt;
+</pre>
+
+
+          <hr class="bs-docs-separator">
+
+
+          <h2>Barra de navegação responsiva</h2>
+          <p>Para implementar uma barra de navegação responsiva colapsável, coloque em volta do conteúdo da barra de navegação em uma div container, <code>.nav-collapse.collapse</code>, e adicione um botão alternador na barra de navegação, <code>.btn-navbar</code>.</p>
+          <div class="bs-docs-example">
+            <div class="navbar">
+              <div class="navbar-inner">
+                <div class="container">
+                  <a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                  </a>
+                  <a class="brand" href="#">Título</a>
+                  <div class="nav-collapse">
+                    <ul class="nav">
+                      <li class="active"><a href="#">Início</a></li>
+                      <li><a href="#">Link</a></li>
+                      <li><a href="#">Link</a></li>
+                      <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">Dropdown <b class="caret"></b></a>
+                        <ul class="dropdown-menu">
+                          <li><a href="#">Ação</a></li>
+                          <li><a href="#">Outra ação</a></li>
+                          <li><a href="#">Algo a mais aqui</a></li>
+                          <li class="divider"></li>
+                          <li class="nav-header">Nav header</li>
+                          <li><a href="#">Link separador</a></li>
+                          <li><a href="#">Um ou mais links separados</a></li>
+                        </ul>
+                      </li>
+                    </ul>
+                    <form class="navbar-search pull-left" action="">
+                      <input type="text" class="search-query span2" placeholder="Search">
+                    </form>
+                    <ul class="nav pull-right">
+                      <li><a href="#">Link</a></li>
+                      <li class="divider-vertical"></li>
+                      <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">Dropdown <b class="caret"></b></a>
+                        <ul class="dropdown-menu">
+                          <li><a href="#">Ação</a></li>
+                          <li><a href="#">Outra ação</a></li>
+                          <li><a href="#">Algo a mais aqui</a></li>
+                          <li class="divider"></li>
+                          <li><a href="#">Link separador</a></li>
+                        </ul>
+                      </li>
+                    </ul>
+                  </div><!-- /.nav-collapse -->
+                </div>
+              </div><!-- /navbar-inner -->
+            </div><!-- /navbar -->
+          </div>
+<pre class="prettyprint linenums">
+&lt;div class="navbar"&gt;
+  &lt;div class="navbar-inner"&gt;
+    &lt;div class="container"&gt;
+
+      &lt;!-- .btn-navbar é usado como alternador para conteúdo de barra de navegação colapsável --&gt;
+      &lt;a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse"&gt;
+        &lt;span class="icon-bar"&gt;&lt;/span&gt;
+        &lt;span class="icon-bar"&gt;&lt;/span&gt;
+        &lt;span class="icon-bar"&gt;&lt;/span&gt;
+      &lt;/a&gt;
+
+      &lt;!-- Tenha certeza de deixar a marca se você quer que ela seja mostrada --&gt;
+      &lt;a class="brand" href="#"&gt;Nome do projeto&lt;/a&gt;
+
+      &lt;!-- Tudo que você queira escondido em 940px ou menos, coloque aqui --&gt;
+      &lt;div class="nav-collapse"&gt;
+        &lt;!-- .nav, .navbar-search, .navbar-form, etc --&gt;
+      &lt;/div&gt;
+
+    &lt;/div&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+</pre>
+          <div class="alert alert-info">
+            <strong>Atenção!</strong> The responsive navbar requires the <a href="./javascript.html#collapse">collapse plugin</a> and <a href="./scaffolding.html#responsive">responsive Bootstrap CSS file</a>.
+          </div>
+
+
+          <hr class="bs-docs-separator">
+
+
+          <h2>Variação invertida</h2>
+          <p>Modifique a aparência da barra de navegação adicionando uma classe <code>.navbar-inverse</code>.</p>
+          <div class="bs-docs-example">
+            <div class="navbar navbar-inverse" style="position: static;">
+              <div class="navbar-inner">
+                <div class="container">
+                  <a class="btn btn-navbar" data-toggle="collapse" data-target=".subnav-collapse">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                  </a>
+                  <a class="brand" href="#">Título</a>
+                  <div class="nav-collapse subnav-collapse">
+                    <ul class="nav">
+                      <li class="active"><a href="#">Início</a></li>
+                      <li><a href="#">Link</a></li>
+                      <li><a href="#">Link</a></li>
+                      <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">Dropdown <b class="caret"></b></a>
+                        <ul class="dropdown-menu">
+                          <li><a href="#">Ação</a></li>
+                          <li><a href="#">Outra ação</a></li>
+                          <li><a href="#">Algo a mais aqui</a></li>
+                          <li class="divider"></li>
+                          <li class="nav-header">Nav header</li>
+                          <li><a href="#">Link separador</a></li>
+                          <li><a href="#">Um ou mais links separados</a></li>
+                        </ul>
+                      </li>
+                    </ul>
+                    <form class="navbar-search pull-left" action="">
+                      <input type="text" class="search-query span2" placeholder="Search">
+                    </form>
+                    <ul class="nav pull-right">
+                      <li><a href="#">Link</a></li>
+                      <li class="divider-vertical"></li>
+                      <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">Dropdown <b class="caret"></b></a>
+                        <ul class="dropdown-menu">
+                          <li><a href="#">Ação</a></li>
+                          <li><a href="#">Outra ação</a></li>
+                          <li><a href="#">Algo a mais aqui</a></li>
+                          <li class="divider"></li>
+                          <li><a href="#">Link separador</a></li>
+                        </ul>
+                      </li>
+                    </ul>
+                  </div><!-- /.nav-collapse -->
+                </div>
+              </div><!-- /navbar-inner -->
+            </div><!-- /navbar -->
+          </div>
+<pre class="prettyprint linenums">
+&lt;div class="navbar navbar-inverse"&gt;
+  ...
+&lt;/div&gt;
+</pre>
+
+        </section>
+
+
+
+        <!-- Breadcrumbs
+        ================================================== -->
+        <section id="breadcrumbs">
+          <div class="page-header">
+            <h1>Breadcrumbs(migalhas de pão) <small></small></h1>
+          </div>
+
+          <h2>Exemplos</h2>
+          <p>Um único exemplo mostra como pode ser mostrado entre múltiplas páginas</p>
+          <div class="bs-docs-example">
+            <ul class="breadcrumb">
+              <li class="active">Início</li>
+            </ul>
+            <ul class="breadcrumb">
+              <li><a href="#">Início</a> <span class="divider">/</span></li>
+              <li class="active">Biblioteca</li>
+            </ul>
+            <ul class="breadcrumb" style="margin-bottom: 5px;">
+              <li><a href="#">Início</a> <span class="divider">/</span></li>
+              <li><a href="#">Biblioteca</a> <span class="divider">/</span></li>
+              <li class="active">Dados</li>
+            </ul>
+          </div>
+<pre class="prettyprint linenums">
+&lt;ul class="breadcrumb"&gt;
+  &lt;li&gt;&lt;a href="#"&gt;Início&lt;/a&gt; &lt;span class="divider"&gt;/&lt;/span&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href="#"&gt;Biblioteca&lt;/a&gt; &lt;span class="divider"&gt;/&lt;/span&gt;&lt;/li&gt;
+  &lt;li class="active"&gt;Dados&lt;/li&gt;
+&lt;/ul&gt;
+</pre>
+
+        </section>
+
+
+
+        <!-- Pagination
+        ================================================== -->
+        <section id="pagination">
+          <div class="page-header">
+            <h1>Paginação <small>Duas opções para paginar pelo conteúdo</small></h1>
+          </div>
+
+          <h2>Paginação padrão</h2>
+          <p>Paginação simples inspirado pelo Rdio, ótima para aplicação e resultados de busca. O bloco maior é difícil de perder, facilmente escalável, e provê grandes áreas de clique</p>
+          <div class="bs-docs-example">
+            <div class="pagination">
+              <ul>
+                <li><a href="#">&laquo;</a></li>
+                <li><a href="#">1</a></li>
+                <li><a href="#">2</a></li>
+                <li><a href="#">3</a></li>
+                <li><a href="#">4</a></li>
+                <li><a href="#">5</a></li>
+                <li><a href="#">&raquo;</a></li>
+              </ul>
+            </div>
+          </div>
+<pre class="prettyprint linenums">
+&lt;div class="pagination"&gt;
+  &lt;ul&gt;
+    &lt;li&gt;&lt;a href="#"&gt;Prev&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href="#"&gt;1&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href="#"&gt;2&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href="#"&gt;3&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href="#"&gt;4&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href="#"&gt;Next&lt;/a&gt;&lt;/li&gt;
+  &lt;/ul&gt;
+&lt;/div&gt;
+</pre>
+
+
+          <hr class="bs-docs-separator">
+
+
+          <h2>Opções</h2>
+
+          <h3>Desabilitar e ativar estados</h3>
+          <p>Links são customizados em diferentes circunstâncias. Use <code>.disabled</code> para links não clicáveis e <code>.active</code> para indicar a página corrente</p>
+          <div class="bs-docs-example">
+            <div class="pagination pagination-centered">
+              <ul>
+                <li class="disabled"><a href="#">&laquo;</a></li>
+                <li class="active"><a href="#">1</a></li>
+                <li><a href="#">2</a></li>
+                <li><a href="#">3</a></li>
+                <li><a href="#">4</a></li>
+                <li><a href="#">5</a></li>
+                <li><a href="#">&raquo;</a></li>
+             </ul>
+            </div>
+          </div>
+<pre class="prettyprint linenums">
+&lt;div class="pagination "&gt;
+  &lt;ul&gt;
+    &lt;li class="disabled"&gt;&lt;a href="#"&gt;Prev&lt;/a&gt;&lt;/li&gt;
+    &lt;li class="active"&gt;&lt;a href="#"&gt;1&lt;/a&gt;&lt;/li&gt;
+    ...
+  &lt;/ul&gt;
+&lt;/div&gt;
+</pre>
+
+          <h3>Alinhamento</h3>
+          <p>Adicione um ou duas classes opcionais para modificar o alinhamento dos links de paginação: <code>.pagination-centered</code> e <code>.pagination-right</code>.</p>
+          <div class="bs-docs-example">
+            <div class="pagination pagination-centered">
+              <ul>
+                <li><a href="#">&laquo;</a></li>
+                <li><a href="#">1</a></li>
+                <li><a href="#">2</a></li>
+                <li><a href="#">3</a></li>
+                <li><a href="#">4</a></li>
+                <li><a href="#">5</a></li>
+                <li><a href="#">&raquo;</a></li>
+             </ul>
+            </div>
+          </div>
+<pre class="prettyprint linenums">
+&lt;div class="pagination pagination-centered"&gt;
+  ...
+&lt;/div&gt;
+</pre>
+          <div class="bs-docs-example">
+            <div class="pagination pagination-right">
+              <ul>
+                <li><a href="#">&laquo;</a></li>
+                <li><a href="#">1</a></li>
+                <li><a href="#">2</a></li>
+                <li><a href="#">3</a></li>
+                <li><a href="#">4</a></li>
+                <li><a href="#">5</a></li>
+                <li><a href="#">&raquo;</a></li>
+              </ul>
+            </div>
+          </div>
+<pre class="prettyprint linenums">
+&lt;div class="pagination pagination-right"&gt;
+  ...
+&lt;/div&gt;
+</pre>
+
+
+          <hr class="bs-docs-separator">
+
+
+          <h2>Paginador</h2>
+          <p>Links de próximo e anterior para implementação de paginações simples com marcação leve e estilos leves. É ótimo para sites simples como blogs ou revistas digitais</p>
+
+          <h3>Exemplo padrão</h3>
+          <p>Por padrão, o paginador centraliza links</p>
+          <div class="bs-docs-example">
+            <ul class="pager">
+              <li><a href="#">Anterior</a></li>
+              <li><a href="#">Próximo</a></li>
+            </ul>
+          </div>
+<pre class="prettyprint linenums">
+&lt;ul class="pager"&gt;
+  &lt;li&gt;&lt;a href="#"&gt;Anterior&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href="#"&gt;Próximo&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+</pre>
+
+          <h3>Links alinhados</h3>
+          <p>Alternativamente, você pode alinhar cada link em seus lados</p>
+          <div class="bs-docs-example">
+            <ul class="pager">
+              <li class="previous"><a href="#">&larr; Mais antigos</a></li>
+              <li class="next"><a href="#">Mais novos &rarr;</a></li>
+            </ul>
+          </div>
+<pre class="prettyprint linenums">
+&lt;ul class="pager"&gt;
+  &lt;li class="previous"&gt;
+    &lt;a href="#"&gt;&amp;larr; Mais antigos&lt;/a&gt;
+  &lt;/li&gt;
+  &lt;li class="next"&gt;
+    &lt;a href="#"&gt;Mais novos &amp;rarr;&lt;/a&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+</pre>
+
+          <h3>Estado de opcional desabilitado</h3>
+          <p>Links de paginação também usam a classe utilitária <code>.disabled</code> para a paginação</p>
+          <div class="bs-docs-example">
+            <ul class="pager">
+              <li class="previous disabled"><a href="#">&larr; Mais antigos</a></li>
+              <li class="next"><a href="#">Mais novos &rarr;</a></li>
+            </ul>
+          </div>
+<pre class="prettyprint linenums">
+&lt;ul class="pager"&gt;
+  &lt;li class="previous disabled"&gt;
+    &lt;a href="#"&gt;&amp;larr; Mais antigos&lt;/a&gt;
+  &lt;/li&gt;
+  ...
+&lt;/ul&gt;
+</pre>
+
+        </section>
+
+
+
+        <!-- Labels and badges
+        ================================================== -->
+        <section id="labels-badges">
+          <div class="page-header">
+            <h1>rótulos e emblemas</h1>
+          </div>
+          <h3>Labels(rótulos)</h3>
+          <table class="table table-bordered table-striped">
+            <thead>
+              <tr>
+                <th>Labels(rótulos)</th>
+                <th>Marcação</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>
+                  <span class="label">Padrão</span>
+                </td>
+                <td>
+                  <code>&lt;span class="label"&gt;Padrão&lt;/span&gt;</code>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <span class="label label-success">Sucesso</span>
+                </td>
+                <td>
+                  <code>&lt;span class="label label-success"&gt;Sucesso&lt;/span&gt;</code>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <span class="label label-warning">Aviso</span>
+                </td>
+                <td>
+                  <code>&lt;span class="label label-warning"&gt;Aviso&lt;/span&gt;</code>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <span class="label label-important">Importante</span>
+                </td>
+                <td>
+                  <code>&lt;span class="label label-important"&gt;Importante&lt;/span&gt;</code>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <span class="label label-info">Informações</span>
+                </td>
+                <td>
+                  <code>&lt;span class="label label-info"&gt;Informações&lt;/span&gt;</code>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <span class="label label-inverse">Inverso</span>
+                </td>
+                <td>
+                  <code>&lt;span class="label label-inverse"&gt;Inverso&lt;/span&gt;</code>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+
+          <h3>Badges</h3>
+          <table class="table table-bordered table-striped">
+            <thead>
+              <tr>
+                <th>Nome</th>
+                <th>Exemplo</th>
+                <th>Marcação</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>
+                  Padrão
+                </td>
+                <td>
+                  <span class="badge">1</span>
+                </td>
+                <td>
+                  <code>&lt;span class="badge"&gt;1&lt;/span&gt;</code>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  Sucesso
+                </td>
+                <td>
+                  <span class="badge badge-success">2</span>
+                </td>
+                <td>
+                  <code>&lt;span class="badge badge-success"&gt;2&lt;/span&gt;</code>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  Aviso
+                </td>
+                <td>
+                  <span class="badge badge-warning">4</span>
+                </td>
+                <td>
+                  <code>&lt;span class="badge badge-warning"&gt;4&lt;/span&gt;</code>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  Importante
+                </td>
+                <td>
+                  <span class="badge badge-important">6</span>
+                </td>
+                <td>
+                  <code>&lt;span class="badge badge-important"&gt;6&lt;/span&gt;</code>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  Informações
+                </td>
+                <td>
+                  <span class="badge badge-info">8</span>
+                </td>
+                <td>
+                  <code>&lt;span class="badge badge-info"&gt;8&lt;/span&gt;</code>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  Inverso
+                </td>
+                <td>
+                  <span class="badge badge-inverse">10</span>
+                </td>
+                <td>
+                  <code>&lt;span class="badge badge-inverse"&gt;10&lt;/span&gt;</code>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+
+        </section>
+
+
+
+        <!-- Typographic components
+        ================================================== -->
+        <section id="typography">
+          <div class="page-header">
+            <h1>Componentes tipográficos</h1>
+          </div>
+
+          <h2>Unidade herói</h2>
+          <p>Um componente flexível e leve de showcase. Funciona bem para sites de marketing e de conteúdo pesado</p>
+          <div class="bs-docs-example">
+            <div class="hero-unit">
+              <h1>Olá mundo!</h1>
+              <p>Isto é uma simples unidade herói, um componente para chamar uma atenção extra para informações adicionais</p>
+              <p><a class="btn btn-primary btn-large">Aprenda mais</a></p>
+            </div>
+          </div>
+<pre class="prettyprint linenums">
+&lt;div class="hero-unit"&gt;
+  &lt;h1&gt;Cabeçalho&lt;/h1&gt;
+  &lt;p&gt;Linha de tag&lt;/p&gt;
+  &lt;p&gt;
+    &lt;a class="btn btn-primary btn-large"&gt;
+      Aprenda mais
+    &lt;/a&gt;
+  &lt;/p&gt;
+&lt;/div&gt;
+</pre>
+
+          <h2>Cabeçalho de página</h2>
+          <p>Use um simples <code>h1</code> para apropriadamente dar um espaço nas seções segmentadas de conteúdo em uma página. É possível utilizar o padrão <code>h1</code> com <code>small</code>, o elemento em si mais outros componentes (com estilos adicionais).</p>
+          <div class="bs-docs-example">
+            <div class="page-header">
+              <h1>Exemplo de cabeçalho de página <small>Subtexto para os cabeçalhos</small></h1>
+            </div>
+          </div>
+<pre class="prettyprint linenums">
+&lt;div class="page-header"&gt;
+  &lt;h1&gt;Exemplo de cabeçalho de página&lt;/h1&gt;
+&lt;/div&gt;
+</pre>
+
+        </section>
+
+
+
+        <!-- Thumbnails
+        ================================================== -->
+        <section id="thumbnails">
+          <div class="page-header">
+            <h1>Imagem miniaturas <small>Grid de imagens, videos, texto e mais</small></h1>
+          </div>
+
+          <h2>miniaturas padrão</h2>
+          <p>Por padrão, os Thumbnails do Bootstrap são desenhados para serem exibidos em imagens com links com o mínimo de markup possível.</p>
+          <div class="row-fluid">
+            <ul class="thumbnails">
+              <li class="span3">
+                <a href="#" class="thumbnail">
+                  <img src="http://placehold.it/260x180" alt="">
+                </a>
+              </li>
+              <li class="span3">
+                <a href="#" class="thumbnail">
+                  <img src="http://placehold.it/260x180" alt="">
+                </a>
+              </li>
+              <li class="span3">
+                <a href="#" class="thumbnail">
+                  <img src="http://placehold.it/260x180" alt="">
+                </a>
+              </li>
+              <li class="span3">
+                <a href="#" class="thumbnail">
+                  <img src="http://placehold.it/260x180" alt="">
+                </a>
+              </li>
+            </ul>
+          </div>
+
+          <h2>Altamente customizável</h2>
+          <p>Com um pouco a mais de markup, é possível adicionar qualquer tipo de conteúdo html, como cabeçalho, parágrafos, ou até mesmo botões nas miniaturas</p>
+          <div class="row-fluid">
+            <ul class="thumbnails">
+              <li class="span4">
+                <div class="thumbnail">
+                  <img src="http://placehold.it/300x200" alt="">
+                  <div class="caption">
+                    <h3>Rótulo para a miniatura</h3>
+                    <p>Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
+                    <p><a href="#" class="btn btn-primary">Ação</a> <a href="#" class="btn">Ação</a></p>
+                  </div>
+                </div>
+              </li>
+              <li class="span4">
+                <div class="thumbnail">
+                  <img src="http://placehold.it/300x200" alt="">
+                  <div class="caption">
+                    <h3>Rótulo para a miniatura</h3>
+                    <p>Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
+                    <p><a href="#" class="btn btn-primary">Ação</a> <a href="#" class="btn">Ação</a></p>
+                  </div>
+                </div>
+              </li>
+              <li class="span4">
+                <div class="thumbnail">
+                  <img src="http://placehold.it/300x200" alt="">
+                  <div class="caption">
+                    <h3>Rótulo para a miniatura</h3>
+                    <p>Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
+                    <p><a href="#" class="btn btn-primary">Ação</a> <a href="#" class="btn">Ação</a></p>
+                  </div>
+                </div>
+              </li>
+            </ul>
+          </div>
+
+          <h3>Por que usar miniaturas</h3>
+          <p>As miniaturas (previamente <code>.media-grid</code> até a versão 1.4) são ótimos para grids de fotos ou vídeos, imagens em resultados de busca, detalhes de produtos, portfolios e muito mais. Eles podem ser links ou conteúdo estático</p>
+
+          <h3>marcação simples e flexível</h3>
+          <p>A marcação da miniatura é simplesmente uma <code>ul</code> com qualquer número de elementos <code>li</code>. É também super flexível, permitindo para qualquer tipo de conteúdo com um pouco mais de markup para colocar no seu conteúdo</p>
+
+          <h3>use tamanho das colunas do grid</h3>
+          <p>Por último, os componentes de miniatura usam o grid já existente &mdash;como <code>.span2</code> ou <code>.span3</code>&mdash; para controlar as dimensões da miniatura</p>
+
+          <h2>Marcação</h2>
+          <p>Como mencionado antes, a marcação necessária para as miniaturas é leve e direta. Dê uma olhada na configuração padrão para <strong>imagens linkadas</strong></p>
+<pre class="prettyprint linenums">
+&lt;ul class="thumbnails"&gt;
+  &lt;li class="span4"&gt;
+    &lt;a href="#" class="thumbnail"&gt;
+      &lt;img src="http://placehold.it/300x200" alt=""&gt;
+    &lt;/a&gt;
+  &lt;/li&gt;
+  ...
+&lt;/ul&gt;
+</pre>
+          <p>Para conteúdo personalizado nas miniaturas, a marcação muda um pouco. Para permitir elementos bloco em qualquer lugar, nós trocamos a tag <code>&lt;a&gt;</code> para uma div <code>&lt;div&gt;</code> assim:</p>
+<pre class="prettyprint linenums">
+&lt;ul class="thumbnails"&gt;
+  &lt;li class="span4"&gt;
+    &lt;div class="thumbnail"&gt;
+      &lt;img src="http://placehold.it/300x200" alt=""&gt;
+      &lt;h3&gt;Rótulo para a miniatura&lt;/h3&gt;
+      &lt;p&gt;Texto do thumbnail...&lt;/p&gt;
+    &lt;/div&gt;
+  &lt;/li&gt;
+  ...
+&lt;/ul&gt;
+</pre>
+
+          <h2>Mais exemplos</h2>
+          <p>Explore todas opções com as várias classes do grid disponível para você. Você pode também misturar e encaixar diferentes tamanhos.</p>
+          <ul class="thumbnails">
+            <li class="span4">
+              <a href="#" class="thumbnail">
+                <img src="http://placehold.it/360x270" alt="">
+              </a>
+            </li>
+            <li class="span3">
+              <a href="#" class="thumbnail">
+                <img src="http://placehold.it/260x120" alt="">
+              </a>
+            </li>
+            <li class="span2">
+              <a href="#" class="thumbnail">
+                <img src="http://placehold.it/160x120" alt="">
+              </a>
+            </li>
+            <li class="span3">
+              <a href="#" class="thumbnail">
+                <img src="http://placehold.it/260x120" alt="">
+              </a>
+            </li>
+            <li class="span2">
+              <a href="#" class="thumbnail">
+                <img src="http://placehold.it/160x120" alt="">
+              </a>
+            </li>
+          </ul>
+
+        </section>
+
+
+
+        <!-- Alerts
+        ================================================== -->
+        <section id="alerts">
+          <div class="page-header">
+            <h1>Alertas <small>Estilos para sucesso, advertência, e mensagens de erro</small></h1>
+          </div>
+
+          <h2>Alerta padrão</h2>
+          <p>Coloque qualquer texto em volta de um botão de fechar em um <code>.alert</code> para uma mensagem de alerta básico</p>
+          <div class="bs-docs-example">
+            <div class="alert">
+              <button type="button" class="close" data-dismiss="alert">&times;</button>
+              <strong>Advertência!</strong> Melhor checar você mesmo, você não está parecendo bem
+            </div>
+          </div>
+<pre class="prettyprint linenums">
+&lt;div class="alert"&gt;
+  &lt;button type="button" class="close" data-dismiss="alert"&gt;&times;&lt;/button&gt;
+  &lt;strong&gt;Advertência!&lt;/strong&gt; Melhor checar você mesmo, você não está parecendo bem
+&lt;/div&gt;
+</pre>
+
+          <h3>Botões de fechar</h3>
+          <p>Browsers mobile e opera, com complemento ao atributo <code>data-dismiss="alert"</code>, requer um <code>href="#"</code> para alertas quando usando uma tag <code>&lt;a&gt;</code></p>
+          <pre class="prettyprint linenums">&lt;a href="#" class="close" data-dismiss="alert"&gt;&times;&lt;/a&gt;</pre>
+          <p>Alternativamente, você pode usar um elemento <code>&lt;button&gt;</code> com o atributo data, que nós optamos para fazer em nossa documentação. quando usando <code>&lt;button&gt;</code>, você deve incluir <code>type="button"</code> ou seu formulário pode não ser enviado</p>
+          <pre class="prettyprint linenums">&lt;button type="button" class="close" data-dismiss="alert"&gt;&times;&lt;/button&gt;</pre>
+
+          <h3>Alertas via javascript</h3>
+          <p>Use um <a href="./javascript.html#alerts">alerts jQuery plugin</a> para rapidamente fechar alertas</p>
+
+
+          <hr class="bs-docs-separator">
+
+
+          <h2>Opções</h2>
+          <p>Para mensagens longas, aumente o padding no topo e no bottom do alerta colocando em volta adicionando <code>.alert-block</code>.</p>
+          <div class="bs-docs-example">
+            <div class="alert alert-block">
+              <button type="button" class="close" data-dismiss="alert">&times;</button>
+              <h4>Advertência!</h4>
+              <p>Melhor checar você mesmo, você não está parecendo bem Nulla vitae elit libero, a pharetra augue. Praesent commodo cursus magna, vel scelerisque nisl consectetur et.</p>
+            </div>
+          </div>
+<pre class="prettyprint linenums">
+&lt;div class="alert alert-block"&gt;
+  &lt;button type="button" class="close" data-dismiss="alert"&gt;&times;&lt;/button&gt;
+  &lt;h4&gt;Advertência!&lt;/h4&gt;
+  Melhor checar você mesmo, você não está...
+&lt;/div&gt;
+</pre>
+
+
+          <hr class="bs-docs-separator">
+
+
+          <h2>Alternatvas contextuais</h2>
+          <p>Adicionando classes opcionais para mudar conotação dos alertas</p>
+
+          <h3>Erro ou perigo</h3>
+          <div class="bs-docs-example">
+            <div class="alert alert-error">
+              <button type="button" class="close" data-dismiss="alert">&times;</button>
+              <strong>Oh spnap!</strong> Mude algumas coisas e envie novamente
+            </div>
+          </div>
+<pre class="prettyprint linenums">
+&lt;div class="alert alert-error"&gt;
+  ...
+&lt;/div&gt;
+</pre>
+
+          <h3>Sucesso</h3>
+          <div class="bs-docs-example">
+            <div class="alert alert-success">
+              <button type="button" class="close" data-dismiss="alert">&times;</button>
+              <strong>Muito bem</strong> Você leu esta mensagem importante com sucesso
+            </div>
+          </div>
+<pre class="prettyprint linenums">
+&lt;div class="alert alert-success"&gt;
+  ...
+&lt;/div&gt;
+</pre>
+
+          <h3>Informação</h3>
+          <div class="bs-docs-example">
+            <div class="alert alert-info">
+              <button type="button" class="close" data-dismiss="alert">&times;</button>
+              <strong>Atenção!</strong> Este alerta precisa de sua atenção, mais não é o mais importante
+            </div>
+          </div>
+<pre class="prettyprint linenums">
+&lt;div class="alert alert-info"&gt;
+  ...
+&lt;/div&gt;
+</pre>
+
+        </section>
+
+
+
+        <!-- Progress bars
+        ================================================== -->
+        <section id="progress">
+          <div class="page-header">
+            <h1>Barra de progresso <small>Para carregamento, redirecionamento, ou ação de status</small></h1>
+          </div>
+
+          <h2>Exemplos e marcação</h2>
+
+          <h3>Básico</h3>
+          <p>Barra de progresso padrão com um gradiente vertical</p>
+          <div class="bs-docs-example">
+            <div class="progress">
+              <div class="bar" style="width: 60%;"></div>
+            </div>
+          </div>
+<pre class="prettyprint linenums">
+&lt;div class="progress"&gt;
+  &lt;div class="bar" style="width: 60%;"&gt;&lt;/div&gt;
+&lt;/div&gt;
+</pre>
+
+          <h3>Zebrada</h3>
+          <p>Use um gradiente para criar um efeito de zebra. Não disponível no IE7-8.</p>
+          <div class="bs-docs-example">
+            <div class="progress progress-striped">
+              <div class="bar" style="width: 20%;"></div>
+            </div>
+          </div>
+<pre class="prettyprint linenums">
+&lt;div class="progress progress-striped"&gt;
+  &lt;div class="bar" style="width: 20%;"&gt;&lt;/div&gt;
+&lt;/div&gt;
+</pre>
+
+          <h3>Animado</h3>
+          <p>Adicione um <code>.active</code> ao <code>.progress-striped</code> para animar a zebra da esquerda para direita. Não disponível em todas versões do IE</p>
+          <div class="bs-docs-example">
+            <div class="progress progress-striped active">
+              <div class="bar" style="width: 45%"></div>
+            </div>
+          </div>
+<pre class="prettyprint linenums">
+&lt;div class="progress progress-striped active"&gt;
+  &lt;div class="bar" style="width: 40%;"&gt;&lt;/div&gt;
+&lt;/div&gt;
+</pre>
+
+          <h3>Stacked</h3>
+          <p>Place multiple bars into the same <code>.progress</code> to stack them.</p>
+          <div class="bs-docs-example">
+            <div class="progress">
+              <div class="bar bar-success" style="width: 35%"></div>
+              <div class="bar bar-warning" style="width: 20%"></div>
+              <div class="bar bar-danger" style="width: 10%"></div>
+            </div>
+          </div>
+<pre class="prettyprint linenums">
+&lt;div class="progress"&gt;
+  &lt;div class="bar bar-success" style="width: 35%;"&gt;&lt;/div&gt;
+  &lt;div class="bar bar-warning" style="width: 20%;"&gt;&lt;/div&gt;
+  &lt;div class="bar bar-danger" style="width: 10%;"&gt;&lt;/div&gt;
+&lt;/div&gt;
+</pre>
+
+
+          <hr class="bs-docs-separator">
+
+
+          <h2>Opções</h2>
+
+          <h3>Cores adicionais</h3>
+          <p>Barras de progresso use algumas das classes de botões e alertas para estilos consistentes</p>
+          <div class="bs-docs-example">
+            <div class="progress progress-info" style="margin-bottom: 9px;">
+              <div class="bar" style="width: 20%"></div>
+            </div>
+            <div class="progress progress-success" style="margin-bottom: 9px;">
+              <div class="bar" style="width: 40%"></div>
+            </div>
+            <div class="progress progress-warning" style="margin-bottom: 9px;">
+              <div class="bar" style="width: 60%"></div>
+            </div>
+            <div class="progress progress-danger">
+              <div class="bar" style="width: 80%"></div>
+            </div>
+          </div>
+<pre class="prettyprint linenums">
+&lt;div class="progress progress-info"&gt;
+  &lt;div class="bar" style="width: 20%"&gt;&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class="progress progress-success"&gt;
+  &lt;div class="bar" style="width: 40%"&gt;&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class="progress progress-warning"&gt;
+  &lt;div class="bar" style="width: 60%"&gt;&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class="progress progress-danger"&gt;
+  &lt;div class="bar" style="width: 80%"&gt;&lt;/div&gt;
+&lt;/div&gt;
+</pre>
+
+          <h3>Barras zebradas</h3>
+          <p>Similar as cores sólidas, nós zebramos as barras de progresso</p>
+          <div class="bs-docs-example">
+            <div class="progress progress-info progress-striped" style="margin-bottom: 9px;">
+              <div class="bar" style="width: 20%"></div>
+            </div>
+            <div class="progress progress-success progress-striped" style="margin-bottom: 9px;">
+              <div class="bar" style="width: 40%"></div>
+            </div>
+            <div class="progress progress-warning progress-striped" style="margin-bottom: 9px;">
+              <div class="bar" style="width: 60%"></div>
+            </div>
+            <div class="progress progress-danger progress-striped">
+              <div class="bar" style="width: 80%"></div>
+            </div>
+          </div>
+<pre class="prettyprint linenums">
+&lt;div class="progress progress-info progress-striped"&gt;
+  &lt;div class="bar" style="width: 20%"&gt;&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class="progress progress-success progress-striped"&gt;
+  &lt;div class="bar" style="width: 40%"&gt;&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class="progress progress-warning progress-striped"&gt;
+  &lt;div class="bar" style="width: 60%"&gt;&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class="progress progress-danger progress-striped"&gt;
+  &lt;div class="bar" style="width: 80%"&gt;&lt;/div&gt;
+&lt;/div&gt;
+</pre>
+
+
+          <hr class="bs-docs-separator">
+
+
+          <h2>Suporte a browser</h2>
+          <p>Barra de progresso usa gradientes CSS3, transitions, e as animações são obtidas com todos os seus efeitos. Estas funcionalidades não são suportadas no IE7-9 ou versões mais antigas de Firefox.</p>
+          <p>Versione anteriores ao Internet Explorer 10 e Opera 12 não suporta animação</p>
+
+        </section>
+
+
+
+
+
+        <!-- Miscellaneous
+        ================================================== -->
+        <section id="misc">
+          <div class="page-header">
+            <h1>Diversos <small>Componentes utilitários leves</small></h1>
+          </div>
+
+          <h2>Wells</h2>
+          <p>Use o well como um efeito simples em um elemento para dar um efeito sobreposto</p>
+          <div class="bs-docs-example">
+            <div class="well">
+              Olá, Eu sou um well!
+            </div>
+          </div>
+<pre class="prettyprint linenums">
+&lt;div class="well"&gt;
+  ...
+&lt;/div&gt;
+</pre>
+          <h3>Classes opcionais</h3>
+          <p>Controlando padding e bordas arredondadas com duas classes opcionais modificáveis</p>
+          <div class="bs-docs-example">
+            <div class="well well-large">
+              Olá, Eu sou um well!
+            </div>
+          </div>
+<pre class="prettyprint linenums">
+&lt;div class="well well-large"&gt;
+  ...
+&lt;/div&gt;
+</pre>
+          <div class="bs-docs-example">
+            <div class="well well-small">
+              Olá, Eu sou um well!
+            </div>
+          </div>
+<pre class="prettyprint linenums">
+&lt;div class="well well-small"&gt;
+  ...
+&lt;/div&gt;
+</pre>
+
+          <h2>Ícone de fechar</h2>
+          <p>Use uma classe close genérica para rejeitar o conteúdo como modais e alertas</p>
+          <div class="bs-docs-example">
+            <p><button class="close" style="float: none;">&times;</button></p>
+          </div>
+          <pre class="prettyprint linenums">&lt;button class="close"&gt;&amp;times;&lt;/button&gt;</pre>
+          <p>Dispositivos iOS requerem um href="#" para eventos de clique se você usar preferencialmente como âncora</p>
+          <pre class="prettyprint linenums">&lt;a class="close" href="#"&gt;&amp;times;&lt;/a&gt;</pre>
+
+          <h2>Classes de ajuda</h2>
+          <p>Classes simples, focada para telas menores</p>
+
+          <h4>.pull-left</h4>
+          <p>Flutuar um elemento a esquerda</p>
+<pre class="prettyprint linenums">
+class="pull-left"
+</pre>
+<pre class="prettyprint linenums">
+.pull-left {
+  float: left;
+}
+</pre>
+
+          <h4>.pull-right</h4>
+          <p>Flutuar um elemento na direita</p>
+<pre class="prettyprint linenums">
+class="pull-right"
+</pre>
+<pre class="prettyprint linenums">
+.pull-right {
+  float: right;
+}
+</pre>
+
+          <h4>.muted</h4>
+          <p>Mudar uma cor do elemento para <code>#999</code></p>
+<pre class="prettyprint linenums">
+class="muted"
+</pre>
+<pre class="prettyprint linenums">
+.muted {
+  color: #999;
+}
+</pre>
+
+          <h4>.clearfix</h4>
+          <p>Aplique um clear no <code>float</code> em qualquer elemento</p>
+<pre class="prettyprint linenums">
+class="clearfix"
+</pre>
+<pre class="prettyprint linenums">
+.clearfix {
+  *zoom: 1;
+  &:before,
+  &:after {
+    display: table;
+    content: "";
+  }
+  &:after {
+    clear: both;
+  }
+}
+</pre>
+
+        </section>
+
+
+
+      </div>
+    </div>
+
+  </div>
+
+
+
+    <!-- Footer
+    ================================================== -->
+    <footer class="footer">
+      <div class="container">
+        <p class="pull-right"><a href="#">Voltar ao topo</a></p>
+        <p>Desenvolvido com todo amor no mundo <a href="http://twitter.com/twitter" target="_blank">@twitter</a> por <a href="http://twitter.com/mdo" target="_blank">@mdo</a> e <a href="http://twitter.com/fat" target="_blank">@fat</a>.</p>
+        <p>Este projeto é uma versão do Twitter Bootstrap da globo.com mantido por <a href="http://blog.alexandremagno.net">Alexandre Magno</a></p>
+        <p>Código licenciado sob <a href="http://www.apache.org/licenses/LICENSE-2.0" target="_blank">Licença Apache v2.0</a>. A documentação é licenciada sob <a href="http://creativecommons.org/licenses/by/3.0/">CC 3.0</a>.</p>
+        <p>Ícones do <a href="http://glyphicons.com">Glyphicons Free</a>, licenciado sob <a href="http://creativecommons.org/licenses/by/3.0/">CC 3.0</a>.</p>
+        <ul class="footer-links">
+          <li><a href="http://blog.getbootstrap.com">Leia o blog</a></li>
+          <li><a href="https://github.com/twitter/bootstrap/issues?state=open">Relatar issues</a></li>
+          <li><a href="https://github.com/twitter/bootstrap/wiki">Roadmap e changelog</a></li>
+        </ul>
+      </div>
+    </footer>
+
+
+
+    <!-- Le javascript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script type="text/javascript" src="http://platform.twitter.com/widgets.js"></script>
+    <script src="assets/js/jquery.js"></script>
+    <script src="assets/js/google-code-prettify/prettify.js"></script>
+    <script src="assets/js/bootstrap-transition.js"></script>
+    <script src="assets/js/bootstrap-alert.js"></script>
+    <script src="assets/js/bootstrap-modal.js"></script>
+    <script src="assets/js/bootstrap-dropdown.js"></script>
+    <script src="assets/js/bootstrap-scrollspy.js"></script>
+    <script src="assets/js/bootstrap-tab.js"></script>
+    <script src="assets/js/bootstrap-tooltip.js"></script>
+    <script src="assets/js/bootstrap-popover.js"></script>
+    <script src="assets/js/bootstrap-button.js"></script>
+    <script src="assets/js/bootstrap-collapse.js"></script>
+    <script src="assets/js/bootstrap-carousel.js"></script>
+    <script src="assets/js/bootstrap-typeahead.js"></script>
+    <script src="assets/js/bootstrap-affix.js"></script>
+    <script src="assets/js/application.js"></script>
+
+
+
+  </body>
+</html>
