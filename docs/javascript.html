@@ -386,9 +386,9 @@ $('#myModal').on('hidden', function () {
 
 
           <h2>Exemplos</h2>
-          <p>Add dropdown menus to nearly anything with this simple plugin, including the navbar, tabs, and pills.</p>
+          <p>Adicione menus dropdown em qualquer coisa com este plugin, incluindo barra de navegação, aba e pílulas</p>
 
-          <h3>Within a navbar</h3>
+          <h3>Dentro de uma barra de navegação</h3>
           <div class="bs-docs-example">
             <div id="navbar-example" class="navbar navbar-static">
               <div class="navbar-inner">
@@ -433,7 +433,7 @@ $('#myModal').on('hidden', function () {
             </div> <!-- /navbar-example -->
           </div> 
 
-          <h3>Within tabs</h3>
+          <h3>Dentro de abas</h3>
           <div class="bs-docs-example">
             <ul class="nav nav-pills">
               <li class="active"><a href="#">link normal</a></li>
@@ -477,7 +477,7 @@ $('#myModal').on('hidden', function () {
           <h2>Uso</h2>
 
           <h3>Via atributos data</h3>
-          <p>Add <code>data-toggle="dropdown"</code> to a link or button to toggle a dropdown.</p>
+          <p>Adicione <code>data-toggle="dropdown"</code> para um link ou botão para torná-lo um dropdown</p>
 <pre class="prettyprint linenums">
 &lt;div class="dropdown"&gt;
   &lt;a class="dropdown-toggle" href="#"&gt;Dropdown trigger&lt;/a&gt;
@@ -500,7 +500,7 @@ $('#myModal').on('hidden', function () {
 </pre>
 
           <h3>Via Javascript</h3>
-          <p>Call the dropdowns via JavaScript:</p>
+          <p>Chame o dropdown via JavaScript</p>
           <pre class="prettyprint linenums">$('.dropdown-toggle').dropdown()</pre>
 
           <h3>Opções</h3>
@@ -521,8 +521,8 @@ $('#myModal').on('hidden', function () {
           </div>
 
 
-          <h2>Example in navbar</h2>
-          <p>The ScrollSpy plugin is for automatically updating nav targets based on scroll position. Scroll the area below the navbar and watch the active class change. The dropdown sub items will be highlighted as well.</p>
+          <h2>Exemplo na barra de navegação</h2>
+          <p>O plugin de ScrollSpy é para automaticamente atualizar alvos de navegação baseado na posição do scroll. Realize um scroll na barra de navegação abaixo para ativar a mudança da classe. Os subitens do dropdown serão destacados também.</p>
           <div class="bs-docs-example">
             <div id="navbarExample" class="navbar navbar-static">
               <div class="navbar-inner">
@@ -567,11 +567,11 @@ $('#myModal').on('hidden', function () {
           <h2>Uso</h2>
 
           <h3>Via atributos data</h3>
-          <p>To easily add scrollspy behavior to your topbar navigation, just add <code>data-spy="scroll"</code> to the element you want to spy on (most typically this would be the body) and <code>data-target=".navbar"</code> to select which nav to use. You'll want to use scrollspy with a <code>.nav</code> component.</p>
+          <p>Para facilmente adicionar scrollspy na sua navegação, simplesmente adicione <code>data-spy="scroll"</code> ao elemento que você quer espiar (mais tipicamente seria o corpo) e <code>data-target=".navbar"</code> para selecionar que navegação usar. Você poder usar o scrollspy dentro de um componente <code>.nav</code></p>
           <pre class="prettyprint linenums">&lt;body data-spy="scroll" data-target=".navbar"&gt;...&lt;/body&gt;</pre>
 
           <h3>Via Javascript</h3>
-          <p>Call the scrollspy via JavaScript:</p>
+          <p>Chame o scrollspy via JavaScript:</p>
           <pre class="prettyprint linenums">$('#navbar').scrollspy()</pre>
 
           <div class="alert alert-info">
@@ -589,7 +589,7 @@ $('[data-spy="scroll"]').each(function () {
 </pre>
 
           <h3>Opções</h3>
-          <p>Options can be passed via data attributes or JavaScript. For data attributes, append the option name to <code>data-</code>, as in <code>data-offset=""</code>.</p>
+          <p>Opções podem ser passadas via atributos data ou por JavaScript. Para atributos data, insira a opção ao <code>data-</code>, assim como <code>data-offset=""</code>.</p>
           <table class="table table-bordered table-striped">
             <thead>
              <tr>
@@ -637,7 +637,7 @@ $('[data-spy="scroll"]').each(function () {
 
 
           <h2>Exemplo de abas</h2>
-          <p>Add quick, dynamic tab functionality to transiton through panes of local content, even via dropdown menus.</p>
+          <p>Adicione rapidamente, uma funcionalidade de aba dinâmica para realizar uma transição através de painés de conteúdo local, até mesmo via menus dropdown</p>
           <div class="bs-docs-example">
             <ul id="myTab" class="nav nav-tabs">
               <li class="active"><a href="#home" data-toggle="tab">Início</a></li>
@@ -671,7 +671,7 @@ $('[data-spy="scroll"]').each(function () {
 
 
           <h2>Uso</h2>
-          <p>Enable tabbable tabs via JavaScript (each tab needs to be activated individually):</p>
+          <p>Habilite abas tabeáveis via JavaScript (cada aba precisa ser ativada individualmente):</p>
 <pre class="prettyprint linenums">
 $('#myTab a').click(function (e) {
   e.preventDefault();
@@ -686,7 +686,7 @@ $('#myTab li:eq(2) a').tab('show'); // Select third tab (0-indexed)
 </pre>
 
           <h3>Marcação</h3>
-          <p>You can activate a tab or pill navigation without writing any JavaScript by simply specifying <code>data-toggle="tab"</code> or <code>data-toggle="pill"</code> on an element. Adding the <code>nav</code> and <code>nav-tabs</code> classes to the tab <code>ul</code> will apply the Bootstrap tab styling.</p>
+          <p>Você pode ativar uma aba ou uma navegação pílula sem escrever nenhum JavaScript simplesmente especificando um <code>data-toggle="tab"</code> ou <code>data-toggle="pill"</code> em um elemento. Adicionando as classes <code>nav</code> e um <code>nav-tabs</code> para a aba <code>ul</code> irá aplicar o estilo de aba do Bootstrap</p>
 <pre class="prettyprint linenums">
 &lt;ul class="nav nav-tabs"&gt;
   &lt;li&gt;&lt;a href="#home" data-toggle="tab"&gt;Início&lt;/a&gt;&lt;/li&gt;
@@ -759,14 +759,14 @@ $('a[data-toggle="tab"]').on('shown', function (e) {
 
 
           <h2>Exemplos</h2>
-          <p>Inspired by the excellent jQuery.tipsy plugin written by Jason Frame; Tooltips are an updated version, which don't rely on images, use CSS3 for animations, and data-attributes for local title storage.</p>
+          <p>Inspirado pelo excelente plugin jQuery.tipsy escrito por Jason Frame; Tooltips é uma versão atualizada, que não conta com imagens, usa CSS3 para animações, e atributos data para armazenamento local.</p>
           <p>Coloque o mouse por cima nos links abaixo para ver os tooltips</p>
           <div class="bs-docs-example tooltip-demo">
-            <p class="muted" style="margin-bottom: 0;">Tight pants next level keffiyeh <a href="#" rel="tooltip" title="Default tooltip">you probably</a> haven't heard of them. Photo booth beard raw denim letterpress vegan messenger bag stumptown. Farm-to-table seitan, mcsweeney's fixie sustainable quinoa 8-bit american apparel <a href="#" rel="tooltip" title="Another tooltip">have a</a> terry richardson vinyl chambray. Beard stumptown, cardigans banh mi lomo thundercats. Tofu biodiesel williamsburg marfa, four loko mcsweeney's cleanse vegan chambray. A really ironic artisan <a href="#" rel="tooltip" title="Another one here too">whatever keytar</a>, scenester farm-to-table banksy Austin <a href="#" rel="tooltip" title="The last tip!">twitter handle</a> freegan cred raw denim single-origin coffee viral.
+            <p class="muted" style="margin-bottom: 0;">Aperte os sintos no próximos níveis <a href="#" rel="tooltip" title="Default tooltip">você provavelmente</a> não ouviu falar deles. Photo booth beard raw denim letterpress vegan messenger bag stumptown. Farm-to-table seitan, mcsweeney's fixie sustainable quinoa 8-bit american apparel <a href="#" rel="tooltip" title="Another tooltip">have a</a> terry richardson vinyl chambray. Beard stumptown, cardigans banh mi lomo thundercats. Tofu biodiesel williamsburg marfa, four loko mcsweeney's cleanse vegan chambray. A really ironic artisan <a href="#" rel="tooltip" title="Another one here too">whatever keytar</a>, scenester farm-to-table banksy Austin <a href="#" rel="tooltip" title="The last tip!">twitter handle</a> freegan cred raw denim single-origin coffee viral.
             </p>
           </div>
 
-          <h3>Four directions</h3>
+          <h3>Quatro direções</h3>
           <div class="bs-docs-example tooltip-demo">
             <ul class="bs-docs-tooltip-examples">
               <li><a href="#" rel="tooltip" data-placement="top" title="Tooltip on top">Tooltip on top</a></li>
@@ -781,11 +781,11 @@ $('a[data-toggle="tab"]').on('shown', function (e) {
 
 
           <h2>Uso</h2>
-          <p>Trigger the tooltip via JavaScript:</p>
+          <p>Lance um tooltip via JavaScript</p>
           <pre class="prettyprint linenums">$('#example').tooltip(opções)</pre>
 
           <h3>Opções</h3>
-          <p>Options can be passed via data attributes or JavaScript. For data attributes, append the option name to <code>data-</code>, as in <code>data-animation=""</code>.</p>
+          <p>Opções podem ser passadas via atributos data ou JavaScript. Para atributos data, insira a opção de nome <code>data-</code>, como em <code>data-animation=""</code>.</p>
           <table class="table table-bordered table-striped">
             <thead>
              <tr>
@@ -806,7 +806,7 @@ $('a[data-toggle="tab"]').on('shown', function (e) {
                <td>html</td>
                <td>boleano</td>
                <td>true</td>
-               <td>Insert html into the tooltip. If false, jquery's <code>text</code> method will be used to insert content into the dom. Use text if you're worried about XSS attacks.</td>
+               <td>Insira html no tooltip. Se for escolhido false, o método jQuery <code>text</code> irá usar o conteúdo inserido dentro do dom. Use o texto se você está preocupado com ataques XSS</td>
              </tr>
              <tr>
                <td>localização</td>
@@ -866,7 +866,7 @@ $('a[data-toggle="tab"]').on('shown', function (e) {
           <p>Alterne um elemento tooltip</p>
           <pre class="prettyprint linenums">$('#element').tooltip('toggle')</pre>
           <h4>.tooltip('destroy')</h4>
-          <p>Hides and destroys an element's tooltip.</p>
+          <p>Esconde e destrói tooltips de elementos</p>
           <pre class="prettyprint linenums">$('#element').tooltip('destroy')</pre>
         </section>
 
@@ -880,10 +880,10 @@ $('a[data-toggle="tab"]').on('shown', function (e) {
         </div>
 
         <h2>Exemplos</h2>
-        <p>Add small overlays of content, like those on the iPad, to any element for housing secondary information. Hover over the button to trigger the popover. <strong>Requires <a href="#tooltips">Tooltip</a> to be included.</strong></p>
+        <p>Adicione um pequeno overlay de conteúdo, como aqueles do iPad, para qualquer elemento para guardar informação secundária. Passe o mouse no botão para disparar o popover. <strong>Requer que o <a href="#tooltips">Tooltip</a> seja incluído.</strong></p>
 
-        <h3>Static popover</h3>
-        <p>Four options are available: top, right, bottom, and left aligned.</p>
+        <h3>Popover estático</h3>
+        <p>Quatro opções estão disponíveis: top, right, bottom, e alinhado a esquerda com left</p>
         <div class="bs-docs-example bs-docs-example-popover">
           <div class="popover top">
             <div class="arrow"></div>
@@ -919,11 +919,11 @@ $('a[data-toggle="tab"]').on('shown', function (e) {
 
           <div class="clearfix"></div>
         </div>
-        <p>No markup shown as popovers are generated from JavaScript and content within a <code>data</code> attribute.</p>
+        <p>Nenhuma marcação dos popovers são geradas do JavaScript e os conteúdos dentro de um atributo <code>data</code></p>
 
         <h3>Live demo</h3>
         <div class="bs-docs-example" style="padding-bottom: 24px;">
-          <a href="#" class="btn btn-large btn-danger" rel="popover" title="A Title" data-content="And here's some amazing content. It's very engaging. right?">Click to toggle popover</a>
+          <a href="#" class="btn btn-large btn-danger" rel="popover" title="A Title" data-content="And here's some amazing content. It's very engaging. right?">Clicar no popover alternado</a>
         </div>
 
 
@@ -931,11 +931,11 @@ $('a[data-toggle="tab"]').on('shown', function (e) {
 
 
         <h2>Uso</h2>
-        <p>Enable popovers via JavaScript:</p>
+        <p>Habilite popover via JavaScript</p>
         <pre class="prettyprint linenums">$('#example').popover(opções)</pre>
 
         <h3>Opções</h3>
-        <p>Options can be passed via data attributes or JavaScript. For data attributes, append the option name to <code>data-</code>, as in <code>data-animation=""</code>.</p>
+        <p>Opções podem ser passadas via atributos data ou JavaScript. Para atributos data, insira a opção de nome <code>data-</code>, como em <code>data-animation=""</code>.</p>
         <table class="table table-bordered table-striped">
           <thead>
            <tr>
@@ -956,7 +956,7 @@ $('a[data-toggle="tab"]').on('shown', function (e) {
              <td>html</td>
              <td>boleano</td>
              <td>true</td>
-             <td>Insert html into the popover. If false, jquery's <code>text</code> method will be used to insert content into the dom. Use text if you're worried about XSS attacks.</td>
+             <td>Insira html no popover. Se for escolhida a opção false, o método jQuery <code>text</code> será usado para inserir documento no dom. Use o texto se você está preocupado com ataque XSS.</td>
            </tr>
            <tr>
              <td>localização</td>
@@ -974,7 +974,7 @@ $('a[data-toggle="tab"]').on('shown', function (e) {
              <td>trigger</td>
              <td>string</td>
              <td>'click'</td>
-             <td>how popover is triggered - click | hover | focus | manual</td>
+             <td>Como popover é disparado - click | hover | focus | manual</td>
            </tr>
            <tr>
              <td>título</td>
@@ -1021,7 +1021,7 @@ $('a[data-toggle="tab"]').on('shown', function (e) {
         <p>Alterna um elemento popover</p>
         <pre class="prettyprint linenums">$('#element').popover('toggle')</pre>
         <h4>.popover('destroy')</h4>
-        <p>Hides and destroys an element's popover.</p>
+        <p>Esconde e destrói um elemento popover</p>
         <pre class="prettyprint linenums">$('#element').popover('destroy')</pre>
       </section>
 
@@ -1036,7 +1036,7 @@ $('a[data-toggle="tab"]').on('shown', function (e) {
 
 
         <h2>Exemplo de alertas</h2>
-        <p>Add dismiss functionality to all alerge messages with this plugin.</p>
+        <p>Adicione funcionalidade para todas mensagens de alerta dentro do plugin</p>
         <div class="bs-docs-example">
           <div class="alert fade in">
             <button type="button" class="close" data-dismiss="alert">&times;</button>
