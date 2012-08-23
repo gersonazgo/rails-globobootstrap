@@ -75,7 +75,7 @@
 <header class="jumbotron subhead" id="overview">
   <div class="container">
     <h1>Base do desenvolvimento</h1>
-    <p class="lead">Bootstrap is built on responsive 12-column grids, layouts, and components.</p>
+    <p class="lead">O Bootstrap é construído em um grid responsivo de 12 colunas, com layouts e componentes</p>
   </div>
 </header>
 
@@ -101,11 +101,11 @@
         ================================================== -->
         <section id="global">
           <div class="page-header">
-            <h1>Global settings</h1>
+            <h1>configurações globais</h1>
           </div>
 
           <h3>Requer o doctype de HTML5</h3>
-          <p>Bootstrap makes use of certain HTML elements and CSS properties that require the use of the HTML5 doctype. Include it at the beginning of all your projects.</p>
+          <p>O Bootstrap faz o uso de certos elementos HTML e propriedades CSS que requer o uso do doctype HTML5. Inclua no início dos seus projetos</p>
 <pre class="prettyprint linenums">
 &lt;!DOCTYPE html&gt;
 &lt;html lang="en"&gt;
@@ -114,17 +114,17 @@
 </pre>
 
           <h3>Tipografia e links</h3>
-          <p>Bootstrap sets basic global display, typography, and link styles. Specifically, we:</p>
+          <p>O Bootstrap usa estilos básicos de tela, tipografia, e estilos de link. Especificadamente, nós temos:</p>
           <ul>
-            <li>Remove <code>margin</code> on the body</li>
+            <li>Remove <code>margin</code> do corpo</li>
             <li>Escolhemos o <code>background-color: white;</code> no <code>body</code></li>
-            <li>Use the <code>@baseFontFamily</code>, <code>@baseFontSize</code>, and <code>@baseLineHeight</code> attributes as our typographic base</li>
+            <li>Use os atributos <code>@baseFontFamily</code>, <code>@baseFontSize</code>, and <code>@baseLineHeight</code> para nossa base tipográfica</li>
             <li>Escolhemos cores globais de link via <code>@linkColor</code> e aplicamos linha abaixo do link com <code>:hover</code></li>
           </ul>
-          <p>These styles can be found within <strong>scaffolding.less</strong>.</p>
+          <p>Estes estilos podem ser encontrados em <strong>scaffolding.less</strong>.</p>
 
           <h3>Reset via Normalize</h3>
-          <p>With Bootstrap 2, the old reset block has been dropped in favor of <a href="http://necolas.github.com/normalize.css/" target="_blank">Normalize.css</a>, a project by <a href="http://twitter.com/necolas" target="_blank">Nicolas Gallagher</a> that also powers the <a href="http://html5boilerplate.com" target="_blank">HTML5 Boilerplate</a>. While we use much of Normalize within our <strong>reset.less</strong>, we have removed some elements specifically for Bootstrap.</p>
+          <p>Com o Bootstrap 2, os velhos blocos de reset foram retirados em favor do <a href="http://necolas.github.com/normalize.css/" target="_blank">Normalize.css</a>, um projeto do <a href="http://twitter.com/necolas" target="_blank">Nicolas Gallagher</a> que também tem o poder do <a href="http://html5boilerplate.com" target="_blank">HTML5 Boilerplate</a>. Enquanto nós usamos muito do Normalize em nosso <strong>reset.less</strong>, nós removemos alguns elementos especificadamente para o Bootstrap</p>
 
         </section>
 
@@ -135,11 +135,11 @@
         ================================================== -->
         <section id="gridSystem">
           <div class="page-header">
-            <h1>Default grid system</h1>
+            <h1>Sistema de grid padrão</h1>
           </div>
 
-          <h2>Live grid example</h2>
-          <p>The default Bootstrap grid system utilizes <strong>12 columns</strong>, making for a 940px wide container without <a href="#responsive">responsive features</a> enabled. With the responsive CSS file added, the grid adapts to be 724px and 1170px wide depending on your viewport. Below 767px viewports, the columns become fluid and stack vertically.</p>
+          <h2>Exemplo de grid real</h2>
+          <p>O sistema padrão do grid do Bootstrap utiliza <strong>12 columns</strong>, com um container de 940px sem <a href="#responsive">funcionalidades de design responsivo</a> habilitadas. Com o arquivo responsive adicionado, o grid se adapta de 724px e 1170px dependendo do nosso viewport. Abaixo de 767px, as colunas se tornam fluidas e ficam estagnadas verticalmente</p>
           <div class="bs-docs-grid">
             <div class="row show-grid">
               <div class="span1">1</div>
@@ -166,18 +166,18 @@
             </div>
           </div>
 
-          <h3>Basic grid HTML</h3>
-          <p>For a simple two column layout, create a <code>.row</code> and add the appropriate number of <code>.span*</code> columns. As this is a 12-column grid, each <code>.span*</code> spans a number of those 12 columns, and should always add up to 12 for each row (or the number of columns in the parent).</p>
+          <h3>HTML do grid básico</h3>
+          <p>Para um simples layout de duas colunas, crie um <code>.row</code> e adicione um número apropriado de <code>.span*</code>. Como o grid é de 12 colunas, cada <code>.span*</code> tem um número que somam 12 colunas, e deve sempre ter 12 colunas para cada linha (ou o número de colunas do pai).</p>
 <pre class="prettyprint linenums">
 &lt;div class="row"&gt;
   &lt;div class="span4"&gt;...&lt;/div&gt;
   &lt;div class="span8"&gt;...&lt;/div&gt;
 &lt;/div&gt;
 </pre>
-          <p>Given this example, we have <code>.span4</code> and <code>.span8</code>, making for 12 total columns and a complete row.</p>
+          <p>No exemplo dado, nós temos <code>.span4</code> e <code>.span8</code>, fazendo 12 o total de colunas de uma linha completa</p>
 
           <h2>Dando um offset nas colunas</h2>
-          <p>Move columns to the left using <code>.offset*</code> classes. Each class increases the left margin of a column by a whole column. For example, <code>.offset4</code> moves <code>.span4</code> over four columns.</p>
+          <p>Mova colunas para a esquerda usando as classes <code>.offset*</code>. Cada classe aumenta a margem esquerda de uma coluna por uma coluna completa. Por exemplo, um <code>.offset4</code> move <code>.span4</code> em quatro colunas</p>
           <div class="bs-docs-grid">
             <div class="row show-grid">
               <div class="span4">4</div>
@@ -199,7 +199,7 @@
 </pre>
 
           <h2>Aninhando colunas</h2>
-          <p>To nest your content with the default grid, add a new <code>.row</code> and set of <code>.span*</code> columns within an existing <code>.span*</code> column. Nested rows should include a set of columns that add up to the number of columns of its parent.</p>
+          <p>Para aninhar seu conteúdo com o grid padrão, adicione um novo <code>.row</code> e escolha um <code>.span*</code> em * colunas com uma coluna existente de <code>.span*</code>. Linhas aninhadas devem incluir um set de colunas que adicionam ao número de colunas do seu pai</p>
           <div class="row show-grid">
             <div class="span9">
               Nível 1 da coluna
@@ -235,8 +235,8 @@
             <h1>Sistema de grid fluido</h1>
           </div>
 
-          <h2>Live fluid grid example</h2>
-          <p>The fluid grid system uses percents instead of pixels for column widths. It has the same responsive capabilities as our fixed grid system, ensuring proper proportions for key screen resolutions and devices.</p>
+          <h2>Exemplo de grid fluido</h2>
+          <p>O sistema de grid fluido usa porcentagem ao invés de pixels para colunagem nas larguras. Ele tem as mesmas funcionalidades responsivas como nosso grid fixo, assegurando as proporções adequadas para tela chave nas resoluções e dispositivos</p>
           <div class="bs-docs-grid">
             <div class="row-fluid show-grid">
               <div class="span1">1</div>
@@ -270,8 +270,8 @@
             </div>
           </div>
 
-          <h3>Basic fluid grid HTML</h3>
-          <p>Make any row "fluid" by changing <code>.row</code> to <code>.row-fluid</code>. The column classes stay the exact same, making it easy to flip between fixed and fluid grids.</p>
+          <h3>HTML básico do grid fluido</h3>
+          <p>Para tornar qualquer linha "fluid" mudando <code>.row</code> para <code>.row-fluid</code>.</p>
 <pre class="prettyprint linenums">
 &lt;div class="row-fluid"&gt;
   &lt;div class="span4"&gt;...&lt;/div&gt;
@@ -279,8 +279,8 @@
 &lt;/div&gt;
 </pre>
 
-          <h2>Fluid offsetting</h2>
-          <p>Operates the same way as the fixed grid system offsetting: add <code>.offset*</code> to any column to offset by that many columns.</p>
+          <h2>offset do fluido</h2>
+          <p>Opera da mesma forma como o grid fixo com um offset: adicione <code>.offset*</code> para qualquer coluna para dar um offset para qualquer coluna</p>
           <div class="bs-docs-grid">
             <div class="row-fluid show-grid">
               <div class="span4">4</div>
@@ -302,7 +302,7 @@
 </pre>
 
           <h2>Teste de fluido</h2>
-          <p>Nesting with fluid grids is a bit different: the number of nested columns should not match the parent's number of columns. Instead, each level of nested columns are reset because each row takes up 100% of the parent column.</p>
+          <p>Aninhando grids fluidos é um pouco diferente: o número de colunas aninhadas devem não bater o número de colunas pai. Ao invés disto, cada nível da coluna aninhada são reiniciadas por que cada linha leva 100% da coluna pai</p>
           <div class="row-fluid show-grid">
             <div class="span12">
               Fluid 12
@@ -341,7 +341,7 @@
           </div>
 
           <h2>Layout fixo</h2>
-          <p>Provides a common fixed-width (and optionally responsive) layout with only <code>&lt;div class="container"&gt;</code> required.</p>
+          <p>Provê uma largura fixa (e opcionalmente responsiva) com qualquer <code>&lt;div class="container"&gt;</code> requerido.</p>
           <div class="mini-layout">
             <div class="mini-layout-body"></div>
           </div>
@@ -354,7 +354,7 @@
 </pre>
 
           <h2>Layout fluido</h2>
-          <p>Create a fluid, two-column page with <code>&lt;div class="container-fluid"&gt;</code>&mdash;great for applications and docs.</p>
+          <p>Criar uma página de duas colunas fluida com <code>&lt;div class="container-fluid"&gt;</code>&mdash;ótimo para aplicação e documentação</p>
           <div class="mini-layout fluid">
             <div class="mini-layout-sidebar"></div>
             <div class="mini-layout-body"></div>
@@ -383,15 +383,15 @@
             <h1>Design Responsivo</h1>
           </div>
 
-          <h2>Enabling responsive features</h2>
-          <p>Turn on responsive CSS in your project by including the proper meta tag and additional stylesheet within the <code>&lt;head&gt;</code> of your document. If you've compiled Bootstrap from the Customize page, you need only include the meta tag.</p>
+          <h2>Habilitando funcionalidades responsivas</h2>
+          <p>Ligue o CSS responsivo no nosso projeto incluindo a meta tag e folha de estilos adicionais dentro do <code>&lt;head&gt;</code> do documento. Se você está com o Bootstrap da página customizada, você irá precisar incluir esta meta tag.</p>
 <pre class="prettyprint linenums">
 &lt;meta name="viewport" content="width=device-width, initial-scale=1.0"&gt;
 &lt;link href="assets/css/bootstrap-responsive.css" rel="stylesheet"&gt;
 </pre>
-          <p><span class="label label-info">Atenção!</span>  Bootstrap doesn't include responsive features by default at this time as not everything needs to be responsive. Instead of encouraging developers to remove this feature, we figure it best to enable it as needed.</p>
+          <p><span class="label label-info">Atenção!</span> Bootstrap não inclui funcionalidade responsivas por padrão neste tempo por que nem tudo precisa ser responsiva. Ao invés disto nós encorajamos os desenvolvedores a remover esta funcionalidade, nós fizemos de uma forma que é possível habilitar quando necessário.</p>
 
-          <h2>About responsive Bootstrap</h2>
+          <h2>Sobre o Bootstrap responsivo</h2>
           <img src="assets/img/responsive-illustrations.png" alt="Responsive devices" style="float: right; margin: 0 0 20px 20px;">
           <p>Os Media queries permitem ter CSS customizado baseado em um número de condições&mdash;aspecto, larguras, dipo de exibição, etc&mdash;mas geralmente focado em <code>min-width</code> and <code>max-width</code>.</p>
           <ul>
@@ -419,7 +419,7 @@
                 <td class="muted" colspan="2">Colunas fluidas, larguras não fixas</td>
               </tr>
               <tr>
-                <td>Phones to tablets</td>
+                <td>Phones até tablets</td>
                 <td>767px and below</td>
                 <td class="muted" colspan="2">Colunas fluidas, larguras não fixas</td>
               </tr>
@@ -459,13 +459,13 @@
 
 
           <h2>Classes utilitárias responsivas</h2>
-          <p>For faster mobile-friendly development, use these utility classes for showing and hiding content by device. Below is a table of the available classes and their effect on a given media query layout (labeled by device). They can be found in <code>responsive.less</code>.</p>
+          <p>Para um desenvolvimento rápido e amigável em mobile, use estas classes utilitárias para mostrar e esconder conteúdo dependendo do dispositivo. Abaixo é uma tabela de classes disponíveis e seus efeitos num layout específico(rotulado por dispositivo). Eles podem ser encontrados em <code>responsive.less</code>.</p>
           <table class="table table-bordered table-striped responsive-utilities">
             <thead>
               <tr>
                 <th>Classe</th>
-                <th>Phones <small>767px and below</small></th>
-                <th>Tablets <small>979px to 768px</small></th>
+                <th>Phones <small>767px e abaixo</small></th>
+                <th>Tablets <small>979px até 768px</small></th>
                 <th>Desktops <small>Default</small></th>
               </tr>
             </thead>
@@ -512,7 +512,7 @@
           <h3>Quando usar</h3>
           <p>Use uma limitada e básica versão do seu site para evitar criar diferentes versões do mesmo site. Ao invés disto, use-os como complemento de cada apresentação do dispositivo</p>
 
-          <h3>Responsive utilities test case</h3>
+          <h3>Caso de teste responsivo</h3>
           <p>Redimensione seu browser ou carregar dispositivos diferentes para testar as classes acima</p>
           <h4>Visível em...</h4>
           <p>Marcações verdes indica que a classe é visível na nossa atual resolução</p>
