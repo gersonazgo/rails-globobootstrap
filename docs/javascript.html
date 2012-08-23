@@ -74,8 +74,8 @@
 ================================================== -->
 <header class="jumbotron subhead">
   <div class="container">
-    <h1>JavaScript for Bootstrap</h1>
-    <p class="lead">Bring Bootstrap's components to life&mdash;now with 13 custom jQuery plugins.
+    <h1>Javascript para o Bootstrap</h1>
+    <p class="lead">Traga os componentes do Bootstrap a vida, agora com 13 plugins jQuery personalizados
   </div>
 </header>
 
@@ -86,7 +86,7 @@
     <div class="row">
       <div class="span3 bs-docs-sidebar">
         <ul class="nav nav-list bs-docs-sidenav">
-          <li><a href="#overview"><i class="icon-chevron-right"></i> Overview</a></li>
+          <li><a href="#overview"><i class="icon-chevron-right"></i> Geral</a></li>
           <li><a href="#transitions"><i class="icon-chevron-right"></i> Transições</a></li>
           <li><a href="#modals"><i class="icon-chevron-right"></i> Modal</a></li>
           <li><a href="#dropdowns"><i class="icon-chevron-right"></i> Dropdown</a></li>
@@ -109,35 +109,35 @@
         ================================================== -->
         <section id="overview">
           <div class="page-header">
-            <h1>JavaScript in Bootstrap</h1>
+            <h1>Javascript para o Bootstrap</h1>
           </div>
 
-          <h3>Individual or compiled</h3>
-          <p>If you have downloaded the latest version of Bootstrap, both <strong>bootstrap.js</strong> and <strong>bootstrap.min.js</strong> contain all of the plugins listed on this page.</p>
+          <h3>Individual ou compilado</h3>
+          <p>Se você fez download da última versão do Bootstrap, ambos <strong>bootstrap.js</strong> and <strong>bootstrap.min.js</strong> contém todos plugins listados nesta página.</p>
 
-          <h3>Data attributes</h3>
-          <p>You can use all Bootstrap plugins purely through the markup API without writing a single line of JavaScript. This is Bootstrap's first class API and should be your first consideration when using a plugin.</p>
+          <h3>Atributos Data</h3>
+          <p>Você pode usar todos plugins do Bootstrap puramente através da API na marcação sem escrever uma única linha de JavaScript. Isto é a primeira classe de API do Bootstrap e deve ser considerada quando usar um plugin</p>
 
-          <p>That said, in some situations it may be desirable to turn this functionality off. Therefore, we also provide the ability to disable the data attribute API by unbinding all events on the body namespaced with `'data-api'`. This looks like this:
+          <p>Dito isto, em algumas situações pode ser desejável desligar esta funcionalidade. Para isto, nós também provemos a habilidade de destabilitar os atributos data que desanexa todos eventos no corpo com o namespace de `'data-api'`. E ficaria assim:
           <pre class="prettyprint linenums">$('body').off('.data-api')</pre>
 
-          <p>Alternatively, to target a specific plugin, just include the plugins name as a namespace along with the data-api namespace like this:</p>
+          <p>Alternativamente, para um plugin específico, simplesmente inclua o nome do plugin como um namespace no namespace do data-api assim:</p>
           <pre class="prettyprint linenums">$('body').off('.alert.data-api')</pre>
 
-          <h3>Programmatic API</h3>
-          <p>We also believe you should be able to use all Bootstrap plugins purely through the JavaScript API. All public APIs are single, chainable methods, and return the collection acted upon.</p>
+          <h3>API programática</h3>
+          <p>Nós também acreditamos que deveríamos ser capazes de usar todos plugins do Bootstrap através da API Javascript. Todas API's públicas são únicas, com métodos encadeáveis, e retorna a coleção que foi aplicada</p>
           <pre class="prettyprint linenums">$(".btn.danger").button("toggle").addClass("fat")</pre>
-          <p>All methods should accept an optional options object, a string which targets a particular method, or nothing (which initiates a plugin with default behavior):</p>
+          <p>Todos métodos devem aceitar um objeto de opções adicionais, em uma string que direcina a um método particular, ou nada (que inicia com o comportamento padrão):</p>
 <pre class="prettyprint linenums">
 $("#myModal").modal()                       // initialized with defaults
 $("#myModal").modal({ keyboard: false })   // initialized with no keyboard
 $("#myModal").modal('show')                // initializes and invokes show immediately</p>
 </pre>
-          <p>Each plugin also exposes it's raw constructor on a `Constructor` property: <code>$.fn.popover.Constructor</code>. If you'd like to get a particular plugin instance, retrieve it directly from an element: <code>$('[rel=popover]').data('popover')</code>.</p>
+          <p>Cada plugin também expões seu construtor em uma propriedade `Constructor`: <code>$.fn.popover.Constructor</code>. Se você deseja obter uma instância particular de um plugin, obtenha diretamente de um elemento: <code>$('[rel=popover]').data('popover')</code>.</p>
 
           <h3>Eventos</h3>
-          <p>Bootstrap provides custom events for most plugin's unique actions. Generally, these come in an infinitive and past participle form - where the infinitive (ex. <code>show</code>) is triggered at the start of an event, and it's past participle form (ex. <code>shown</code>) is trigger on the completion of an action.</p>
-          <p>All infinitive events provide preventDefault functionality. This provides the abililty to stop the execution of an action before it starts.</p>
+          <p>O Bootstrap provê eventos customizados para ações únicas dos plugins. Geralmente, eles vem na forma infinitiva e do passado particípio - onde o infinitvo (ex. <code>show</code>) é lançado no início do evento, e o passado particípio (ex. <code>shown</code>) é lançado quando a ação é completada</p>
+          <p>Todos eventos infinitivos provê a funcionalidade de preventDefault. Isto provê a habilidade de parar a execução de uma ação antes mesmo dela começar</p>
 <pre class="prettyprint linenums">
 $('#myModal').on('show', function (e) {
     if (!data) return e.preventDefault() // stops modal from being shown
@@ -153,15 +153,15 @@ $('#myModal').on('show', function (e) {
           <div class="page-header">
             <h1>Transições <small>bootstrap-transition.js</small></h1>
           </div>
-          <h3>About transitions</h3>
-          <p>For simple transition effects, include bootstrap-transition.js once alongside the other JS files. If you're using the compiled (or minified) bootstrap.js, there is no need to include this&mdash;it's already there.</p>
+          <h3>Sobre transições</h3>
+          <p>Para efeitos simples de transição, inclua bootstrap-transition.js uma vez antes de outros arquivos JS. Se você está usando uma versão minificada do bootstrap.js, não há necessidade de incluir&mdash; já está lá</p>
           <h3>Casos de uso</h3>
-          <p>A few examples of the transition plugin:</p>
+          <p>Alguns exemplos do plugin de transição</p>
           <ul>
-            <li>Sliding or fading in modals</li>
-            <li>Fading out tabs</li>
-            <li>Fading out alerts</li>
-            <li>Sliding carousel panes</li>
+            <li>Deslizando ou aplicando efeito fade em modais</li>
+            <li>Fade out em abas</li>
+            <li>Fade out em alertas</li>
+            <li>Deslizando por painéis de carousel</li>
           </ul>
 
         </section>
@@ -177,10 +177,10 @@ $('#myModal').on('show', function (e) {
 
 
           <h2>Exemplos</h2>
-          <p>Modals are streamlined, but flexible, dialog prompts with the minimum required functionality and smart defaults.</p>
+          <p>Modais são simplificados, mas flexíveis diálogos que requer o mínimo de funcionalidade e padrões inteligentes</p>
 
           <h3>Exemplo estático</h3>
-          <p>A rendered modal with header, body, and set of actions in the footer.</p>
+          <p>Um modal renderiza um cabeçalho, corpo, e uma coleção de ações no footer</p>
           <div class="bs-docs-example" style="background-color: #f5f5f5;">
             <div class="modal" style="position: relative; top: auto; left: auto; margin: 0 auto 20px; z-index: 1; max-width: 100%;">
               <div class="modal-header">
@@ -213,7 +213,7 @@ $('#myModal').on('show', function (e) {
 </pre>
 
           <h3>demo ao vivo</h3>
-          <p>Toggle a modal via JavaScript by clicking the button below. It will slide down and fade in from the top of the page.</p>
+          <p>Alterne um modal via JavaScript clicando no botão abaixo. Isto irá descer deslizando e aparecendo na frente do topo da página</p>
           <!-- sample modal content -->
           <div id="myModal" class="modal hide fade" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
             <div class="modal-header">
@@ -225,7 +225,7 @@ $('#myModal').on('show', function (e) {
               <p>Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem.</p>
 
               <h4>Popover no modal</h4>
-              <p>This <a href="#" role="button" class="btn popover-test" title="A Title" data-content="And here's some amazing content. It's very engaging. right?">button</a> should trigger a popover on hover.</p>
+              <p>This <a href="#" role="button" class="btn popover-test" title="A Title" data-content="E aqui está um conteúdo incrível. Muito envolvente. right?">button</a> deve disparar o popover no estado hover.</p>
 
               <h4>Tooltips em um modal</h4>
               <p><a href="#" class="tooltip-test" title="Tooltip">Este link</a> and <a href="#" class="tooltip-test" title="Tooltip">aquele link</a> deve ter tooltips no hover.</p>
@@ -275,16 +275,16 @@ $('#myModal').on('show', function (e) {
 
           <h2>Uso</h2>
 
-          <h3>Via data attributes</h3>
-          <p>Activate a modal without writing JavaScript. Set <code>data-toggle="modal"</code> on a controller element, like a button, along with a <code>data-target="#foo"</code> or <code>href="#foo"</code> to target a specific modal to toggle.</p>
+          <h3>Via atributos data</h3>
+          <p>Ative um modal sem JavaScript. Escolha <code>data-toggle="modal"</code> em um elemento de controle, como um botão, com um <code>data-target="#foo"</code> ou <code>href="#foo"</code> para especificar um modal alternado</p>
           <pre class="prettyprint linenums">&lt;button type="button" data-toggle="modal" data-target="#myModal"&gt;Launch modal&lt;/button&gt;</pre>
 
-          <h3>Via JavaScript</h3>
-          <p>Call a modal with id <code>myModal</code> with a single line of JavaScript:</p>
+          <h3>Via Javascript</h3>
+          <p>Chame um modal com id <code>myModal</code> com uma única linha de javascript</p>
           <pre class="prettyprint linenums">$('#myModal').modal(options)</pre>
 
           <h3>Opções</h3>
-          <p>Options can be passed via data attributes or JavaScript. For data attributes, append the option name to <code>data-</code>, as in <code>data-backdrop=""</code>.</p>
+          <p>Opções podem ser passadas via atributos data ou JavaScript. Para atributos data, insira o nome da opção para <code>data-</code>, ou como <code>data-backdrop=""</code>.</p>
           <table class="table table-bordered table-striped">
             <thead>
              <tr>
@@ -476,7 +476,7 @@ $('#myModal').on('hidden', function () {
 
           <h2>Uso</h2>
 
-          <h3>Via data attributes</h3>
+          <h3>Via atributos data</h3>
           <p>Add <code>data-toggle="dropdown"</code> to a link or button to toggle a dropdown.</p>
 <pre class="prettyprint linenums">
 &lt;div class="dropdown"&gt;
@@ -499,7 +499,7 @@ $('#myModal').on('hidden', function () {
 &lt;/div&gt;
 </pre>
 
-          <h3>Via JavaScript</h3>
+          <h3>Via Javascript</h3>
           <p>Call the dropdowns via JavaScript:</p>
           <pre class="prettyprint linenums">$('.dropdown-toggle').dropdown()</pre>
 
@@ -566,11 +566,11 @@ $('#myModal').on('hidden', function () {
 
           <h2>Uso</h2>
 
-          <h3>Via data attributes</h3>
+          <h3>Via atributos data</h3>
           <p>To easily add scrollspy behavior to your topbar navigation, just add <code>data-spy="scroll"</code> to the element you want to spy on (most typically this would be the body) and <code>data-target=".navbar"</code> to select which nav to use. You'll want to use scrollspy with a <code>.nav</code> component.</p>
           <pre class="prettyprint linenums">&lt;body data-spy="scroll" data-target=".navbar"&gt;...&lt;/body&gt;</pre>
 
-          <h3>Via JavaScript</h3>
+          <h3>Via Javascript</h3>
           <p>Call the scrollspy via JavaScript:</p>
           <pre class="prettyprint linenums">$('#navbar').scrollspy()</pre>
 
@@ -1275,11 +1275,11 @@ $('#my-alert').bind('closed', function () {
 
             <h2>Uso</h2>
 
-            <h3>Via data attributes</h3>
+            <h3>Via atributos data</h3>
             <p>Simplesmente adicione <code>data-toggle="collapse"</code> e um <code>data-target</code> para o elemento automaticamente assumir o controle de um elemento colapsável. O atributo <code>data-target</code> aceita um seletor css para ser aplicado. Tenha certeza de adicionar a classe <code>collapse</code> para um elemento colapsável. Se você gosta de ele vir por padrão aberto, adicione a classe <code>in</code></p>
             <p>para dicionar um gerenciamento de accordion em grupo para um controle de elementos colapsáveis, adicione os atributos data <code>data-parent="#selector"</code>. Verifica a demonstração para vê-lo em ação.</p>
 
-            <h3>Via JavaScript</h3>
+            <h3>Via Javascript</h3>
             <p>Enable manually with:</p>
             <pre class="prettyprint linenums">$(".collapse").collapse()</pre>
 
@@ -1427,10 +1427,10 @@ $('#myCollapsible').on('hidden', function () {
 
             <h2>Uso</h2>
 
-            <h3>Via data attributes</h3>
+            <h3>Via atributos data</h3>
             <p>...</p>
 
-            <h3>Via JavaScript</h3>
+            <h3>Via Javascript</h3>
             <p>Call carousel manually with:</p>
             <pre class="prettyprint linenums">$('.carousel').carousel()</pre>
 
@@ -1525,10 +1525,10 @@ $('.carousel').carousel({
 
             <h2>Uso</h2>
 
-            <h3>Via data attributes</h3>
+            <h3>Via atributos data</h3>
             <p>Add data attributes to register an element with typeahead functionality as shown in the example above.</p>
 
-            <h3>Via JavaScript</h3>
+            <h3>Via Javascript</h3>
             <p>Call the typeahead manually with:</p>
             <pre class="prettyprint linenums">$('.typeahead').typeahead()</pre>
 
@@ -1604,7 +1604,7 @@ $('.carousel').carousel({
 
             <h2>Uso</h2>
 
-            <h3>Via data attributes</h3>
+            <h3>Via atributos data</h3>
             <p>To easily add affix behavior to any element, just add <code>data-spy="affix"</code> to the element you want to spy on. Then use offsets to define when to toggle the pinning of an element on and off.</p>
 
             <pre class="prettyprint linenums">&lt;div data-spy="affix" data-offset-top="200"&gt;...&lt;/div&gt;</pre>
@@ -1614,7 +1614,7 @@ $('.carousel').carousel({
               It's up to you to manage the position of a pinned element. This is done by styling <code>affix</code>, <code>affix-top</code>, and <code>affix-bottom</code>.
             </div>
 
-            <h3>Via JavaScript</h3>
+            <h3>Via Javascript</h3>
             <p>Call the affix plugin via JavaScript:</p>
             <pre class="prettyprint linenums">$('#navbar').affix()</pre>
 
