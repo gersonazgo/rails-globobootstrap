@@ -689,6 +689,12 @@ Por exemplo, &lt;code&gt;&lt;section&gt;&lt;/code&gt; deve ser colocado inline
               </tr>
               <tr>
                 <td>
+                  <code>.warning</code>
+                </td>
+                <td>Indica um aviso que pode precisar de atenção</td>
+              </tr>
+              <tr>
+                <td>
                   <code>.info</code>
                 </td>
                 <td>Usar uma alternativa ao estilo padrão</td>
@@ -718,11 +724,17 @@ Por exemplo, &lt;code&gt;&lt;section&gt;&lt;/code&gt; deve ser colocado inline
                   <td>02/04/2012</td>
                   <td>Declined</td>
                 </tr>
-                <tr class="info">
+                <tr class="warning">
                   <td>3</td>
                   <td>TB - Monthly</td>
                   <td>03/04/2012</td>
                   <td>Pending</td>
+                </tr>
+                <tr class="info">
+                  <td>4</td>
+                  <td>TB - Monthly</td>
+                  <td>04/04/2012</td>
+                  <td>Call in to confirm</td>
                 </tr>
               </tbody>
             </table>
@@ -1356,7 +1368,7 @@ Por exemplo, &lt;code&gt;&lt;section&gt;&lt;/code&gt; deve ser colocado inline
 </pre>
 
           <h3>Estdos de validação</h3>
-          <p>O Bootstrap inclui estilos de validação para erro, aviso, e mensagens de sucesso. Para usar, adicione a classe apropriada para o <code>.control-group</code></p>
+          <p>O Bootstrap inclui estilos de validação para erro, avisos, informações, e mensagens de sucesso. Para usar, adicione a classe apropriada em volta do <code>.control-group</code>.</p>
 
           <form class="bs-docs-example form-horizontal">
             <div class="control-group warning">
@@ -1371,6 +1383,13 @@ Por exemplo, &lt;code&gt;&lt;section&gt;&lt;/code&gt; deve ser colocado inline
               <div class="controls">
                 <input type="text" id="inputError">
                 <span class="help-inline">Por favor, corrija o erro</span>
+              </div>
+            </div>
+            <div class="control-group info">
+              <label class="control-label" for="inputError">Input com informação</label>
+              <div class="controls">
+                <input type="text" id="inputError">
+                <span class="help-inline">O nome de usuário já existe</span>
               </div>
             </div>
             <div class="control-group success">
@@ -1757,7 +1776,7 @@ Por exemplo, &lt;code&gt;&lt;section&gt;&lt;/code&gt; deve ser colocado inline
           </ul>
 
           <h3>Glyphicons attribution</h3>
-          <p><a href="http://glyphicons.com/">Glyphicons</a> Halflings não são normalmente grátis, mas um arranjo entre o Bootstrap e os criadores do Glyphicons tornou isto possível e não custa nada a você como desenvolvedor. Como forma de agradecimento, nós pedimos para você incluir um link opcional de volta do <a href="http://glyphicons.com/">Glyphicons</a> quando aplicável</p>
+          <p><a href="http://glyphicons.com/">Glyphicons</a> Halflings are normally not available for free, but an arrangement between Bootstrap and the Glyphicons creators have made this possible at no cost to you as developers. As a thank you, we ask you to include an optional link back to <a href="http://glyphicons.com/">Glyphicons</a> whenever practical.</p>
 
 
           <hr class="bs-docs-separator">
