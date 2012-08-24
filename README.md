@@ -24,9 +24,11 @@ Para estender o Globo Bootstrap, você precisa clonar o projeto
 
 	git clone https://github.com/globocom/bootstrap
 	
-As modificações de CSS devem ser feitas na pasta less
-As modificações de Javascript devem ser feitas na pasta js
-As modificações nos templates devem ser feitas na pasta docs/templates nos arquivos com extensão .mustache
+As modificações de CSS devem ser feitas na pasta less.
+
+As modificações de Javascript devem ser feitas na pasta js.
+
+As modificações nos templates devem ser feitas na pasta docs/templates nos arquivos com extensão .mustache.
 
 Após qualquer modificação nos arquivos .less e .mustaque, existe um comando make para gerar os arquivos no formato css e formato html para os arquivos .less e os arquivos .html respectivamente
 
