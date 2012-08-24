@@ -1,17 +1,72 @@
 GLOBO BOOTSTRAP
 =================
 
-O Bootstrap da Globo, desenvolvido como uma extensão do Bootstrap do twitter, é um kit de ferramentas para facilmente usar componentes de interface para websites, aplicações e mais. Inclui folha de estilos padronizadas para tipografia, formulários, botões, tabelas, grids, navegação alertas e mais.
+O Bootstrap da Globo, desenvolvido como uma extensão do Bootstrap do twitter, é um kit de ferramentas para facilmente usar componentes de interface para websites, aplicações e mais e para utilizar seus componentes nos diversos produtos da Globo.com. Inclui folha de estilos padronizadas para tipografia, formulários, botões, tabelas, grids, navegação alertas e mais.
 
 Para começar -- checkout https://github.com/globocom/bootstrap
 
+O Bootstrap da Globo.com possui uma versão em português do Bootstrap do twitter que está localizada em
+	docs/build/translation/pt-br.json
+
+Com este arquivo é possível traduzir todos os textos do twitter original sem interferir na documentação original.
 
 Uso
 -----
 
-Você pode usar o Globo Bootstrap fazendo o download dos componentes desejados na página de customização.
+Você pode usar o Globo Bootstrap fazendo o download dos [componentes desejados na página de customização](http://globocom.github.com/bootstrap/customize.html).
 
-Uma outra forma é gerar os arquivos executando o comando make.
+A página de download é servido pelo [Bootstrap Server](https://github.com/globocom/bootstrap-server).
+
+Como estender
+-------------
+
+Para estender o Globo Bootstrap, você precisa clonar o projeto
+
+	git clone https://github.com/globocom/bootstrap
+	
+As modificações de CSS devem ser feitas na pasta less
+As modificações de Javascript devem ser feitas na pasta js
+As modificações nos templates devem ser feitas na pasta docs/templates nos arquivos com extensão .mustache
+
+Após qualquer modificação nos arquivos .less e .mustaque, existe um comando make para gerar os arquivos no formato css e formato html para os arquivos .less e os arquivos .html respectivamente
+
+Qual branch devo usar
+--------------
+
+O projeto mais atualizado sempre se encontra em uma branch globo-bootstrap-vn (onde n é o número da versão)
+
+A versão mais recente do twitter bootstrap se encontra em *.*-wip e corresponde a versão globo-bootstrap-*.*
+
+Como atualizar com o twitter bootstrap
+--------------------------------------
+
+O repositório remoto do twitter está em um origin chamado upstream em que é possivel obter novas versões.
+
+Para atualizar, basta fazer um merge da branch e rodas os comandos
+	
+	make
+	node docs/build/translation
+
+Após executar o último script, irá aparecer um modelo de json onde há as strings que surgiram para ser atualizadas na nova versão. Estas chaves e valores devem ser inseridas no arquivo
+	
+	docs/build/translation/pt-br.json
+
+Com isto basta executar o comando
+	
+	node docs/build/translation
+	
+Novamente até não restarem strings para serem traduzidas
+
+Como publicar uma página
+--------------------------
+
+Para publicar uma página execute o comando
+	
+	make gh-pages-translated
+	
+Desta forma ele irá criar uma pasta num diretório anterior (../) chamada bootstrap-gh-pages.
+
+O conteúdo desta pasta pode ser copiada para a branch gh-pages e então com um push ela é publicada nas páginas do github no repositório da globo.com
 
 
 Versionamento
@@ -44,7 +99,7 @@ https://github.com/globocom/bootstrap/issues
 Roadmap
 ---------------
 
-### 2.0
+### globo-bootstrap-v1.1
 * Integração com o bootstrap-server para downloads customizados
 
 Para desenvolvedores
@@ -52,13 +107,9 @@ Para desenvolvedores
 
 Há um makefile para poder gerar os estáticos
 
-+ **build** - `make build`
-Executa o compiler do less e gera o bootstrap.css e bootstrap.min.css
++ **build** - `make`
+Executa o compiler do less e gera o bootstrap.css e bootstrap.min.css e os templates
 O compilador lessc é necessário para o comando rodar.
-
-+ **watch** - `make watch`
-Método para automaticamente fazer o build a cada vez que o arquivo é salvo
-O Watchr é necessário para o comando funcionar
 
 
 Autores
