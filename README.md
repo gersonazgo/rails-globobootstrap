@@ -106,6 +106,10 @@ Roadmap
 ---------------
 
 ### globo-bootstrap-v1.1
+* Modificar tag do analytics
+* Listar as strings não usadas na tradução do arquivo pt-br.json
+* Remover entradas duplicadas de tradução
+* Componente de exemplo
 * Integração com o bootstrap-server para downloads customizados
 
 Para desenvolvedores
