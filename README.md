@@ -113,12 +113,12 @@ Para desenvolvedores
 
 Há um makefile para poder gerar os estáticos
 
-+ **build** - `make`
++ `make`
 Executa o compiler do less e gera o bootstrap.css e bootstrap.min.css e os templates
 O compilador lessc é necessário para o comando rodar.
 
-+ **build** - `make test`
-Executa o jshint e testes do qunit com o [phantomjs](http://code.google.com/p/phantomjs/) (usado para o ci). Depende da intalação de ter o phantomjs instalado.
++ `make test`
+Executa o jshint e testes do qunit com o [phantomjs](http://code.google.com/p/phantomjs/) (usado para o ci). Depende de ter o phantomjs instalado.
 
 Autores
 -------
