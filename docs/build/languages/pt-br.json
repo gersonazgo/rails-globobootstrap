@@ -3,6 +3,8 @@
     "Overview": "Geral",
     "Scaffolding": "Fundação",
     "Base CSS": "CSS Base",
+    "Home": "Página inicial",
+    "Javascript": "Javascript",
     "Components": "Componentes",
     "Javascript plugins": "Plugins de Javascript",
     "Using LESS": "Usando o LESS",
@@ -19,6 +21,7 @@
     "This is a twitter Bootstrap version from globo.com kept by <a href=\"http://blog.alexandremagno.net\">Alexandre Magno</a>": "Este projeto é uma versão do Twitter Bootstrap da globo.com mantido por <a href=\"http://blog.alexandremagno.net\">Alexandre Magno</a>"
   },
   "Pages": {
+    "1": "1",
     "": "",
     "Form validation": "Validação de formulários",
     "Checkboxes": "Checkboxes",
@@ -1657,6 +1660,9 @@
     "To easily add scrollspy behavior to your topbar navigation, just add <code>data-spy=\"scroll\"</code> to the element you want to spy on (most typically this would be the body) and <code>data-target=\".navbar\"</code> to select which nav to use. You'll want to use scrollspy with a <code>.nav</code> component.": "Para facilmente adicionar scrollspy na sua navegação, simplesmente adicione <code>data-spy=\"scroll\"</code> ao elemento que você quer espiar (mais tipicamente seria o corpo) e <code>data-target=\".navbar\"</code> para selecionar que navegação usar. Você poder usar o scrollspy dentro de um componente <code>.nav</code>",
     "Call the scrollspy via JavaScript:": "Chame o scrollspy via JavaScript:",
     "Options can be passed via data attributes or JavaScript. For data attributes, append the option name to <code>data-</code>, as in <code>data-offset=\"\"</code>.": "Opções podem ser passadas via atributos data ou por JavaScript. Para atributos data, insira a opção ao <code>data-</code>, assim como <code>data-offset=\"\"</code>.",
+    "Options can be passed via data attributes or JavaScript. For data attributes, append the option name to <code>data-</code>, as in <code>data-interval=\"\"</code>.": "Opções podem ser passadas via atributos data ou por JavaScript. Para atributos data, insira a opção ao <code>data-</code>, assim como <code>data-interval=\"\"</code>.",
+    "Options can be passed via data attributes or JavaScript. For data attributes, append the option name to <code>data-</code>, as in <code>data-source=\"\"</code>.": "Opções podem ser passadas via atributos data ou por JavaScript. Para atributos data, insira a opção ao <code>data-</code>, assim como <code>data-source=\"\"</code>.",
+    "Options can be passed via data attributes or JavaScript. For data attributes, append the option name to <code>data-</code>, as in <code>data-offset-top=\"200\"</code>.":"Opções podem ser passadas via atributos data ou por JavaScript. Para atributos data, insira a opção ao <code>data-</code>, assim como <code>data-offset-top=\"200\"</code>.",
     "Add quick, dynamic tab functionality to transiton through panes of local content, even via dropdown menus.": "Adicione rapidamente, uma funcionalidade de aba dinâmica para realizar uma transição através de painés de conteúdo local, até mesmo via menus dropdown",
     "Enable tabbable tabs via JavaScript (each tab needs to be activated individually):": "Habilite abas tabeáveis via JavaScript (cada aba precisa ser ativada individualmente):",
     "You can activate a tab or pill navigation without writing any JavaScript by simply specifying <code>data-toggle=\"tab\"</code> or <code>data-toggle=\"pill\"</code> on an element. Adding the <code>nav</code> and <code>nav-tabs</code> classes to the tab <code>ul</code> will apply the Bootstrap tab styling.": "Você pode ativar uma aba ou uma navegação pílula sem escrever nenhum JavaScript simplesmente especificando um <code>data-toggle=\"tab\"</code> ou <code>data-toggle=\"pill\"</code> em um elemento. Adicionando as classes <code>nav</code> e um <code>nav-tabs</code> para a aba <code>ul</code> irá aplicar o estilo de aba do Bootstrap",
@@ -1739,7 +1745,9 @@
     "Tablets <small>979px to 768px</small>": "Tablets <small>979px até 768px</small>",
     "Desktops <small>Default</small>": "Desktops <small>Default</small>",
     "Responsive utilities test case": "Caso de teste responsivo",
-
+    "<a href=\"http://glyphicons.com/\">Glyphicons</a> Halflings are normally not available for free, but an arrangement between Bootstrap and the Glyphicons creators have made this possible at no cost to you as developers. As a thank you, we ask you to include an optional link back to <a href=\"http://glyphicons.com/\">Glyphicons</a> whenever practical.": "<a href=\"http://glyphicons.com/\">Glyphicons</a> Halflings não são normalmente grátis, mas um arranjo entre o Bootstrap e os criadores do Glyphicons tornou isto possível e não custa nada a você como desenvolvedor. Como forma de agradecimento, nós pedimos para você incluir um link opcional de volta do <a href=\"http://glyphicons.com/\">Glyphicons</a> quando aplicável",
+    "Add dismiss functionality to all alerts messages with this plugin.":"Adicionar uma funcionalidade de fechar alertas de mensagens com este plugin",
+    "The default Bootstrap grid system utilizes <strong>12 columns</strong>, making for a 940px wide container without <a href=\"./scaffolding.html#responsive\">responsive features</a> enabled. With the responsive CSS file added, the grid adapts to be 724px and 1170px wide depending on your viewport. Below 767px viewports, the columns become fluid and stack vertically.": "O sistema padrão do grid do Bootstrap utiliza <strong>12 columns</strong>, com um container de 940px sem <a href=\"./scaffolding.html#responsive\">funcionalidades de design responsivo</a> habilitadas. Com o arquivo responsive adicionado, o grid se adapta de 724px e 1170px dependendo do nosso viewport. Abaixo de 767px, as colunas se tornam fluidas e ficam estagnadas verticalmente",
     "Indicates a warning that might need attention.": "Indica um aviso que pode precisar de atenção",
     "Bootstrap includes validation styles for error, warning, info, and success messages. To use, add the appropriate class to the surrounding <code>.control-group</code>.": "O Bootstrap inclui estilos de validação para erro, avisos, informações, e mensagens de sucesso. Para usar, adicione a classe apropriada em volta do <code>.control-group</code>.",
     "Input with info": "Input com informação",

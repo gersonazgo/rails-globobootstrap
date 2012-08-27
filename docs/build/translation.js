@@ -12,6 +12,7 @@ reset = '\033[0m';
 var language = cjson.load(__dirname + '/languages/'+langchoose+'.json')
 var pages = fs.readdirSync(__dirname + '/../templates/pages')
 var template = fs.readFileSync(__dirname + '/../templates/layout.mustache', 'utf-8'),
+strings = []
 
 context = {
      name: "Layout",
@@ -20,8 +21,11 @@ context = {
        if (language[context.name][k]) {
         return language[context.name][k]  
        } else {
-         console.log(blue + 'Missing translation in Layout for: ' + red + k + reset);
-         count++
+         if(strings.indexOf(k) == -1) {
+          console.log(blue + 'Missing translation in Layout for: ' + red + k + reset)
+          count++
+         }
+         strings.push(k)
          return k
        } 
      }  
@@ -47,11 +51,14 @@ pages.forEach(function(name){
         if (language['Pages'][k]) {
           return language['Pages'][k]  
         } else {
-          console.log(blue + 'Missing translation in page '+ nicename +' for: ' + red + k + reset)
-          count++
-          translated_keys['Pages'] = {}
-          keys[k] = ""
-          translated_keys['Pages'] = keys
+          if(strings.indexOf(k) == -1) {
+            console.log(blue + 'Missing translation in page '+ nicename +' for: ' + red + k + reset)
+            count++
+            translated_keys['Pages'] = {}
+            keys[k] = ""
+            translated_keys['Pages'] = keys
+          }
+          strings.push(k)
           return k
         }
       } else {
@@ -71,5 +78,5 @@ pages.forEach(function(name){
   fs.writeFileSync(__dirname + '/../' + name.replace(/mustache$/, 'html'), full_page, 'utf-8')
 })
 fs.writeFileSync(__dirname + '/languages/template.json', JSON.stringify(translated_keys), 'utf-8')
-console.log("The json from missing translation files:" + JSON.stringify(translated_keys))
-console.log("There's  "+ count +" words for translate");
+console.log(blue + "The json from missing translation files(insert the keys at language file located at docs/build/languages): \n" + reset + JSON.stringify(translated_keys))
+console.log(red + "There's  "+ count +" words for translate")
