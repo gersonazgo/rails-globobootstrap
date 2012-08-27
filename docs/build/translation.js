@@ -12,7 +12,9 @@ reset = '\033[0m';
 var language = cjson.load(__dirname + '/languages/'+langchoose+'.json')
 var pages = fs.readdirSync(__dirname + '/../templates/pages')
 var template = fs.readFileSync(__dirname + '/../templates/layout.mustache', 'utf-8'),
-strings = []
+strings = [],
+words = [],
+unused = []
 
 context = {
      name: "Layout",
@@ -47,6 +49,7 @@ pages.forEach(function(name){
   page_context.title = nicename,
   page_context.name = nicename,
   page_context._i = function (k) { 
+      words.push(k)
       if(language['Pages']) {
         if (language['Pages'][k]) {
           return language['Pages'][k]  
@@ -57,7 +60,7 @@ pages.forEach(function(name){
             translated_keys['Pages'] = {}
             keys[k] = ""
             translated_keys['Pages'] = keys
-          }
+          } 
           strings.push(k)
           return k
         }
@@ -80,3 +83,9 @@ pages.forEach(function(name){
 fs.writeFileSync(__dirname + '/languages/template.json', JSON.stringify(translated_keys), 'utf-8')
 console.log(blue + "The json from missing translation files(insert the keys at language file located at docs/build/languages): \n" + reset + JSON.stringify(translated_keys))
 console.log(red + "There's  "+ count +" words for translate")
+/*for(pages in language['Pages']) {
+  if(words.indexOf(pages)==-1) {
+     unused.push(pages)   
+  }
+}
+console.log(red + 'unused keys: \n' + reset + unused.join(red + '\n ') + reset)*/
