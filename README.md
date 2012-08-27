@@ -37,14 +37,14 @@ Qual branch devo usar
 
 O projeto mais atualizado sempre se encontra em uma branch globo-bootstrap-vn (onde n é o número da versão)
 
-A versão mais recente do twitter bootstrap se encontra em *.*-wip e corresponde a versão globo-bootstrap-*.*
+A versão mais recente do twitter bootstrap se encontra em major.minor-wip e corresponde a versão globo-bootstrap-major.minor
 
 Como atualizar com o twitter bootstrap
 --------------------------------------
 
 O repositório remoto do twitter está em um origin chamado upstream em que é possivel obter novas versões.
 
-Para atualizar, basta fazer um merge da branch e rodas os comandos
+Para atualizar, basta fazer um merge da branch e rodar os comandos
 	
 	make
 	node docs/build/translation
@@ -59,16 +59,20 @@ Com isto basta executar o comando
 	
 Novamente até não restarem strings para serem traduzidas
 
-Como publicar uma página
+Como publicar o projeto
 --------------------------
 
-Para publicar uma página execute o comando
+Para publicar os estáticos do projeto execute o comando
 	
 	make gh-pages-translated
 	
 Desta forma ele irá criar uma pasta num diretório anterior (../) chamada bootstrap-gh-pages.
 
-O conteúdo desta pasta pode ser copiada para a branch gh-pages e então com um push ela é publicada nas páginas do github no repositório da globo.com
+
+Como contribuir
+-----------------------
+
+Após realizar as modificações seguindo as diretrizes acima, faça um pull request para gente ;-)
 
 
 Versionamento
@@ -113,6 +117,8 @@ Há um makefile para poder gerar os estáticos
 Executa o compiler do less e gera o bootstrap.css e bootstrap.min.css e os templates
 O compilador lessc é necessário para o comando rodar.
 
++ **build** - `make test`
+Executa o jshint e testes do qunit com o [phantomjs](http://code.google.com/p/phantomjs/) (usado para o ci). Depende da intalação de ter o phantomjs instalado.
 
 Autores
 -------
