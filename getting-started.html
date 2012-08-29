@@ -44,7 +44,7 @@
           <div class="nav-collapse collapse">
             <ul class="nav">
               <li class="">
-                <a href="./index.html">Home</a>
+                <a href="./index.html">Página inicial</a>
               </li>
               <li class="">
                 <a href="./getting-started.html">Ponto de partida</a>
@@ -145,6 +145,7 @@
   └── README.md
 </pre>
           <p>Isto é um dos mais básicos do Bootstrap: arquivos compilados para rapidamente ser usado em seu projeto web. Nós provemos CSS e JS compilados (<code>bootstrap.*</code>), assim como um arquivo JS e CSS compilado (<code>bootstrap.min.*</code>). Os arquivos de imagens são comprimidos usando o <a href="http://imageoptim.com/">ImageOptim</a>, uma aplicativo Mac para comprimir PNGs.</p>
+          <p>Por favor note que todos plugins JavaScript requerem que o jQuery seja incluído</p>
         </section>
 
 
@@ -202,17 +203,20 @@
           <p class="lead">Com um breve aprofundamento nos conteúdos no caminho, nós podemos focar no uso do Bootstrap. Para fazer isto, nós utilizamos o template de HTML básico que inclui tudo mencionando na <a href="#file-structure">Estrutura de arquivos</a>.</p>
           <p>Agora, aqui está uma olhada no <strong>arquivo HTML típico</strong></p>
 <pre class="prettyprint linenums">
+&lt;!DOCTYPE html&gt;
 &lt;html&gt;
   &lt;head&gt;
     &lt;title&gt;Bootstrap 101 Template&lt;/title&gt;
   &lt;/head&gt;
   &lt;body&gt;
     &lt;h1&gt;Hello, world!&lt;/h1&gt;
+    &lt;script src="http://code.jquery.com/jquery-latest.js"&gt;&lt;/script&gt;
   &lt;/body&gt;
 &lt;/html&gt;
 </pre>
           <p>Para fazer isto em um <strong>template Bootstrap</strong>, só inclua o css apropriado e o arquivo JS</p>
 <pre class="prettyprint linenums">
+&lt;!DOCTYPE html&gt;
 &lt;html&gt;
   &lt;head&gt;
     &lt;title&gt;Bootstrap 101 Template&lt;/title&gt;
@@ -221,6 +225,7 @@
   &lt;/head&gt;
   &lt;body&gt;
     &lt;h1&gt;Hello, world!&lt;/h1&gt;
+    &lt;script src="http://code.jquery.com/jquery-latest.js"&gt;&lt;/script&gt;
     &lt;script src="js/bootstrap.min.js"&gt;&lt;/script&gt;
   &lt;/body&gt;
 &lt;/html&gt;
@@ -283,6 +288,7 @@
     </div>
 
   </div>
+
 
 
     <!-- Footer

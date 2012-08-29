@@ -1402,10 +1402,20 @@
             </div>
           </div>
 <pre class="prettyprint linenums">
-&lt;div class="pagination "&gt;
+&lt;div class="pagination"&gt;
   &lt;ul&gt;
     &lt;li class="disabled"&gt;&lt;a href="#"&gt;Prev&lt;/a&gt;&lt;/li&gt;
     &lt;li class="active"&gt;&lt;a href="#"&gt;1&lt;/a&gt;&lt;/li&gt;
+    ...
+  &lt;/ul&gt;
+&lt;/div&gt;
+</pre>
+          <p>{{_i}}You can optionally swap out active or disabled anchors for spans to remove click functionality while retaining intended styles.{{/i}}</p>
+<pre class="prettyprint linenums">
+&lt;div class="pagination"&gt;
+  &lt;ul&gt;
+    &lt;li class="disabled"&gt;&lt;span&gt;Prev&lt;/span&gt;&lt;/li&gt;
+    &lt;li class="active"&gt;&lt;span&gt;1&lt;/span&gt;&lt;/li&gt;
     ...
   &lt;/ul&gt;
 &lt;/div&gt;
@@ -1698,7 +1708,7 @@
           </div>
 <pre class="prettyprint linenums">
 &lt;div class="page-header"&gt;
-  &lt;h1&gt;{{_i}}Example page header{{/i}}&lt;/h1&gt;
+  &lt;h1&gt;{{_i}}Example page header{{/i}} &lt;small&gt;{{_i}}Subtext for header{{/i}}&lt;/small&gt;&lt;/h1&gt;
 &lt;/div&gt;
 </pre>
 
@@ -1734,6 +1744,28 @@
               </li>
               <li class="span3">
                 <a href="#" class="thumbnail">
+                  <img src="http://placehold.it/260x180" alt="">
+                </a>
+              </li>
+            </ul>
+          </div>
+
+          <h2>{{_i}}Thumbnails with inner border{{/i}}</h2>
+          <p>{{_i}}There's a alternative way to stylize borders using a little css trick to simulate inner-borders. To apply this border just add <code>inner-border</code> class inside <code>a</code> tag.{{/i}}</p>
+          <div class="row-fluid">
+            <ul class="thumbnails">
+              <li class="span4">
+                <a href="#" class="inner-border">
+                  <img src="http://placehold.it/260x180" alt="">
+                </a>
+              </li>
+              <li class="span4">
+                <a href="#" class="inner-border">
+                  <img src="http://placehold.it/260x180" alt="">
+                </a>
+              </li>
+              <li class="span4">
+                <a href="#" class="inner-border">
                   <img src="http://placehold.it/260x180" alt="">
                 </a>
               </li>
