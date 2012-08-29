@@ -5228,6 +5228,21 @@ a.thumbnail:hover {
   color: #555555;
 }
 
+a.inner-border,
+a.inner-border img {
+  float: left;
+  overflow: hidden;
+}
+
+a.inner-border:hover {
+  border: 3px solid;
+}
+
+a.inner-border:hover img {
+  max-width: none;
+  margin: -3px;
+}
+
 .label,
 .badge {
   font-size: 11.844px;

@@ -33,6 +33,7 @@
   .box-shadow(0 1px 3px rgba(0,0,0,.055));
   .transition(all .2s ease-in-out);
 }
+
 // Add a hover state for linked versions only
 a.thumbnail:hover {
   border-color: @linkColor;
@@ -49,4 +50,18 @@ a.thumbnail:hover {
 .thumbnail .caption {
   padding: 9px;
   color: @gray;
+}
+
+// thumbnail hover effects
+a.inner-border, a.inner-border img {
+  overflow: hidden;
+  float: left;
+}
+
+a.inner-border:hover {
+  border: 3px solid;
+  img {
+     max-width: none;
+     margin: -3px;
+  }
 }
