@@ -2,7 +2,7 @@
 <html lang="en">
   <head>
     <meta charset="utf-8">
-    <title>Globo.com Bootstrap</title>
+    <title>Scaffolding · Twitter Bootstrap</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="">
     <meta name="author" content="">
@@ -44,25 +44,25 @@
           <div class="nav-collapse collapse">
             <ul class="nav">
               <li class="">
-                <a href="./index.html">Página inicial</a>
+                <a href="./index.html">Home</a>
               </li>
               <li class="">
-                <a href="./getting-started.html">Ponto de partida</a>
+                <a href="./getting-started.html">Get started</a>
+              </li>
+              <li class="active">
+                <a href="./scaffolding.html">Scaffolding</a>
               </li>
               <li class="">
-                <a href="./scaffolding.html">Fundação</a>
+                <a href="./base-css.html">Base CSS</a>
               </li>
               <li class="">
-                <a href="./base-css.html">CSS Base</a>
-              </li>
-              <li class="">
-                <a href="./components.html">Componentes</a>
+                <a href="./components.html">Components</a>
               </li>
               <li class="">
                 <a href="./javascript.html">Javascript</a>
               </li>
               <li class="">
-                <a href="./customize.html">Customizando</a>
+                <a href="./customize.html">Customize</a>
               </li>
             </ul>
           </div>
@@ -74,8 +74,8 @@
 ================================================== -->
 <header class="jumbotron subhead" id="overview">
   <div class="container">
-    <h1>Base do desenvolvimento</h1>
-    <p class="lead">O Bootstrap é construído em um grid responsivo de 12 colunas, com layouts e componentes</p>
+    <h1>Scaffolding</h1>
+    <p class="lead">Bootstrap is built on responsive 12-column grids, layouts, and components.</p>
   </div>
 </header>
 
@@ -86,11 +86,11 @@
     <div class="row">
       <div class="span3 bs-docs-sidebar">
         <ul class="nav nav-list bs-docs-sidenav">
-          <li><a href="#global"><i class="icon-chevron-right"></i> Estilos globais</a></li>
-          <li><a href="#gridSystem"><i class="icon-chevron-right"></i> Sistema de Grid</a></li>
-          <li><a href="#fluidGridSystem"><i class="icon-chevron-right"></i> Sistema de grid fluido</a></li>
+          <li><a href="#global"><i class="icon-chevron-right"></i> Global styles</a></li>
+          <li><a href="#gridSystem"><i class="icon-chevron-right"></i> Grid system</a></li>
+          <li><a href="#fluidGridSystem"><i class="icon-chevron-right"></i> Fluid grid system</a></li>
           <li><a href="#layouts"><i class="icon-chevron-right"></i> Layouts</a></li>
-          <li><a href="#responsive"><i class="icon-chevron-right"></i> Design Responsivo</a></li>
+          <li><a href="#responsive"><i class="icon-chevron-right"></i> Responsive design</a></li>
         </ul>
       </div>
       <div class="span9">
@@ -101,11 +101,11 @@
         ================================================== -->
         <section id="global">
           <div class="page-header">
-            <h1>configurações globais</h1>
+            <h1>Global settings</h1>
           </div>
 
-          <h3>Requer o doctype de HTML5</h3>
-          <p>O Bootstrap faz o uso de certos elementos HTML e propriedades CSS que requer o uso do doctype HTML5. Inclua no início dos seus projetos</p>
+          <h3>Requires HTML5 doctype</h3>
+          <p>Bootstrap makes use of certain HTML elements and CSS properties that require the use of the HTML5 doctype. Include it at the beginning of all your projects.</p>
 <pre class="prettyprint linenums">
 &lt;!DOCTYPE html&gt;
 &lt;html lang="en"&gt;
@@ -113,18 +113,18 @@
 &lt;/html&gt;
 </pre>
 
-          <h3>Tipografia e links</h3>
-          <p>O Bootstrap usa estilos básicos de tela, tipografia, e estilos de link. Especificadamente, nós temos:</p>
+          <h3>Typography and links</h3>
+          <p>Bootstrap sets basic global display, typography, and link styles. Specifically, we:</p>
           <ul>
-            <li>Remove <code>margin</code> do corpo</li>
-            <li>Escolhemos o <code>background-color: white;</code> no <code>body</code></li>
-            <li>Use os atributos <code>@baseFontFamily</code>, <code>@baseFontSize</code>, and <code>@baseLineHeight</code> para nossa base tipográfica</li>
-            <li>Escolhemos cores globais de link via <code>@linkColor</code> e aplicamos linha abaixo do link com <code>:hover</code></li>
+            <li>Remove <code>margin</code> on the body</li>
+            <li>Set <code>background-color: white;</code> on the <code>body</code></li>
+            <li>Use the <code>@baseFontFamily</code>, <code>@baseFontSize</code>, and <code>@baseLineHeight</code> attributes as our typographic base</li>
+            <li>Set the global link color via <code>@linkColor</code> and apply link underlines only on <code>:hover</code></li>
           </ul>
-          <p>Estes estilos podem ser encontrados em <strong>scaffolding.less</strong>.</p>
+          <p>These styles can be found within <strong>scaffolding.less</strong>.</p>
 
           <h3>Reset via Normalize</h3>
-          <p>Com o Bootstrap 2, os velhos blocos de reset foram retirados em favor do <a href="http://necolas.github.com/normalize.css/" target="_blank">Normalize.css</a>, um projeto do <a href="http://twitter.com/necolas" target="_blank">Nicolas Gallagher</a> que também tem o poder do <a href="http://html5boilerplate.com" target="_blank">HTML5 Boilerplate</a>. Enquanto nós usamos muito do Normalize em nosso <strong>reset.less</strong>, nós removemos alguns elementos especificadamente para o Bootstrap</p>
+          <p>With Bootstrap 2, the old reset block has been dropped in favor of <a href="http://necolas.github.com/normalize.css/" target="_blank">Normalize.css</a>, a project by <a href="http://twitter.com/necolas" target="_blank">Nicolas Gallagher</a> that also powers the <a href="http://html5boilerplate.com" target="_blank">HTML5 Boilerplate</a>. While we use much of Normalize within our <strong>reset.less</strong>, we have removed some elements specifically for Bootstrap.</p>
 
         </section>
 
@@ -135,11 +135,11 @@
         ================================================== -->
         <section id="gridSystem">
           <div class="page-header">
-            <h1>Sistema de grid padrão</h1>
+            <h1>Default grid system</h1>
           </div>
 
-          <h2>Exemplo de grid real</h2>
-          <p>O sistema padrão do grid do Bootstrap utiliza <strong>12 columns</strong>, com um container de 940px sem <a href="./scaffolding.html#responsive">funcionalidades de design responsivo</a> habilitadas. Com o arquivo responsive adicionado, o grid se adapta de 724px e 1170px dependendo do nosso viewport. Abaixo de 767px, as colunas se tornam fluidas e ficam estagnadas verticalmente</p>
+          <h2>Live grid example</h2>
+          <p>The default Bootstrap grid system utilizes <strong>12 columns</strong>, making for a 940px wide container without <a href="./scaffolding.html#responsive">responsive features</a> enabled. With the responsive CSS file added, the grid adapts to be 724px and 1170px wide depending on your viewport. Below 767px viewports, the columns become fluid and stack vertically.</p>
           <div class="bs-docs-grid">
             <div class="row show-grid">
               <div class="span1">1</div>
@@ -166,18 +166,18 @@
             </div>
           </div>
 
-          <h3>HTML do grid básico</h3>
-          <p>Para um simples layout de duas colunas, crie um <code>.row</code> e adicione um número apropriado de <code>.span*</code>. Como o grid é de 12 colunas, cada <code>.span*</code> tem um número que somam 12 colunas, e deve sempre ter 12 colunas para cada linha (ou o número de colunas do pai).</p>
+          <h3>Basic grid HTML</h3>
+          <p>For a simple two column layout, create a <code>.row</code> and add the appropriate number of <code>.span*</code> columns. As this is a 12-column grid, each <code>.span*</code> spans a number of those 12 columns, and should always add up to 12 for each row (or the number of columns in the parent).</p>
 <pre class="prettyprint linenums">
 &lt;div class="row"&gt;
   &lt;div class="span4"&gt;...&lt;/div&gt;
   &lt;div class="span8"&gt;...&lt;/div&gt;
 &lt;/div&gt;
 </pre>
-          <p>No exemplo dado, nós temos <code>.span4</code> e <code>.span8</code>, fazendo 12 o total de colunas de uma linha completa</p>
+          <p>Given this example, we have <code>.span4</code> and <code>.span8</code>, making for 12 total columns and a complete row.</p>
 
-          <h2>Dando um offset nas colunas</h2>
-          <p>Mova colunas para a esquerda usando as classes <code>.offset*</code>. Cada classe aumenta a margem esquerda de uma coluna por uma coluna completa. Por exemplo, um <code>.offset4</code> move <code>.span4</code> em quatro colunas</p>
+          <h2>Offsetting columns</h2>
+          <p>Move columns to the left using <code>.offset*</code> classes. Each class increases the left margin of a column by a whole column. For example, <code>.offset4</code> moves <code>.span4</code> over four columns.</p>
           <div class="bs-docs-grid">
             <div class="row show-grid">
               <div class="span4">4</div>
@@ -198,17 +198,17 @@
 &lt;/div&gt;
 </pre>
 
-          <h2>Aninhando colunas</h2>
-          <p>Para aninhar seu conteúdo com o grid padrão, adicione um novo <code>.row</code> e escolha um <code>.span*</code> em * colunas com uma coluna existente de <code>.span*</code>. Linhas aninhadas devem incluir um set de colunas que adicionam ao número de colunas do seu pai</p>
+          <h2>Nesting columns</h2>
+          <p>To nest your content with the default grid, add a new <code>.row</code> and set of <code>.span*</code> columns within an existing <code>.span*</code> column. Nested rows should include a set of columns that add up to the number of columns of its parent.</p>
           <div class="row show-grid">
             <div class="span9">
-              Nível 1 da coluna
+              Level 1 of column
               <div class="row show-grid">
                 <div class="span6">
-                  Nível 2
+                  Level 2
                 </div>
                 <div class="span3">
-                  Nível 2
+                  Level 2
                 </div>
               </div>
             </div>
@@ -216,10 +216,10 @@
 <pre class="prettyprint linenums">
 &lt;div class="row"&gt;
   &lt;div class="span9"&gt;
-    Coluna nível 1
+    Level 1 column
     &lt;div class="row"&gt;
-      &lt;div class="span6"&gt;Nível 2&lt;/div&gt;
-      &lt;div class="span3"&gt;Nível 2&lt;/div&gt;
+      &lt;div class="span6"&gt;Level 2&lt;/div&gt;
+      &lt;div class="span3"&gt;Level 2&lt;/div&gt;
     &lt;/div&gt;
   &lt;/div&gt;
 &lt;/div&gt;
@@ -232,11 +232,11 @@
         ================================================== -->
         <section id="fluidGridSystem">
           <div class="page-header">
-            <h1>Sistema de grid fluido</h1>
+            <h1>Fluid grid system</h1>
           </div>
 
-          <h2>Exemplo de grid fluido</h2>
-          <p>O sistema de grid fluido usa porcentagem ao invés de pixels para colunagem nas larguras. Ele tem as mesmas funcionalidades responsivas como nosso grid fixo, assegurando as proporções adequadas para tela chave nas resoluções e dispositivos</p>
+          <h2>Live fluid grid example</h2>
+          <p>The fluid grid system uses percents instead of pixels for column widths. It has the same responsive capabilities as our fixed grid system, ensuring proper proportions for key screen resolutions and devices.</p>
           <div class="bs-docs-grid">
             <div class="row-fluid show-grid">
               <div class="span1">1</div>
@@ -270,8 +270,8 @@
             </div>
           </div>
 
-          <h3>HTML básico do grid fluido</h3>
-          <p>Para tornar qualquer linha "fluid" mudando <code>.row</code> para <code>.row-fluid</code>.</p>
+          <h3>Basic fluid grid HTML</h3>
+          <p>Make any row "fluid" by changing <code>.row</code> to <code>.row-fluid</code>. The column classes stay the exact same, making it easy to flip between fixed and fluid grids.</p>
 <pre class="prettyprint linenums">
 &lt;div class="row-fluid"&gt;
   &lt;div class="span4"&gt;...&lt;/div&gt;
@@ -279,8 +279,8 @@
 &lt;/div&gt;
 </pre>
 
-          <h2>offset do fluido</h2>
-          <p>Opera da mesma forma como o grid fixo com um offset: adicione <code>.offset*</code> para qualquer coluna para dar um offset para qualquer coluna</p>
+          <h2>Fluid offsetting</h2>
+          <p>Operates the same way as the fixed grid system offsetting: add <code>.offset*</code> to any column to offset by that many columns.</p>
           <div class="bs-docs-grid">
             <div class="row-fluid show-grid">
               <div class="span4">4</div>
@@ -301,8 +301,8 @@
 &lt;/div&gt;
 </pre>
 
-          <h2>Teste de fluido</h2>
-          <p>Aninhando grids fluidos é um pouco diferente: o número de colunas aninhadas devem não bater o número de colunas pai. Ao invés disto, cada nível da coluna aninhada são reiniciadas por que cada linha leva 100% da coluna pai</p>
+          <h2>Fluid nesting</h2>
+          <p>Nesting with fluid grids is a bit different: the number of nested columns should not match the parent's number of columns. Instead, each level of nested columns are reset because each row takes up 100% of the parent column.</p>
           <div class="row-fluid show-grid">
             <div class="span12">
               Fluid 12
@@ -319,10 +319,10 @@
 <pre class="prettyprint linenums">
 &lt;div class="row-fluid"&gt;
   &lt;div class="span12"&gt;
-    Nível 1 da coluna
+    Level 1 of column
     &lt;div class="row-fluid"&gt;
-      &lt;div class="span6"&gt;Nível 2&lt;/div&gt;
-      &lt;div class="span6"&gt;Nível 2&lt;/div&gt;
+      &lt;div class="span6"&gt;Level 2&lt;/div&gt;
+      &lt;div class="span6"&gt;Level 2&lt;/div&gt;
     &lt;/div&gt;
   &lt;/div&gt;
 &lt;/div&gt;
@@ -340,8 +340,8 @@
             <h1>Layouts</h1>
           </div>
 
-          <h2>Layout fixo</h2>
-          <p>Provê uma largura fixa (e opcionalmente responsiva) com qualquer <code>&lt;div class="container"&gt;</code> requerido.</p>
+          <h2>Fixed layout</h2>
+          <p>Provides a common fixed-width (and optionally responsive) layout with only <code>&lt;div class="container"&gt;</code> required.</p>
           <div class="mini-layout">
             <div class="mini-layout-body"></div>
           </div>
@@ -353,8 +353,8 @@
 &lt;/body&gt;
 </pre>
 
-          <h2>Layout fluido</h2>
-          <p>Criar uma página de duas colunas fluida com <code>&lt;div class="container-fluid"&gt;</code>&mdash;ótimo para aplicação e documentação</p>
+          <h2>Fluid layout</h2>
+          <p>Create a fluid, two-column page with <code>&lt;div class="container-fluid"&gt;</code>&mdash;great for applications and docs.</p>
           <div class="mini-layout fluid">
             <div class="mini-layout-sidebar"></div>
             <div class="mini-layout-body"></div>
@@ -363,10 +363,10 @@
 &lt;div class="container-fluid"&gt;
   &lt;div class="row-fluid"&gt;
     &lt;div class="span2"&gt;
-      &lt;!--conteúdo da lateral--&gt;
+      &lt;!--Sidebar content--&gt;
     &lt;/div&gt;
     &lt;div class="span10"&gt;
-      &lt;!--conteúdo do corpo--&gt;
+      &lt;!--Body content--&gt;
     &lt;/div&gt;
   &lt;/div&gt;
 &lt;/div&gt;
@@ -380,63 +380,63 @@
         ================================================== -->
         <section id="responsive">
           <div class="page-header">
-            <h1>Design Responsivo</h1>
+            <h1>Responsive design</h1>
           </div>
 
-          <h2>Habilitando funcionalidades responsivas</h2>
-          <p>Ligue o CSS responsivo no nosso projeto incluindo a meta tag e folha de estilos adicionais dentro do <code>&lt;head&gt;</code> do documento. Se você está com o Bootstrap da página customizada, você irá precisar incluir esta meta tag.</p>
+          <h2>Enabling responsive features</h2>
+          <p>Turn on responsive CSS in your project by including the proper meta tag and additional stylesheet within the <code>&lt;head&gt;</code> of your document. If you've compiled Bootstrap from the Customize page, you need only include the meta tag.</p>
 <pre class="prettyprint linenums">
 &lt;meta name="viewport" content="width=device-width, initial-scale=1.0"&gt;
 &lt;link href="assets/css/bootstrap-responsive.css" rel="stylesheet"&gt;
 </pre>
-          <p><span class="label label-info">Atenção!</span> Bootstrap não inclui funcionalidade responsivas por padrão neste tempo por que nem tudo precisa ser responsiva. Ao invés disto nós encorajamos os desenvolvedores a remover esta funcionalidade, nós fizemos de uma forma que é possível habilitar quando necessário.</p>
+          <p><span class="label label-info">Heads up!</span>  Bootstrap doesn't include responsive features by default at this time as not everything needs to be responsive. Instead of encouraging developers to remove this feature, we figure it best to enable it as needed.</p>
 
-          <h2>Sobre o Bootstrap responsivo</h2>
+          <h2>About responsive Bootstrap</h2>
           <img src="assets/img/responsive-illustrations.png" alt="Responsive devices" style="float: right; margin: 0 0 20px 20px;">
-          <p>Os Media queries permitem ter CSS customizado baseado em um número de condições&mdash;aspecto, larguras, dipo de exibição, etc&mdash;mas geralmente focado em <code>min-width</code> and <code>max-width</code>.</p>
+          <p>Media queries allow for custom CSS based on a number of conditions&mdash;ratios, widths, display type, etc&mdash;but usually focuses around <code>min-width</code> and <code>max-width</code>.</p>
           <ul>
-            <li>Modificar a largura da coluna no seu grid</li>
-            <li>Elementos estagnados ao invés de float quando for necessário</li>
-            <li>Redimensionando cabeçalhos e textos para ser mais apropriados para dispositivos</li>
+            <li>Modify the width of column in our grid</li>
+            <li>Stack elements instead of float wherever necessary</li>
+            <li>Resize headings and text to be more appropriate for devices</li>
           </ul>
-          <p>Usar media queries responsivamente e somente como princípio para a audiência de dispositivos móveis. Para projetos mariores, considere dedicar bases de código e não em camadas de media queries</p>
+          <p>Use media queries responsibly and only as a start to your mobile audiences. For larger projects, do consider dedicated code bases and not layers of media queries.</p>
 
-          <h2>Dispositivos suportados</h2>
-          <p>O Bootstrap suporta uma utilidade de media queries em um único arquivo para ajudar a fazer seus projetos mais apropriados para diferentes dispositivos e resoluções de tela. Aqui está o que é incluso:</p>
+          <h2>Supported devices</h2>
+          <p>Bootstrap supports a handful of media queries in a single file to help make your projects more appropriate on different devices and screen resolutions. Here's what's included:</p>
           <table class="table table-bordered table-striped">
             <thead>
               <tr>
-                <th>Nome</th>
-                <th>Largura do layout</th>
-                <th>largura da coluna</th>
-                <th>Largura do espaçamento</th>
+                <th>Label</th>
+                <th>Layout width</th>
+                <th>Column width</th>
+                <th>Gutter width</th>
               </tr>
             </thead>
             <tbody>
               <tr>
                 <td>Phones</td>
                 <td>480px and below</td>
-                <td class="muted" colspan="2">Colunas fluidas, larguras não fixas</td>
+                <td class="muted" colspan="2">Fluid columns, no fixed widths</td>
               </tr>
               <tr>
-                <td>Phones até tablets</td>
+                <td>Phones to tablets</td>
                 <td>767px and below</td>
-                <td class="muted" colspan="2">Colunas fluidas, larguras não fixas</td>
+                <td class="muted" colspan="2">Fluid columns, no fixed widths</td>
               </tr>
               <tr>
-                <td>Tablets no formato na orientação horizontal</td>
+                <td>Portrait tablets</td>
                 <td>768px and above</td>
                 <td>42px</td>
                 <td>20px</td>
               </tr>
               <tr>
-                <td>Padrão</td>
+                <td>Default</td>
                 <td>980px and up</td>
                 <td>60px</td>
                 <td>20px</td>
               </tr>
               <tr>
-                <td>Resolução de tela grande</td>
+                <td>Large display</td>
                 <td>1200px and up</td>
                 <td>70px</td>
                 <td>30px</td>
@@ -444,85 +444,85 @@
             </tbody>
           </table>
 <pre class="prettyprint linenums">
-/* dispositivo no formato paisagem e abaixos */
+/* Landscape phones and down */
 @media (max-width: 480px) { ... }
 
-/* dispositivo em paisagem até os tablets em formato porta-retrato */
+/* Landscape phone to portrait tablet */
 @media (max-width: 767px) { ... }
 
-/* tables em formato porta retrato até os desktos no formato paisagem */
+/* Portrait tablet to landscape and desktop */
 @media (min-width: 768px) and (max-width: 979px) { ... }
 
-/* Desktop maiores */
+/* Large desktop */
 @media (min-width: 1200px) { ... }
 </pre>
 
 
-          <h2>Classes utilitárias responsivas</h2>
-          <p>Para um desenvolvimento rápido e amigável em mobile, use estas classes utilitárias para mostrar e esconder conteúdo dependendo do dispositivo. Abaixo é uma tabela de classes disponíveis e seus efeitos num layout específico(rotulado por dispositivo). Eles podem ser encontrados em <code>responsive.less</code>.</p>
+          <h2>Responsive utility classes</h2>
+          <p>For faster mobile-friendly development, use these utility classes for showing and hiding content by device. Below is a table of the available classes and their effect on a given media query layout (labeled by device). They can be found in <code>responsive.less</code>.</p>
           <table class="table table-bordered table-striped responsive-utilities">
             <thead>
               <tr>
-                <th>Classe</th>
-                <th>Phones <small>767px e abaixo</small></th>
-                <th>Tablets <small>979px até 768px</small></th>
+                <th>Class</th>
+                <th>Phones <small>767px and below</small></th>
+                <th>Tablets <small>979px to 768px</small></th>
                 <th>Desktops <small>Default</small></th>
               </tr>
             </thead>
             <tbody>
               <tr>
                 <th><code>.visible-phone</code></th>
-                <td class="is-visible">Visível</td>
-                <td class="is-hidden">Escondido</td>
-                <td class="is-hidden">Escondido</td>
+                <td class="is-visible">Visible</td>
+                <td class="is-hidden">Hidden</td>
+                <td class="is-hidden">Hidden</td>
               </tr>
               <tr>
                 <th><code>.visible-tablet</code></th>
-                <td class="is-hidden">Escondido</td>
-                <td class="is-visible">Visível</td>
-                <td class="is-hidden">Escondido</td>
+                <td class="is-hidden">Hidden</td>
+                <td class="is-visible">Visible</td>
+                <td class="is-hidden">Hidden</td>
               </tr>
               <tr>
                 <th><code>.visible-desktop</code></th>
-                <td class="is-hidden">Escondido</td>
-                <td class="is-hidden">Escondido</td>
-                <td class="is-visible">Visível</td>
+                <td class="is-hidden">Hidden</td>
+                <td class="is-hidden">Hidden</td>
+                <td class="is-visible">Visible</td>
               </tr>
               <tr>
                 <th><code>.hidden-phone</code></th>
-                <td class="is-hidden">Escondido</td>
-                <td class="is-visible">Visível</td>
-                <td class="is-visible">Visível</td>
+                <td class="is-hidden">Hidden</td>
+                <td class="is-visible">Visible</td>
+                <td class="is-visible">Visible</td>
               </tr>
               <tr>
                 <th><code>.hidden-tablet</code></th>
-                <td class="is-visible">Visível</td>
-                <td class="is-hidden">Escondido</td>
-                <td class="is-visible">Visível</td>
+                <td class="is-visible">Visible</td>
+                <td class="is-hidden">Hidden</td>
+                <td class="is-visible">Visible</td>
               </tr>
               <tr>
                 <th><code>.hidden-desktop</code></th>
-                <td class="is-visible">Visível</td>
-                <td class="is-visible">Visível</td>
-                <td class="is-hidden">Escondido</td>
+                <td class="is-visible">Visible</td>
+                <td class="is-visible">Visible</td>
+                <td class="is-hidden">Hidden</td>
               </tr>
             </tbody>
           </table>
 
-          <h3>Quando usar</h3>
-          <p>Use uma limitada e básica versão do seu site para evitar criar diferentes versões do mesmo site. Ao invés disto, use-os como complemento de cada apresentação do dispositivo</p>
+          <h3>When to use</h3>
+          <p>Use on a limited basis and avoid creating entirely different versions of the same site. Instead, use them to complement each device's presentation.</p>
 
-          <h3>Caso de teste responsivo</h3>
-          <p>Redimensione seu browser ou carregar dispositivos diferentes para testar as classes acima</p>
-          <h4>Visível em...</h4>
-          <p>Marcações verdes indica que a classe é visível na nossa atual resolução</p>
+          <h3>Responsive utilities test case</h3>
+          <p>Resize your browser or load on different devices to test the above classes.</p>
+          <h4>Visible on...</h4>
+          <p>Green checkmarks indicate that class is visible in your current viewport.</p>
           <ul class="responsive-utilities-test">
             <li>Phone<span class="visible-phone">&#10004; Phone</span></li>
             <li>Tablet<span class="visible-tablet">&#10004; Tablet</span></li>
             <li>Desktop<span class="visible-desktop">&#10004; Desktop</span></li>
           </ul>
-          <h4>Escondido em...</h4>
-          <p>Aqui, marcas verdes indica que a classe é escondido na nossa resolução atual</p>
+          <h4>Hidden on...</h4>
+          <p>Here, green checkmarks indicate that class is hidden in your current viewport.</p>
           <ul class="responsive-utilities-test hidden-on">
             <li>Phone<span class="hidden-phone">&#10004; Phone</span></li>
             <li>Tablet<span class="hidden-tablet">&#10004; Tablet</span></li>
@@ -544,15 +544,15 @@
     ================================================== -->
     <footer class="footer">
       <div class="container">
-        <p class="pull-right"><a href="#">Voltar ao topo</a></p>
-        <p>Desenvolvido com todo amor no mundo <a href="http://twitter.com/twitter" target="_blank">@twitter</a> por <a href="http://twitter.com/mdo" target="_blank">@mdo</a> e <a href="http://twitter.com/fat" target="_blank">@fat</a>.</p>
-        <p>Este projeto é uma versão do Twitter Bootstrap da globo.com mantido por <a href="http://blog.alexandremagno.net">Alexandre Magno</a></p>
-        <p>Código licenciado sob <a href="http://www.apache.org/licenses/LICENSE-2.0" target="_blank">Licença Apache v2.0</a>. A documentação é licenciada sob <a href="http://creativecommons.org/licenses/by/3.0/">CC 3.0</a>.</p>
-        <p>Ícones do <a href="http://glyphicons.com">Glyphicons Free</a>, licenciado sob <a href="http://creativecommons.org/licenses/by/3.0/">CC 3.0</a>.</p>
+        <p class="pull-right"><a href="#">Back to top</a></p>
+        <p>Designed and built with all the love in the world <a href="http://twitter.com/twitter" target="_blank">@twitter</a> by <a href="http://twitter.com/mdo" target="_blank">@mdo</a> and <a href="http://twitter.com/fat" target="_blank">@fat</a>.</p>
+        <p>This is a twitter Bootstrap version from globo.com kept by <a href="http://blog.alexandremagno.net">Alexandre Magno</a></p>
+        <p>Code licensed under the <a href="http://www.apache.org/licenses/LICENSE-2.0" target="_blank">Apache License v2.0</a>. Documentation licensed under <a href="http://creativecommons.org/licenses/by/3.0/">CC BY 3.0</a>.</p>
+        <p>Icons from <a href="http://glyphicons.com">Glyphicons Free</a>, licensed under <a href="http://creativecommons.org/licenses/by/3.0/">CC BY 3.0</a>.</p>
         <ul class="footer-links">
-          <li><a href="http://blog.getbootstrap.com">Leia o blog</a></li>
-          <li><a href="https://github.com/twitter/bootstrap/issues?state=open">Relatar issues</a></li>
-          <li><a href="https://github.com/twitter/bootstrap/wiki">Roadmap e changelog</a></li>
+          <li><a href="http://blog.getbootstrap.com">Read the blog</a></li>
+          <li><a href="https://github.com/twitter/bootstrap/issues?state=open">Submit issues</a></li>
+          <li><a href="https://github.com/twitter/bootstrap/wiki">Roadmap and changelog</a></li>
         </ul>
       </div>
     </footer>
