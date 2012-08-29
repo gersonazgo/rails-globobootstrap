@@ -6,7 +6,7 @@ O Bootstrap da Globo, desenvolvido como uma extensão do Bootstrap do twitter, �
 Para começar -- checkout https://github.com/globocom/bootstrap
 
 O Bootstrap da Globo.com possui uma versão em português do Bootstrap do twitter que está localizada em
-	docs/build/translation/pt-br.json
+	docs/build/languages/pt-br.json
 
 Com este arquivo é possível traduzir todos os textos do twitter original sem interferir na documentação original.
 
