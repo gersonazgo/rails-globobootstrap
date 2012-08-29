@@ -91,8 +91,9 @@ input[type="color"],
 // Reset appearance properties for textual inputs and textarea
 // Declare width for legacy (can't be on input[type=*] selectors or it's too specific)
 input,
-textarea {
-  width: 210px;
+textarea,
+.uneditable-input {
+  width: 206px; // plus 12px padding and 2px border
 }
 // Reset height since textareas have rows
 textarea {
@@ -209,7 +210,7 @@ input[type="checkbox"]:focus {
 // Placeholder
 // -------------------------
 
-// Placeholder text gets special styles; can't be bundled together though for some reason
+// Placeholder text gets special styles because when browsers invalidate entire lines if it doesn’t understand a selector
 input,
 textarea {
   .placeholder();
