@@ -743,7 +743,7 @@ dd {
 
 .dl-horizontal dt {
   float: left;
-  width: 120px;
+  width: 160px;
   overflow: hidden;
   clear: left;
   text-align: right;
@@ -752,7 +752,7 @@ dd {
 }
 
 .dl-horizontal dd {
-  margin-left: 130px;
+  margin-left: 180px;
 }
 
 hr {
@@ -1775,7 +1775,7 @@ legend + .control-group {
 
 .form-horizontal .control-label {
   float: left;
-  width: 140px;
+  width: 160px;
   padding-top: 5px;
   text-align: right;
 }
@@ -1783,21 +1783,26 @@ legend + .control-group {
 .form-horizontal .controls {
   *display: inline-block;
   *padding-left: 20px;
-  margin-left: 160px;
+  margin-left: 180px;
   *margin-left: 0;
 }
 
 .form-horizontal .controls:first-child {
-  *padding-left: 160px;
+  *padding-left: 180px;
 }
 
 .form-horizontal .help-block {
-  margin-top: 10px;
   margin-bottom: 0;
 }
 
+.form-horizontal input + .help-block,
+.form-horizontal select + .help-block,
+.form-horizontal textarea + .help-block {
+  margin-top: 10px;
+}
+
 .form-horizontal .form-actions {
-  padding-left: 160px;
+  padding-left: 180px;
 }
 
 table {
@@ -2100,6 +2105,22 @@ table .span24 {
 
 .table tbody tr.info td {
   background-color: #d9edf7;
+}
+
+.table-hover tbody tr.success:hover td {
+  background-color: #d0e9c6;
+}
+
+.table-hover tbody tr.error:hover td {
+  background-color: #ebcccc;
+}
+
+.table-hover tbody tr.warning:hover td {
+  background-color: #faf2cc;
+}
+
+.table-hover tbody tr.info:hover td {
+  background-color: #c4e3f3;
 }
 
 [class^="icon-"],
@@ -4815,19 +4836,19 @@ input[type="submit"].btn.btn-mini {
   background-color: #fff;
 }
 
-.modal-open .dropdown-menu {
+.modal-open .modal .dropdown-menu {
   z-index: 2050;
 }
 
-.modal-open .dropdown.open {
+.modal-open .modal .dropdown.open {
   *z-index: 2050;
 }
 
-.modal-open .popover {
+.modal-open .modal .popover {
   z-index: 2060;
 }
 
-.modal-open .tooltip {
+.modal-open .modal .tooltip {
   z-index: 2080;
 }
 
