@@ -5251,23 +5251,35 @@ a.thumbnail:hover {
 
 a.inner-border,
 a.inner-border img {
-  float: left;
-  overflow: hidden;
+  -webkit-border-radius: 3px;
+     -moz-border-radius: 3px;
+          border-radius: 3px;
 }
 
 a.inner-border {
-  -webkit-border-radius: 4px;
-     -moz-border-radius: 4px;
-          border-radius: 4px;
+  padding: 0;
+  border: none;
+}
+
+a.inner-border span {
+  opacity: 0;
 }
 
 a.inner-border:hover {
-  border: 3px solid;
+  position: relative;
 }
 
-a.inner-border:hover img {
-  max-width: none;
-  margin: -3px;
+a.inner-border:hover span {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 98%;
+  height: 96%;
+  border: 3px solid;
+  -webkit-border-radius: 3px;
+     -moz-border-radius: 3px;
+          border-radius: 3px;
+  opacity: 1;
 }
 
 .label,
