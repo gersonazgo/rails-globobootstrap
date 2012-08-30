@@ -54,19 +54,29 @@ a.thumbnail:hover {
 
 // thumbnail hover effects
 a.inner-border, a.inner-border img {
-  overflow: hidden;
-  float: left;
+  .border-radius(3px);
 }
 
 a.inner-border {
-  .border-radius(4px);
+  border: none;
+  padding: 0;
+}
+
+a.inner-border span {
+  opacity: 0;
 }
 
 a.inner-border:hover {
-  border: 3px solid;
+  position: relative;
 }
 
-a.inner-border:hover img {
-  max-width: none;
-  margin: -3px;
+a.inner-border:hover span {
+  border: 3px solid;
+  position: absolute;
+  width: 98%;
+  height: 96%;
+  top: 0;
+  left: 0;
+  opacity: 1;
+  .border-radius(3px);
 }
