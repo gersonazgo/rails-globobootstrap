@@ -4,7 +4,7 @@
     "Scaffolding": "Fundação",
     "Base CSS": "CSS Base",
     "Home": "Página inicial",
-    "Javascript": "Javascript",
+    "JavaScript": "JavaScript",
     "Components": "Componentes",
     "Javascript plugins": "Plugins de Javascript",
     "Using LESS": "Usando o LESS",
@@ -19,7 +19,7 @@
     "Code licensed under the <a href=\"http://www.apache.org/licenses/LICENSE-2.0\" target=\"_blank\">Apache License v2.0</a>. Documentation licensed under <a href=\"http://creativecommons.org/licenses/by/3.0/\">CC BY 3.0</a>.": "Código licenciado sob <a href=\"http://www.apache.org/licenses/LICENSE-2.0\" target=\"_blank\">Licença Apache v2.0</a>. A documentação é licenciada sob <a href=\"http://creativecommons.org/licenses/by/3.0/\">CC 3.0</a>.",
     "Icons from <a href=\"http://glyphicons.com\">Glyphicons Free</a>, licensed under <a href=\"http://creativecommons.org/licenses/by/3.0/\">CC BY 3.0</a>.": "Ícones do <a href=\"http://glyphicons.com\">Glyphicons Free</a>, licenciado sob <a href=\"http://creativecommons.org/licenses/by/3.0/\">CC 3.0</a>.",
     "This is a twitter Bootstrap version from globo.com kept by <a href=\"http://blog.alexandremagno.net\">Alexandre Magno</a>": "Este projeto é uma versão do Twitter Bootstrap da globo.com mantido por <a href=\"http://blog.alexandremagno.net\">Alexandre Magno</a>",
-     "What's new": "O que há de novo?",
+    "What's new": "O que há de novo?",
     "Inner Border at Thumbnails section": "Borda interna na seção Thumbnails"
   },
   "Pages": {
@@ -1305,6 +1305,18 @@
     "There's a alternative way to stylize borders using a little css trick to simulate inner-borders. To apply this border just add <code>inner-border</code> class inside <code>a</code> tag.": "Há uma maneira alternativa de estilizar bordas usando um pequeno truque para simular bordas internas. Para aplicar esta borda adicione a classe <code>inner-border</code> dentro de uma tag <code>a</code>.",
     "Please note that all JavaScript plugins require jQuery to be included.": "Por favor note que todos plugins JavaScript requerem que o jQuery seja incluído",
     "You must manage the position of a pinned element and the behavior of its immediate parent. Position is controlled by <code>affix</code>, <code>affix-top</code>, and <code>affix-bottom</code>. Remember to check for a potentially collapsed parent when the affix kicks in as it's removing content from the normal flow of the page.": "Você deve gerenciar a posição de um elemento fixo e o comportamento do seu pai mais próximo. A posição é controlada por <code>affix</code>, <code>affix-top</code>, e <code>affix-bottom</code>. Lembre-se de checar por um pai colapsado quando o affix remove o conteúdo do fluxo normal da página.",
-    "More info":"Mais informações"
+    "More info": "Mais informações",
+    "Bold": "Negrito",
+    "Italics": "Itálicos",
+    "Emphasis classes": "Classes de ênfase",
+    "Convey meaning through color with a handful of emphasis utility classes.": "Um melhor significado através de cor com uma coleção de classes utilitárias",
+    "Form control which supports multiple lines of text. Change <code>rows</code> attribute as necessary.": "Controle de formulários que suporta múltiplas linhas de texto. Mude o atributo <code>rows</code> quando necessário",
+    "Before downloading, be sure to have a code editor (we recommend <a href=\"http://sublimetext.com/2\">Sublime Text 2</a>) and some working knowledge of HTML and CSS. We won't walk through the source files here, but they are available for download. We'll focus on getting started with the compiled Bootstrap files.": "Antes de fazer o download, certifique-se de ter um editor de código (nós recomendamos o <a href=\"http://sublimetext.com/2\">Sublime Text 2</a>) e algum conhecimento de HTML e CSS. Nós não iremos detalhar os arquivos fonte aqui, mas eles estão disponíveis para download. Nós iremos focar nos arquivos do Bootstrap já compilados",
+    "With a brief intro into the contents out of the way, we can focus on putting Bootstrap to use. To do that, we'll utilize a basic HTML template that includes everything we mentioned in the <a href=\"#file-structure\">File structure</a>.": "Com uma breve introdução nos conteúdos fora do caminho, nós podemos focar em colocar o Bootstrap para uso. Para fazer isto, nós utilizamos um template de HTML básico que inclui tudo mencionado na <a href=\"#file-structure\">Estrutura de arquivos</a>. ",
+    "Alternatively, to target a specific plugin, just include the plugin's name as a namespace along with the data-api namespace like this:": "Alternativamente, para obter um plugin específico, nós simplesmente incluímos o nome do plugin como um namespace no data-api assim:",
+    "Each plugin also exposes its raw constructor on a `Constructor` property: <code>$.fn.popover.Constructor</code>. If you'd like to get a particular plugin instance, retrieve it directly from an element: <code>$('[rel=popover]').data('popover')</code>.": "Cada plugin também expõe seu construtor básico como uma porpriedade `Constructor`: <code>$.fn.popover.Constructor</code>. Se você quer ter uma instância particular de um determinado plugin, obtenha diretamente de um elemento: <code>$('[rel=popover]').data('popover')</code>.",
+    "Bootstrap provides custom events for most plugin's unique actions. Generally, these come in an infinitive and past participle form - where the infinitive (ex. <code>show</code>) is triggered at the start of an event, and its past participle form (ex. <code>shown</code>) is trigger on the completion of an action.": "O Bootstrap provê eventos customizados para ações únicas dos plugins. Geralmente, estes vêm em uma forma de infinitivo e passado particípio - onde o infinitivo (ex. <code>show</code>) é lançado no começo de um evento, e sua forma no passado particípio (ex. <code>shown</code>) é lançado ao se completar uma ação.",
+    "You can also use the plugin without the accordion markup. Make a button toggle the expanding and collapsing of another element.": "Você pode também usar o plugin sem a marcação de um acordeon. Faça um botão alternado expandindo e colapsando outro elemento",
+    "Move columns to the right using <code>.offset*</code> classes. Each class increases the left margin of a column by a whole column. For example, <code>.offset4</code> moves <code>.span4</code> over four columns.": "Mova colunas para a direita usando as classes <code>.offset*</code>. Cada classe aumenta a margem esquerda de uma coluna por toda colunagem. Por exemplo, <code>.offset4</code> move <code>.span4</code> por 4 colunas."
   }
 }
