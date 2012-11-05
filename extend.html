@@ -8,7 +8,6 @@
     <meta name="author" content="">
 
     <!-- Le styles -->
-    <link href="http://s.glbimg.com/po/fo/globo-fontface.css" rel="stylesheet">
     <link href="assets/css/bootstrap.css" rel="stylesheet">
     <link href="assets/css/bootstrap-responsive.css" rel="stylesheet">
     <link href="assets/css/docs.css" rel="stylesheet">
@@ -20,7 +19,7 @@
     <![endif]-->
 
     <!-- Le fav and touch icons -->
-    <link rel="shortcut icon" href="assets/ico/favicon.ico">
+    <link rel="shortcut icon" href="assets/ico/favicon.png">
     <link rel="apple-touch-icon-precomposed" sizes="144x144" href="assets/ico/apple-touch-icon-144-precomposed.png">
     <link rel="apple-touch-icon-precomposed" sizes="114x114" href="assets/ico/apple-touch-icon-114-precomposed.png">
     <link rel="apple-touch-icon-precomposed" sizes="72x72" href="assets/ico/apple-touch-icon-72-precomposed.png">
@@ -40,7 +39,7 @@
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
           </button>
-          <a class="brand" href="./index.html">Globo Bootstrap</a>
+          <a class="brand" href="./index.html">Bootstrap</a>
           <div class="nav-collapse collapse">
             <ul class="nav">
               <li class="">
@@ -59,16 +58,10 @@
                 <a href="./components.html">Componentes</a>
               </li>
               <li class="">
-                <a href="./javascript.html">Javascript</a>
+                <a href="./javascript.html">JavaScript</a>
               </li>
               <li class="">
                 <a href="./customize.html">Customizando</a>
-              </li>
-              <li class="dropdown">
-                <a data-toggle="dropdown" class="dropdown-toggle" href="#">O que há de novo?<b class="caret"></b></a>
-                <ul class="dropdown-menu">
-                  <li><a href="./components.html#thumbnails">Borda interna na seção Thumbnails</a></li>
-                </ul>
               </li>
             </ul>
           </div>
@@ -154,7 +147,7 @@
           <pre>$ lessc ./less/bootstrap.less > bootstrap.css</pre>
           <p>Tenha certeza de incluir <code>--compress</code> no comando para você economizar alguns bytes!</p>
 
-          <h3>Javascript</h3>
+          <h3>JavaScript</h3>
           <p><a href="http://lesscss.org/">Faça download do último Less.js</a> e inclua o caminho (e o Bootstrap) no <code>&lt;head&gt;</code>.</p>
 <pre class="prettyprint">
 &lt;link rel="stylesheet/less" href="/path/to/bootstrap.less"&gt;
@@ -187,18 +180,18 @@
 
           <h3>Configurando estrutura de arquivos</h3>
           <p>Faça o Download do último Bootstrap compilado e coloque no seu projeto. Por exemplo você poderia ter algo do tipo:</p>
-<pre class="prettyprint">
-  app/
-  ├── layouts/
-  └── templates/
-  public/
-  ├── css/
-  │   ├── bootstrap.min.css
-  ├── js/
-  │   ├── bootstrap.min.js
-  └── img/
-      ├── glyphicons-halflings.png
-      └── glyphicons-halflings-white.png
+<pre>
+  <span class="icon-folder-open"></span> app/
+      <span class="icon-folder-open"></span> layouts/
+      <span class="icon-folder-open"></span> templates/
+  <span class="icon-folder-open"></span> public/
+      <span class="icon-folder-open"></span> css/
+          <span class="icon-file"></span> bootstrap.min.css
+      <span class="icon-folder-open"></span> js/
+          <span class="icon-file"></span> bootstrap.min.js
+      <span class="icon-folder-open"></span> img/
+          <span class="icon-file"></span> glyphicons-halflings.png
+          <span class="icon-file"></span> glyphicons-halflings-white.png
 </pre>
 
           <h3>Utilize um template de início</h3>
@@ -253,13 +246,14 @@
     <footer class="footer">
       <div class="container">
         <p class="pull-right"><a href="#">Voltar ao topo</a></p>
-        <p>Desenvolvido com todo amor no mundo <a href="http://twitter.com/twitter" target="_blank">@twitter</a> por <a href="http://twitter.com/mdo" target="_blank">@mdo</a> e <a href="http://twitter.com/fat" target="_blank">@fat</a>.</p>
-        <p>Este projeto é uma versão do Twitter Bootstrap da globo.com mantido por <a href="http://blog.alexandremagno.net">Alexandre Magno</a></p>
-        <p>Código licenciado sob <a href="http://www.apache.org/licenses/LICENSE-2.0" target="_blank">Licença Apache v2.0</a>. A documentação é licenciada sob <a href="http://creativecommons.org/licenses/by/3.0/">CC 3.0</a>.</p>
-        <p>Ícones do <a href="http://glyphicons.com">Glyphicons Free</a>, licenciado sob <a href="http://creativecommons.org/licenses/by/3.0/">CC 3.0</a>.</p>
+        <p>Desenhado e construído com todo amor do mundo por <a href="http://twitter.com/mdo" target="_blank">@mdo</a> e <a href="http://twitter.com/fat" target="_blank">@fat</a>.</p>
+        <p>Código licenciado sob <a href="http://www.apache.org/licenses/LICENSE-2.0" target="_blank">Apache License v2.0</a>, documentação sob <a href="http://creativecommons.org/licenses/by/3.0/">CC 3.0</a>.</p>
+        <p><a href="http://glyphicons.com">Glyphicons grátis</a> licenciado sob <a href="http://creativecommons.org/licenses/by/3.0/">CC 3.0</a>.</p>
         <ul class="footer-links">
-          <li><a href="http://blog.getbootstrap.com">Leia o blog</a></li>
-          <li><a href="https://github.com/twitter/bootstrap/issues?state=open">Relatar issues</a></li>
+          <li><a href="http://blog.getbootstrap.com">Blog</a></li>
+          <li class="muted">&middot;</li>
+          <li><a href="https://github.com/twitter/bootstrap/issues?state=open">Issues</a></li>
+          <li class="muted">&middot;</li>
           <li><a href="https://github.com/twitter/bootstrap/wiki">Roadmap e changelog</a></li>
         </ul>
       </div>

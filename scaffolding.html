@@ -8,7 +8,6 @@
     <meta name="author" content="">
 
     <!-- Le styles -->
-    <link href="http://s.glbimg.com/po/fo/globo-fontface.css" rel="stylesheet">
     <link href="assets/css/bootstrap.css" rel="stylesheet">
     <link href="assets/css/bootstrap-responsive.css" rel="stylesheet">
     <link href="assets/css/docs.css" rel="stylesheet">
@@ -20,7 +19,7 @@
     <![endif]-->
 
     <!-- Le fav and touch icons -->
-    <link rel="shortcut icon" href="assets/ico/favicon.ico">
+    <link rel="shortcut icon" href="assets/ico/favicon.png">
     <link rel="apple-touch-icon-precomposed" sizes="144x144" href="assets/ico/apple-touch-icon-144-precomposed.png">
     <link rel="apple-touch-icon-precomposed" sizes="114x114" href="assets/ico/apple-touch-icon-114-precomposed.png">
     <link rel="apple-touch-icon-precomposed" sizes="72x72" href="assets/ico/apple-touch-icon-72-precomposed.png">
@@ -40,7 +39,7 @@
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
           </button>
-          <a class="brand" href="./index.html">Globo Bootstrap</a>
+          <a class="brand" href="./index.html">Bootstrap</a>
           <div class="nav-collapse collapse">
             <ul class="nav">
               <li class="">
@@ -59,16 +58,10 @@
                 <a href="./components.html">Componentes</a>
               </li>
               <li class="">
-                <a href="./javascript.html">Javascript</a>
+                <a href="./javascript.html">JavaScript</a>
               </li>
               <li class="">
                 <a href="./customize.html">Customizando</a>
-              </li>
-              <li class="dropdown">
-                <a data-toggle="dropdown" class="dropdown-toggle" href="#">O que há de novo?<b class="caret"></b></a>
-                <ul class="dropdown-menu">
-                  <li><a href="./components.html#thumbnails">Borda interna na seção Thumbnails</a></li>
-                </ul>
               </li>
             </ul>
           </div>
@@ -183,7 +176,7 @@
           <p>No exemplo dado, nós temos <code>.span4</code> e <code>.span8</code>, fazendo 12 o total de colunas de uma linha completa</p>
 
           <h2>Dando um offset nas colunas</h2>
-          <p>Mova colunas para a esquerda usando as classes <code>.offset*</code>. Cada classe aumenta a margem esquerda de uma coluna por uma coluna completa. Por exemplo, um <code>.offset4</code> move <code>.span4</code> em quatro colunas</p>
+          <p>Mova colunas para a direita usando as classes <code>.offset*</code>. Cada classe aumenta a margem esquerda de uma coluna por toda colunagem. Por exemplo, <code>.offset4</code> move <code>.span4</code> por 4 colunas.</p>
           <div class="bs-docs-grid">
             <div class="row show-grid">
               <div class="span4">4</div>
@@ -208,7 +201,7 @@
           <p>Para aninhar seu conteúdo com o grid padrão, adicione um novo <code>.row</code> e escolha um <code>.span*</code> em * colunas com uma coluna existente de <code>.span*</code>. Linhas aninhadas devem incluir um set de colunas que adicionam ao número de colunas do seu pai</p>
           <div class="row show-grid">
             <div class="span9">
-              Nível 1 da coluna
+              Coluna nível 1
               <div class="row show-grid">
                 <div class="span6">
                   Nível 2
@@ -308,13 +301,21 @@
 </pre>
 
           <h2>Teste de fluido</h2>
-          <p>Aninhando grids fluidos é um pouco diferente: o número de colunas aninhadas devem não bater o número de colunas pai. Ao invés disto, cada nível da coluna aninhada são reiniciadas por que cada linha leva 100% da coluna pai</p>
+          <p>Grids fluidos utiliza aninhamento de forma diferente: cada nível de colunas devem adicionar até 12 colunas. Isto é por que o grid fluido usa percentagens, não pixels, para escolher as larguras.</p>
           <div class="row-fluid show-grid">
             <div class="span12">
               Fluid 12
               <div class="row-fluid show-grid">
                 <div class="span6">
                   Fluid 6
+                  <div class="row-fluid show-grid">
+                    <div class="span6">
+                      Fluid 6
+                    </div>
+                    <div class="span6">
+                      Fluid 6
+                    </div>
+                  </div>
                 </div>
                 <div class="span6">
                   Fluid 6
@@ -325,10 +326,16 @@
 <pre class="prettyprint linenums">
 &lt;div class="row-fluid"&gt;
   &lt;div class="span12"&gt;
-    Nível 1 da coluna
+    Fluid 12
     &lt;div class="row-fluid"&gt;
-      &lt;div class="span6"&gt;Nível 2&lt;/div&gt;
-      &lt;div class="span6"&gt;Nível 2&lt;/div&gt;
+      &lt;div class="span6"&gt;
+        Fluid 6
+        &lt;div class="row-fluid"&gt;
+          &lt;div class="span6"&gt;Fluid 6&lt;/div&gt;
+          &lt;div class="span6"&gt;Fluid 6&lt;/div&gt;
+        &lt;/div&gt;
+      &lt;/div&gt;
+      &lt;div class="span6"&gt;Fluid 6&lt;/div&gt;
     &lt;/div&gt;
   &lt;/div&gt;
 &lt;/div&gt;
@@ -420,20 +427,10 @@
             </thead>
             <tbody>
               <tr>
-                <td>Phones</td>
-                <td>480px and below</td>
-                <td class="muted" colspan="2">Colunas fluidas, larguras não fixas</td>
-              </tr>
-              <tr>
-                <td>Phones até tablets</td>
-                <td>767px and below</td>
-                <td class="muted" colspan="2">Colunas fluidas, larguras não fixas</td>
-              </tr>
-              <tr>
-                <td>Tablets no formato na orientação horizontal</td>
-                <td>768px and above</td>
-                <td>42px</td>
-                <td>20px</td>
+                <td>Resolução de tela grande</td>
+                <td>1200px and up</td>
+                <td>70px</td>
+                <td>30px</td>
               </tr>
               <tr>
                 <td>Padrão</td>
@@ -442,25 +439,35 @@
                 <td>20px</td>
               </tr>
               <tr>
-                <td>Resolução de tela grande</td>
-                <td>1200px and up</td>
-                <td>70px</td>
-                <td>30px</td>
+                <td>Tablets no formato na orientação horizontal</td>
+                <td>768px and above</td>
+                <td>42px</td>
+                <td>20px</td>
+              </tr>
+              <tr>
+                <td>Phones até tablets</td>
+                <td>767px and below</td>
+                <td class="muted" colspan="2">Colunas fluidas, larguras não fixas</td>
+              </tr>
+              <tr>
+                <td>Phones</td>
+                <td>480px and below</td>
+                <td class="muted" colspan="2">Colunas fluidas, larguras não fixas</td>
               </tr>
             </tbody>
           </table>
 <pre class="prettyprint linenums">
-/* dispositivo no formato paisagem e abaixos */
-@media (max-width: 480px) { ... }
-
-/* dispositivo em paisagem até os tablets em formato porta-retrato */
-@media (max-width: 767px) { ... }
+/* Desktop maiores */
+@media (min-width: 1200px) { ... }
 
 /* tables em formato porta retrato até os desktos no formato paisagem */
 @media (min-width: 768px) and (max-width: 979px) { ... }
 
-/* Desktop maiores */
-@media (min-width: 1200px) { ... }
+/* dispositivo em paisagem até os tablets em formato porta-retrato */
+@media (max-width: 767px) { ... }
+
+/* dispositivo no formato paisagem e abaixos */
+@media (max-width: 480px) { ... }
 </pre>
 
 
@@ -516,7 +523,7 @@
           </table>
 
           <h3>Quando usar</h3>
-          <p>Use uma limitada e básica versão do seu site para evitar criar diferentes versões do mesmo site. Ao invés disto, use-os como complemento de cada apresentação do dispositivo</p>
+          <p>Use de forma básica e evite de criar versões completamente diferentes do mesmo site. Ao invés disto, use-os para complementar cada apresentação do dispositivo. Utilitários responsives não devem ser usados com tabelas, e isto não é suportado.</p>
 
           <h3>Caso de teste responsivo</h3>
           <p>Redimensione seu browser ou carregar dispositivos diferentes para testar as classes acima</p>
@@ -551,13 +558,14 @@
     <footer class="footer">
       <div class="container">
         <p class="pull-right"><a href="#">Voltar ao topo</a></p>
-        <p>Desenvolvido com todo amor no mundo <a href="http://twitter.com/twitter" target="_blank">@twitter</a> por <a href="http://twitter.com/mdo" target="_blank">@mdo</a> e <a href="http://twitter.com/fat" target="_blank">@fat</a>.</p>
-        <p>Este projeto é uma versão do Twitter Bootstrap da globo.com mantido por <a href="http://blog.alexandremagno.net">Alexandre Magno</a></p>
-        <p>Código licenciado sob <a href="http://www.apache.org/licenses/LICENSE-2.0" target="_blank">Licença Apache v2.0</a>. A documentação é licenciada sob <a href="http://creativecommons.org/licenses/by/3.0/">CC 3.0</a>.</p>
-        <p>Ícones do <a href="http://glyphicons.com">Glyphicons Free</a>, licenciado sob <a href="http://creativecommons.org/licenses/by/3.0/">CC 3.0</a>.</p>
+        <p>Desenhado e construído com todo amor do mundo por <a href="http://twitter.com/mdo" target="_blank">@mdo</a> e <a href="http://twitter.com/fat" target="_blank">@fat</a>.</p>
+        <p>Código licenciado sob <a href="http://www.apache.org/licenses/LICENSE-2.0" target="_blank">Apache License v2.0</a>, documentação sob <a href="http://creativecommons.org/licenses/by/3.0/">CC 3.0</a>.</p>
+        <p><a href="http://glyphicons.com">Glyphicons grátis</a> licenciado sob <a href="http://creativecommons.org/licenses/by/3.0/">CC 3.0</a>.</p>
         <ul class="footer-links">
-          <li><a href="http://blog.getbootstrap.com">Leia o blog</a></li>
-          <li><a href="https://github.com/twitter/bootstrap/issues?state=open">Relatar issues</a></li>
+          <li><a href="http://blog.getbootstrap.com">Blog</a></li>
+          <li class="muted">&middot;</li>
+          <li><a href="https://github.com/twitter/bootstrap/issues?state=open">Issues</a></li>
+          <li class="muted">&middot;</li>
           <li><a href="https://github.com/twitter/bootstrap/wiki">Roadmap e changelog</a></li>
         </ul>
       </div>

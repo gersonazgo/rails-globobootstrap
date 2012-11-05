@@ -8,7 +8,6 @@
     <meta name="author" content="">
 
     <!-- Le styles -->
-    <link href="http://s.glbimg.com/po/fo/globo-fontface.css" rel="stylesheet">
     <link href="assets/css/bootstrap.css" rel="stylesheet">
     <link href="assets/css/bootstrap-responsive.css" rel="stylesheet">
     <link href="assets/css/docs.css" rel="stylesheet">
@@ -20,7 +19,7 @@
     <![endif]-->
 
     <!-- Le fav and touch icons -->
-    <link rel="shortcut icon" href="assets/ico/favicon.ico">
+    <link rel="shortcut icon" href="assets/ico/favicon.png">
     <link rel="apple-touch-icon-precomposed" sizes="144x144" href="assets/ico/apple-touch-icon-144-precomposed.png">
     <link rel="apple-touch-icon-precomposed" sizes="114x114" href="assets/ico/apple-touch-icon-114-precomposed.png">
     <link rel="apple-touch-icon-precomposed" sizes="72x72" href="assets/ico/apple-touch-icon-72-precomposed.png">
@@ -40,7 +39,7 @@
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
           </button>
-          <a class="brand" href="./index.html">Globo Bootstrap</a>
+          <a class="brand" href="./index.html">Bootstrap</a>
           <div class="nav-collapse collapse">
             <ul class="nav">
               <li class="">
@@ -59,16 +58,10 @@
                 <a href="./components.html">Componentes</a>
               </li>
               <li class="">
-                <a href="./javascript.html">Javascript</a>
+                <a href="./javascript.html">JavaScript</a>
               </li>
               <li class="">
                 <a href="./customize.html">Customizando</a>
-              </li>
-              <li class="dropdown">
-                <a data-toggle="dropdown" class="dropdown-toggle" href="#">O que há de novo?<b class="caret"></b></a>
-                <ul class="dropdown-menu">
-                  <li><a href="./components.html#thumbnails">Borda interna na seção Thumbnails</a></li>
-                </ul>
               </li>
             </ul>
           </div>
@@ -111,7 +104,7 @@
           <div class="page-header">
             <h1>1. Download</h1>
           </div>
-          <p class="lead">Antes de fazer download, certifique-se de ter um editor de código (nós recomendamos o <a href="http://sublimetext.com/2">Sublime Text 2</a>) e alguns conhecimentos de HTML e CSS. Nós não colocamos os códigos fontes aqui, mas eles estão disponíveis para download. Nós também iremos focar em como começar com os arquivos do Bootstrap compilados</p>
+          <p class="lead">Antes de fazer o download, certifique-se de ter um editor de código (nós recomendamos o <a href="http://sublimetext.com/2">Sublime Text 2</a>) e algum conhecimento de HTML e CSS. Nós não iremos detalhar os arquivos fonte aqui, mas eles estão disponíveis para download. Nós iremos focar nos arquivos do Bootstrap já compilados</p>
 
           <div class="row-fluid">
             <div class="span6">
@@ -145,10 +138,9 @@
   ├── js/
   │   ├── bootstrap.js
   │   ├── bootstrap.min.js
-  ├── img/
-  │   ├── glyphicons-halflings.png
-  │   ├── glyphicons-halflings-white.png
-  └── README.md
+  └── img/
+      ├── glyphicons-halflings.png
+      └── glyphicons-halflings-white.png
 </pre>
           <p>Isto é um dos mais básicos do Bootstrap: arquivos compilados para rapidamente ser usado em seu projeto web. Nós provemos CSS e JS compilados (<code>bootstrap.*</code>), assim como um arquivo JS e CSS compilado (<code>bootstrap.min.*</code>). Os arquivos de imagens são comprimidos usando o <a href="http://imageoptim.com/">ImageOptim</a>, uma aplicativo Mac para comprimir PNGs.</p>
           <p>Por favor note que todos plugins JavaScript requerem que o jQuery seja incluído</p>
@@ -171,11 +163,11 @@
           <p>Estilos para elementos comum de HTML como tipografia, código, tabelas, formulários e botões. Também é incluído um <a href="http://glyphicons.com">Glyphicons</a>, uma ótima coleção de ícones</p>
           <h4><a href="http://twitter.github.com/bootstrap/components.html">Componentes</a></h4>
           <p>Estilos básicos para componentes de interface comuns, como abas e pílulas, barras de navegação, cabeçalhos de página e muito mais</p>
-          <h4><a href="http://twitter.github.com/bootstrap/javascript.html">Plugins Javascript</a></h4>
-          <p>Similar aos componentes, estes plugins javascript são componentes interativos para casos como tooltips, popovers, modals, e mais.</p>
+          <h4><a href="http://twitter.github.com/bootstrap/javascript.html">Plugins JavaScript</a></h4>
+          <p>Similar aos Componentes, estes plugins JavaScript são componentes interativos para coisas como tooltips, popovers, modais, e mais.</p>
 
           <h2>Lista de componentes</h2>
-          <p>Juntos, as seções de <strong>Componentes</strong> e <strong>Plugins Javascript</strong> provê os seguintes elementos de interface</p>
+          <p>Juntos, a seção de <strong>Componentes</strong> and <strong>plugins JavaScript</strong></p>
           <ul>
             <li>Grupos de botões</li>
             <li>Dropdown de botões</li>
@@ -206,7 +198,7 @@
           <div class="page-header">
             <h1>4. Template de HTML básico</h1>
           </div>
-          <p class="lead">Com um breve aprofundamento nos conteúdos no caminho, nós podemos focar no uso do Bootstrap. Para fazer isto, nós utilizamos o template de HTML básico que inclui tudo mencionando na <a href="#file-structure">Estrutura de arquivos</a>.</p>
+          <p class="lead">Com uma breve introdução nos conteúdos fora do caminho, nós podemos focar em colocar o Bootstrap para uso. Para fazer isto, nós utilizamos um template de HTML básico que inclui tudo mencionado na <a href="#file-structure">Estrutura de arquivos</a>. </p>
           <p>Agora, aqui está uma olhada no <strong>arquivo HTML típico</strong></p>
 <pre class="prettyprint linenums">
 &lt;!DOCTYPE html&gt;
@@ -227,7 +219,7 @@
   &lt;head&gt;
     &lt;title&gt;Bootstrap 101 Template&lt;/title&gt;
     &lt;!-- Bootstrap --&gt;
-    &lt;link href="css/bootstrap.min.css" rel="stylesheet"&gt;
+    &lt;link href="css/bootstrap.min.css" rel="stylesheet" media="screen"&gt;
   &lt;/head&gt;
   &lt;body&gt;
     &lt;h1&gt;Hello, world!&lt;/h1&gt;
@@ -250,6 +242,13 @@
           <p class="lead">Vá além do template básico com poucos exemplos de layouts. Nós encorajamos as pessoas a iterar nestes exemplos e não simplesmente usá-los como resultado final</p>
           <ul class="thumbnails bootstrap-examples">
             <li class="span3">
+              <a class="thumbnail" href="examples/starter-template.html">
+                <img src="assets/img/examples/bootstrap-example-starter.jpg" alt="">
+              </a>
+              <h4>Modelo inicial</h4>
+              <p>Um documento HTML esqueleto com todos CSS's do Bootstrap e Javascript inclusos </p>
+            </li>
+            <li class="span3">
               <a class="thumbnail" href="examples/hero.html">
                 <img src="assets/img/examples/bootstrap-example-hero.jpg" alt="">
               </a>
@@ -263,12 +262,35 @@
               <h4>Layout fluido</h4>
               <p>Usado para nosso novo responsive, o sistema de grid fluido cria um layout líquido com todo sentido</p>
             </li>
+
             <li class="span3">
-              <a class="thumbnail" href="examples/starter-template.html">
-                <img src="assets/img/examples/bootstrap-example-starter.jpg" alt="">
+              <a class="thumbnail" href="examples/marketing-narrow.html">
+                <img src="assets/img/examples/bootstrap-example-marketing-narrow.png" alt="">
               </a>
-              <h4>Modelo inicial</h4>
-              <p>Um HTML no osso com todos os CSS's e javascript inclusos</p>
+              <h4>Para sites de marketing</h4>
+              <p>Pequeno, leve e um template de marketing para pequenos projetos ou times</p>
+            </li>
+            <li class="span3">
+              <a class="thumbnail" href="examples/signin.html">
+                <img src="assets/img/examples/bootstrap-example-signin.png" alt="">
+              </a>
+              <h4>Entrar</h4>
+              <p>Esqueleto de aviso com formulário customizado, maiores controles de formulário e layout flexível</p>
+            </li>
+            <li class="span3">
+              <a class="thumbnail" href="examples/sticky-footer.html">
+                <img src="assets/img/examples/bootstrap-example-sticky-footer.png" alt="">
+              </a>
+              <h4>Rodapé Colado</h4>
+              <p>Coloque um rodapé de altura fixa na parte inferior da área útil do browser</p>
+            </li>
+
+            <li class="span3">
+              <a class="thumbnail" href="examples/carousel.html">
+                <img src="assets/img/examples/bootstrap-example-carousel.png" alt="">
+              </a>
+              <h4>Carrossel jumbotron</h4>
+              <p>Um riff mais interativo do site de marketing</p>
             </li>
           </ul>
         </section>
@@ -302,13 +324,14 @@
     <footer class="footer">
       <div class="container">
         <p class="pull-right"><a href="#">Voltar ao topo</a></p>
-        <p>Desenvolvido com todo amor no mundo <a href="http://twitter.com/twitter" target="_blank">@twitter</a> por <a href="http://twitter.com/mdo" target="_blank">@mdo</a> e <a href="http://twitter.com/fat" target="_blank">@fat</a>.</p>
-        <p>Este projeto é uma versão do Twitter Bootstrap da globo.com mantido por <a href="http://blog.alexandremagno.net">Alexandre Magno</a></p>
-        <p>Código licenciado sob <a href="http://www.apache.org/licenses/LICENSE-2.0" target="_blank">Licença Apache v2.0</a>. A documentação é licenciada sob <a href="http://creativecommons.org/licenses/by/3.0/">CC 3.0</a>.</p>
-        <p>Ícones do <a href="http://glyphicons.com">Glyphicons Free</a>, licenciado sob <a href="http://creativecommons.org/licenses/by/3.0/">CC 3.0</a>.</p>
+        <p>Desenhado e construído com todo amor do mundo por <a href="http://twitter.com/mdo" target="_blank">@mdo</a> e <a href="http://twitter.com/fat" target="_blank">@fat</a>.</p>
+        <p>Código licenciado sob <a href="http://www.apache.org/licenses/LICENSE-2.0" target="_blank">Apache License v2.0</a>, documentação sob <a href="http://creativecommons.org/licenses/by/3.0/">CC 3.0</a>.</p>
+        <p><a href="http://glyphicons.com">Glyphicons grátis</a> licenciado sob <a href="http://creativecommons.org/licenses/by/3.0/">CC 3.0</a>.</p>
         <ul class="footer-links">
-          <li><a href="http://blog.getbootstrap.com">Leia o blog</a></li>
-          <li><a href="https://github.com/twitter/bootstrap/issues?state=open">Relatar issues</a></li>
+          <li><a href="http://blog.getbootstrap.com">Blog</a></li>
+          <li class="muted">&middot;</li>
+          <li><a href="https://github.com/twitter/bootstrap/issues?state=open">Issues</a></li>
+          <li class="muted">&middot;</li>
           <li><a href="https://github.com/twitter/bootstrap/wiki">Roadmap e changelog</a></li>
         </ul>
       </div>

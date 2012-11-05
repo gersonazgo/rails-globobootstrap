@@ -8,7 +8,6 @@
     <meta name="author" content="">
 
     <!-- Le styles -->
-    <link href="http://s.glbimg.com/po/fo/globo-fontface.css" rel="stylesheet">
     <link href="assets/css/bootstrap.css" rel="stylesheet">
     <link href="assets/css/bootstrap-responsive.css" rel="stylesheet">
     <link href="assets/css/docs.css" rel="stylesheet">
@@ -20,7 +19,7 @@
     <![endif]-->
 
     <!-- Le fav and touch icons -->
-    <link rel="shortcut icon" href="assets/ico/favicon.ico">
+    <link rel="shortcut icon" href="assets/ico/favicon.png">
     <link rel="apple-touch-icon-precomposed" sizes="144x144" href="assets/ico/apple-touch-icon-144-precomposed.png">
     <link rel="apple-touch-icon-precomposed" sizes="114x114" href="assets/ico/apple-touch-icon-114-precomposed.png">
     <link rel="apple-touch-icon-precomposed" sizes="72x72" href="assets/ico/apple-touch-icon-72-precomposed.png">
@@ -40,7 +39,7 @@
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
           </button>
-          <a class="brand" href="./index.html">Globo Bootstrap</a>
+          <a class="brand" href="./index.html">Bootstrap</a>
           <div class="nav-collapse collapse">
             <ul class="nav">
               <li class="">
@@ -59,16 +58,10 @@
                 <a href="./components.html">Componentes</a>
               </li>
               <li class="">
-                <a href="./javascript.html">Javascript</a>
+                <a href="./javascript.html">JavaScript</a>
               </li>
               <li class="">
                 <a href="./customize.html">Customizando</a>
-              </li>
-              <li class="dropdown">
-                <a data-toggle="dropdown" class="dropdown-toggle" href="#">O que há de novo?<b class="caret"></b></a>
-                <ul class="dropdown-menu">
-                  <li><a href="./components.html#thumbnails">Borda interna na seção Thumbnails</a></li>
-                </ul>
               </li>
             </ul>
           </div>
@@ -80,7 +73,7 @@
 ================================================== -->
 <header class="jumbotron subhead">
   <div class="container">
-    <h1>Javascript para o Bootstrap</h1>
+    <h1>JavaScript</h1>
     <p class="lead">Traga os componentes do Bootstrap a vida, agora com 13 plugins jQuery personalizados
   </div>
 </header>
@@ -119,7 +112,7 @@
           </div>
 
           <h3>Individual ou compilado</h3>
-          <p>Se você fez download da última versão do Bootstrap, ambos <strong>bootstrap.js</strong> and <strong>bootstrap.min.js</strong> contém todos plugins listados nesta página.</p>
+          <p>Plugins podem ser incluídos individualmente (embora alguns tenham depências), ou tudo de uma vez. Ambos <strong>bootstrap.js</strong> e <strong>bootstrap.min.js</strong> contém todos plugins em um único arquivo</p>
 
           <h3>Atributos Data</h3>
           <p>Você pode usar todos plugins do Bootstrap puramente através da API na marcação sem escrever uma única linha de JavaScript. Isto é a primeira classe de API do Bootstrap e deve ser considerada quando usar um plugin</p>
@@ -127,7 +120,7 @@
           <p>Dito isto, em algumas situações pode ser desejável desligar esta funcionalidade. Para isto, nós também provemos a habilidade de destabilitar os atributos data que desanexa todos eventos no corpo com o namespace de `'data-api'`. E ficaria assim:
           <pre class="prettyprint linenums">$('body').off('.data-api')</pre>
 
-          <p>Alternativamente, para um plugin específico, simplesmente inclua o nome do plugin como um namespace no namespace do data-api assim:</p>
+          <p>Alternativamente, para obter um plugin específico, nós simplesmente incluímos o nome do plugin como um namespace no data-api assim:</p>
           <pre class="prettyprint linenums">$('body').off('.alert.data-api')</pre>
 
           <h3>API programática</h3>
@@ -139,11 +132,11 @@ $("#myModal").modal()                       // initialized with defaults
 $("#myModal").modal({ keyboard: false })   // initialized with no keyboard
 $("#myModal").modal('show')                // initializes and invokes show immediately</p>
 </pre>
-          <p>Cada plugin também expões seu construtor em uma propriedade `Constructor`: <code>$.fn.popover.Constructor</code>. Se você deseja obter uma instância particular de um plugin, obtenha diretamente de um elemento: <code>$('[rel=popover]').data('popover')</code>.</p>
+          <p>Cada plugin também expõe seu construtor básico como uma porpriedade `Constructor`: <code>$.fn.popover.Constructor</code>. Se você quer ter uma instância particular de um determinado plugin, obtenha diretamente de um elemento: <code>$('[rel=popover]').data('popover')</code>.</p>
 
           <h3>Eventos</h3>
-          <p>O Bootstrap provê eventos customizados para ações únicas dos plugins. Geralmente, eles vem na forma infinitiva e do passado particípio - onde o infinitvo (ex. <code>show</code>) é lançado no início do evento, e o passado particípio (ex. <code>shown</code>) é lançado quando a ação é completada</p>
-          <p>Todos eventos infinitivos provê a funcionalidade de preventDefault. Isto provê a habilidade de parar a execução de uma ação antes mesmo dela começar</p>
+          <p>O Bootstrap provê eventos customizados para ações únicas dos plugins. Geralmente, estes vêm em uma forma de infinitivo e passado particípio - onde o infinitivo (ex. <code>show</code>) é lançado no começo de um evento, e sua forma no passado particípio (ex. <code>shown</code>) é lançado ao se completar uma ação.</p>
+          <p>Todos eventos no infinitivo provê uma funcionalidade com preventDefault. Isto provê a habilidade de parar a execução de uma ação antes de começar.</p>
 <pre class="prettyprint linenums">
 $('#myModal').on('show', function (e) {
     if (!data) return e.preventDefault() // stops modal from being shown
@@ -188,13 +181,13 @@ $('#myModal').on('show', function (e) {
           <h3>Exemplo estático</h3>
           <p>Um modal renderiza um cabeçalho, corpo, e uma coleção de ações no footer</p>
           <div class="bs-docs-example" style="background-color: #f5f5f5;">
-            <div class="modal" style="position: relative; top: auto; left: auto; margin: 0 auto 20px; z-index: 1; max-width: 100%;">
+            <div class="modal" style="position: relative; top: auto; left: auto; right: auto; margin: 0 auto 20px; z-index: 1; max-width: 100%;">
               <div class="modal-header">
                 <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
                 <h3>Cabeçalho do modal</h3>
               </div>
               <div class="modal-body">
-                <p>Um corpo fino...</p>
+                <p>Um corpo fino &hellip;</p>
               </div>
               <div class="modal-footer">
                 <a href="#" class="btn">Fechar</a>
@@ -209,7 +202,7 @@ $('#myModal').on('show', function (e) {
     &lt;h3&gt;Cabeçalho do modal&lt;/h3&gt;
   &lt;/div&gt;
   &lt;div class="modal-body"&gt;
-    &lt;p&gt;Um corpo fino...&lt;/p&gt;
+    &lt;p&gt;Um corpo fino &hellip;&lt;/p&gt;
   &lt;/div&gt;
   &lt;div class="modal-footer"&gt;
     &lt;a href="#" class="btn"&gt;Fechar&lt;/a&gt;
@@ -231,7 +224,7 @@ $('#myModal').on('show', function (e) {
               <p>Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem.</p>
 
               <h4>Popover no modal</h4>
-              <p>This <a href="#" role="button" class="btn popover-test" title="A Title" data-content="E aqui está um conteúdo incrível. Muito envolvente. right?">button</a> deve disparar o popover no estado hover.</p>
+              <p>Este <a href="#" role="button" class="btn popover-test" title="A Title" data-content="aqui está um conteúdo ótimo. Muito engajante. certo?">botão</a></p>
 
               <h4>Tooltips em um modal</h4>
               <p><a href="#" class="tooltip-test" title="Tooltip">Este link</a> and <a href="#" class="tooltip-test" title="Tooltip">aquele link</a> deve ter tooltips no hover.</p>
@@ -256,17 +249,17 @@ $('#myModal').on('show', function (e) {
             <a data-toggle="modal" href="#myModal" class="btn btn-primary btn-large">Executar modal de demo</a>
           </div>
 <pre class="prettyprint linenums">
-&lt;-- Button to trigger modal --&gt;
+&lt!-- Button to trigger modal --&gt;
 &lt;a href="#myModal" role="button" class="btn" data-toggle="modal"&gt;Executar modal de demo&lt;/a&gt;
 
-&lt;-- Modal --&gt;
-&lt;div class="modal" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true"&gt;
+&lt!-- Modal --&gt;
+&lt;div id="myModal" class="modal hide fade" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true"&gt;
   &lt;div class="modal-header"&gt;
     &lt;button type="button" class="close" data-dismiss="modal" aria-hidden="true"&gt;&times;&lt;/button&gt;
     &lt;h3 id="myModalLabel"&gt;Modal header&lt;/h3&gt;
   &lt;/div&gt;
   &lt;div class="modal-body"&gt;
-    &lt;p&gt;Um corpo fino...&lt;/p&gt;
+    &lt;p&gt;Um corpo fino &hellip;&lt;/p&gt;
   &lt;/div&gt;
   &lt;div class="modal-footer"&gt;
     &lt;button class="btn" data-dismiss="modal" aria-hidden="true"&gt;Fechar&lt;/button&gt;
@@ -513,8 +506,8 @@ $('#myModal').on('hidden', function () {
           <p><em>Nenhum</em></p>
 
           <h3>Métodos</h3>
-          <h4>$().dropdown()</h4>
-          <p>Api programática para ativar menus para uma barra de navegação ou navegação em abas</p>
+          <h4>$().dropdown('toggle')</h4>
+          <p>Uma api programática para alternar menus para uma navegação comum ou em abas</p>
         </section>
 
 
@@ -643,7 +636,7 @@ $('[data-spy="scroll"]').each(function () {
 
 
           <h2>Exemplo de abas</h2>
-          <p>Adicione rapidamente, uma funcionalidade de aba dinâmica para realizar uma transição através de painés de conteúdo local, até mesmo via menus dropdown</p>
+          <p>Adicione uma rápida e dinâmica funcionalidade de transição em painés de conteúdo, até mesmo via menus dropdowns</p>
           <div class="bs-docs-example">
             <ul id="myTab" class="nav nav-tabs">
               <li class="active"><a href="#home" data-toggle="tab">Início</a></li>
@@ -811,7 +804,7 @@ $('a[data-toggle="tab"]').on('shown', function (e) {
              <tr>
                <td>html</td>
                <td>boleano</td>
-               <td>true</td>
+               <td>false</td>
                <td>Insira html no tooltip. Se for escolhido false, o método jQuery <code>text</code> irá usar o conteúdo inserido dentro do dom. Use o texto se você está preocupado com ataques XSS</td>
              </tr>
              <tr>
@@ -932,6 +925,16 @@ $('a[data-toggle="tab"]').on('shown', function (e) {
           <a href="#" class="btn btn-large btn-danger" rel="popover" title="A Title" data-content="And here's some amazing content. It's very engaging. right?">Clicar no popover alternado</a>
         </div>
 
+        <h4>Quatro direções</h4>
+        <div class="bs-docs-example tooltip-demo">
+          <ul class="bs-docs-tooltip-examples">
+            <li><a href="#" class="btn" rel="popover" data-placement="top" data-content="Vivamus sagittis lacus vel augue laoreet rutrum faucibus." title="Popover on top">Popover on top</a></li>
+            <li><a href="#" class="btn" rel="popover" data-placement="right" data-content="Vivamus sagittis lacus vel augue laoreet rutrum faucibus." title="Popover on right">Popover on right</a></li>
+            <li><a href="#" class="btn" rel="popover" data-placement="bottom" data-content="Vivamus sagittis lacus vel augue laoreet rutrum faucibus." title="Popover on bottom">Popover on bottom</a></li>
+            <li><a href="#" class="btn" rel="popover" data-placement="left" data-content="Vivamus sagittis lacus vel augue laoreet rutrum faucibus." title="Popover on left">Popover on left</a></li>
+          </ul>
+        </div>
+
 
         <hr class="bs-docs-separator">
 
@@ -961,7 +964,7 @@ $('a[data-toggle="tab"]').on('shown', function (e) {
            <tr>
              <td>html</td>
              <td>boleano</td>
-             <td>true</td>
+             <td>false</td>
              <td>Insira html no popover. Se for escolhida a opção false, o método jQuery <code>text</code> será usado para inserir documento no dom. Use o texto se você está preocupado com ataque XSS.</td>
            </tr>
            <tr>
@@ -1267,6 +1270,36 @@ $('#my-alert').bind('closed', function () {
                 </div>
               </div>
             </div>
+<pre class="prettyprint linenums">
+&lt;div class="accordion" id="accordion2"&gt;
+  &lt;div class="accordion-group"&gt;
+    &lt;div class="accordion-heading"&gt;
+      &lt;a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion2" href="#collapseOne"&gt;
+        Grupo de itens colapsáveis #1
+      &lt;/a&gt;
+    &lt;/div&gt;
+    &lt;div id="collapseOne" class="accordion-body collapse in"&gt;
+      &lt;div class="accordion-inner"&gt;
+        Anim pariatur cliche...
+      &lt;/div&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+  &lt;div class="accordion-group"&gt;
+    &lt;div class="accordion-heading"&gt;
+      &lt;a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion2" href="#collapseTwo"&gt;
+        Grupo de itens colapsáveis #2
+      &lt;/a&gt;
+    &lt;/div&gt;
+    &lt;div id="collapseTwo" class="accordion-body collapse"&gt;
+      &lt;div class="accordion-inner"&gt;
+        Anim pariatur cliche...
+      &lt;/div&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+...
+</pre>
+            <p>Você pode também usar o plugin sem a marcação de um acordeon. Faça um botão alternado expandindo e colapsando outro elemento</p>
 <pre class="prettyprint linenums">
 &lt;button type="button" class="btn btn-danger" data-toggle="collapse" data-target="#demo"&gt;
   um item colapsável simples
@@ -1581,6 +1614,12 @@ $('.carousel').carousel({
                  <td>O método usado para ordenar os resultados do autocomplete. Aceita um argumento simples <code>items</code> e tem o escopo da instância do typeahead. Referenciando a sentenção atual com <code>this.query</code></td>
                </tr>
                <tr>
+                 <td>Atualizador</td>
+                 <td>function</td>
+                 <td>Retornar itens selecionados</td>
+                 <td>O método usado para retornar o item selecionado. Aceita um único argumento o <code>item</code> que tem um escopo da instância do typeahead</td>
+               </tr>
+               <tr>
                  <td>highlighter</td>
                  <td>function</td>
                  <td>destaque todos os padrões encontrados</td>
@@ -1648,7 +1687,7 @@ $('[data-spy="affix"]').each(function () {
                <td>offset</td>
                <td>number | function | object</td>
                <td>10</td>
-               <td>Pixels para dar um offset da tela quando calculando a posição do scroll. Se um único número é provido, o offset será aplicado em ambas direções topo e esquerda. Para listar elementos em uma única direção, ou múltiplos efeitos de offset únicos, simplesmente use um objeto <code>offset: { x: 10 }</code>. Use uma função quando você precisa dinamicamente prover um offset (útil para design responsivo).</td>
+               <td>Pixels para offset da tela quando é calculada a posição do scroll. Se um único número é fornecido, o offset irá ser aplicado nas direções topo e esquerda. Para uma única direção, ou múltiplos efeitos únicos de offset, simplesmente passe como parâmetro um objeto <code>offset: { x: 10 }</code>. Use uma função quando você precisa dar um offset dinâmicamente (útil para alguns designs responsivos).</td>
              </tr>
             </tbody>
           </table>
@@ -1668,13 +1707,14 @@ $('[data-spy="affix"]').each(function () {
     <footer class="footer">
       <div class="container">
         <p class="pull-right"><a href="#">Voltar ao topo</a></p>
-        <p>Desenvolvido com todo amor no mundo <a href="http://twitter.com/twitter" target="_blank">@twitter</a> por <a href="http://twitter.com/mdo" target="_blank">@mdo</a> e <a href="http://twitter.com/fat" target="_blank">@fat</a>.</p>
-        <p>Este projeto é uma versão do Twitter Bootstrap da globo.com mantido por <a href="http://blog.alexandremagno.net">Alexandre Magno</a></p>
-        <p>Código licenciado sob <a href="http://www.apache.org/licenses/LICENSE-2.0" target="_blank">Licença Apache v2.0</a>. A documentação é licenciada sob <a href="http://creativecommons.org/licenses/by/3.0/">CC 3.0</a>.</p>
-        <p>Ícones do <a href="http://glyphicons.com">Glyphicons Free</a>, licenciado sob <a href="http://creativecommons.org/licenses/by/3.0/">CC 3.0</a>.</p>
+        <p>Desenhado e construído com todo amor do mundo por <a href="http://twitter.com/mdo" target="_blank">@mdo</a> e <a href="http://twitter.com/fat" target="_blank">@fat</a>.</p>
+        <p>Código licenciado sob <a href="http://www.apache.org/licenses/LICENSE-2.0" target="_blank">Apache License v2.0</a>, documentação sob <a href="http://creativecommons.org/licenses/by/3.0/">CC 3.0</a>.</p>
+        <p><a href="http://glyphicons.com">Glyphicons grátis</a> licenciado sob <a href="http://creativecommons.org/licenses/by/3.0/">CC 3.0</a>.</p>
         <ul class="footer-links">
-          <li><a href="http://blog.getbootstrap.com">Leia o blog</a></li>
-          <li><a href="https://github.com/twitter/bootstrap/issues?state=open">Relatar issues</a></li>
+          <li><a href="http://blog.getbootstrap.com">Blog</a></li>
+          <li class="muted">&middot;</li>
+          <li><a href="https://github.com/twitter/bootstrap/issues?state=open">Issues</a></li>
+          <li class="muted">&middot;</li>
           <li><a href="https://github.com/twitter/bootstrap/wiki">Roadmap e changelog</a></li>
         </ul>
       </div>

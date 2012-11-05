@@ -114,7 +114,7 @@ hr.soften {
 .jumbotron p {
   font-size: 24px;
   font-weight: 300;
-  line-height: 30px;
+  line-height: 1.25;
   margin-bottom: 30px;
 }
 
@@ -132,18 +132,8 @@ hr.soften {
 }
 
 /* Download button */
-@-webkit-keyframes downloadButton {
-  from { box-shadow: inset 0 1px 0 rgba(255,255,255,.1), 0 1px 5px rgba(0,0,0,.25), 0 2px 10px rgba(0,68,204,.5); }
-  50% {  box-shadow: inset 0 1px 0 rgba(255,255,255,.1), 0 1px 5px rgba(0,0,0,.25), 0 2px 25px rgba(0,68,204,.9); }
-  to {   box-shadow: inset 0 1px 0 rgba(255,255,255,.1), 0 1px 5px rgba(0,0,0,.25), 0 2px 10px rgba(0,68,204,.5); }
-}
-@-moz-keyframes downloadButton {
-  from { box-shadow: inset 0 1px 0 rgba(255,255,255,.1), 0 1px 5px rgba(0,0,0,.25), 0 2px 10px rgba(0,68,204,.5); }
-  50% {  box-shadow: inset 0 1px 0 rgba(255,255,255,.1), 0 1px 5px rgba(0,0,0,.25), 0 2px 25px rgba(0,68,204,.9); }
-  to {   box-shadow: inset 0 1px 0 rgba(255,255,255,.1), 0 1px 5px rgba(0,0,0,.25), 0 2px 10px rgba(0,68,204,.5); }
-}
 .masthead .btn {
-  padding: 14px 24px;
+  padding: 19px 24px;
   font-size: 24px;
   font-weight: 200;
   color: #fff; /* redeclare to override the `.jumbotron a` */
@@ -151,19 +141,17 @@ hr.soften {
   -webkit-border-radius: 6px;
      -moz-border-radius: 6px;
           border-radius: 6px;
-  -webkit-box-shadow: inset 0 1px 0 rgba(255,255,255,.1), 0 1px 5px rgba(0,0,0,.25), 0 2px 10px rgba(0,68,204,.01);
-     -moz-box-shadow: inset 0 1px 0 rgba(255,255,255,.1), 0 1px 5px rgba(0,0,0,.25), 0 2px 10px rgba(0,68,204,.01);
-          box-shadow: inset 0 1px 0 rgba(255,255,255,.1), 0 1px 5px rgba(0,0,0,.25), 0 2px 10px rgba(0,68,204,.01);
-  -webkit-animation-name: downloadButton;
-     -moz-animation-name: downloadButton;
-  -webkit-animation-duration: 1.5s;
-     -moz-animation-duration: 1.5s;
-  -webkit-animation-iteration-count: infinite;
-     -moz-animation-iteration-count: infinite;
+  -webkit-box-shadow: inset 0 1px 0 rgba(255,255,255,.1), 0 1px 5px rgba(0,0,0,.25);
+     -moz-box-shadow: inset 0 1px 0 rgba(255,255,255,.1), 0 1px 5px rgba(0,0,0,.25);
+          box-shadow: inset 0 1px 0 rgba(255,255,255,.1), 0 1px 5px rgba(0,0,0,.25);
   -webkit-transition: none;
      -moz-transition: none;
           transition: none;
-
+}
+.masthead .btn:hover {
+  -webkit-box-shadow: inset 0 1px 0 rgba(255,255,255,.1), 0 1px 5px rgba(0,0,0,.25);
+     -moz-box-shadow: inset 0 1px 0 rgba(255,255,255,.1), 0 1px 5px rgba(0,0,0,.25);
+          box-shadow: inset 0 1px 0 rgba(255,255,255,.1), 0 1px 5px rgba(0,0,0,.25);
 }
 .masthead .btn:active {
   -webkit-box-shadow: inset 0 2px 4px rgba(0,0,0,.1), 0 1px 0 rgba(255,255,255,.1);
@@ -188,6 +176,16 @@ hr.soften {
   left: 0;
   background: url(../img/bs-docs-masthead-pattern.png) repeat center center;
   opacity: .4;
+}
+@media
+only screen and (-webkit-min-device-pixel-ratio: 2),
+only screen and (   min--moz-device-pixel-ratio: 2),
+only screen and (     -o-min-device-pixel-ratio: 2/1) {
+
+  .jumbotron:after {
+    background-size: 150px 150px;
+  }
+
 }
 
 /* Masthead (docs home)
@@ -287,7 +285,7 @@ hr.soften {
   margin-bottom: 40px;
   font-size: 20px;
   font-weight: 300;
-  line-height: 25px;
+  line-height: 1.25;
   color: #999;
 }
 .marketing img {
@@ -315,7 +313,10 @@ hr.soften {
 }
 .footer-links li {
   display: inline;
-  margin-right: 10px;
+  padding: 0 2px;
+}
+.footer-links li:first-child {
+  padding-left: 0;
 }
 
 
@@ -344,7 +345,13 @@ hr.soften {
   margin-bottom: 0;
 }
 .show-grid .show-grid [class*="span"] {
+  margin-top: 5px;
+}
+.show-grid [class*="span"] [class*="span"] {
   background-color: #ccc;
+}
+.show-grid [class*="span"] [class*="span"] [class*="span"] {
+  background-color: #999;
 }
 
 
@@ -647,10 +654,6 @@ h2 + .row {
 form.bs-docs-example {
   padding-bottom: 19px;
 }
-.bs-docs-example .lead {
-  font-size: 18px;
-  line-height: 24px;
-}
 
 /* Images */
 .bs-docs-example-images img {
@@ -770,7 +773,7 @@ form.bs-docs-example {
 }
 .bs-docs-sidenav > li > a {
   display: block;
-  *width: 190px;
+  width: 190px \9;
   margin: 0 0 -1px;
   padding: 8px 14px;
   border: 1px solid #e5e5e5;
@@ -836,6 +839,9 @@ form.bs-docs-example {
   }
   .bs-docs-sidenav {
     width: 258px;
+  }
+  .bs-docs-sidenav > li > a {
+    width: 230px \9; /* Override the previous IE8-9 hack */
   }
 }
 
@@ -957,11 +963,11 @@ form.bs-docs-example {
 
   /* Downsize the jumbotrons */
   .jumbotron h1 {
-    font-size: 60px;
+    font-size: 45px;
   }
   .jumbotron p,
   .jumbotron .btn {
-    font-size: 20px;
+    font-size: 18px;
   }
   .jumbotron .btn {
     display: block;
@@ -976,7 +982,10 @@ form.bs-docs-example {
 
   /* Marketing on home */
   .marketing h1 {
-    font-size: 40px;
+    font-size: 30px;
+  }
+  .marketing-byline {
+    font-size: 18px;
   }
 
   /* center example sites */
@@ -1010,6 +1019,11 @@ form.bs-docs-example {
     left: auto;
   }
 
+  /* Tighten up footer */
+  .footer {
+    padding-top: 20px;
+    padding-bottom: 20px;
+  }
   /* Unfloat the back to top in footer to prevent odd text wrapping */
   .footer .pull-right {
     float: none;

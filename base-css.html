@@ -8,7 +8,6 @@
     <meta name="author" content="">
 
     <!-- Le styles -->
-    <link href="http://s.glbimg.com/po/fo/globo-fontface.css" rel="stylesheet">
     <link href="assets/css/bootstrap.css" rel="stylesheet">
     <link href="assets/css/bootstrap-responsive.css" rel="stylesheet">
     <link href="assets/css/docs.css" rel="stylesheet">
@@ -20,7 +19,7 @@
     <![endif]-->
 
     <!-- Le fav and touch icons -->
-    <link rel="shortcut icon" href="assets/ico/favicon.ico">
+    <link rel="shortcut icon" href="assets/ico/favicon.png">
     <link rel="apple-touch-icon-precomposed" sizes="144x144" href="assets/ico/apple-touch-icon-144-precomposed.png">
     <link rel="apple-touch-icon-precomposed" sizes="114x114" href="assets/ico/apple-touch-icon-114-precomposed.png">
     <link rel="apple-touch-icon-precomposed" sizes="72x72" href="assets/ico/apple-touch-icon-72-precomposed.png">
@@ -40,7 +39,7 @@
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
           </button>
-          <a class="brand" href="./index.html">Globo Bootstrap</a>
+          <a class="brand" href="./index.html">Bootstrap</a>
           <div class="nav-collapse collapse">
             <ul class="nav">
               <li class="">
@@ -59,16 +58,10 @@
                 <a href="./components.html">Componentes</a>
               </li>
               <li class="">
-                <a href="./javascript.html">Javascript</a>
+                <a href="./javascript.html">JavaScript</a>
               </li>
               <li class="">
                 <a href="./customize.html">Customizando</a>
-              </li>
-              <li class="dropdown">
-                <a data-toggle="dropdown" class="dropdown-toggle" href="#">O que há de novo?<b class="caret"></b></a>
-                <ul class="dropdown-menu">
-                  <li><a href="./components.html#thumbnails">Borda interna na seção Thumbnails</a></li>
-                </ul>
               </li>
             </ul>
           </div>
@@ -161,15 +154,15 @@
 &lt;/p&gt;
 </pre>
 
-          <h3><code>&lt;strong&gt;</code></h3>
-          <p>Para enfatizar um pedaço de texto com <strong>important</strong></p>
+          <h3>Negrito</h3>
+          <p>Para enfatizar um pedaço de texto com uma propriedade font-weight mais pesada</p>
           <div class="bs-docs-example">
             <p>The following snippet of text is <strong>rendered as bold text</strong>.</p>
           </div>
           <pre class="prettyprint">&lt;strong&gt;rendered as bold text&lt;/strong&gt;</pre>
 
-          <h3><code>&lt;em&gt;</code></h3>
-          <p>Para enfatizar um pedaço de texto com <em>stress</em></p>
+          <h3>Itálicos</h3>
+          <p>Para enfatizar um trecho de texto com itálico</p>
           <div class="bs-docs-example">
             <p>The following snippet of text is <em>rendered as italicized text</em>.</p>
           </div>
@@ -177,12 +170,29 @@
 
           <p><span class="label label-info">Atenção!</span> Sinta-se livre para usar <code>&lt;b&gt;</code> e <code>&lt;i&gt;</code> em HTML5. <code>&lt;b&gt;</code> é feito para marcar palavras ou frases sem dar importância adicional enquanto é mais usado para <code>&lt;i&gt;</code>, termos técnicos etc.</p>
 
+          <h3>Classes de ênfase</h3>
+          <p>Um melhor significado através de cor com uma coleção de classes utilitárias</p>
+          <div class="bs-docs-example">
+            <p class="muted">Fusce dapibus, tellus ac cursus commodo, tortor mauris nibh.</p>
+            <p class="text-warning">Etiam porta sem malesuada magna mollis euismod.</p>
+            <p class="text-error">Donec ullamcorper nulla non metus auctor fringilla.</p>
+            <p class="text-info">Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis.</p>
+            <p class="text-success">Duis mollis, est non commodo luctus, nisi erat porttitor ligula.</p>
+          </div>
+<pre class="prettyprint linenums">
+&lt;p class="muted"&gt;Fusce dapibus, tellus ac cursus commodo, tortor mauris nibh.&lt;/p&gt;
+&lt;p class="text-warning"&gt;Etiam porta sem malesuada magna mollis euismod.&lt;/p&gt;
+&lt;p class="text-error"&gt;Donec ullamcorper nulla non metus auctor fringilla.&lt;/p&gt;
+&lt;p class="text-info"&gt;Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis.&lt;/p&gt;
+&lt;p class="text-success"&gt;Duis mollis, est non commodo luctus, nisi erat porttitor ligula.&lt;/p&gt;
+</pre>
+
 
           <hr class="bs-docs-separator">
 
 
           <h2 id="abbreviations">Abreviações</h2>
-          <p>Implementação estilizada do elemento <code>&lt;abbr&gt;</code> para abreviações e acrônimos para mostrar a versão expandida do hover. Abreviações com um atributo <code>title</code> tem uma leve borda inferior e ajuda o cursor no hover, dando informação adicional de contexto</p>
+          <p>Implementação estilizada da tag HTML <code>&lt;abbr&gt;</code> para abreviação e acrônimo para mostrar a versão expandida do hover. Abreviações como o atributo <code>title</code> tem uma um destaque com uma borda e um cursor no hover, que provê um adicional contexto quando o usuário passa o mouse sob o link</p>
 
           <h3><code>&lt;abbr&gt;</code></h3>
           <p>Para texto expandido em um hover de uma abreviação, incluindo um atributo <code>title</code></p>
@@ -216,7 +226,7 @@
             </address>
             <address>
               <strong>Nome completo</strong><br>
-              <a href="mailto:#">first.last@gmail.com</a>
+              <a href="mailto:#">first.last@example.com</a>
             </address>
           </div>
 <pre class="prettyprint linenums">
@@ -229,7 +239,7 @@
 
 &lt;address&gt;
   &lt;strong&gt;Nome completo&lt;/strong&gt;&lt;br&gt;
-  &lt;a href="mailto:#"&gt;first.last@gmail.com&lt;/a&gt;
+  &lt;a href="mailto:#"&gt;first.last@example.com&lt;/a&gt;
 &lt;/address&gt;
 </pre>
 
@@ -340,7 +350,7 @@
 </pre>
 
         <h3>Não estilizadas</h3>
-        <p>Uma lista de itens com nenhum <code>list-style</code> or margem esquerdas adicionais</p>
+        <p>Remova por padrão o <code>list-style</code> e padding a esquerda de uma lista de items (somente os filhos imediatos da lista)</p>
         <div class="bs-docs-example">
           <ul class="unstyled">
             <li>Lorem ipsum dolor sit amet</li>
@@ -362,6 +372,21 @@
         </div>
 <pre class="prettyprint linenums">
 &lt;ul class="unstyled"&gt;
+  &lt;li&gt;...&lt;/li&gt;
+&lt;/ul&gt;
+</pre>
+
+        <h3>Inline</h3>
+        <p>Coloque todos itens da lista em uma única linha com <code>inline-block</code> e algum padding</p>
+        <div class="bs-docs-example">
+          <ul class="inline">
+            <li>Lorem ipsum</li>
+            <li>Phasellus iaculis</li>
+            <li>Nulla volutpat</li>
+          </ul>
+        </div>
+<pre class="prettyprint linenums">
+&lt;ul class="inline"&gt;
   &lt;li&gt;...&lt;/li&gt;
 &lt;/ul&gt;
 </pre>
@@ -499,7 +524,7 @@ Por exemplo, &lt;code&gt;&lt;section&gt;&lt;/code&gt; deve ser colocado inline
 
 
           <h2>Classes opcionais</h2>
-          <p>Adicione qualquer das classes seguintes para a classe base <code>.table</code></p>
+          <p>Adicione qualquer uma das seguintes classes a classe base <code>.table</code></p>
 
           <h3><code>.table-striped</code></h3>
           <p>Adicione tabelas zebradas dentro de uma tag <code>&lt;tbody&gt;</code> via um seletor CSS <code>:nth-child</code>  (não disponível no IE7-IE8)</p>
@@ -865,25 +890,29 @@ Por exemplo, &lt;code&gt;&lt;section&gt;&lt;/code&gt; deve ser colocado inline
           <h2>Estilos padrão</h2>
           <p>Controles de formulários individuais recebem estilização, mas sem nenhuam classe base no elemento <code>&lt;form&gt;</code> ou mudanças grandes na marcação. Resultados são estagnados, alinhados a esquerda e rótulos no topo dos controles de formulário</p>
           <form class="bs-docs-example">
-            <legend>Legend</legend>
-            <label>Nome do título</label>
-            <input type="text" placeholder="Digite algo...">
-            <span class="help-block">Ajuda de texto em bloco</span>
-            <label class="checkbox">
-              <input type="checkbox"> Olha eu
-            </label>
-            <button type="submit" class="btn">Enviar</button>
+            <fieldset>
+              <legend>Legend</legend>
+              <label>Nome do título</label>
+              <input type="text" placeholder="Digite algo...">
+              <span class="help-block">Ajuda de texto em bloco</span>
+              <label class="checkbox">
+                <input type="checkbox"> Olha eu
+              </label>
+              <button type="submit" class="btn">Enviar</button>
+            </fieldset>
           </form>
 <pre class="prettyprint linenums">
 &lt;form&gt;
-  &lt;legend&gt;Legenda&lt;/legend&gt;
-  &lt;label&gt;Nome do título&lt;/label&gt;
-  &lt;input type="text" placeholder="Digite algo..."&gt;
-  &lt;span class="help-block"&gt;Example block-level help text here.&lt;/span&gt;
-  &lt;label class="checkbox"&gt;
-    &lt;input type="checkbox"&gt; Olha eu
-  &lt;/label&gt;
-  &lt;button type="submit" class="btn"&gt;Enviar&lt;/button&gt;
+  &lt;fieldset&gt;
+    &lt;legend&gt;Legenda&lt;/legend&gt;
+    &lt;label&gt;Nome do título&lt;/label&gt;
+    &lt;input type="text" placeholder="Digite algo..."&gt;
+    &lt;span class="help-block"&gt;Example block-level help text here.&lt;/span&gt;
+    &lt;label class="checkbox"&gt;
+      &lt;input type="checkbox"&gt; Olha eu
+    &lt;/label&gt;
+    &lt;button type="submit" class="btn"&gt;Enviar&lt;/button&gt;
+  &lt;/fieldset&gt;
 &lt;/form&gt;
 </pre>
 
@@ -937,7 +966,6 @@ Por exemplo, &lt;code&gt;&lt;section&gt;&lt;/code&gt; deve ser colocado inline
             <li>Coloque em volta de qualquer controle associado <code>.controls</code> para alinhamento apropriado</li>
           </ul>
           <form class="bs-docs-example form-horizontal">
-            <legend>Legend</legend>
             <div class="control-group">
               <label class="control-label" for="inputEmail">Email</label>
               <div class="controls">
@@ -1002,7 +1030,7 @@ Por exemplo, &lt;code&gt;&lt;section&gt;&lt;/code&gt; deve ser colocado inline
 </pre>
 
           <h3>Área de texto</h3>
-          <p>Controles de formulário que também suporta múltiplas linhas de texto. Mude o atributo <code>row</code> quando necessário</p>
+          <p>Controle de formulários que suporta múltiplas linhas de texto. Mude o atributo <code>rows</code> quando necessário</p>
           <form class="bs-docs-example form-inline">
             <textarea rows="3"></textarea>
           </form>
@@ -1121,20 +1149,22 @@ Por exemplo, &lt;code&gt;&lt;section&gt;&lt;/code&gt; deve ser colocado inline
           <form class="bs-docs-example">
             <div class="input-prepend">
               <span class="add-on">@</span>
-              <input class="span2" id="prependedInput" size="16" type="text" placeholder="Nome do usuário">
+              <input class="span2" id="prependedInput" type="text" placeholder="Nome do usuário">
             </div>
             <br>
             <div class="input-append">
-              <input class="span2" id="appendedInput" size="16" type="text">
+              <input class="span2" id="appendedInput" type="text">
               <span class="add-on">.00</span>
             </div>
           </form>
 <pre class="prettyprint linenums">
 &lt;div class="input-prepend"&gt;
-  &lt;span class="add-on"&gt;@&lt;/span&gt;&lt;input class="span2" id="prependedInput" size="16" type="text" placeholder="Nome do usuário"&gt;
+  &lt;span class="add-on"&gt;@&lt;/span&gt;
+  &lt;input class="span2" id="prependedInput" type="text" placeholder="Nome do usuário"&gt;
 &lt;/div&gt;
 &lt;div class="input-append"&gt;
-  &lt;input class="span2" id="appendedInput" size="16" type="text"&gt;&lt;span class="add-on"&gt;.00&lt;/span&gt;
+  &lt;input class="span2" id="appendedInput" type="text"&gt;
+  &lt;span class="add-on"&gt;.00&lt;/span&gt;
 &lt;/div&gt;
 </pre>
 
@@ -1143,13 +1173,15 @@ Por exemplo, &lt;code&gt;&lt;section&gt;&lt;/code&gt; deve ser colocado inline
           <form class="bs-docs-example form-inline">
             <div class="input-prepend input-append">
               <span class="add-on">$</span>
-              <input class="span2" id="appendedPrependedInput" size="16" type="text">
+              <input class="span2" id="appendedPrependedInput" type="text">
               <span class="add-on">.00</span>
             </div>
           </form>
 <pre class="prettyprint linenums">
 &lt;div class="input-prepend input-append"&gt;
-  &lt;span class="add-on"&gt;$&lt;/span&gt;&lt;input class="span2" id="appendedPrependedInput" size="16" type="text"&gt;&lt;span class="add-on"&gt;.00&lt;/span&gt;
+  &lt;span class="add-on"&gt;$&lt;/span&gt;
+  &lt;input class="span2" id="appendedPrependedInput" type="text"&gt;
+  &lt;span class="add-on"&gt;.00&lt;/span&gt;
 &lt;/div&gt;
 </pre>
 
@@ -1157,24 +1189,188 @@ Por exemplo, &lt;code&gt;&lt;section&gt;&lt;/code&gt; deve ser colocado inline
           <p>Ao invés de um <code>&lt;span&gt;</code> com texto, use um <code>.btn</code> para ligar um botão (ou dois) a um input</p>
           <form class="bs-docs-example">
             <div class="input-append">
-              <input class="span2" id="appendedInputButton" size="16" type="text">
+              <input class="span2" id="appendedInputButton" type="text">
               <button class="btn" type="button">Go!</button>
             </div>
-            <br>
+          </form>
+<pre class="prettyprint linenums">
+&lt;div class="input-append"&gt;
+  &lt;input class="span2" id="appendedInputButton" type="text"&gt;
+  &lt;button class="btn" type="button"&gt;Go!&lt;/button&gt;
+&lt;/div&gt;
+</pre>
+          <form class="bs-docs-example">
             <div class="input-append">
-              <input class="span2" id="appendedInputButtons" size="16" type="text">
+              <input class="span2" id="appendedInputButtons" type="text">
               <button class="btn" type="button">Search</button>
               <button class="btn" type="button">Options</button>
             </div>
           </form>
 <pre class="prettyprint linenums">
 &lt;div class="input-append"&gt;
-  &lt;input class="span2" id="appendedInputButton" size="16" type="text"&gt;&lt;button class="btn" type="button"&gt;Go!&lt;/button&gt;
+  &lt;input class="span2" id="appendedInputButtons" type="text"&gt;
+  &lt;button class="btn" type="button"&gt;Search&lt;/button&gt;
+  &lt;button class="btn" type="button"&gt;Options&lt;/button&gt;
 &lt;/div&gt;
+</pre>
 
+          <h4>Dropdown de botões</h4>
+          <p></p>
+          <form class="bs-docs-example">
+            <div class="input-append">
+              <input class="span2" id="appendedDropdownButton" type="text">
+              <div class="btn-group">
+                <button class="btn dropdown-toggle" data-toggle="dropdown">Ação <span class="caret"></span></button>
+                <ul class="dropdown-menu">
+                  <li><a href="#">Ação</a></li>
+                  <li><a href="#">Outra ação</a></li>
+                  <li><a href="#">Algo a mais aqui</a></li>
+                  <li class="divider"></li>
+                  <li><a href="#">Link separador</a></li>
+                </ul>
+              </div><!-- /btn-group -->
+            </div><!-- /input-append -->
+          </form>
+<pre class="prettyprint linenums">
 &lt;div class="input-append"&gt;
-  &lt;input class="span2" id="appendedInputButtons" size="16" type="text"&gt;&lt;button class="btn" type="button"&gt;Search&lt;/button&gt;&lt;button class="btn" type="button"&gt;Options&lt;/button&gt;
+  &lt;input class="span2" id="appendedDropdownButton" type="text"&gt;
+  &lt;div class="btn-group"&gt;
+    &lt;button class="btn dropdown-toggle" data-toggle="dropdown"&gt;
+      Ação
+      &lt;span class="caret"&gt;&lt;/span&gt;
+    &lt;/button&gt;
+    &lt;ul class="dropdown-menu"&gt;
+      ...
+    &lt;/ul&gt;
+  &lt;/div&gt;
 &lt;/div&gt;
+</pre>
+
+          <form class="bs-docs-example">
+            <div class="input-prepend">
+              <div class="btn-group">
+                <button class="btn dropdown-toggle" data-toggle="dropdown">Ação <span class="caret"></span></button>
+                <ul class="dropdown-menu">
+                  <li><a href="#">Ação</a></li>
+                  <li><a href="#">Outra ação</a></li>
+                  <li><a href="#">Algo a mais aqui</a></li>
+                  <li class="divider"></li>
+                  <li><a href="#">Link separador</a></li>
+                </ul>
+              </div><!-- /btn-group -->
+              <input class="span2" id="prependedDropdownButton" type="text">
+            </div><!-- /input-prepend -->
+          </form>
+<pre class="prettyprint linenums">
+&lt;div class="input-prepend"&gt;
+  &lt;div class="btn-group"&gt;
+    &lt;button class="btn dropdown-toggle" data-toggle="dropdown"&gt;
+      Ação
+      &lt;span class="caret"&gt;&lt;/span&gt;
+    &lt;/button&gt;
+    &lt;ul class="dropdown-menu"&gt;
+      ...
+    &lt;/ul&gt;
+  &lt;/div&gt;
+  &lt;input class="span2" id="prependedDropdownButton" type="text"&gt;
+&lt;/div&gt;
+</pre>
+
+          <form class="bs-docs-example">
+            <div class="input-prepend input-append">
+              <div class="btn-group">
+                <button class="btn dropdown-toggle" data-toggle="dropdown">Ação <span class="caret"></span></button>
+                <ul class="dropdown-menu">
+                  <li><a href="#">Ação</a></li>
+                  <li><a href="#">Outra ação</a></li>
+                  <li><a href="#">Algo a mais aqui</a></li>
+                  <li class="divider"></li>
+                  <li><a href="#">Link separador</a></li>
+                </ul>
+              </div><!-- /btn-group -->
+              <input class="span2" id="appendedPrependedDropdownButton" type="text">
+              <div class="btn-group">
+                <button class="btn dropdown-toggle" data-toggle="dropdown">Ação <span class="caret"></span></button>
+                <ul class="dropdown-menu">
+                  <li><a href="#">Ação</a></li>
+                  <li><a href="#">Outra ação</a></li>
+                  <li><a href="#">Algo a mais aqui</a></li>
+                  <li class="divider"></li>
+                  <li><a href="#">Link separador</a></li>
+                </ul>
+              </div><!-- /btn-group -->
+            </div><!-- /input-prepend input-append -->
+          </form>
+<pre class="prettyprint linenums">
+&lt;div class="input-prepend input-append"&gt;
+  &lt;div class="btn-group"&gt;
+    &lt;button class="btn dropdown-toggle" data-toggle="dropdown"&gt;
+      Ação
+      &lt;span class="caret"&gt;&lt;/span&gt;
+    &lt;/button&gt;
+    &lt;ul class="dropdown-menu"&gt;
+      ...
+    &lt;/ul&gt;
+  &lt;/div&gt;
+  &lt;input class="span2" id="appendedPrependedDropdownButton" type="text"&gt;
+  &lt;div class="btn-group"&gt;
+    &lt;button class="btn dropdown-toggle" data-toggle="dropdown"&gt;
+      Ação
+      &lt;span class="caret"&gt;&lt;/span&gt;
+    &lt;/button&gt;
+    &lt;ul class="dropdown-menu"&gt;
+      ...
+    &lt;/ul&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+</pre>
+
+          <h4>Grupos dropdown de segmento</h4>
+          <form class="bs-docs-example">
+            <div class="input-prepend">
+              <div class="btn-group">
+                <button class="btn" tabindex="-1">Action</button>
+                <button class="btn dropdown-toggle" data-toggle="dropdown" tabindex="-1">
+                  <span class="caret"></span>
+                </button>
+                <ul class="dropdown-menu">
+                  <li><a href="#">Ação</a></li>
+                  <li><a href="#">Outra ação</a></li>
+                  <li><a href="#">Algo a mais aqui</a></li>
+                  <li class="divider"></li>
+                  <li><a href="#">Link separador</a></li>
+                </ul>
+              </div>
+              <input type="text">
+            </div>
+            <div class="input-append">
+              <input type="text">
+              <div class="btn-group">
+                <button class="btn" tabindex="-1">Action</button>
+                <button class="btn dropdown-toggle" data-toggle="dropdown" tabindex="-1">
+                  <span class="caret"></span>
+                </button>
+                <ul class="dropdown-menu">
+                  <li><a href="#">Ação</a></li>
+                  <li><a href="#">Outra ação</a></li>
+                  <li><a href="#">Algo a mais aqui</a></li>
+                  <li class="divider"></li>
+                  <li><a href="#">Link separador</a></li>
+                </ul>
+              </div>
+            </div>
+          </form>
+<pre class="prettyprint linenums">
+&lt;form&gt;
+  &lt;div class="input-prepend"&gt;
+    &lt;div class="btn-group"&gt;...&lt;/div&gt;
+    &lt;input type="text"&gt;
+  &lt;/div&gt;
+  &lt;div class="input-append"&gt;
+    &lt;input type="text"&gt;
+    &lt;div class="btn-group"&gt;...&lt;/div&gt;
+  &lt;/div&gt;
+&lt;/form&gt;
 </pre>
 
           <h4>Formulário de busca</h4>
@@ -1203,6 +1399,17 @@ Por exemplo, &lt;code&gt;&lt;section&gt;&lt;/code&gt; deve ser colocado inline
 
           <h3>Controlar tamanho</h3>
           <p>Use classes de tamanho relativo como <code>.input-large</code> ou deixe seus inputs com o tamanho da colunagem do grid usando as classes <code>.span*</code></p>
+
+          <h4>Input em bloco</h4>
+          <p>Faça qualquer elemento <code>&lt;input&gt;</code> ou <code>&lt;textarea&gt;</code> se comportar como um elemento em bloco.</p>
+          <form class="bs-docs-example" style="padding-bottom: 15px;">
+            <div class="controls">
+              <input class="input-block-level" type="text" placeholder=".input-block-level">
+            </div>
+          </form>
+<pre class="prettyprint linenums">
+&lt;input class="input-block-level" type="text" placeholder=".input-block-level"&gt;
+</pre>
 
           <h4>Tamanho relativo</h4>
           <form class="bs-docs-example" style="padding-bottom: 15px;">
@@ -1364,6 +1571,15 @@ Por exemplo, &lt;code&gt;&lt;section&gt;&lt;/code&gt; deve ser colocado inline
 &lt;input class="input-xlarge" id="focusedInput" type="text" value="Isto está focado..."&gt;
 </pre>
 
+          <h3>Input inválidos</h3>
+          <p>Estilize inputs através da funcionalidade padrão do browser com um <code>:invalid</code>. Especifique um <code>type</code> e adicionar um atributo <code>required</code></p>
+          <form class="bs-docs-example form-inline">
+            <input class="span3" type="email" placeholder="test@example.com" required>
+          </form>
+<pre class="prettyprint linenums">
+&lt;input class="span3" type="email" required&gt;
+</pre>
+
           <h3>Inputs desabilitados</h3>
           <p>Adicione o atributo <code>disabled</code> em um input para prevenir que o usuário possa digitar algo com uma aparência diferente</p>
           <form class="bs-docs-example form-inline">
@@ -1392,9 +1608,9 @@ Por exemplo, &lt;code&gt;&lt;section&gt;&lt;/code&gt; deve ser colocado inline
               </div>
             </div>
             <div class="control-group info">
-              <label class="control-label" for="inputError">Input com informação</label>
+              <label class="control-label" for="inputInfo">Input com informação</label>
               <div class="controls">
-                <input type="text" id="inputError">
+                <input type="text" id="inputInfo">
                 <span class="help-inline">O nome de usuário já existe</span>
               </div>
             </div>
@@ -1907,8 +2123,9 @@ Por exemplo, &lt;code&gt;&lt;section&gt;&lt;/code&gt; deve ser colocado inline
   &lt;label class="control-label" for="inputIcon"&gt;Endereço de email&lt;/label&gt;
   &lt;div class="controls"&gt;
     &lt;div class="input-prepend"&gt;
-    &lt;span class="add-on"&gt;&lt;i class="icon-envelope"&gt;&lt;/i&gt;&lt;/span&gt;
-    &lt;input class="span2" id="inputIcon" type="text"&gt;
+      &lt;span class="add-on"&gt;&lt;i class="icon-envelope"&gt;&lt;/i&gt;&lt;/span&gt;
+      &lt;input class="span2" id="inputIcon" type="text"&gt;
+    &lt;/div&gt;
   &lt;/div&gt;
 &lt;/div&gt;
 </pre>
@@ -1929,13 +2146,14 @@ Por exemplo, &lt;code&gt;&lt;section&gt;&lt;/code&gt; deve ser colocado inline
     <footer class="footer">
       <div class="container">
         <p class="pull-right"><a href="#">Voltar ao topo</a></p>
-        <p>Desenvolvido com todo amor no mundo <a href="http://twitter.com/twitter" target="_blank">@twitter</a> por <a href="http://twitter.com/mdo" target="_blank">@mdo</a> e <a href="http://twitter.com/fat" target="_blank">@fat</a>.</p>
-        <p>Este projeto é uma versão do Twitter Bootstrap da globo.com mantido por <a href="http://blog.alexandremagno.net">Alexandre Magno</a></p>
-        <p>Código licenciado sob <a href="http://www.apache.org/licenses/LICENSE-2.0" target="_blank">Licença Apache v2.0</a>. A documentação é licenciada sob <a href="http://creativecommons.org/licenses/by/3.0/">CC 3.0</a>.</p>
-        <p>Ícones do <a href="http://glyphicons.com">Glyphicons Free</a>, licenciado sob <a href="http://creativecommons.org/licenses/by/3.0/">CC 3.0</a>.</p>
+        <p>Desenhado e construído com todo amor do mundo por <a href="http://twitter.com/mdo" target="_blank">@mdo</a> e <a href="http://twitter.com/fat" target="_blank">@fat</a>.</p>
+        <p>Código licenciado sob <a href="http://www.apache.org/licenses/LICENSE-2.0" target="_blank">Apache License v2.0</a>, documentação sob <a href="http://creativecommons.org/licenses/by/3.0/">CC 3.0</a>.</p>
+        <p><a href="http://glyphicons.com">Glyphicons grátis</a> licenciado sob <a href="http://creativecommons.org/licenses/by/3.0/">CC 3.0</a>.</p>
         <ul class="footer-links">
-          <li><a href="http://blog.getbootstrap.com">Leia o blog</a></li>
-          <li><a href="https://github.com/twitter/bootstrap/issues?state=open">Relatar issues</a></li>
+          <li><a href="http://blog.getbootstrap.com">Blog</a></li>
+          <li class="muted">&middot;</li>
+          <li><a href="https://github.com/twitter/bootstrap/issues?state=open">Issues</a></li>
+          <li class="muted">&middot;</li>
           <li><a href="https://github.com/twitter/bootstrap/wiki">Roadmap e changelog</a></li>
         </ul>
       </div>
