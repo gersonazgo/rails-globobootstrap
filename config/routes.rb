@@ -1,4 +1,12 @@
 RailsGlobobootstrap::Application.routes.draw do
+  get "examples/index"
+
+  get "examples/hero"
+
+  get "examples/fluid"
+
+  get "examples/starter_template"
+
   # The priority is based upon order of creation:
   # first created -> highest priority.
 
