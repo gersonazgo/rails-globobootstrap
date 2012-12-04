@@ -1,4 +1,6 @@
 RailsGlobobootstrap::Application.routes.draw do
+
+  root to: "examples#index"
   get "examples/index"
 
   get "examples/hero"

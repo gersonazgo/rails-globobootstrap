@@ -17,14 +17,11 @@ class ExamplesController < ApplicationController
 
   end
 
+  # Permite que se escolha o layout conforme a action chamada
   def get_layout
     case action_name
-    when "starter_template"
-      "starter_template"
-    when "hero"
-      "hero"
-    when "fluid"
-      "fluid"
+    when "index", "hero", "fluid", "starter_template"
+      "application"
     else
       "application"
     end

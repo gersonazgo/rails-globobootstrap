@@ -1,2 +1,72 @@
-<h1>Examples#index</h1>
-<p>Find me in app/views/examples/index.html.erb</p>
+<div class="container">
+  <h1>Globo Bootstrap on Rails</h1>
+  <p>Abaixo, 3 exemplos: <em>template inicial, unidade herói (marketing template) e layout fluido.</em></p>
+  <br>
+
+  <ul class="thumbnails">
+    <li class="span4">
+      <a href="<%= url_for(controller: "examples", action: 'starter_template') %>" 
+      class="thumbnail inner-border">
+        <%= image_tag "bootstrap-example-starter.png" %>
+        <h4>Template Inicial</h4>
+      </a>
+    </li>
+    <li class="span4">
+      <a href="<%= url_for(controller: "examples", action: 'hero') %>" 
+      class="thumbnail inner-border">
+        <%= image_tag "bootstrap-example-hero.png" %>
+        <h4>Unidade Herói</h4>
+      </a>
+    </li>
+    <li class="span4">
+      <a href="<%= url_for(controller: "examples", action: 'fluid') %>" 
+      class="thumbnail inner-border">
+        <%= image_tag "bootstrap-example-fluid.png" %>
+        <h4>Layout Fluido</h4>
+      </a>
+    </li>
+  </ul>
+
+  <div class="alert alert-info">
+    <h4>Hey!</h4>
+    <p>Isso é apenas um projeto <em>rails</em> com o <em>bootstrap</em> integrado à <em><b>gem less-rails</b></em>, dando possibilidade de editar o <em>LESS</em> e em tempo real e ver como fica nos 3 layouts acima.<br><br>
+    O arquivo a ser editado está em <em>app/assets/bootstrap.css.less</em>.<br><br>
+
+    Quer inspiração pra temas pra testar direto no LESS? Recomendo 
+    <ul>
+      <li><%= link_to "http://www.lavishbootstrap.com/" %></li>
+      <li><%= link_to "http://bootswatch.com/" %></li>
+    </ul>
+  </div>
+
+  <p class="lead">Todo o crédito e amor do mundo pros caras da <a href="http://opensource.globo.com" target="_blank">@globo.com</a> e do <a href="http://twitter.com/twitter" target="_blank">@twitter</a>.</p>
+
+  <hr>
+
+
+
+  <footer class="footer">
+      <div class="container">
+        <p class="pull-right"><a href="#">Voltar ao topo</a></p>
+        <p>Desenvolvido com todo amor no mundo <a href="http://twitter.com/twitter" target="_blank">@twitter</a> por <a href="http://twitter.com/mdo" target="_blank">@mdo</a> e <a href="http://twitter.com/fat" target="_blank">@fat</a>
+        <br>
+        <a href="https://github.com/globocom/bootstrap" target="_blank">Globo Bootstrap</a> é uma versão do Twitter Bootstrap da globo.com mantido por <a href="http://blog.alexandremagno.net" target="_blank">Alexandre Magno</a><br>
+        Este projeto está sendo mantido por  <a href="https://github.com/gersonazgo" target="_blank">Gerson Azevedo</a><br>
+        Código licenciado sob <a href="http://www.apache.org/licenses/LICENSE-2.0" target="_blank">Licença Apache v2.0</a>. A documentação é licenciada sob <a href="http://creativecommons.org/licenses/by/3.0/">CC 3.0</a>.<br>
+        Ícones do <a href="http://glyphicons.com">Glyphicons Free</a>, licenciado sob <a href="http://creativecommons.org/licenses/by/3.0/">CC 3.0</a>.</p>
+        
+      </div>
+</footer>
+
+</div> <!-- /container -->
+
+  
+
+
+<hr>
+ 
+
+
+
+
+
