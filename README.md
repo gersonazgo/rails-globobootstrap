@@ -1,7 +1,15 @@
 Globo Bootstrap on Rails
 ========================
 
-Wip
+Este é um simples projeto rails que contém o bootstrap como asset, a gem less-rails e 3 exemplos como views. O objetivo é que se possa alterar as variáveis do LESS e ver o resultado em tempo real já dentro do rails app. 
+Clone-o
+	git clone https://github.com/gersonazgo/rails-globobootstrap
+Rode o server
+	rails s
+
+Edite o LESS em assets/stylesheets e as views em examples/views. 
+Way to go! :)
+
 
 Autores
 -------
